@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Roboto|Roboto+Mono');
+
+/* Navigation */
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.bg-dark {
+    background-color: #370974 !important;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgb(255, 255, 255, 1);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+}
+
+.nav-item .btn {
+    background-color: #370974;
+    border-radius: 15px;
+}
+
+.navbar-nav>li {
+    margin: 0px 15px;
+}
+
+.navbar-nav>li .btn-dark {
+    border: 1px solid #ffffff
+}
+
+.login-page .container {
+    margin: auto;
+    box-shadow: 2px 2px rgba(55, 9, 116, 0.26);
+    border-radius: 10px;
+    height: auto;
+}
+
+#login-page {
+    height: auto;
+}
+
+/* Login Page */
+.login-page {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: #370974;
+}
+
+
+.section-title {
+    margin-bottom: 0px;
+    border-top: 1.5px solid rgba(55, 9, 116, 0.5);
+    border-right: 1.5px solid rgba(55, 9, 116, 0.5);
+    border-left: 1.5px solid rgba(55, 9, 116, 0.5);
+
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom: 1px solid rgba(55, 9, 116, 0.5);
+    padding: 10px 0px;
+}
+
+.section-title h3 {
+    text-align: center;
+    /* padding: 5px 0px; */
+}
+
+.lt {
+    border-top: 1px solid rgba(55, 9, 116, 0.5);
+    border-left: 1.5px solid rgba(55, 9, 116, 0.5);
+    border-right: 1px solid rgba(55, 9, 116, 0.5);
+    border-bottom: 1.5px solid rgba(55, 9, 116, 0.5);
+    border-bottom-left-radius: 10px;
+    padding: 20px 20px 20px 30px;
+    color: #370974;
+}
+
+.lt-top {
+    margin-bottom: 170px;
+}
+
+.lt-top img {
+    height: 200px;
+    width: 200px;
+}
+
+.lt-top .media {
+    margin-top: 20px;
+}
+
+.lt-top .media p {
+    text-align: justify;
+}
+
+.lt-top li {
+    list-style: circle;
+    padding: 10px;
+}
+
+.lt-bottom,
+.lt-bottom-2 {
+    overflow: auto;
+    /* padding-left: 20px; */
+}
+
+.lt-bottom li,
+.lt-bottom-2 li {
+    float: left;
+    margin-right: 70px;
+    list-style: circle;
+}
+
+.lt-bottom-2 {
+    margin-top: 300px;
+}
+
+.lf {
+    border-top: 1px solid rgba(55, 9, 116, 0.5);
+    border-left: 1px solid rgba(55, 9, 116, 0.5);
+    border-right: 1.5px solid rgba(55, 9, 116, 0.5);
+    border-bottom: 1.5px solid rgba(55, 9, 116, 0.5);
+    border-bottom-right-radius: 10px;
+    padding: 20px 30px 50px 30px;
+}
+
+.lf label {
+    text-transform: uppercase;
+    color: #370974;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.lf input {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 17px;
+    color: #370974;
+    border: 1px solid rgba(55, 9, 116, 0.5);
+}
+
+.lf select,
+option {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    font-family: 'Roboto Mono', monospace;
+}
+
+#lf-button {
+    margin-top: 50px;
+    background-color: #41B661;
+    color: #FFFFFF;
+}
+
+#lf-button-2 {
+    margin-top: 50px;
+    border: 1px solid #370974;
+    color: #370974;
+}
+
+#lf-button-3 {
+    background-color: red;
+    padding: 5px;
+    width: 200px;
+    color: #FFFFFF;
+    border-radius: 20px;
+}
+
+#lf-button-4 {
+    background-color: #41B661;
+    padding: 5px;
+    width: 200px;
+    color: #FFFFFF;
+    border-radius: 20px;
+}
+
+#lf-button,
+#lf-button-2,
+#lf-button-3,
+#lf-button-4 {
+    font-family: 'Roboto Mono', monospace;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.lf .fa-eye-slash,
+.fa-angle-down {
+    color: #370974;
+}
+
+.lf small p {
+    font-size: 14px;
+    font-family: 'Roboto Mono', monospace;
+    color: #370974;
+}
+
+.lf small span {
+    color: #41B661;
+    font-weight: bold;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#lf-span {
+    color: red;
+}
+
+.lf .form-group {
+    margin-bottom: 0px;
+}
+
+.lf .upload-drop-zone {
+    background-color: #CCCCCC;
+    border: 1px solid #370974;
+    line-height: 100px;
+    text-align: center;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.hr {
+    border: 0.5px solid rgba(55, 9, 116, 0.26);
+}
+
+/*  Responsive Design */

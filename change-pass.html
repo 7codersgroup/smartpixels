@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit==no" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+        <!-- Bootstrap CSS-->
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" href="css/all.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <title>SmartPixels - Change Password</title>
+    </head>
+
+    <body>
+        <!--Header-->
+        <section class="">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <a class="navbar-brand" href="#">Smart Pixels</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">
+                                Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Competitions</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="#">Support</a></li>
+                        <li class="nav-item"><a class="nav-link" href="login.html">Sign In</a></li>
+                        <li class="nav-item nav-border">
+                            <a href="sign-up.html" class="btn btn-dark nav-link">Create Account</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </section>
+        <!--End Header -->
+
+        <section class="login-page">
+            <div class="container">
+                <div class="row">
+                    <!-- <i class="fas fa-lock fa-7x"></i> -->
+                    <div class="col-md-12 section-title">
+                        <h3>Account Password Setup</h3>
+                    </div>
+                </div>
+                <div class="row" id="login-page">
+                    <div class="col-md-6 lt">
+                        <h4>Change Your Password</h4>
+                        <div class="lt-bottom-2">
+                            <ul>
+                                <li>Term of Use</li>
+                                <li>Policy</li>
+                                <li>Support</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6 lf">
+                        <form>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">
+                                    Old Password<span> *</span>
+                                </label>
+                                <div class="input-group mb-4">
+                                    <input type="password" class="form-control" placeholder="Please input old password"
+                                           aria-describedby="button-addon2" />
+                                    <div class="input-group-append">
+                                        <button class="btn btn-outline-secondary" type="button" id="button-addon2">
+                                            <span class="fas fa-eye-slash"></span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <label for="exampleInputPassword1">
+                                    New Password<span> *</span>
+                                </label>
+                                <div class="input-group">
+                                    <input type="password" class="form-control" placeholder="Kindly choose a convenient passwo"
+                                           aria-describedby="button-addon2" />
+                                    <div class="input-group-append">
+                                        <button class="btn btn-outline-secondary" type="button" id="button-addon2">
+                                            <span class="fas fa-eye-slash"></span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <small id="passwordHelpBlock" class="form-text text-muted mb-4">
+                                    <p class="mt-2">
+                                        Your password must be at least 8
+                                        characters and contain uppercase, lowercase letters and numbers
+                                    </p>
+                                </small>
+                                <small class="form-text text-muted mb-4">
+                                    <span>AT LEAST 8 CHARACTERS</span><br>
+                                    <span id="lf-span">UPPERCASE</span><br>
+                                    <span>LOWERCASE</span><br>
+                                    <span>NUMBER</span>
+                                </small>
+                                <label for="exampleInputPassword1">
+                                    Confirm Password<span> *</span>
+                                </label>
+                                <div class="input-group">
+                                    <input type="password" class="form-control" placeholder="Comfirm password"
+                                           ria-describedby="button-addon2" />
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col-md-6">
+                                    <button type="submit" id="lf-button-2" class="btn btn-block btn-lg">Cancel</button>
+                                </div>
+                                <div class="col-md-6">
+                                    <button type="submit" id="lf-button" class="btn btn-block btn-lg">Change Password</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="/src/js/jquery-3.3.1.min.js"></script>
+    <script src="/src/js/popper.min.js"></script>
+    <script src="/src/js/bootstrap.min.js"></script>
+
+</html>
