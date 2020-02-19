@@ -1,224 +1,922 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat|Roboto|Roboto+Mono');
+@import url("https://fonts.googleapis.com/css?family=Montserrat|Roboto|Roboto+Mono");
 
 /* Navigation */
 
 body {
-    font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
+  background-image: url(../img/body_mask@2x.png);
+  /* position: relative; */
 }
 
 .bg-dark {
-    background-color: #370974 !important;
+  background-color: #370974 !important;
 }
 
 .navbar-dark .navbar-nav .nav-link {
-    color: rgb(255, 255, 255, 1);
-    font-family: 'Montserrat', sans-serif;
-    font-size: 15px;
+  color: rgb(255, 255, 255, 1);
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.85em;
 }
 
-.nav-item .btn {
-    background-color: #370974;
-    border-radius: 15px;
+.navbar-nav > li {
+  margin: 0px 45px;
 }
 
-.navbar-nav>li {
-    margin: 0px 15px;
+.navbar-nav > li .nav-button {
+  border: 0.5px solid #ffffff;
+  font-size: 1em;
+  border-radius: 10px;
+  background-color: #370974;
+  font-weight: 600;
 }
 
-.navbar-nav>li .btn-dark {
-    border: 1px solid #ffffff
+.navbar-nav .nav-button {
+  padding-left: 20px !important;
+  padding-right: 20px !important;
 }
 
-.login-page .container {
-    margin: auto;
-    box-shadow: 2px 2px rgba(55, 9, 116, 0.26);
-    border-radius: 10px;
-    height: auto;
+#cancel-button,
+#save-button,
+#submit-button {
+  margin-top: 50px;
+  color: #ffffff;
+  font-family: "Roboto Mono", monospace;
+  text-transform: uppercase;
+  font-size: 1em;
+  height: 50px;
 }
 
-#login-page {
-    height: auto;
+#save-button {
+  margin-top: 50px;
+  color: #ffffff;
+  background-color: #41b661;
 }
 
-/* Login Page */
-.login-page {
-    margin-top: 50px;
-    margin-bottom: 50px;
-    color: #370974;
+#cancel-button {
+  margin-top: 50px;
+  border: 1px solid #370974;
+  color: #370974;
 }
 
-
-.section-title {
-    margin-bottom: 0px;
-    border-top: 1.5px solid rgba(55, 9, 116, 0.5);
-    border-right: 1.5px solid rgba(55, 9, 116, 0.5);
-    border-left: 1.5px solid rgba(55, 9, 116, 0.5);
-
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    border-bottom: 1px solid rgba(55, 9, 116, 0.5);
-    padding: 10px 0px;
-}
-
-.section-title h3 {
-    text-align: center;
-    /* padding: 5px 0px; */
-}
-
-.lt {
-    border-top: 1px solid rgba(55, 9, 116, 0.5);
-    border-left: 1.5px solid rgba(55, 9, 116, 0.5);
-    border-right: 1px solid rgba(55, 9, 116, 0.5);
-    border-bottom: 1.5px solid rgba(55, 9, 116, 0.5);
-    border-bottom-left-radius: 10px;
-    padding: 20px 20px 20px 30px;
-    color: #370974;
-}
-
-.lt-top {
-    margin-bottom: 170px;
-}
-
-.lt-top img {
-    height: 200px;
-    width: 200px;
-}
-
-.lt-top .media {
-    margin-top: 20px;
-}
-
-.lt-top .media p {
-    text-align: justify;
-}
-
-.lt-top li {
-    list-style: circle;
-    padding: 10px;
-}
-
-.lt-bottom,
-.lt-bottom-2 {
-    overflow: auto;
-    /* padding-left: 20px; */
-}
-
-.lt-bottom li,
-.lt-bottom-2 li {
-    float: left;
-    margin-right: 70px;
-    list-style: circle;
-}
-
-.lt-bottom-2 {
-    margin-top: 300px;
-}
-
-.lf {
-    border-top: 1px solid rgba(55, 9, 116, 0.5);
-    border-left: 1px solid rgba(55, 9, 116, 0.5);
-    border-right: 1.5px solid rgba(55, 9, 116, 0.5);
-    border-bottom: 1.5px solid rgba(55, 9, 116, 0.5);
-    border-bottom-right-radius: 10px;
-    padding: 20px 30px 50px 30px;
-}
-
-.lf label {
-    text-transform: uppercase;
-    color: #370974;
-    font-family: 'Roboto', sans-serif;
-    font-weight: bold;
-    font-size: 17px;
-}
-
-.lf input {
-    font-family: 'Roboto Mono', monospace;
-    font-size: 17px;
-    color: #370974;
-    border: 1px solid rgba(55, 9, 116, 0.5);
-}
-
-.lf select,
-option {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    font-family: 'Roboto Mono', monospace;
-}
-
-#lf-button {
-    margin-top: 50px;
-    background-color: #41B661;
-    color: #FFFFFF;
-}
-
-#lf-button-2 {
-    margin-top: 50px;
-    border: 1px solid #370974;
-    color: #370974;
-}
-
-#lf-button-3 {
-    background-color: red;
-    padding: 5px;
-    width: 200px;
-    color: #FFFFFF;
-    border-radius: 20px;
-}
-
-#lf-button-4 {
-    background-color: #41B661;
-    padding: 5px;
-    width: 200px;
-    color: #FFFFFF;
-    border-radius: 20px;
-}
-
-#lf-button,
-#lf-button-2,
-#lf-button-3,
-#lf-button-4 {
-    font-family: 'Roboto Mono', monospace;
-    text-transform: uppercase;
-    font-size: 20px;
-}
-
-.lf .fa-eye-slash,
-.fa-angle-down {
-    color: #370974;
-}
-
-.lf small p {
-    font-size: 14px;
-    font-family: 'Roboto Mono', monospace;
-    color: #370974;
-}
-
-.lf small span {
-    color: #41B661;
-    font-weight: bold;
-    font-size: 14px;
-    font-family: 'Roboto', sans-serif;
+#submit-button {
+  margin-top: 50px;
+  color: #ffffff;
+  background-color: #41b661;
 }
 
 #lf-span {
-    color: red;
+  color: red;
 }
 
-.lf .form-group {
-    margin-bottom: 0px;
+.page {
+  padding-top: 100px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 100px;
+  color: #370974;
 }
 
-.lf .upload-drop-zone {
-    background-color: #CCCCCC;
-    border: 1px solid #370974;
-    line-height: 100px;
-    text-align: center;
-    border-radius: 5px;
-    width: 100%;
+.page #page-border {
+  margin-bottom: 0px;
+  border-top: 1.5px solid rgba(55, 9, 116, 0.5);
+  border-right: 1.5px solid rgba(55, 9, 116, 0.5);
+  border-left: 1.5px solid rgba(55, 9, 116, 0.5);
+
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom: 1px solid rgba(55, 9, 116, 0.5);
+  padding: 10px 0px;
+}
+
+.page #page-border-2 {
+  border-top: 1px solid rgba(55, 9, 116, 0.5);
+  border-left: 1.5px solid rgba(55, 9, 116, 0.5);
+  border-right: 1px solid rgba(55, 9, 116, 0.5);
+  border-bottom: 1.5px solid rgba(55, 9, 116, 0.5);
+  border-bottom-left-radius: 10px;
+  padding: 20px 20px 20px 30px;
+  color: #370974;
+}
+
+.page #page-border-3 {
+  border-top: 1px solid rgba(55, 9, 116, 0.5);
+  border-left: 1px solid rgba(55, 9, 116, 0.5);
+  border-right: 1.5px solid rgba(55, 9, 116, 0.5);
+  border-bottom: 1.5px solid rgba(55, 9, 116, 0.5);
+  border-bottom-right-radius: 10px;
+  padding: 50px 80px 50px 80px;
+}
+
+.page {
+  position: relative;
+}
+
+.page .page-image {
+  position: absolute !important;
+  /* border: 3px solid red; */
+}
+
+.page .page-image img {
+  display: block;
+  top: 2000px;
+  /* border: 3px solid orange; */
+}
+
+.page .page-main-title h3 {
+  text-align: center;
+  font-size: 1.4em;
+}
+
+.page .page-sub-title h4 {
+  font-size: 1.3em;
+}
+
+/* Login Page */
+
+.login-page .container-fluid {
+  margin: auto;
+  box-shadow: 2px 2px rgba(55, 9, 116, 0.26);
+  border-radius: 10px;
+  height: auto;
+  background-color: #ffffff;
+}
+
+.login-page .login-heading {
+  margin-left: 20px;
+}
+
+.login-page .login-body .login-heading {
+  margin-bottom: 200px;
+}
+
+.login-page .login-body .login-heading button {
+  font-size: 1em;
+}
+
+.login-page .login-body .login-heading img {
+  height: 200px;
+  width: 200px;
+}
+
+.login-page .login-body .login-heading li {
+  list-style: circle;
+  padding: 10px;
+}
+
+.login-page .login-body .login-footer,
+ul {
+  /* border: 1px solid blue; */
+  padding-left: 20px;
+}
+
+.login-page .login-body .login-footer {
+  overflow: auto;
+  margin-left: 0px;
+}
+
+.login-page .login-body .login-footer li {
+  float: left;
+  margin-right: 70px;
+  list-style: circle;
+}
+
+.login-page .login-registration label {
+  text-transform: uppercase;
+  color: #370974;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.login-page .login-registration input {
+  font-family: "Roboto Mono", monospace;
+  font-size: 17px;
+  border: 1px solid rgba(55, 9, 116, 0.5);
+  height: 50px;
+  border-radius: 6px;
+}
+
+.login-page .login-registration input::placeholder {
+  color: #370974;
+}
+
+.login-page .login-registration select,
+option {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  font-family: "Roboto Mono", monospace;
+  color: #370974;
+}
+
+.login-page .login-registration textarea {
+  border: 1px solid rgba(55, 9, 116, 0.5);
+}
+
+.login-page .login-registration .fa-eye-slash,
+.fa-angle-down {
+  color: #370974;
+}
+
+.login-page .login-registration small p {
+  font-size: 14px;
+  font-family: "Roboto Mono", monospace;
+  color: #370974;
+}
+
+.login-page .login-registration small span {
+  color: #41b661;
+  font-weight: bold;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+}
+
+.login-page .login-registration .form-group {
+  margin-bottom: 0px;
+}
+
+.login-page .login-registration .upload-drop-zone {
+  background-color: #cccccc;
+  border: 1px solid #370974;
+  line-height: 100px;
+  text-align: center;
+  border-radius: 5px;
+  width: 100%;
 }
 
 .hr {
-    border: 0.5px solid rgba(55, 9, 116, 0.26);
+  border: 0.5px solid rgba(55, 9, 116, 0.26);
 }
 
-/*  Responsive Design */
+/* Verify Page */
+
+.verify-page .container-fluid {
+  margin: auto;
+  box-shadow: 2px 2px rgba(55, 9, 116, 0.26);
+  border-radius: 10px;
+  height: auto;
+  background-color: #ffffff;
+}
+
+.verify-page .verify-body .verify-heading {
+  margin-bottom: 170px;
+}
+
+.verify-page .verify-body .verify-heading #verified {
+  background-color: red;
+  padding: 3px 5px 3px 5px;
+  width: 80px;
+  color: #ffffff;
+  border-radius: 20px;
+  margin-right: 30px;
+}
+
+.verify-page .verify-body .verify-heading #unverified {
+  background-color: #41b661;
+  padding: 3px 5px 3px 5px;
+  width: 90px;
+  color: #ffffff;
+  border-radius: 20px;
+  margin-left: 0px;
+}
+
+.verify-page .verify-body .verify-heading #verified,
+#unverified {
+  font-family: "Roboto Mono", monospace;
+  text-transform: lowercase;
+  font-size: 0.7em;
+}
+
+.verify-page .verify-body .verify-content {
+  margin-top: 20px;
+}
+
+.verify-page .verify-content p {
+  text-align: left;
+  width: 447px;
+}
+
+.verify-page .verify-body .verify-footer {
+  overflow: auto;
+  margin-left: 0px;
+}
+
+.verify-page .verify-body .verify-footer li {
+  float: left;
+  margin-right: 70px;
+  list-style: circle;
+}
+
+.verify-page .verify-body .verify-footer ul {
+  /* border: 1px solid blue; */
+  padding-left: 20px;
+}
+
+.verify-registration label {
+  text-transform: uppercase;
+  color: #370974;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 17px;
+}
+.verify-registration input {
+  font-family: "Roboto Mono", monospace;
+  font-size: 17px;
+  border: 1px solid rgba(55, 9, 116, 0.5);
+  height: 50px;
+  border-radius: 6px;
+}
+
+.verify-registration input::placeholder {
+  color: #370974;
+}
+
+.verify-registration select,
+option {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  font-family: "Roboto Mono", monospace;
+  color: #370974;
+  height: 50px;
+  border: 1px solid rgba(55, 9, 116, 0.5);
+}
+
+.verify-registration textarea {
+  border: 1px solid rgba(55, 9, 116, 0.5);
+}
+
+.verify-registration .fa-eye-slash,
+.fa-angle-down {
+  color: #370974;
+}
+
+.verify-registration small p {
+  font-size: 14px;
+  font-family: "Roboto Mono", monospace;
+  color: #370974;
+}
+
+.verify-registration small span {
+  color: #41b661;
+  font-weight: bold;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+}
+
+.verify-registration .form-group {
+  margin-bottom: 0px;
+}
+
+.verify-registration .upload-drop-zone {
+  background-color: #cccccc;
+  border: 1px solid #370974;
+  line-height: 100px;
+  text-align: center;
+  border-radius: 5px;
+  width: 100%;
+}
+
+/*  Sign Up  */
+
+.signup-page .container-fluid {
+  margin: auto;
+  box-shadow: 2px 2px rgba(55, 9, 116, 0.26);
+  border-radius: 10px;
+  height: auto;
+  background-color: #ffffff;
+}
+
+.signup-page .signup-body .signup-heading {
+  margin-bottom: 170px;
+}
+
+.signup-page .signup-body .signup-heading .media {
+  margin-top: 50px;
+}
+
+.signup-page .signup-body .signup-heading .media img {
+  height: 135px;
+  width: 135px;
+}
+
+.signup-page .signup-body .signup-heading .media p:last-child {
+  margin-top: 30px;
+}
+
+.signup-page .signup-body .signup-footer {
+  overflow: auto;
+  margin-left: 0px;
+}
+
+.signup-page .signup-body .signup-footer li {
+  float: left;
+  margin-right: 70px;
+  list-style: circle;
+}
+
+.signup-page .signup-body .signup-footer ul {
+  /* border: 1px solid blue; */
+  padding-left: 20px;
+}
+
+.signup-registration label {
+  text-transform: uppercase;
+  color: #370974;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 17px;
+}
+.signup-registration input {
+  font-family: "Roboto Mono", monospace;
+  font-size: 17px;
+  border: 1px solid rgba(55, 9, 116, 0.5);
+  height: 50px;
+  border-radius: 6px;
+}
+
+.signup-registration input::placeholder {
+  color: #370974;
+}
+
+.signup-registration select,
+option {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  font-family: "Roboto Mono", monospace;
+  color: #370974;
+  height: 50px;
+  border: 1px solid rgba(55, 9, 116, 0.5);
+}
+
+.signup-registration textarea {
+  border: 1px solid rgba(55, 9, 116, 0.5);
+}
+
+.signup-registration .fa-eye-slash,
+.fa-angle-down {
+  color: #370974;
+}
+
+.signup-registration small p {
+  font-size: 14px;
+  font-family: "Roboto Mono", monospace;
+  color: #370974;
+}
+
+.signup-registration small span {
+  color: #41b661;
+  font-weight: bold;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+}
+
+.signup-registration .form-group {
+  margin-bottom: 0px;
+}
+
+.signup-registration .upload-drop-zone {
+  background-color: #cccccc;
+  border: 1px solid #370974;
+  line-height: 100px;
+  text-align: center;
+  border-radius: 5px;
+  width: 100%;
+}
+
+/*  Change Number */
+.cp-page .container-fluid {
+  margin: auto;
+  box-shadow: 2px 2px rgba(55, 9, 116, 0.26);
+  border-radius: 10px;
+  height: auto;
+  background-color: #ffffff;
+}
+
+.cp-page .cp-body .cp-footer {
+  overflow: auto;
+  margin-left: 0px;
+  margin-top: 380px;
+}
+
+.cp-page .cp-body .cp-footer li {
+  float: left;
+  margin-right: 70px;
+  list-style: circle;
+}
+
+.cp-page .cp-body .cp-footer ul {
+  /* border: 1px solid blue; */
+  padding-left: 20px;
+}
+
+.cp-page .cp-registration label {
+  text-transform: uppercase;
+  color: #370974;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 17px;
+}
+.cp-page .cp-registration input {
+  font-family: "Roboto Mono", monospace;
+  font-size: 17px;
+  border: 1px solid rgba(55, 9, 116, 0.5);
+  height: 50px;
+  border-radius: 6px;
+}
+
+.cp-page .cp-registration input::placeholder {
+  color: #370974;
+}
+
+.cp-page .cp-registration select,
+option {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  font-family: "Roboto Mono", monospace;
+  color: #370974;
+  height: 50px;
+  border: 1px solid rgba(55, 9, 116, 0.5);
+}
+
+.cp-page .cp-registration textarea {
+  border: 1px solid rgba(55, 9, 116, 0.5);
+}
+
+.cp-page .cp-registration .fa-eye-slash,
+.fa-angle-down {
+  color: #370974;
+}
+
+.cp-page .cp-registration small p {
+  font-size: 14px;
+  font-family: "Roboto Mono", monospace;
+  color: #370974;
+}
+
+.cp-page .cp-registration small span {
+  color: #41b661;
+  font-weight: bold;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+}
+
+.cp-page .cp-registration .form-group {
+  margin-bottom: 0px;
+}
+
+.cp-page .cp-registration .upload-drop-zone {
+  background-color: #cccccc;
+  border: 1px solid #370974;
+  line-height: 100px;
+  text-align: center;
+  border-radius: 5px;
+  width: 100%;
+}
+
+/*  Verify Number*/
+.vn-page .container-fluid {
+  margin: auto;
+  box-shadow: 2px 2px rgba(55, 9, 116, 0.26);
+  border-radius: 10px;
+  height: auto;
+  background-color: #ffffff;
+}
+
+.vn-page .vn-body .vn-footer {
+  overflow: auto;
+  margin-left: 0px;
+  margin-top: 380px;
+}
+
+.vn-page .vn-body .vn-footer li {
+  float: left;
+  margin-right: 70px;
+  list-style: circle;
+}
+
+.vn-page .vn-body .vn-footer ul {
+  /* border: 1px solid blue; */
+  padding-left: 20px;
+}
+
+.vn-page .vn-registration label {
+  text-transform: uppercase;
+  color: #370974;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 17px;
+}
+.vn-page .vn-registration input {
+  font-family: "Roboto Mono", monospace;
+  font-size: 17px;
+  border: 1px solid rgba(55, 9, 116, 0.5);
+  height: 50px;
+  border-radius: 6px;
+}
+
+.vn-page .vn-registration input::placeholder {
+  color: #370974;
+}
+
+.vn-page .vn-registration select,
+option {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  font-family: "Roboto Mono", monospace;
+  color: #370974;
+  height: 50px;
+  border: 1px solid rgba(55, 9, 116, 0.5);
+}
+
+.vn-page .vn-registration textarea {
+  border: 1px solid rgba(55, 9, 116, 0.5);
+}
+
+.vn-page .vn-registration .fa-eye-slash,
+.fa-angle-down {
+  color: #370974;
+}
+
+.vn-page .vn-registration small p {
+  font-size: 14px;
+  font-family: "Roboto Mono", monospace;
+  color: #370974;
+}
+
+.vn-page .vn-registration small span {
+  color: #41b661;
+  font-weight: bold;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+}
+
+.vn-page .vn-registration .form-group {
+  margin-bottom: 0px;
+}
+
+.vn-page .vn-registration .upload-drop-zone {
+  background-color: #cccccc;
+  border: 1px solid #370974;
+  line-height: 100px;
+  text-align: center;
+  border-radius: 5px;
+  width: 100%;
+}
+
+/* Accounts  */
+.accounts-page .container-fluid {
+  margin: auto;
+  box-shadow: 2px 2px rgba(55, 9, 116, 0.26);
+  border-radius: 10px;
+  height: auto;
+  background-color: #ffffff;
+}
+
+.accounts-page .accounts-body .accounts-heading {
+  margin-bottom: 170px;
+}
+
+.accounts-page .accounts-body .accounts-heading #verified {
+  background-color: red;
+  padding: 3px 5px 3px 5px;
+  width: 80px;
+  color: #ffffff;
+  border-radius: 20px;
+  margin-right: 30px;
+}
+
+.accounts-page .accounts-body .accounts-heading #unverified {
+  background-color: #41b661;
+  padding: 3px 5px 3px 5px;
+  width: 90px;
+  color: #ffffff;
+  border-radius: 20px;
+  margin-left: 0px;
+}
+
+.accounts-page .accounts-body .accounts-heading #verified,
+#unverified {
+  font-family: "Roboto Mono", monospace;
+  text-transform: lowercase;
+  font-size: 0.7em;
+}
+
+.accounts-page .accounts-body .account-content {
+  margin-top: 20px;
+}
+
+.accounts-page .account-content p {
+  text-align: left;
+  width: 447px;
+}
+
+.accounts-page .accounts-body .accounts-footer {
+  overflow: auto;
+  margin-left: 0px;
+}
+
+.accounts-page .accounts-body .accounts-footer li {
+  float: left;
+  margin-right: 70px;
+  list-style: circle;
+}
+
+.accounts-page .accounts-body .accounts-footer ul {
+  /* border: 1px solid blue; */
+  padding-left: 20px;
+}
+
+.accounts-page .accounts-registration img {
+  margin-top: 5px;
+  height: 84px;
+  width: 84px;
+}
+
+.accounts-page .accounts-registration .form-group {
+  margin-bottom: 50px;
+}
+
+.accounts-page .accounts-registration .form-group .col-10 {
+  padding-left: 15px;
+}
+
+.accounts-page .accounts-registration .accounts-button {
+  margin-top: 10px;
+}
+
+.accounts-page .accounts-registration .accounts-button .btn-normal {
+  font-family: "Roboto Mono", monospace;
+  background: #ffffff;
+  color: #370974;
+  border: 1px solid rgba(55, 9, 116, 0.5);
+  /* padding: 3px 15px 3px 15px; */
+  font-size: 1em;
+  height: 50px;
+  text-transform: uppercase;
+}
+
+.accounts-page .accounts-registration .accounts-button .btn-verified {
+  font-family: "Roboto Mono", monospace;
+  background: #41b661;
+  color: #ffffff;
+  border-radius: 50px;
+  padding: 3px 15px 3px 15px;
+  font-size: 0.7em;
+  margin-left: 20px;
+}
+
+.accounts-page .accounts-registration label {
+  color: #370974;
+  font-family: "Roboto", sans-serif;
+  font-weight: 200;
+  font-size: 1.5em;
+}
+
+.accounts-page .accounts-registration .label-small {
+  font-family: "Roboto Mono", monospace;
+  font-size: 0.8em;
+}
+.accounts-page .accounts-registration input {
+  font-family: "Roboto Mono", monospace;
+  font-size: 17px;
+  border: 1px solid rgba(55, 9, 116, 0.5);
+  height: 50px;
+  border-radius: 6px;
+}
+
+.accounts-page .accounts-registration input::placeholder {
+  color: #370974;
+}
+
+.accounts-page .accounts-registration select,
+option {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  font-family: "Roboto Mono", monospace;
+  color: #370974;
+  height: 50px;
+  border: 1px solid rgba(55, 9, 116, 0.5);
+}
+
+.accounts-page .accounts-registration textarea {
+  border: 1px solid rgba(55, 9, 116, 0.5);
+}
+
+.accounts-page .accounts-registration .fa-eye-slash,
+.fa-angle-down {
+  color: #370974;
+}
+
+.accounts-page .accounts-registration small p {
+  font-size: 14px;
+  font-family: "Roboto Mono", monospace;
+  color: #370974;
+}
+
+.accounts-page .accounts-registration small span {
+  color: #41b661;
+  font-weight: bold;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+}
+
+.accounts-page .accounts-registration .upload-drop-zone {
+  background-color: #cccccc;
+  border: 1px solid #370974;
+  line-height: 100px;
+  text-align: center;
+  border-radius: 5px;
+  width: 100%;
+}
+
+/* Verify Number*/
+.payment-page .container-fluid {
+  margin: auto;
+  box-shadow: 2px 2px rgba(55, 9, 116, 0.26);
+  border-radius: 10px;
+  height: auto;
+  background-color: #ffffff;
+}
+
+.payment-page .payment-body .payment-footer {
+  overflow: auto;
+  margin-left: 0px;
+  margin-top: 380px;
+}
+
+.payment-page .payment-body .payment-footer li {
+  float: left;
+  margin-right: 70px;
+  list-style: circle;
+}
+
+.payment-page .payment-body .payment-footer ul {
+  /* border: 1px solid blue; */
+  padding-left: 20px;
+}
+
+.payment-page .payment-registration label {
+  text-transform: uppercase;
+  color: #370974;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 17px;
+}
+.payment-page .payment-registration input {
+  font-family: "Roboto Mono", monospace;
+  font-size: 17px;
+  border: 1px solid rgba(55, 9, 116, 0.5);
+  height: 50px;
+  border-radius: 6px;
+}
+
+.payment-page .payment-registration input::placeholder {
+  color: #370974;
+}
+
+.payment-page .payment-registration select,
+option {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  font-family: "Roboto Mono", monospace;
+  color: #370974;
+  height: 50px;
+  border: 1px solid rgba(55, 9, 116, 0.5);
+}
+
+.payment-page .payment-registration textarea {
+  border: 1px solid rgba(55, 9, 116, 0.5);
+}
+
+.payment-page .payment-registration .fa-eye-slash,
+.fa-angle-down {
+  color: #370974;
+}
+
+.payment-page .payment-registration small p {
+  font-size: 14px;
+  font-family: "Roboto Mono", monospace;
+  color: #370974;
+}
+
+.payment-page .payment-registration small span {
+  color: #41b661;
+  font-weight: bold;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+}
+
+.payment-page .payment-registration .form-group {
+  margin-bottom: 0px;
+}
+
+.payment-page .payment-registration .upload-drop-zone {
+  background-color: #cccccc;
+  border: 1px solid #370974;
+  line-height: 100px;
+  text-align: center;
+  border-radius: 5px;
+  width: 100%;
+}
+.payment-page .payment-registration .payment-submit {
+  margin-top: 200px;
+}

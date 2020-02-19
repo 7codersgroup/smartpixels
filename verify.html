@@ -1,70 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <!-- Required meta tags -->
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit==no" />
-        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit==no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-        <!-- Bootstrap CSS-->
-        <link rel="stylesheet" href="css/bootstrap.min.css" />
-        <link rel="stylesheet" href="css/all.css" />
-        <link rel="stylesheet" href="css/style.css" />
-        <title>SmartPixels - Sign-up</title>
-    </head>
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>SmartPixels - Verify</title>
+</head>
 
-    <body>
-        <!--Header-->
-        <section class="">
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                <a class="navbar-brand" href="#">Smart Pixels</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+<body>
+    <!--Header-->
+    <section class="">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">SmartPixels</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">
-                                Home <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Competitions</a>
-                        </li>
-                        <li class="nav-item"><a class="nav-link" href="#">Support</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Sign In</a></li>
-                        <li class="nav-item nav-border">
-                            <a href="#" class="btn btn-dark nav-link">Create Account</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </section>
-        <!--End Header -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">
+                            Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Competitions</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#">Support</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Sign In</a></li>
+                    <li class="nav-item nav-border">
+                        <a href="#" class="btn nav-button nav-link">Create Account</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </section>
+    <!--End Header -->
 
-        <section class="login-page">
-            <div class="container">
+    <div class="page">
+        <section class="verify-page">
+            <div class="container-fluid">
                 <div class="row">
-                    <div class="col-md-12 section-title">
-                        <h3>We're glad to have you back</h3>
+                    <div class="col-md-12 page-main-title" id="page-border">
+                        <h3>Identity Verification</h3>
                     </div>
                 </div>
-                <div class="row" id="login-page">
-                    <div class="col-md-6 lt">
-                        <h4>Create Your Account</h4>
-                        <div class="lt-top">
+                <div class="row">
+                    <div class="col-md-6 verify-body page-sub-title" id="page-border-2">
+                        <h4>Verify your identity</h4>
+                        <div class="verify-heading">
 
-                            <div class="form-row mt-4 mb-4">
-                                <div class="col">
-                                    <button type="submit" id="lf-button-3" class="btn btn-block btn-lg">Verified</button>
+                            <div class="form-row mt-3 mb-5">
+                                <div class="">
+                                    <button type="submit" id="verified" class="btn btn-block">Verified</button>
                                 </div>
-                                <div class="col-7">
-                                    <button type="submit" id="lf-button-4" class="btn btn-block btn-lg">Unverified</button>
+                                <div class="">
+                                    <button type="submit" id="unverified" class="btn btn-block">Unverified</button>
                                 </div>
                             </div>
-                            <div class="media-body">
+                            <div class="verify-content">
                                 <p>
                                     Friend, things will never remain the same for you. God has made all things new for
                                     you, so live the life of freshness. Forget about the losses of yesterday and focus
@@ -74,7 +75,7 @@
                             </div>
 
                         </div>
-                        <div class="lt-bottom">
+                        <div class="verify-footer">
                             <ul>
                                 <li>Term of Use</li>
                                 <li>Policy</li>
@@ -82,7 +83,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-md-6 lf">
+                    <div class="col-md-6 verify-registration" id="page-border-3">
                         <form>
                             <div class="form-group mb-4">
                                 <div class="form-row">
@@ -123,6 +124,11 @@
                             <div class="form-group mb-4">
                                 <label for="exampleFormControlTextarea1">Address<span> *</span></label>
                                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                <small id="passwordHelpBlock" class="form-text text-muted mb-4">
+                                    <p class="mt-2">
+                                        Please fill in your address as it appears in your medium of identification
+                                    </p>
+                                </small>
                             </div>
                             <div class="form-group mb-4">
                                 <label for="exampleInputCity1">
@@ -145,7 +151,8 @@
                                     ID DOCUMENT TYPE <span> * </span>
                                 </label>
                                 <div class="input-group">
-                                    <select class="form-control" id="exampleFormControlSelect1" aria-describedby="button-addon1">
+                                    <select class="form-control" id="exampleFormControlSelect1"
+                                        aria-describedby="button-addon1">
                                         <option>Please Select</option>
                                         <option>2</option>
                                         <option>3</option>
@@ -204,7 +211,8 @@
                                     Proof of Address Type <span> * </span>
                                 </label>
                                 <div class="input-group">
-                                    <select class="form-control" id="exampleFormControlSelect1" aria-describedby="button-addon1">
+                                    <select class="form-control" id="exampleFormControlSelect1"
+                                        aria-describedby="button-addon1">
                                         <option>Please Select</option>
                                         <option>2</option>
                                         <option>3</option>
@@ -235,10 +243,11 @@
                             </div>
                             <div class="form-row">
                                 <div class="col-md-6">
-                                    <button type="submit" id="lf-button-2" class="btn btn-block btn-lg">Cancel</button>
+                                    <button type="submit" id="cancel-button"
+                                        class="btn btn-block btn-lg">Cancel</button>
                                 </div>
                                 <div class="col-md-6">
-                                    <button type="submit" id="lf-button" class="btn btn-block btn-lg">Save</button>
+                                    <button type="submit" id="save-button" class="btn btn-block btn-lg">Save</button>
                                 </div>
                             </div>
                         </form>
@@ -246,12 +255,13 @@
                 </div>
             </div>
         </section>
-    </body>
+    </div>
+</body>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
 
 </html>
