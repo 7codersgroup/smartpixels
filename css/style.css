@@ -592,6 +592,30 @@ option {
 }
 
 /*  Verify Number*/
+.page-body .page .vn-image-1 {
+  position: absolute;
+  margin: 0 auto;
+  left: 80px;
+  top: 250px;
+}
+
+.page-body .page .vn-image-2 {
+  position: absolute;
+  margin: 0 auto;
+  left: 1200px;
+  top: 310px;
+}
+
+.page-body .page .vn-image-1 img {
+  height: 450px;
+  width: 450px;
+}
+
+.page-body .page .vn-image-2 img {
+  height: 300px;
+  width: 300px;
+}
+
 .vn-page .container-fluid {
   margin: auto;
   box-shadow: 2px 2px rgba(55, 9, 116, 0.26);
@@ -682,6 +706,42 @@ option {
 }
 
 /* Accounts  */
+
+.page-body .page .account-image-1 {
+  position: absolute;
+  margin: 0 auto;
+  left: 170px;
+  top: 730px;
+}
+
+.page-body .page .account-image-2 {
+  position: absolute;
+  margin: 0 auto;
+  left: 100px;
+  top: 400px;
+}
+
+.page-body .page .account-image-3 {
+  position: absolute;
+  margin: 0 auto;
+  left: 570px;
+  top: 145px;
+}
+
+.page-body .page .account-image-1 img {
+  height: 500px;
+  width: 500px;
+}
+
+.page-body .page .account-image-2 img {
+  height: 250px;
+  width: 250px;
+}
+
+.page-body .page .account-image-3 img {
+  height: 200px;
+  width: 200px;
+}
 .accounts-page .container-fluid {
   margin: auto;
   box-shadow: 2px 2px rgba(55, 9, 116, 0.26);
@@ -847,7 +907,31 @@ option {
   width: 100%;
 }
 
-/* Verify Number*/
+/* Payment */
+.page-body .page .payment-image-1 {
+  position: absolute;
+  margin: 0 auto;
+  left: 80px;
+  top: 250px;
+}
+
+.page-body .page .payment-image-2 {
+  position: absolute;
+  margin: 0 auto;
+  left: 1250px;
+  top: 380px;
+}
+
+.page-body .page .payment-image-1 img {
+  height: 450px;
+  width: 450px;
+}
+
+.page-body .page .payment-image-2 img {
+  height: 250px;
+  width: 250px;
+}
+
 .payment-page .container-fluid {
   margin: auto;
   box-shadow: 2px 2px rgba(55, 9, 116, 0.26);
