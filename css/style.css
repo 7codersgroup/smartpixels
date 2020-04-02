@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat|Roboto|Roboto+Mono");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600|Roboto|Roboto+Mono");
 
 /* Navigation */
 
@@ -77,7 +77,7 @@ body {
 
 .page #page-border {
   margin-bottom: 0px;
-  border-top: 1.5px solid rgba(55, 9, 116, 0.5);
+  border-top: 1.5px solid #37097480;
   border-right: 1.5px solid rgba(55, 9, 116, 0.5);
   border-left: 1.5px solid rgba(55, 9, 116, 0.5);
 
@@ -1022,4 +1022,302 @@ option {
 }
 .payment-page .payment-registration .payment-submit {
   margin-top: 200px;
+}
+
+/* Upload  */
+.page-body .page .upload-image-1 {
+  position: absolute;
+  margin: 0 auto;
+  left: 80px;
+  top: 350px;
+}
+
+.page-body .page .upload-image-2 {
+  position: absolute;
+  margin: 0 auto;
+  left: 1150px;
+  top: 100px;
+}
+
+.page-body .page .upload-image-1 img {
+  height: 450px;
+  width: 450px;
+}
+
+.page-body .page .upload-image-2 img {
+  height: 300px;
+  width: 300px;
+}
+
+.upload-page .container-fluid {
+  margin: auto;
+  box-shadow: 2px 2px rgba(55, 9, 116, 0.26);
+  border-radius: 10px;
+  height: auto;
+  background-color: #ffffff;
+}
+
+.upload-page .upload-body h4 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.7em;
+  font-weight: 500;
+}
+
+.upload-page .upload-body .upload-heading {
+  margin-bottom: 170px;
+}
+
+.upload-page .upload-body .upload-heading p {
+  text-align: left;
+  width: 447px;
+  margin-top: 20px;
+  font-family: "Roboto Mono", monospace;
+}
+
+.upload-page .upload-body .upload-heading li {
+  list-style: none;
+  margin-bottom: 5px;
+  font-family: "Roboto Mono", monospace;
+}
+
+.upload-page .upload-body .upload-footer {
+  overflow: auto;
+  margin-left: 0px;
+}
+
+.upload-page .upload-body .upload-footer li {
+  float: left;
+  margin-right: 70px;
+  list-style: circle;
+  font-family: "Roboto Mono", monospace;
+}
+
+.upload-page .upload-body .upload-footer ul {
+  /* border: 1px solid blue; */
+  padding-left: 20px;
+}
+.upload-registration {
+  padding: 50px 30px 50px 30px !important;
+}
+.upload-registration label {
+  text-transform: uppercase;
+  color: #370974;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 17px;
+}
+.upload-registration input {
+  font-family: "Roboto Mono", monospace;
+  font-size: 17px;
+  border: 1px solid rgba(55, 9, 116, 0.5);
+  height: 50px;
+  border-radius: 6px;
+}
+
+.upload-registration input::placeholder {
+  color: #370974;
+}
+
+.upload-registration small p {
+  font-size: 14px;
+  font-family: "Roboto Mono", monospace;
+  color: #370974;
+}
+
+.upload-registration small span {
+  color: #41b661;
+  font-weight: bold;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+}
+
+.upload-registration select,
+option {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  font-family: "Roboto Mono", monospace;
+  color: #370974;
+  height: 50px;
+  border: 1px solid rgba(55, 9, 116, 0.5);
+}
+
+.upload-registration textarea {
+  border: 1px solid rgba(55, 9, 116, 0.5);
+}
+
+.upload-registration textarea::placeholder {
+  font-family: "Roboto Mono", monospace;
+  font-size: 0.85em;
+  color: #370974;
+}
+
+.upload-registration .upload-drop-zone {
+  border: 1px solid #37097480;
+  width: 100%;
+  border-radius: 5px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.upload-registration .upload-drop-zone img {
+  width: 120px;
+  height: 62px;
+  /* padding-left: 30px; */
+}
+.upload-registration .upload-drop-zone p {
+  margin-top: 20px;
+  font-size: 0.85em;
+}
+.upload-registration .upload-drop-zone .btn {
+  background-color: #370974;
+  border-radius: 10px;
+  padding: 0px 35px;
+  margin-left: 20px;
+  margin-top: 12px;
+  height: 35px;
+  color: #ffffff;
+  font-family: "Roboto Mono", monospace;
+  font-size: 0.81em;
+  text-transform: uppercase;
+}
+
+.upload-registration .upload-tags {
+  border: 1px solid #37097480;
+  width: 100%;
+  border-radius: 5px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 20px;
+  padding-right: 0px;
+}
+
+.upload-registration .upload-check {
+  padding-right: 50px;
+}
+
+.upload-registration .upload-check .custom-control:first-child {
+  margin-bottom: 10px;
+}
+
+.upload-registration .upload-check .custom-control label {
+  font-weight: 300;
+  font-family: "Roboto Mono", monospace;
+  font-size: 0.9em;
+}
+
+/* Checkout Page */
+.nav-2 {
+  margin-left: 65px;
+}
+.page-body-2 {
+  margin-top: -100px;
+}
+.checkout-page h4 {
+  color: #707070;
+  font-size: 2em;
+  margin-top: 50px;
+}
+
+.checkout-page .row {
+  margin-left: 0px;
+}
+
+.checkout-page .billing-address {
+  border: 1px solid #3709749d;
+  padding: 50px;
+}
+
+.checkout-page .billing-address label {
+  font-family: "Roboto", serif;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.checkout-page .billing-address input,
+.checkout-page .billing-address textarea {
+  font-family: "Roboto Mono", monospace;
+  font-weight: 300;
+  color: #370974;
+  height: 50px;
+  border: 1px solid #370974;
+}
+
+.checkout-page .billing-address .form-text p {
+  color: #370974;
+  font-family: "Roboto Mono", monospace;
+}
+
+.checkout-page .billing-address input::placeholder {
+  color: #370974;
+}
+
+.checkout-page .billing-address select {
+  height: 50px;
+  border: 1px solid #370974;
+}
+
+.checkout-page .billing-address select,
+option {
+  color: #370974;
+  font-family: "Roboto Mono", monospace;
+}
+
+.checkout-page .payment-details {
+  border: 1px solid #370974;
+  padding: 50px;
+}
+
+.checkout-page .payment-details label {
+  color: #370974;
+  font-family: "Roboto", san-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.checkout-page .payment-details input {
+  color: #370974;
+  font-family: "Roboto Mono", monospace;
+  font-weight: 300;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid #370974;
+  height: 50px;
+  border-radius: 0px;
+  margin-bottom: 50px;
+}
+
+.checkout-page .checkout-cart {
+  border: 1px solid #370974;
+  padding: 50px;
+}
+
+.checkout-page .checkout-cart hr {
+  border: 1px solid #370974;
+  border-style: dashed;
+}
+
+.checkout-page .checkout-cart .cart-total {
+  color: #707070;
+  font-weight: 600;
+}
+
+.checkout-page .checkout-cart .cart-total:last-child {
+  float: right;
+}
+
+.checkout-page .checkout-cart .cart-pay {
+  margin-top: 0px;
+}
+
+.checkout-page .checkout-cart .cart-pay button {
+  margin-top: 20px;
+  background-color: #370974;
+  color: #ffffff;
+}
+
+.checkout-page .checkout-cart .form-group {
+  margin-bottom: 0px;
 }
