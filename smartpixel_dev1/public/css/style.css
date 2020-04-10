@@ -113,7 +113,7 @@ body {
 .page-body {
   position: relative;
   margin: 0 auto;
-  background-image: url(../img/body_mask@2x.png);
+  background-image: url(../img/body_mask@2x.png); 
 }
 
 .page .page-main-title h3 {

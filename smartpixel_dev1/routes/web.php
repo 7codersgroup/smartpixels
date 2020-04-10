@@ -22,3 +22,7 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 Auth::routes(['verify' => true]);
+
+Route::get('verifydoc', 'VerifydocController@verifyDocs')->name('verifydoc');
+Route::post('verifydoc', 'VerifydocController@VerifyDocPost')->name('doc.verify.post');
+
