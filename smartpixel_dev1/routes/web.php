@@ -26,3 +26,12 @@ Auth::routes(['verify' => true]);
 Route::get('verifydoc', 'VerifydocController@verifyDocs')->name('verifydoc');
 Route::post('verifydoc', 'VerifydocController@VerifyDocPost')->name('doc.verify.post');
 
+Route::get('verify-number', 'VerifyNumberController@verifyNumber')->name('verify-number');
+//Route::post('verifydoc', 'VerifydocController@VerifyDocPost')->name('doc.verify.post');
+
+Route::get('checkout', 'CheckoutController@checkout')->name('checkout');
+
+Route::get('account', 'AccountController@account')->name('account');
+
+Route::get('upload', 'UploadController@imageUpload')->name('upload');
+

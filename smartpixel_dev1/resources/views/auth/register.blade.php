@@ -17,7 +17,7 @@
                             <h4>Create Your Account</h4>
                             <div class="signup-heading">
                                 <div class="media">
-                                    <img src="img/img_2.jpg" class="mr-3 img-thumbnail">
+                                    <img src=" {{ asset('img/img_2.jpg') }}" alt="No Image" class="mr-3 img-thumbnail">
                                     <div class="media-body">
                                         <p>
                                             Friend, things will never remain the same for you. God has made all things
@@ -135,7 +135,7 @@
                                     </span>
                                 @enderror
                                     </div>
-                                    <small id="passwordHelpBlock" class="form-text text-muted mb-4">
+                                    <!-- <small id="passwordHelpBlock" class="form-text text-muted mb-4">
                                         <p class="mt-2">
                                             Your password must be at least 8
                                             characters and contain uppercase, lowercase letters and numbers
@@ -146,7 +146,7 @@
                                         <span id="lf-span">UPPERCASE</span><br>
                                         <span>LOWERCASE</span><br>
                                         <span>NUMBER</span>
-                                    </small>
+                                    </small> -->
                                     <label for="exampleInputPassword1">
                                         Confirm Password<span> *</span>
                                     </label>
