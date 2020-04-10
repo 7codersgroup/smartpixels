@@ -1,0 +1,1323 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600|Roboto|Roboto+Mono");
+
+/* Navigation */
+
+body {
+  font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
+}
+
+.bg-dark {
+  background-color: #370974 !important;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: rgb(255, 255, 255, 1);
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.85em;
+}
+
+.navbar-nav > li {
+  margin: 0px 45px;
+}
+
+.navbar-nav > li .nav-button {
+  border: 0.5px solid #ffffff;
+  font-size: 1em;
+  border-radius: 10px;
+  background-color: #370974;
+  font-weight: 600;
+}
+
+.navbar-nav .nav-button {
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+}
+
+#cancel-button,
+#save-button,
+#submit-button {
+  margin-top: 50px;
+  color: #ffffff;
+  font-family: "Roboto Mono", monospace;
+  text-transform: uppercase;
+  font-size: 1em;
+  height: 50px;
+}
+
+#save-button {
+  margin-top: 50px;
+  color: #ffffff;
+  background-color: #41b661;
+}
+
+#cancel-button {
+  margin-top: 50px;
+  border: 1px solid #370974;
+  color: #370974;
+}
+
+#submit-button {
+  margin-top: 50px;
+  color: #ffffff;
+  background-color: #41b661;
+}
+
+#lf-span {
+  color: red;
+}
+
+.page {
+  padding-top: 100px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 100px;
+  color: #370974;
+}
+
+.page #page-border {
+  margin-bottom: 0px;
+  border-top: 1.5px solid #37097480;
+  border-right: 1.5px solid rgba(55, 9, 116, 0.5);
+  border-left: 1.5px solid rgba(55, 9, 116, 0.5);
+
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom: 1px solid rgba(55, 9, 116, 0.5);
+  padding: 10px 0px;
+}
+
+.page #page-border-2 {
+  border-top: 1px solid rgba(55, 9, 116, 0.5);
+  border-left: 1.5px solid rgba(55, 9, 116, 0.5);
+  border-right: 1px solid rgba(55, 9, 116, 0.5);
+  border-bottom: 1.5px solid rgba(55, 9, 116, 0.5);
+  border-bottom-left-radius: 10px;
+  padding: 20px 20px 20px 30px;
+  color: #370974;
+}
+
+.page #page-border-3 {
+  border-top: 1px solid rgba(55, 9, 116, 0.5);
+  border-left: 1px solid rgba(55, 9, 116, 0.5);
+  border-right: 1.5px solid rgba(55, 9, 116, 0.5);
+  border-bottom: 1.5px solid rgba(55, 9, 116, 0.5);
+  border-bottom-right-radius: 10px;
+  padding: 50px 80px 50px 80px;
+}
+
+.page-body .wrapper {
+  margin: 0 auto;
+}
+
+.page-body {
+  position: relative;
+  margin: 0 auto;
+  background-image: url(../img/body_mask@2x.png);
+}
+
+.page .page-main-title h3 {
+  text-align: center;
+  font-size: 1.4em;
+}
+
+.page .page-sub-title h4 {
+  font-size: 1.3em;
+}
+
+/* Login Page */
+
+.login-page .container-fluid {
+  margin: auto;
+  box-shadow: 2px 2px rgba(55, 9, 116, 0.26);
+  border-radius: 10px;
+  height: auto;
+  background-color: #ffffff;
+}
+
+.login-page .login-heading {
+  margin-left: 20px;
+}
+
+.login-page .login-body .login-heading {
+  margin-bottom: 200px;
+}
+
+.login-page .login-body .login-heading button {
+  font-size: 1em;
+}
+
+.login-page .login-body .login-heading img {
+  height: 200px;
+  width: 200px;
+}
+
+.login-page .login-body .login-heading li {
+  list-style: circle;
+  padding: 10px;
+}
+
+.login-page .login-body .login-footer,
+ul {
+  /* border: 1px solid blue; */
+  padding-left: 20px;
+}
+
+.login-page .login-body .login-footer {
+  overflow: auto;
+  margin-left: 0px;
+}
+
+.login-page .login-body .login-footer li {
+  float: left;
+  margin-right: 70px;
+  list-style: circle;
+}
+
+.login-page .login-registration label {
+  text-transform: uppercase;
+  color: #370974;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.login-page .login-registration input {
+  font-family: "Roboto Mono", monospace;
+  font-size: 17px;
+  border: 1px solid rgba(55, 9, 116, 0.5);
+  height: 50px;
+  border-radius: 6px;
+}
+
+.login-page .login-registration input::placeholder {
+  color: #370974;
+}
+
+.login-page .login-registration select,
+option {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  font-family: "Roboto Mono", monospace;
+  color: #370974;
+}
+
+.login-page .login-registration textarea {
+  border: 1px solid rgba(55, 9, 116, 0.5);
+}
+
+.login-page .login-registration .fa-eye-slash,
+.fa-angle-down {
+  color: #370974;
+}
+
+.login-page .login-registration small p {
+  font-size: 14px;
+  font-family: "Roboto Mono", monospace;
+  color: #370974;
+}
+
+.login-page .login-registration small span {
+  color: #41b661;
+  font-weight: bold;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+}
+
+.login-page .login-registration .form-group {
+  margin-bottom: 0px;
+}
+
+.login-page .login-registration .upload-drop-zone {
+  background-color: #cccccc;
+  border: 1px solid #370974;
+  line-height: 100px;
+  text-align: center;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.hr {
+  border: 0.5px solid rgba(55, 9, 116, 0.26);
+}
+
+/* Verify Page */
+
+.verify-page .container-fluid {
+  margin: auto;
+  box-shadow: 2px 2px rgba(55, 9, 116, 0.26);
+  border-radius: 10px;
+  height: auto;
+  background-color: #ffffff;
+}
+
+.verify-page .verify-body .verify-heading {
+  margin-bottom: 170px;
+}
+
+.verify-page .verify-body .verify-heading #verified {
+  background-color: red;
+  padding: 3px 5px 3px 5px;
+  width: 80px;
+  color: #ffffff;
+  border-radius: 20px;
+  margin-right: 30px;
+}
+
+.verify-page .verify-body .verify-heading #unverified {
+  background-color: #41b661;
+  padding: 3px 5px 3px 5px;
+  width: 90px;
+  color: #ffffff;
+  border-radius: 20px;
+  margin-left: 0px;
+}
+
+.verify-page .verify-body .verify-heading #verified,
+#unverified {
+  font-family: "Roboto Mono", monospace;
+  text-transform: lowercase;
+  font-size: 0.7em;
+}
+
+.verify-page .verify-body .verify-content {
+  margin-top: 20px;
+}
+
+.verify-page .verify-content p {
+  text-align: left;
+  width: 447px;
+}
+
+.verify-page .verify-body .verify-footer {
+  overflow: auto;
+  margin-left: 0px;
+}
+
+.verify-page .verify-body .verify-footer li {
+  float: left;
+  margin-right: 70px;
+  list-style: circle;
+}
+
+.verify-page .verify-body .verify-footer ul {
+  /* border: 1px solid blue; */
+  padding-left: 20px;
+}
+
+.verify-registration label {
+  text-transform: uppercase;
+  color: #370974;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 17px;
+}
+.verify-registration input {
+  font-family: "Roboto Mono", monospace;
+  font-size: 17px;
+  border: 1px solid rgba(55, 9, 116, 0.5);
+  height: 50px;
+  border-radius: 6px;
+}
+
+.verify-registration input::placeholder {
+  color: #370974;
+}
+
+.verify-registration select,
+option {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  font-family: "Roboto Mono", monospace;
+  color: #370974;
+  height: 50px;
+  border: 1px solid rgba(55, 9, 116, 0.5);
+}
+
+.verify-registration textarea {
+  border: 1px solid rgba(55, 9, 116, 0.5);
+}
+
+.verify-registration .fa-eye-slash,
+.fa-angle-down {
+  color: #370974;
+}
+
+.verify-registration small p {
+  font-size: 14px;
+  font-family: "Roboto Mono", monospace;
+  color: #370974;
+}
+
+.verify-registration small span {
+  color: #41b661;
+  font-weight: bold;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+}
+
+.verify-registration .form-group {
+  margin-bottom: 0px;
+}
+
+.verify-registration .upload-drop-zone {
+  background-color: #cccccc;
+  border: 1px solid #370974;
+  line-height: 100px;
+  text-align: center;
+  border-radius: 5px;
+  width: 100%;
+}
+
+/*  Sign Up  */
+
+.signup-page .container-fluid {
+  margin: auto;
+  box-shadow: 2px 2px rgba(55, 9, 116, 0.26);
+  border-radius: 10px;
+  height: auto;
+  background-color: #ffffff;
+}
+
+.signup-page .signup-body .signup-heading {
+  margin-bottom: 170px;
+}
+
+.signup-page .signup-body .signup-heading .media {
+  margin-top: 50px;
+}
+
+.signup-page .signup-body .signup-heading .media img {
+  height: 135px;
+  width: 135px;
+}
+
+.signup-page .signup-body .signup-heading .media p:last-child {
+  margin-top: 30px;
+}
+
+.signup-page .signup-body .signup-footer {
+  overflow: auto;
+  margin-left: 0px;
+}
+
+.signup-page .signup-body .signup-footer li {
+  float: left;
+  margin-right: 70px;
+  list-style: circle;
+}
+
+.signup-page .signup-body .signup-footer ul {
+  /* border: 1px solid blue; */
+  padding-left: 20px;
+}
+
+.signup-registration label {
+  text-transform: uppercase;
+  color: #370974;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 17px;
+}
+.signup-registration input {
+  font-family: "Roboto Mono", monospace;
+  font-size: 17px;
+  border: 1px solid rgba(55, 9, 116, 0.5);
+  height: 50px;
+  border-radius: 6px;
+}
+
+.signup-registration input::placeholder {
+  color: #370974;
+}
+
+.signup-registration select,
+option {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  font-family: "Roboto Mono", monospace;
+  color: #370974;
+  height: 50px;
+  border: 1px solid rgba(55, 9, 116, 0.5);
+}
+
+.signup-registration textarea {
+  border: 1px solid rgba(55, 9, 116, 0.5);
+}
+
+.signup-registration .fa-eye-slash,
+.fa-angle-down {
+  color: #370974;
+}
+
+.signup-registration small p {
+  font-size: 14px;
+  font-family: "Roboto Mono", monospace;
+  color: #370974;
+}
+
+.signup-registration small span {
+  color: #41b661;
+  font-weight: bold;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+}
+
+.signup-registration .form-group {
+  margin-bottom: 0px;
+}
+
+.signup-registration .upload-drop-zone {
+  background-color: #cccccc;
+  border: 1px solid #370974;
+  line-height: 100px;
+  text-align: center;
+  border-radius: 5px;
+  width: 100%;
+}
+
+/*  Change Number */
+
+.page-body .page .cp-image-1 {
+  position: absolute;
+  margin: 0 auto;
+  left: -30px;
+  top: 480px;
+}
+
+.page-body .page .cp-image-2 {
+  position: absolute;
+  margin: 0 auto;
+  left: 1320px;
+  top: 180px;
+}
+
+.page-body .page .cp-image-2 img {
+  height: 350px;
+  width: 350px;
+}
+
+.page-body .page .cp-image-1 img {
+  height: 350px;
+  width: 350px;
+}
+
+.cp-page .container-fluid {
+  margin: auto;
+  box-shadow: 2px 2px rgba(55, 9, 116, 0.26);
+  border-radius: 10px;
+  height: auto;
+  background-color: #ffffff;
+}
+
+.cp-page .cp-body .cp-footer {
+  overflow: auto;
+  margin-left: 0px;
+  margin-top: 380px;
+}
+
+.cp-page .cp-body .cp-footer li {
+  float: left;
+  margin-right: 70px;
+  list-style: circle;
+}
+
+.cp-page .cp-body .cp-footer ul {
+  /* border: 1px solid blue; */
+  padding-left: 20px;
+}
+
+.cp-page .cp-registration label {
+  text-transform: uppercase;
+  color: #370974;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 17px;
+}
+.cp-page .cp-registration input {
+  font-family: "Roboto Mono", monospace;
+  font-size: 17px;
+  border: 1px solid rgba(55, 9, 116, 0.5);
+  height: 50px;
+  border-radius: 6px;
+}
+
+.cp-page .cp-registration input::placeholder {
+  color: #370974;
+}
+
+.cp-page .cp-registration select,
+option {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  font-family: "Roboto Mono", monospace;
+  color: #370974;
+  height: 50px;
+  border: 1px solid rgba(55, 9, 116, 0.5);
+}
+
+.cp-page .cp-registration textarea {
+  border: 1px solid rgba(55, 9, 116, 0.5);
+}
+
+.cp-page .cp-registration .fa-eye-slash,
+.fa-angle-down {
+  color: #370974;
+}
+
+.cp-page .cp-registration small p {
+  font-size: 14px;
+  font-family: "Roboto Mono", monospace;
+  color: #370974;
+}
+
+.cp-page .cp-registration small span {
+  color: #41b661;
+  font-weight: bold;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+}
+
+.cp-page .cp-registration .form-group {
+  margin-bottom: 0px;
+}
+
+.cp-page .cp-registration .upload-drop-zone {
+  background-color: #cccccc;
+  border: 1px solid #370974;
+  line-height: 100px;
+  text-align: center;
+  border-radius: 5px;
+  width: 100%;
+}
+
+/*  Verify Number*/
+.page-body .page .vn-image-1 {
+  position: absolute;
+  margin: 0 auto;
+  left: 80px;
+  top: 250px;
+}
+
+.page-body .page .vn-image-2 {
+  position: absolute;
+  margin: 0 auto;
+  left: 1200px;
+  top: 310px;
+}
+
+.page-body .page .vn-image-1 img {
+  height: 450px;
+  width: 450px;
+}
+
+.page-body .page .vn-image-2 img {
+  height: 300px;
+  width: 300px;
+}
+
+.vn-page .container-fluid {
+  margin: auto;
+  box-shadow: 2px 2px rgba(55, 9, 116, 0.26);
+  border-radius: 10px;
+  height: auto;
+  background-color: #ffffff;
+}
+
+.vn-page .vn-body .vn-footer {
+  overflow: auto;
+  margin-left: 0px;
+  margin-top: 380px;
+}
+
+.vn-page .vn-body .vn-footer li {
+  float: left;
+  margin-right: 70px;
+  list-style: circle;
+}
+
+.vn-page .vn-body .vn-footer ul {
+  /* border: 1px solid blue; */
+  padding-left: 20px;
+}
+
+.vn-page .vn-registration label {
+  text-transform: uppercase;
+  color: #370974;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 17px;
+}
+.vn-page .vn-registration input {
+  font-family: "Roboto Mono", monospace;
+  font-size: 17px;
+  border: 1px solid rgba(55, 9, 116, 0.5);
+  height: 50px;
+  border-radius: 6px;
+}
+
+.vn-page .vn-registration input::placeholder {
+  color: #370974;
+}
+
+.vn-page .vn-registration select,
+option {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  font-family: "Roboto Mono", monospace;
+  color: #370974;
+  height: 50px;
+  border: 1px solid rgba(55, 9, 116, 0.5);
+}
+
+.vn-page .vn-registration textarea {
+  border: 1px solid rgba(55, 9, 116, 0.5);
+}
+
+.vn-page .vn-registration .fa-eye-slash,
+.fa-angle-down {
+  color: #370974;
+}
+
+.vn-page .vn-registration small p {
+  font-size: 14px;
+  font-family: "Roboto Mono", monospace;
+  color: #370974;
+}
+
+.vn-page .vn-registration small span {
+  color: #41b661;
+  font-weight: bold;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+}
+
+.vn-page .vn-registration .form-group {
+  margin-bottom: 0px;
+}
+
+.vn-page .vn-registration .upload-drop-zone {
+  background-color: #cccccc;
+  border: 1px solid #370974;
+  line-height: 100px;
+  text-align: center;
+  border-radius: 5px;
+  width: 100%;
+}
+
+/* Accounts  */
+
+.page-body .page .account-image-1 {
+  position: absolute;
+  margin: 0 auto;
+  left: 170px;
+  top: 730px;
+}
+
+.page-body .page .account-image-2 {
+  position: absolute;
+  margin: 0 auto;
+  left: 100px;
+  top: 400px;
+}
+
+.page-body .page .account-image-3 {
+  position: absolute;
+  margin: 0 auto;
+  left: 570px;
+  top: 145px;
+}
+
+.page-body .page .account-image-1 img {
+  height: 500px;
+  width: 500px;
+}
+
+.page-body .page .account-image-2 img {
+  height: 250px;
+  width: 250px;
+}
+
+.page-body .page .account-image-3 img {
+  height: 200px;
+  width: 200px;
+}
+.accounts-page .container-fluid {
+  margin: auto;
+  box-shadow: 2px 2px rgba(55, 9, 116, 0.26);
+  border-radius: 10px;
+  height: auto;
+  background-color: #ffffff;
+}
+
+.accounts-page .accounts-body .accounts-heading {
+  margin-bottom: 170px;
+}
+
+.accounts-page .accounts-body .accounts-heading #verified {
+  background-color: red;
+  padding: 3px 5px 3px 5px;
+  width: 80px;
+  color: #ffffff;
+  border-radius: 20px;
+  margin-right: 30px;
+}
+
+.accounts-page .accounts-body .accounts-heading #unverified {
+  background-color: #41b661;
+  padding: 3px 5px 3px 5px;
+  width: 90px;
+  color: #ffffff;
+  border-radius: 20px;
+  margin-left: 0px;
+}
+
+.accounts-page .accounts-body .accounts-heading #verified,
+#unverified {
+  font-family: "Roboto Mono", monospace;
+  text-transform: lowercase;
+  font-size: 0.7em;
+}
+
+.accounts-page .accounts-body .account-content {
+  margin-top: 20px;
+}
+
+.accounts-page .account-content p {
+  text-align: left;
+  width: 447px;
+}
+
+.accounts-page .accounts-body .accounts-footer {
+  overflow: auto;
+  margin-left: 0px;
+}
+
+.accounts-page .accounts-body .accounts-footer li {
+  float: left;
+  margin-right: 70px;
+  list-style: circle;
+}
+
+.accounts-page .accounts-body .accounts-footer ul {
+  /* border: 1px solid blue; */
+  padding-left: 20px;
+}
+
+.accounts-page .accounts-registration img {
+  margin-top: 5px;
+  height: 84px;
+  width: 84px;
+}
+
+.accounts-page .accounts-registration .form-group {
+  margin-bottom: 50px;
+}
+
+.accounts-page .accounts-registration .form-group .col-10 {
+  padding-left: 15px;
+}
+
+.accounts-page .accounts-registration .accounts-button {
+  margin-top: 10px;
+}
+
+.accounts-page .accounts-registration .accounts-button .btn-normal {
+  font-family: "Roboto Mono", monospace;
+  background: #ffffff;
+  color: #370974;
+  border: 1px solid rgba(55, 9, 116, 0.5);
+  /* padding: 3px 15px 3px 15px; */
+  font-size: 1em;
+  height: 50px;
+  text-transform: uppercase;
+}
+
+.accounts-page .accounts-registration .accounts-button .btn-verified {
+  font-family: "Roboto Mono", monospace;
+  background: #41b661;
+  color: #ffffff;
+  border-radius: 50px;
+  padding: 3px 15px 3px 15px;
+  font-size: 0.7em;
+  margin-left: 20px;
+}
+
+.accounts-page .accounts-registration label {
+  color: #370974;
+  font-family: "Roboto", sans-serif;
+  font-weight: 200;
+  font-size: 1.5em;
+}
+
+.accounts-page .accounts-registration .label-small {
+  font-family: "Roboto Mono", monospace;
+  font-size: 0.8em;
+}
+.accounts-page .accounts-registration input {
+  font-family: "Roboto Mono", monospace;
+  font-size: 17px;
+  border: 1px solid rgba(55, 9, 116, 0.5);
+  height: 50px;
+  border-radius: 6px;
+}
+
+.accounts-page .accounts-registration input::placeholder {
+  color: #370974;
+}
+
+.accounts-page .accounts-registration select,
+option {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  font-family: "Roboto Mono", monospace;
+  color: #370974;
+  height: 50px;
+  border: 1px solid rgba(55, 9, 116, 0.5);
+}
+
+.accounts-page .accounts-registration textarea {
+  border: 1px solid rgba(55, 9, 116, 0.5);
+}
+
+.accounts-page .accounts-registration .fa-eye-slash,
+.fa-angle-down {
+  color: #370974;
+}
+
+.accounts-page .accounts-registration small p {
+  font-size: 14px;
+  font-family: "Roboto Mono", monospace;
+  color: #370974;
+}
+
+.accounts-page .accounts-registration small span {
+  color: #41b661;
+  font-weight: bold;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+}
+
+.accounts-page .accounts-registration .upload-drop-zone {
+  background-color: #cccccc;
+  border: 1px solid #370974;
+  line-height: 100px;
+  text-align: center;
+  border-radius: 5px;
+  width: 100%;
+}
+
+/* Payment */
+.page-body .page .payment-image-1 {
+  position: absolute;
+  margin: 0 auto;
+  left: 80px;
+  top: 250px;
+}
+
+.page-body .page .payment-image-2 {
+  position: absolute;
+  margin: 0 auto;
+  left: 1250px;
+  top: 380px;
+}
+
+.page-body .page .payment-image-1 img {
+  height: 450px;
+  width: 450px;
+}
+
+.page-body .page .payment-image-2 img {
+  height: 250px;
+  width: 250px;
+}
+
+.payment-page .container-fluid {
+  margin: auto;
+  box-shadow: 2px 2px rgba(55, 9, 116, 0.26);
+  border-radius: 10px;
+  height: auto;
+  background-color: #ffffff;
+}
+
+.payment-page .payment-body .payment-footer {
+  overflow: auto;
+  margin-left: 0px;
+  margin-top: 380px;
+}
+
+.payment-page .payment-body .payment-footer li {
+  float: left;
+  margin-right: 70px;
+  list-style: circle;
+}
+
+.payment-page .payment-body .payment-footer ul {
+  /* border: 1px solid blue; */
+  padding-left: 20px;
+}
+
+.payment-page .payment-registration label {
+  text-transform: uppercase;
+  color: #370974;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 17px;
+}
+.payment-page .payment-registration input {
+  font-family: "Roboto Mono", monospace;
+  font-size: 17px;
+  border: 1px solid rgba(55, 9, 116, 0.5);
+  height: 50px;
+  border-radius: 6px;
+}
+
+.payment-page .payment-registration input::placeholder {
+  color: #370974;
+}
+
+.payment-page .payment-registration select,
+option {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  font-family: "Roboto Mono", monospace;
+  color: #370974;
+  height: 50px;
+  border: 1px solid rgba(55, 9, 116, 0.5);
+}
+
+.payment-page .payment-registration textarea {
+  border: 1px solid rgba(55, 9, 116, 0.5);
+}
+
+.payment-page .payment-registration .fa-eye-slash,
+.fa-angle-down {
+  color: #370974;
+}
+
+.payment-page .payment-registration small p {
+  font-size: 14px;
+  font-family: "Roboto Mono", monospace;
+  color: #370974;
+}
+
+.payment-page .payment-registration small span {
+  color: #41b661;
+  font-weight: bold;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+}
+
+.payment-page .payment-registration .form-group {
+  margin-bottom: 0px;
+}
+
+.payment-page .payment-registration .upload-drop-zone {
+  background-color: #cccccc;
+  border: 1px solid #370974;
+  line-height: 100px;
+  text-align: center;
+  border-radius: 5px;
+  width: 100%;
+}
+.payment-page .payment-registration .payment-submit {
+  margin-top: 200px;
+}
+
+/* Upload  */
+.page-body .page .upload-image-1 {
+  position: absolute;
+  margin: 0 auto;
+  left: 80px;
+  top: 350px;
+}
+
+.page-body .page .upload-image-2 {
+  position: absolute;
+  margin: 0 auto;
+  left: 1150px;
+  top: 100px;
+}
+
+.page-body .page .upload-image-1 img {
+  height: 450px;
+  width: 450px;
+}
+
+.page-body .page .upload-image-2 img {
+  height: 300px;
+  width: 300px;
+}
+
+.upload-page .container-fluid {
+  margin: auto;
+  box-shadow: 2px 2px rgba(55, 9, 116, 0.26);
+  border-radius: 10px;
+  height: auto;
+  background-color: #ffffff;
+}
+
+.upload-page .upload-body h4 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.7em;
+  font-weight: 500;
+}
+
+.upload-page .upload-body .upload-heading {
+  margin-bottom: 170px;
+}
+
+.upload-page .upload-body .upload-heading p {
+  text-align: left;
+  width: 447px;
+  margin-top: 20px;
+  font-family: "Roboto Mono", monospace;
+}
+
+.upload-page .upload-body .upload-heading li {
+  list-style: none;
+  margin-bottom: 5px;
+  font-family: "Roboto Mono", monospace;
+}
+
+.upload-page .upload-body .upload-footer {
+  overflow: auto;
+  margin-left: 0px;
+}
+
+.upload-page .upload-body .upload-footer li {
+  float: left;
+  margin-right: 70px;
+  list-style: circle;
+  font-family: "Roboto Mono", monospace;
+}
+
+.upload-page .upload-body .upload-footer ul {
+  /* border: 1px solid blue; */
+  padding-left: 20px;
+}
+.upload-registration {
+  padding: 50px 30px 50px 30px !important;
+}
+.upload-registration label {
+  text-transform: uppercase;
+  color: #370974;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 17px;
+}
+.upload-registration input {
+  font-family: "Roboto Mono", monospace;
+  font-size: 17px;
+  border: 1px solid rgba(55, 9, 116, 0.5);
+  height: 50px;
+  border-radius: 6px;
+}
+
+.upload-registration input::placeholder {
+  color: #370974;
+}
+
+.upload-registration small p {
+  font-size: 14px;
+  font-family: "Roboto Mono", monospace;
+  color: #370974;
+}
+
+.upload-registration small span {
+  color: #41b661;
+  font-weight: bold;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+}
+
+.upload-registration select,
+option {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  font-family: "Roboto Mono", monospace;
+  color: #370974;
+  height: 50px;
+  border: 1px solid rgba(55, 9, 116, 0.5);
+}
+
+.upload-registration textarea {
+  border: 1px solid rgba(55, 9, 116, 0.5);
+}
+
+.upload-registration textarea::placeholder {
+  font-family: "Roboto Mono", monospace;
+  font-size: 0.85em;
+  color: #370974;
+}
+
+.upload-registration .upload-drop-zone {
+  border: 1px solid #37097480;
+  width: 100%;
+  border-radius: 5px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.upload-registration .upload-drop-zone img {
+  width: 120px;
+  height: 62px;
+  /* padding-left: 30px; */
+}
+.upload-registration .upload-drop-zone p {
+  margin-top: 20px;
+  font-size: 0.85em;
+}
+.upload-registration .upload-drop-zone .btn {
+  background-color: #370974;
+  border-radius: 10px;
+  padding: 0px 35px;
+  margin-left: 20px;
+  margin-top: 12px;
+  height: 35px;
+  color: #ffffff;
+  font-family: "Roboto Mono", monospace;
+  font-size: 0.81em;
+  text-transform: uppercase;
+}
+
+.upload-registration .upload-tags {
+  border: 1px solid #37097480;
+  width: 100%;
+  border-radius: 5px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 20px;
+  padding-right: 0px;
+}
+
+.upload-registration .upload-check {
+  padding-right: 50px;
+}
+
+.upload-registration .upload-check .custom-control:first-child {
+  margin-bottom: 10px;
+}
+
+.upload-registration .upload-check .custom-control label {
+  font-weight: 300;
+  font-family: "Roboto Mono", monospace;
+  font-size: 0.9em;
+}
+
+/* Checkout Page */
+.nav-2 {
+  margin-left: 65px;
+}
+.page-body-2 {
+  margin-top: -100px;
+}
+.checkout-page h4 {
+  color: #707070;
+  font-size: 2em;
+  margin-top: 50px;
+}
+
+.checkout-page .row {
+  margin-left: 0px;
+}
+
+.checkout-page .billing-address {
+  border: 1px solid #3709749d;
+  padding: 50px;
+}
+
+.checkout-page .billing-address label {
+  font-family: "Roboto", serif;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.checkout-page .billing-address input,
+.checkout-page .billing-address textarea {
+  font-family: "Roboto Mono", monospace;
+  font-weight: 300;
+  color: #370974;
+  height: 50px;
+  border: 1px solid #370974;
+}
+
+.checkout-page .billing-address .form-text p {
+  color: #370974;
+  font-family: "Roboto Mono", monospace;
+}
+
+.checkout-page .billing-address input::placeholder {
+  color: #370974;
+}
+
+.checkout-page .billing-address select {
+  height: 50px;
+  border: 1px solid #370974;
+}
+
+.checkout-page .billing-address select,
+option {
+  color: #370974;
+  font-family: "Roboto Mono", monospace;
+}
+
+.checkout-page .payment-details {
+  border: 1px solid #370974;
+  padding: 50px;
+}
+
+.checkout-page .payment-details label {
+  color: #370974;
+  font-family: "Roboto", san-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.checkout-page .payment-details input {
+  color: #370974;
+  font-family: "Roboto Mono", monospace;
+  font-weight: 300;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid #370974;
+  height: 50px;
+  border-radius: 0px;
+  margin-bottom: 50px;
+}
+
+.checkout-page .checkout-cart {
+  border: 1px solid #370974;
+  padding: 50px;
+}
+
+.checkout-page .checkout-cart hr {
+  border: 1px solid #370974;
+  border-style: dashed;
+}
+
+.checkout-page .checkout-cart .cart-total {
+  color: #707070;
+  font-weight: 600;
+}
+
+.checkout-page .checkout-cart .cart-total:last-child {
+  float: right;
+}
+
+.checkout-page .checkout-cart .cart-pay {
+  margin-top: 0px;
+}
+
+.checkout-page .checkout-cart .cart-pay button {
+  margin-top: 20px;
+  background-color: #370974;
+  color: #ffffff;
+}
+
+.checkout-page .checkout-cart .form-group {
+  margin-bottom: 0px;
+}
