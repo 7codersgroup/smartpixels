@@ -34,9 +34,24 @@
             <a class="nav-link" href="#">Competitions</a>
           </li>
           <li class="nav-item"><a class="nav-link" href="#">Support</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Sign In</a></li>
-          <li class="nav-item nav-border">
-            <a href="#" class="btn nav-button nav-link">Create Account</a>
+          <li class="nav-item"><a class="nav-link" href="#">Submit Photos</a></li>
+          <!-- <li class="nav-item nav-border">
+            <a href="#" class="btn nav-button nav-link">
+              Hi Danie
+            </a>
+          </li> -->
+          <li class="nav-item dropdown">
+            <a class="nav-link btn nav-button" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Hi, Daniel
+              <span class="fas fa-angle-down fa-lg"></span>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
           </li>
         </ul>
       </div>
@@ -86,12 +101,19 @@
             </div>
             <div class="col-md-6 upload-registration" id="page-border-3">
               <form>
-                <div class="form-group mb-4 ">
-                  <div class="form-row upload-drop-zone">
-                    <img src="./img/1x.png" />
-                    <p>Drop and drop your photos here or</p>
-                    <button type="submit" class="btn">Browse</button>
+                <div class="upload-file input-group mb-3">
+                  <div class="custom-file">
+                    <input type="file" class="custom-file-input" id="validatedCustomFile" placeholder="" required>
+                    <div class="form-row upload-drop-zone">
+                      <img src="./img/1x.png" />
+                      <p>Drop and drop your photos here or</p>
+                      <button type="submit" class="btn">Browse</button>
+                    </div>
                   </div>
+                </div>
+                <div class="form-group mb-4 ">
+
+
                 </div>
 
                 <div class="form-group mb-4">
@@ -142,5 +164,6 @@
 <script src="js/jquery-3.3.1.min.js"></script>
 <script src="js/popper.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script src="https://kit.fontawesome.com/e9480ff5ec.js" crossorigin="anonymous"></script>
 
 </html>

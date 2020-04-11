@@ -11,6 +11,10 @@ body {
   background-color: #370974 !important;
 }
 
+.navbar .navbar-brand {
+  margin-left: 35px;
+}
+
 .navbar-dark .navbar-nav .nav-link {
   color: rgb(255, 255, 255, 1);
   font-family: "Montserrat", sans-serif;
@@ -18,7 +22,11 @@ body {
 }
 
 .navbar-nav > li {
-  margin: 0px 45px;
+  margin: 0 25px;
+}
+
+.navbar-nav > li:last-child {
+  margin-right: 35px;
 }
 
 .navbar-nav > li .nav-button {
@@ -32,6 +40,70 @@ body {
 .navbar-nav .nav-button {
   padding-left: 20px !important;
   padding-right: 20px !important;
+}
+
+.navbar-nav .fas {
+  color: #ffffff;
+  margin-left: 10px;
+}
+
+.navbar-nav .dropdown-menu {
+  left: -81px;
+  margin-top: 8px;
+  border-radius: 0px;
+  background-color: #370974;
+  color: #ffffff;
+}
+
+.navbar-nav .dropdown-menu .dropdown-item {
+  color: #ffffff;
+  text-align: right;
+}
+
+.navbar-nav .dropdown-menu .dropdown-item:hover {
+  color: #370974;
+  background-color: #ffffff;
+}
+
+.navbar-2 .navbar-nav .nav-item {
+  margin: 0px 50px;
+}
+
+.navbar-2 .navbar-nav .nav-item:last-of-type {
+  margin-right: 25px;
+}
+
+.footer {
+  background-color: #370974;
+  padding: 50px 50px;
+  margin-top: 100px;
+}
+
+.footer .container-fluid {
+  background-color: #370974;
+}
+
+.footer .footer-content p {
+  float: left;
+  color: #ffffff;
+  margin: 0px;
+  font-size: 1.1em;
+  font-family: "Roboto", sans-serif;
+  font-weight: 200;
+}
+
+.footer .footer-content {
+  padding: 0px;
+}
+
+.footer .footer-content p:last-of-type {
+  float: right;
+  /* margin-right: 100px; */
+}
+
+.footer .footer-content p:nth-last-of-type(2) {
+  float: left;
+  margin-left: 1050px;
 }
 
 #cancel-button,
@@ -123,6 +195,169 @@ body {
 
 .page .page-sub-title h4 {
   font-size: 1.3em;
+}
+
+/* Index Page  */
+.index-page {
+  position: relative;
+  margin: 0 auto;
+}
+
+.featured-image .img-container {
+  /* position: absolute; */
+  width: 100%;
+  height: 755px;
+  overflow: hidden;
+}
+
+.featured-image .wrapper {
+  background-color: #00000060;
+  position: absolute;
+  height: 755px;
+  width: 100%;
+  top: 0px;
+}
+
+.featured-image .search-form {
+  position: absolute;
+  right: 20%;
+  width: 60%;
+  top: 245px;
+}
+
+.featured-image .search-form p {
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.2em;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.featured-image .search-form input {
+  height: 60px;
+  border-color: #ffffff;
+  border: 1px solid #ffffff;
+}
+
+.featured-image .search-form .btn {
+  background-color: #ffffff;
+  border-color: #ffffff;
+}
+
+.index-page .banner {
+  background-color: #370974;
+  color: #ffffff;
+  height: 152px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.index-page .banner p {
+  text-align: center;
+  font-size: 2em;
+  font-family: "Montserrat", sans-serif;
+  margin-left: -50px;
+}
+
+.index-page .banner .btn {
+  color: #ffffff;
+  font-size: 0.9;
+  border: 2px solid #ffffff;
+  border-radius: 50px;
+  margin-left: 75px;
+}
+
+.index-explore .explore-heading h2 {
+  text-align: center;
+  color: #370974;
+  margin-bottom: 50px;
+  font-size: 2.5em;
+  font-weight: 300;
+}
+
+.index-explore {
+  margin-top: 100px;
+  padding: 0 50px;
+}
+
+.index-explore .row {
+  margin-bottom: 50px;
+}
+
+.index-explore .explore-card .card {
+  border: 1px solid #370974;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  position: relative;
+}
+
+.index-explore .explore-card .card img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.index-explore .explore-card .card .card-body {
+  position: absolute;
+  width: 100%;
+  background-color: #00000041;
+  color: #ffffff;
+  bottom: 0px;
+  padding: 10px;
+  /* padding-top: 8px; */
+  text-align: center;
+}
+
+.index-explore .explore-card .card .card-body p {
+  float: left;
+  margin: 0 auto;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+.index-explore .explore-card .card .card-body p:last-of-type {
+  float: right;
+}
+
+.index-explore .explore-card .card .card-body span {
+  margin-left: 10px;
+}
+
+.index-contributor .row {
+  margin-top: 100px;
+}
+
+.index-contributor {
+  margin-top: 100px;
+  padding: 0px 50px;
+}
+
+.index-contributor .contributor-heading h2 {
+  text-align: center;
+  color: #370974;
+  margin-bottom: 50px;
+  font-size: 2.5em;
+  font-weight: 300;
+}
+
+.index-contributor .card {
+  border: none;
+  align-items: center;
+}
+
+.index-contributor .card img {
+  height: 250px;
+  width: 250px;
+}
+
+.index-contributor .card .card-body h5 {
+  margin-top: 20px;
+  font-weight: 400;
+  font-size: 1.7em;
+  font-family: "Montserrat", sans-serif;
+  color: #370974;
 }
 
 /* Login Page */
@@ -360,13 +595,36 @@ option {
   margin-bottom: 0px;
 }
 
-.verify-registration .upload-drop-zone {
+/* .verify-registration .upload-drop-zone {
   background-color: #cccccc;
   border: 1px solid #370974;
   line-height: 100px;
   text-align: center;
   border-radius: 5px;
   width: 100%;
+} */
+.verify-registration .custom-file {
+  width: 100%;
+  height: 100px;
+  padding: 0px;
+  border: 1px solid #370974;
+  border-radius: 5px;
+  position: relative;
+  background-color: #cccccc;
+}
+
+.verify-registration .custom-file .custom-file-input {
+  height: 100px;
+}
+
+.verify-registration .custom-file label {
+  position: absolute;
+  color: #ffffff;
+  padding-left: 10px;
+  padding-top: 15px;
+  font-weight: 200;
+  text-transform: capitalize;
+  top: 0px;
 }
 
 /*  Sign Up  */
@@ -936,7 +1194,7 @@ option {
   margin: auto;
   box-shadow: 2px 2px rgba(55, 9, 116, 0.26);
   border-radius: 10px;
-  height: auto;
+  /* height: auto; */
   background-color: #ffffff;
 }
 
@@ -1151,10 +1409,24 @@ option {
   color: #370974;
 }
 
-.upload-registration .upload-drop-zone {
-  border: 1px solid #37097480;
+.upload-registration .custom-file {
   width: 100%;
-  border-radius: 5px;
+  height: 100px;
+  padding: 0px;
+  border: 1px solid #37097480;
+  position: relative;
+}
+
+.upload-registration .custom-file .custom-file-input {
+  height: 100px;
+}
+
+.upload-registration .custom-file .upload-drop-zone {
+  position: absolute;
+}
+
+.upload-registration .upload-drop-zone {
+  width: 100%;
   padding-top: 30px;
   padding-bottom: 30px;
   padding-left: 0px;
@@ -1208,11 +1480,13 @@ option {
 }
 
 /* Checkout Page */
-.nav-2 {
-  margin-left: 65px;
-}
 .page-body-2 {
   margin-top: -100px;
+}
+
+.checkout-page {
+  margin-left: -30px !important;
+  margin-right: -15px;
 }
 .checkout-page h4 {
   color: #707070;
@@ -1290,7 +1564,7 @@ option {
 }
 
 .checkout-page .checkout-cart {
-  border: 1px solid #370974;
+  border: 1px solid #cccccc;
   padding: 50px;
 }
 
@@ -1320,4 +1594,158 @@ option {
 
 .checkout-page .checkout-cart .form-group {
   margin-bottom: 0px;
+}
+
+/* Cart */
+.checkout-page .cart .card {
+  border: 1px solid #cccccc;
+  border-radius: 0px;
+  margin-right: 100px;
+  margin-top: 50px;
+}
+.checkout-page .cart .card .card-body {
+  position: absolute;
+  margin-left: 180px;
+}
+
+.checkout-page .cart .card .card-img-top {
+  height: 200px;
+  width: 200px;
+  float: left;
+  padding: 15px;
+}
+
+.checkout-page .cart .card .card-body {
+  color: #707070;
+  font-family: "Montserrat", sans-serif;
+}
+
+.checkout-page .cart .card .card-body h5 {
+  font-size: 1.7em;
+}
+
+.checkout-page .cart .card .card-body p {
+  font-size: 1.35em;
+}
+
+.checkout-page .cart .card .card-body a {
+  font-weight: 600;
+}
+
+/*  Dashboard */
+
+.dashboard {
+  background-color: #f7f7fa;
+}
+
+.dashboard-tabs {
+  margin: 0 50px;
+}
+
+.dashboard-tabs .tabs {
+  margin-top: 20px;
+  width: 100%;
+}
+.dashboard-tabs .tabs p {
+  float: left;
+  color: #370974;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2em;
+}
+
+.dashboard-tabs .tabs p:nth-last-of-type(3) {
+  margin-left: 100px;
+}
+
+.dashboard-tabs .tabs p:nth-last-of-type(2) {
+  float: right;
+}
+
+.dashboard-tabs .tabs p:nth-last-of-type(4) {
+  margin-left: 100px;
+}
+
+.dashboard-tabs-2 {
+  margin: 0px;
+  padding: 0 50px;
+  background-color: #ffffff;
+}
+
+.dashboard-tabs-2 .tabs {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.dashboard-tabs-2 .tabs a {
+  float: left;
+  color: #370974;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2em;
+  height: 100%;
+}
+
+.dashboard-tabs-2 .tabs a:nth-last-of-type(2) {
+  margin-left: 100px;
+}
+
+.dashboard-tabs-2 .tabs a:nth-last-of-type(1) {
+  margin-left: 100px;
+}
+
+.dashboard-tabs-2 .tabs a:hover {
+  text-decoration: none;
+}
+
+.dashboard-explore .container-fluid {
+  padding: 0px;
+}
+
+.dashboard-explore {
+  margin-top: 100px;
+  padding: 0 50px;
+}
+
+.dashboard-explore .row {
+  margin-bottom: 50px;
+}
+
+.dashboard-explore .dashboard-card .card {
+  border: 1px solid #370974;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  position: relative;
+}
+
+.dashboard-explore .dashboard-card .card img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.dashboard-explore .dashboard-card .card .card-body {
+  position: absolute;
+  width: 100%;
+  background-color: #00000041;
+  color: #ffffff;
+  bottom: 0px;
+  padding: 10px;
+  /* padding-top: 8px; */
+  text-align: center;
+}
+
+.dashboard-explore .dashboard-card .card .card-body p {
+  float: left;
+  margin: 0 auto;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+.dashboard-explore .dashboard-card .card .card-body p:last-of-type {
+  float: right;
+}
+
+.dashboard-explore .dashboard-card .card .card-body span {
+  margin-left: 10px;
 }

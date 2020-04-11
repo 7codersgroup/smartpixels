@@ -34,9 +34,24 @@
                         <a class="nav-link" href="#">Competitions</a>
                     </li>
                     <li class="nav-item"><a class="nav-link" href="#">Support</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Sign In</a></li>
-                    <li class="nav-item nav-border">
-                        <a href="#" class="btn nav-button nav-link">Create Account</a>
+                    <li class="nav-item"><a class="nav-link" href="#">Submit Photos</a></li>
+                    <!-- <li class="nav-item nav-border">
+                <a href="#" class="btn nav-button nav-link">
+                  Hi Danie
+                </a>
+              </li> -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link btn nav-button" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Hi, Daniel
+                            <span class="fas fa-angle-down fa-lg"></span>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -184,9 +199,11 @@
                                     <label for="exampleInputZipCode1">
                                         Upload Scanned Identity Document<span> *</span>
                                     </label>
-                                    <div class="input-group mb-3">
-                                        <div class="upload-drop-zone" id="drop-zone">
-                                            Drop document here! or click here to select document
+                                    <div class="upload-file input-group mb-3">
+                                        <div class="custom-file">
+                                            <input type="file" class="custom-file-input" id="validatedCustomFile"
+                                                required>
+                                            <label>Drop document here! or click here to select document</label>
                                         </div>
                                     </div>
                                     <small id="passwordHelpBlock" class="form-text text-muted mb-4">
@@ -202,9 +219,11 @@
                                     <label for="exampleInputZipCode1">
                                         Upload Selfie<span> *</span>
                                     </label>
-                                    <div class="input-group mb-3">
-                                        <div class="upload-drop-zone" id="drop-zone">
-                                            Drop document here! or click here to select document
+                                    <div class="upload-file input-group mb-3">
+                                        <div class="custom-file">
+                                            <input type="file" class="custom-file-input" id="validatedCustomFile"
+                                                required>
+                                            <label>Drop document here! or click here to select document</label>
                                         </div>
                                     </div>
                                     <small id="passwordHelpBlock" class="form-text text-muted mb-4">
@@ -237,9 +256,11 @@
                                     <label for="exampleInputZipCode1">
                                         Upload Proof of Address <span> *</span>
                                     </label>
-                                    <div class="input-group mb-3">
-                                        <div class="upload-drop-zone" id="drop-zone">
-                                            Drop document here! or click here to select document
+                                    <div class="upload-file input-group mb-3">
+                                        <div class="custom-file">
+                                            <input type="file" class="custom-file-input" id="validatedCustomFile"
+                                                required>
+                                            <label>Drop document here! or click here to select document</label>
                                         </div>
                                     </div>
                                     <small id="passwordHelpBlock" class="form-text text-muted mb-4">
@@ -272,5 +293,6 @@
 <script src="js/jquery-3.3.1.min.js"></script>
 <script src="js/popper.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script src="https://kit.fontawesome.com/e9480ff5ec.js" crossorigin="anonymous"></script>
 
 </html>
