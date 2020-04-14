@@ -235,3 +235,322 @@ svg {
 	text-decoration: underline;
 }
 
+
+
+.motmot .overflow-hidden {
+	overflow: hidden;
+}
+
+.motmot .mti-hero-image {
+	background-color: #4b4b4b;
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.motmot .container-full {
+	width: 100%;
+}
+.motmot .mti-hero-image--large {
+	height: 510px;
+}
+.motmot .mti-hero-image {
+	background-color: #4b4b4b;
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.motmot img {
+	border: 0;
+}
+.motmot * {
+	box-sizing: border-box;
+}
+.mti-hero-image--cover {
+	-o-object-fit: cover;
+	object-fit: cover;
+	-o-object-position: top center;
+	object-position: top center;
+}
+img {
+	border-style: none;
+}
+img {
+	vertical-align: middle;
+}
+.motmot .to-all {
+	bottom: 0;
+	left: 0;
+	right: 0;
+	top: 0;
+}
+.motmot .container-absolute {
+	position: absolute;
+}
+.motmot .medium-black-overlay, .motmot body.artist-profile .profile-hero:hover, body.artist-profile .motmot .profile-hero:hover, .motmot body.artist-profile .hover-img:hover .overlay, body.artist-profile .hover-img:hover .motmot .overlay {
+	background-color: rgba(0,0,0,0.35);
+}
+.motmot * {
+	box-sizing: border-box;
+}
+.maximum-in-front {
+	z-index: 998;
+}
+
+.motmot .v-align {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.motmot .container-full {
+	width: 100%;
+}
+.motmot * {
+	box-sizing: border-box;
+}
+.v-align {
+	position: absolute;
+	top: 40%;
+	right: 0;
+	left: 0;
+	transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+}
+
+.motmot .padding-left-xlarge {
+	padding-left: 25px;
+}
+.motmot .padding-right-xlarge {
+	padding-right: 25px;
+}
+.motmot .padding-bottom-small {
+	padding-bottom: 10px;
+}
+.motmot .margin-bottom-xlarge {
+	margin-bottom: 25px;
+}
+.motmot .center-align {
+	text-align: center;
+}
+
+
+.motmot .container-relative {
+	position: relative;
+}
+.motmot .white {
+	background-color: #fff;
+}
+.motmot * {
+	box-sizing: border-box;
+}
+.hero-input-group {
+	border-radius: 4px;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 750px;
+	box-shadow: 0 2px 4px rgba(50,50,50,0.2);
+	z-index: 2;
+}
+.motmot .container-table {
+	display: table;
+}
+.motmot .no-stretch {
+	white-space: nowrap;
+	width: .1%;
+}
+.motmot .container-table-cell, .motmot .v-align-middle {
+	vertical-align: middle;
+}
+.motmot .container-table-cell {
+	display: table-cell;
+}
+
+.motmot .input-box .input-box__select-box {
+	background-color: #f5f5f5;
+	border-color: #eaeaea;
+	border-top-color: rgb(234, 234, 234);
+	border-bottom-color: rgb(234, 234, 234);
+	border-left-color: rgb(234, 234, 234);
+	border-bottom: 0;
+	border-bottom-right-radius: 0;
+	border-left: 0;
+	border-top: 0;
+	border-top-right-radius: 0;
+}
+.motmot .select-box {
+	background-color: #fafafa;
+	border: 1px solid #e1e1e1;
+	border-top-color: rgb(225, 225, 225);
+	border-top-style: solid;
+	border-top-width: 1px;
+	border-right-color: rgb(225, 225, 225);
+	border-bottom-color: rgb(225, 225, 225);
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-left-color: rgb(225, 225, 225);
+	border-left-style: solid;
+	border-left-width: 1px;
+	border-radius: 4px;
+	border-top-right-radius: 4px;
+	border-bottom-right-radius: 4px;
+	color: #4b4b4b;
+	display: inline-block;
+	position: relative;
+}
+
+.motmot .input-box .input-box__select-box select {
+	height: 58px;
+	padding: 3px 0px 0 15px;
+	font-size: 1rem;
+}
+.motmot select {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	background-color: transparent;
+	border: 0;
+	box-sizing: padding-box;
+	cursor: pointer;
+	display: inline-block;
+	font-size: .875rem;
+	height: 30px;
+	min-height: 30px;
+	outline: 0;
+	padding: 0 32px 0 11px;
+	position: relative;
+	transition: background-color .3s,color .3s,border .3s;
+	vertical-align: middle;
+}
+.motmot button, .motmot select {
+	text-transform: none;
+}
+.motmot button, .motmot input, .motmot optgroup, .motmot select, .motmot textarea {
+	color: inherit;
+	font: inherit;
+	font-size: inherit;
+	margin: 0;
+}
+.motmot * {
+	box-sizing: border-box;
+}
+button, select {
+	text-transform: none;
+}
+button, input, optgroup, select, textarea {
+	font-family: sans-serif;
+	font-size: 100%;
+	line-height: 1.15;
+	margin: 0;
+}
+input, button, select, textarea {
+	font-family: inherit;
+	font-size: inherit;
+	line-height: inherit;
+}
+input, select, a img {
+	vertical-align: middle;
+}
+input, select, a img {
+	vertical-align: middle;
+}
+.motmot .select-box {
+	color: #4b4b4b;
+}
+
+
+.motmot .to-the-bottom {
+	bottom: 0;
+}
+.motmot .to-the-right {
+	right: 0;
+}
+.motmot .container-absolute {
+	position: absolute;
+}
+
+.motmot .margin-xlarge {
+	margin: 25px;
+}
+.motmot .padding-xlarge {
+	padding: 25px;
+}
+.motmot .white-text {
+	color: #fff;
+}
+.motmot a {
+	text-decoration: none;
+}
+.motmot a {
+	background-color: transparent;
+}
+.motmot .font-light {
+	font-weight: 300;
+}
+.motmot p {
+	font-size: 1rem;
+	line-height: 1.5rem;
+	margin: 1rem 0;
+}
+
+.motmot b, .motmot strong {
+	font-weight: bold;
+}
+
+.motmot .input-box .input--xlarge {
+	font-size: 1rem;
+	height: 58px;
+	padding: 0 20px;
+}
+.motmot .input--silent, .motmot .input--silent:hover, .motmot .input--silent:focus, .motmot .input--silent-secondary, .motmot .input--silent-secondary:hover, .motmot .input--silent-secondary:focus {
+	border: 0;
+}
+.motmot .input--silent, .motmot .input--silent-secondary {
+	border-radius: 0;
+}
+.motmot .input--full, .motmot .input--full select {
+	width: 100%;
+}
+.motmot [type="text"], .motmot [type="email"], .motmot [type="password"] {
+	height: 32px;
+	padding: 0 12px;
+}
+.motmot .input, .motmot [type="text"], .motmot [type="email"], .motmot [type="password"], .motmot textarea {
+	border: 1px solid #e1e1e1;
+	border-radius: 4px;
+	box-sizing: padding-box;
+	color: #4b4b4b;
+	font-size: .875rem;
+	margin: 0;
+	outline: 0;
+	transition: color .3s,border .3s;
+}
+.motmot .light {
+	font-weight: 300;
+}
+.motmot input {
+	line-height: normal;
+}
+.motmot button, .motmot input, .motmot optgroup, .motmot select, .motmot textarea {
+	color: inherit;
+	font: inherit;
+	font-weight: inherit;
+	font-size: inherit;
+	line-height: inherit;
+	margin: 0;
+}
+
+.motmot .padding-right-large {
+	padding-right: 20px;
+}
+
+.motmot .input--silent, .motmot .input--silent:hover, .motmot .input--silent:focus, .motmot .input--silent-secondary, .motmot .input--silent-secondary:hover, .motmot .input--silent-secondary:focus {
+	border: 0;
+}
+
+.text-xslarge {
+	font-size: 32px;
+	line-height: 1em;
+}
+
+
