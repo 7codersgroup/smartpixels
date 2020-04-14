@@ -103,7 +103,7 @@ body {
 
 .footer .footer-content p:nth-last-of-type(2) {
   float: left;
-  margin-left: 1050px;
+  margin-left: 1200px;
 }
 
 #cancel-button,
@@ -390,6 +390,7 @@ body {
 .login-page .login-body .login-heading li {
   list-style: circle;
   padding: 10px;
+  font-family: "Roboto Mono", monospace;
 }
 
 .login-page .login-body .login-footer,
@@ -407,6 +408,9 @@ ul {
   float: left;
   margin-right: 70px;
   list-style: circle;
+  font-family: "Roboto Mono", monospace;
+  margin-bottom: 50px;
+  margin-top: 50px;
 }
 
 .login-page .login-registration label {
@@ -650,6 +654,10 @@ option {
   width: 135px;
 }
 
+.signup-page .signup-body .signup-heading .media .media-body p {
+  font-family: "Roboto Mono", monospace;
+}
+
 .signup-page .signup-body .signup-heading .media p:last-child {
   margin-top: 30px;
 }
@@ -663,6 +671,7 @@ option {
   float: left;
   margin-right: 70px;
   list-style: circle;
+  font-family: "Roboto Mono", monospace;
 }
 
 .signup-page .signup-body .signup-footer ul {
@@ -734,6 +743,11 @@ option {
   width: 100%;
 }
 
+.signup-registration .signup-ag {
+  margin-top: 10px;
+  color: #41b661;
+}
+
 /*  Change Number */
 
 .page-body .page .cp-image-1 {
@@ -778,6 +792,7 @@ option {
   float: left;
   margin-right: 70px;
   list-style: circle;
+  font-family: "Roboto Mono", monospace;
 }
 
 .cp-page .cp-body .cp-footer ul {
@@ -892,6 +907,7 @@ option {
   float: left;
   margin-right: 70px;
   list-style: circle;
+  font-family: "Roboto Monospace", monospace;
 }
 
 .vn-page .vn-body .vn-footer ul {
@@ -1037,13 +1053,14 @@ option {
   font-size: 0.7em;
 }
 
-.accounts-page .accounts-body .account-content {
+.accounts-page .accounts-body .accounts-content {
   margin-top: 20px;
+  width: 60%;
 }
 
-.accounts-page .account-content p {
-  text-align: left;
-  width: 447px;
+.accounts-page .accounts-body .accounts-content p {
+  text-align: justify;
+  font-family: "Roboto Mono", monospace;
 }
 
 .accounts-page .accounts-body .accounts-footer {
@@ -1055,6 +1072,7 @@ option {
   float: left;
   margin-right: 70px;
   list-style: circle;
+  font-family: "Roboto Mono", monospace;
 }
 
 .accounts-page .accounts-body .accounts-footer ul {
@@ -1748,4 +1766,294 @@ option {
 
 .dashboard-explore .dashboard-card .card .card-body span {
   margin-left: 10px;
+}
+
+/*  Profile Update */
+
+.profile-page .container-fluid {
+  margin: auto;
+  box-shadow: 2px 2px rgba(55, 9, 116, 0.26);
+  border-radius: 10px;
+  height: auto;
+  background-color: #ffffff;
+}
+
+.profile-page .profile-body .profile-heading {
+  margin-bottom: 170px;
+}
+
+.profile-page .profile-body .profile-heading #verified {
+  background-color: red;
+  padding: 3px 5px 3px 5px;
+  width: 80px;
+  color: #ffffff;
+  border-radius: 20px;
+  margin-right: 30px;
+}
+
+.profile-page .profile-body .profile-heading #unverified {
+  background-color: #41b661;
+  padding: 3px 5px 3px 5px;
+  width: 90px;
+  color: #ffffff;
+  border-radius: 20px;
+  margin-left: 0px;
+}
+
+.profile-page .profile-body .profile-heading #verified,
+#unverified {
+  font-family: "Roboto Mono", monospace;
+  text-transform: lowercase;
+  font-size: 0.7em;
+}
+
+.profile-page .profile-body .profile-content {
+  margin-top: 50px;
+  margin-bottom: 100px;
+  font-family: "Roboto Mono", monospace;
+}
+
+.profile-page .profile-content p {
+  text-align: left;
+  width: 447px;
+}
+
+.profile-page .profile-body .profile-footer {
+  overflow: auto;
+  margin-left: 0px;
+}
+
+.profile-page .profile-body .profile-footer li {
+  float: left;
+  margin-right: 70px;
+  list-style: circle;
+
+  font-family: "Roboto Mono", monospace;
+}
+
+.profile-page .profile-body .profile-footer ul {
+  /* border: 1px solid blue; */
+  padding-left: 20px;
+}
+
+.profile-registration label {
+  text-transform: uppercase;
+  color: #370974;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 17px;
+}
+.profile-registration input {
+  font-family: "Roboto Mono", monospace;
+  font-size: 17px;
+  border: 1px solid rgba(55, 9, 116, 0.5);
+  height: 50px;
+  border-radius: 6px;
+}
+
+.profile-registration input::placeholder {
+  color: #370974;
+}
+
+.profile-registration select,
+option {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  font-family: "Roboto Mono", monospace;
+  color: #370974;
+  height: 50px;
+  border: 1px solid rgba(55, 9, 116, 0.5);
+}
+
+.profile-registration textarea {
+  border: 1px solid rgba(55, 9, 116, 0.5);
+}
+
+.profile-registration .fa-eye-slash,
+.fa-angle-down {
+  color: #370974;
+}
+
+.profile-registration small p {
+  font-size: 14px;
+  font-family: "Roboto Mono", monospace;
+  color: #370974;
+}
+
+.profile-registration small span {
+  color: #41b661;
+  font-weight: bold;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+}
+
+.profile-registration .form-group {
+  margin-bottom: 0px;
+}
+
+/* .profile-registration .upload-drop-zone {
+  background-color: #cccccc;
+  border: 1px solid #370974;
+  line-height: 100px;
+  text-align: center;
+  border-radius: 5px;
+  width: 100%;
+} */
+
+.profile-registration .custom-file {
+  width: 100%;
+  height: 100px;
+  padding: 0px;
+  border: 1px solid #37097480;
+  position: relative;
+}
+
+.profile-registration .custom-file .custom-file-input {
+  height: 100px;
+}
+
+.profile-registration .custom-file .upload-drop-zone {
+  position: absolute;
+}
+
+.profile-registration .upload-drop-zone {
+  width: 100%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.profile-registration .upload-drop-zone img {
+  width: 120px;
+  height: 62px;
+  /* padding-left: 30px; */
+}
+.profile-registration .upload-drop-zone p {
+  margin-top: 20px;
+  font-size: 0.85em;
+}
+.profile-registration .upload-drop-zone .btn {
+  background-color: #370974;
+  border-radius: 10px;
+  padding: 0px 35px;
+  margin-left: 20px;
+  margin-top: 12px;
+  height: 35px;
+  color: #ffffff;
+  font-family: "Roboto Mono", monospace;
+  font-size: 0.81em;
+  text-transform: uppercase;
+}
+
+/*  Password Reset */
+
+.pr-page .container-fluid {
+  margin: auto;
+  box-shadow: 2px 2px rgba(55, 9, 116, 0.26);
+  border-radius: 10px;
+  height: auto;
+  background-color: #ffffff;
+  margin-bottom: 70px;
+}
+
+.pr-page .pr-heading {
+  margin-left: 20px;
+}
+
+.pr-page .pr-body .pr-heading {
+  margin-bottom: 200px;
+}
+
+.pr-page .pr-body .pr-heading button {
+  font-size: 1em;
+}
+
+.pr-page .pr-body .pr-heading img {
+  height: 200px;
+  width: 200px;
+}
+
+.pr-page .pr-body .pr-heading li {
+  list-style: circle;
+  padding: 10px;
+  font-family: "Roboto Mono", monospace;
+}
+
+.pr-page .pr-body .pr-footer,
+ul {
+  /* border: 1px solid blue; */
+  padding-left: 20px;
+}
+
+.pr-page .pr-body .pr-footer {
+  overflow: auto;
+  margin-left: 0px;
+}
+
+.pr-page .pr-body .pr-footer li {
+  float: left;
+  margin-right: 70px;
+  list-style: circle;
+  font-family: "Roboto Mono", monospace;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.pr-page .pr-registration label {
+  text-transform: uppercase;
+  color: #370974;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.pr-page .pr-registration input {
+  font-family: "Roboto Mono", monospace;
+  font-size: 17px;
+  border: 1px solid rgba(55, 9, 116, 0.5);
+  height: 50px;
+  border-radius: 6px;
+}
+
+.pr-page .pr-registration input::placeholder {
+  color: #370974;
+}
+
+.pr-page .pr-registration select,
+option {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  font-family: "Roboto Mono", monospace;
+  color: #370974;
+}
+
+.pr-page .pr-registration textarea {
+  border: 1px solid rgba(55, 9, 116, 0.5);
+}
+
+.pr-page .pr-registration .fa-eye-slash,
+.fa-angle-down {
+  color: #370974;
+}
+
+.pr-page .pr-registration small p {
+  font-size: 14px;
+  font-family: "Roboto Mono", monospace;
+  color: #370974;
+}
+
+.pr-page .pr-registration small span {
+  color: #41b661;
+  font-weight: bold;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+}
+
+.pr-page .pr-registration .form-group {
+  margin-bottom: 0px;
+}
+
+.pr-page .pr-registration .btn {
+  margin-bottom: 140px;
 }
