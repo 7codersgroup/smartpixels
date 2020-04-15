@@ -656,6 +656,7 @@ option {
 
 .signup-page .signup-body .signup-heading .media .media-body p {
   font-family: "Roboto Mono", monospace;
+  text-align: justify;
 }
 
 .signup-page .signup-body .signup-heading .media p:last-child {
@@ -2056,4 +2057,246 @@ option {
 
 .pr-page .pr-registration .btn {
   margin-bottom: 140px;
+}
+
+/* Mobile Respionsiveness */
+@media (max-width: 576px) {
+  /* Generic */
+  html {
+    overflow-y: auto;
+  }
+
+  .input-names .col-md-6:last-of-type {
+    margin-top: 24px;
+  }
+
+  /* Page and Navbar Settings */
+  .page {
+    padding-top: 50px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .page #page-border {
+    border: 1.5px solid rgba(55, 9, 116, 0.5);
+    border-bottom: 0px;
+  }
+
+  .page #page-border-2 {
+    border: 1.5px solid rgba(55, 9, 116, 0.5);
+    border-bottom-left-radius: 0px;
+  }
+
+  .page #page-border-3 {
+    border: 1.5px solid rgba(55, 9, 116, 0.5);
+    padding: 30px 30px 80px 10px;
+  }
+
+  .page .page-sub-title h4 {
+    margin-top: 30px;
+    font-size: 1.3em;
+    text-align: center;
+    width: 100%;
+  }
+
+  .navbar .navbar-brand {
+    margin-left: 0px;
+  }
+
+  .navbar-nav .nav-item {
+    margin: 0px 0px;
+  }
+
+  .navbar-nav .nav-item .nav-button {
+    font-size: 0.8em;
+    width: 50%;
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
+
+  /* Sign Up Page */
+  .signup-page .signup-body h4 {
+    text-align: center;
+  }
+
+  .signup-page .signup-body .signup-heading .media {
+    margin-top: 30px;
+    text-align: center;
+    position: relative;
+  }
+
+  .signup-page .signup-body .signup-heading .media .img {
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    position: absolute;
+  }
+
+  .signup-page .signup-body .signup-heading .media .img img {
+    height: 200px;
+    width: 65%;
+    margin-right: 0px;
+  }
+
+  .signup-page .signup-body .signup-heading .media .media-body {
+    margin-top: 230px;
+  }
+
+  .signup-page .signup-body .signup-footer li {
+    margin-right: 40px;
+    font-size: 0.8em;
+  }
+
+  /* Verify Number */
+  .vn-page .container-fluid row:last-of-type {
+    position: relative;
+  }
+
+  .vn-page .page-sub-title h4 {
+    text-align: center;
+  }
+
+  .vn-page .vn-body {
+    height: 1000px;
+  }
+
+  .vn-page .vn-body .vn-footer {
+    margin-top: 800px;
+  }
+
+  .vn-page .vn-body .vn-footer li {
+    margin-right: 40px;
+    font-size: 0.8em;
+  }
+
+  .vn-page .vn-registration {
+    position: absolute;
+    border: 0px !important;
+  }
+
+  .vn-page .vn-registration form {
+    margin-top: 100px;
+  }
+
+  /* Upload Page */
+  .upload-page .upload-body .upload-heading p {
+    width: 100%;
+  }
+
+  .upload-page .upload-body .upload-footer {
+    position: absolute;
+    top: 1450px;
+  }
+
+  .upload-page .upload-body .upload-footer li {
+    margin-right: 40px;
+    font-size: 0.8em;
+  }
+
+  .upload-page .upload-registration #save-button {
+    margin-bottom: 100px;
+  }
+
+  .custom-file .upload-drop-zone img {
+    width: 60px;
+    height: 31.5px;
+  }
+
+  .custom-file .upload-drop-zone p {
+    margin-top: 10px;
+    font-size: 0.65em;
+  }
+
+  .custom-file .upload-drop-zone .btn {
+    background-color: #370974;
+    border-radius: 5px;
+    padding: 0px 17.5px;
+    margin-left: 10px;
+    margin-top: 7px;
+    height: 17.5px;
+    color: #ffffff;
+    font-family: "Roboto Mono", monospace;
+    font-size: 0.5em;
+    text-transform: uppercase;
+  }
+
+  /*  Profile Page */
+  .profile-page .profile-content p {
+    width: 100%;
+    text-align: justify;
+  }
+
+  .profile-page .profile-body .profile-footer li {
+    margin-right: 40px;
+    font-size: 0.8em;
+  }
+
+  /* Payment */
+  .payment-page .container-fluid row:last-of-type {
+    position: relative;
+  }
+
+  .payment-page .payment-body {
+    height: 1000px;
+  }
+
+  .payment-registration {
+    position: absolute;
+    margin-top: 50px;
+    border: 0px !important;
+    padding-right: 40px !important;
+  }
+
+  .payment-registration form {
+    margin-top: 50px;
+  }
+
+  .payment-registration .payment-input .col-4 .input-group,
+  .col-2 .input-group {
+    margin-top: 25px;
+  }
+
+  .payment-page .payment-body .payment-footer li {
+    margin-right: 40px;
+    font-size: 0.8em;
+  }
+
+  .payment-page .payment-body .payment-footer {
+    margin-top: 800px;
+  }
+
+  /*  Password Reset*/
+  .pr-page .pr-body {
+    height: 500px;
+  }
+  .pr-page .pr-registration {
+    border: 0px !important;
+    border-bottom-right-radius: 0px !important;
+    margin-bottom: 30px;
+    position: absolute;
+  }
+
+  /* Accounts */
+  .accounts-page .accounts-body .accounts-content {
+    width: 100%;
+  }
+
+  .accounts-page .accounts-body .accounts-heading .buttons {
+    text-align: center;
+    padding-left: 40px;
+  }
+  .accounts-page .accounts-registration img {
+    margin-top: 5px;
+    height: 50px;
+    width: 50px;
+  }
+  .accounts-page .accounts-registration .accounts-button .btn-verified {
+    font-family: "Roboto Mono", monospace;
+    background: #41b661;
+    color: #ffffff;
+    border-radius: 50px;
+    padding: 5px 7px 5px 7px;
+    font-size: 0.5em;
+    margin-left: 0px;
+  }
 }
