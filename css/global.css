@@ -76,7 +76,7 @@ body.landing {
 	color: var(--primary-color);
 	box-shadow: 0 2px 8px 0 rgba(0,0,0,.15);
 	background-color: #fff;
-	border: 1px solid #fff;
+	border: 1px solid var(--primary-color);;
 	font-weight: 600;
 	font-size: 15px;
 }
@@ -85,7 +85,7 @@ body.landing {
 	color: var(--primary-color);
 	box-shadow: 0 2px 8px 0 rgba(0,0,0,.15);
 	background-color: #fff;
-	border: 1px solid #fff;
+	border: 1px solid var(--primary-color);;
 	transform: scale(1.05);
 	transition: 0.5s;
 }
@@ -693,13 +693,16 @@ a img {
 }
 /* search */
 
+.mt-push-top {
+	margin-top: 70px;
+}
+
 .products-catagories-area {
 	-webkit-box-flex: 0;
 	-ms-flex: 0 0 100%;
 	flex: 0 0 100%;
 	width: 100%;
 	max-width: 100%;
-	margin-top: 70px;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -709,7 +712,10 @@ a img {
 		flex: 0 0 100%;
 		width: 100%;
 		max-width: 100%;
-		margin-top: 140px;
+	}
+
+	.mt-push-top {
+		margin-top: 180px;
 	}
 }
 
@@ -720,7 +726,10 @@ a img {
 		flex: 0 0 100%;
 		width: 100%;
 		max-width: 100%;
-		margin-top: 140px;
+	}
+
+	.mt-push-top {
+		margin-top: 180px;
 	}
 }
 
@@ -1169,4 +1178,28 @@ figcaption button {
 	color: #6b6b6b;
 	font-weight: 400;
 	margin-bottom: 15px;
+}
+
+.align-item {
+	align-items: center;
+}
+
+.author_bio {
+	padding: 20px;
+	border: 1px solid #cfd9e0;
+	border-radius: 3px;
+	background-color: #fff;
+	background-image: url(../img/artist_bg.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.author_bio a {
+	color: var(--primary-color);
+	font-weight: 600;
+}
+
+.author_bio img {
+	box-shadow: 0 1px 2px rgba(0,0,0,.9);
 }
