@@ -1373,9 +1373,7 @@ option {
   /* border: 1px solid blue; */
   padding-left: 20px;
 }
-.upload-registration {
-  padding: 50px 30px 50px 30px !important;
-}
+
 .upload-registration label {
   text-transform: uppercase;
   color: #370974;
@@ -2066,6 +2064,10 @@ option {
     overflow-y: auto;
   }
 
+  body {
+    overflow-y: hidden;
+  }
+
   .input-names .col-md-6:last-of-type {
     margin-top: 24px;
   }
@@ -2078,18 +2080,20 @@ option {
   }
 
   .page #page-border {
-    border: 1.5px solid rgba(55, 9, 116, 0.5);
+    padding-top: 30px;
+    border: none;
     border-bottom: 0px;
   }
 
   .page #page-border-2 {
-    border: 1.5px solid rgba(55, 9, 116, 0.5);
+    border: 0px;
     border-bottom-left-radius: 0px;
+    padding: 20px 20px 20px 20px;
   }
 
   .page #page-border-3 {
-    border: 1.5px solid rgba(55, 9, 116, 0.5);
-    padding: 30px 30px 80px 10px;
+    border: 0px;
+    padding: 30px 10px 80px 10px;
   }
 
   .page .page-sub-title h4 {
@@ -2115,6 +2119,11 @@ option {
   }
 
   /* Sign Up Page */
+  .signup-page .signup-body {
+    height: 0px;
+    margin-top: 1000px;
+    visibility: hidden;
+  }
   .signup-page .signup-body h4 {
     text-align: center;
   }
@@ -2147,6 +2156,11 @@ option {
     font-size: 0.8em;
   }
 
+  .signup-page .signup-registration {
+    position: absolute;
+    padding-right: 40px !important;
+  }
+
   /* Verify Number */
   .vn-page .container-fluid row:last-of-type {
     position: relative;
@@ -2158,9 +2172,6 @@ option {
 
   .vn-page .vn-body {
     height: 1000px;
-  }
-
-  .vn-page .vn-body .vn-footer {
     margin-top: 800px;
   }
 
@@ -2172,10 +2183,11 @@ option {
   .vn-page .vn-registration {
     position: absolute;
     border: 0px !important;
+    padding-right: 40px !important;
   }
 
   .vn-page .vn-registration form {
-    margin-top: 100px;
+    /* margin-top: 100px; */
   }
 
   /* Upload Page */
@@ -2191,6 +2203,16 @@ option {
   .upload-page .upload-body .upload-footer li {
     margin-right: 40px;
     font-size: 0.8em;
+  }
+
+  .upload-page .upload-body {
+    height: 1000px;
+    margin-top: 700px;
+  }
+
+  .upload-page .upload-registration {
+    position: absolute;
+    padding-right: 40px !important;
   }
 
   .upload-page .upload-registration #save-button {
@@ -2210,9 +2232,9 @@ option {
   .custom-file .upload-drop-zone .btn {
     background-color: #370974;
     border-radius: 5px;
-    padding: 0px 17.5px;
+    padding: 0px 10px;
     margin-left: 10px;
-    margin-top: 7px;
+    margin-top: 8.5px;
     height: 17.5px;
     color: #ffffff;
     font-family: "Roboto Mono", monospace;
@@ -2221,7 +2243,11 @@ option {
   }
 
   /*  Profile Page */
-  .profile-page .profile-content p {
+  .profile-page .profile-body {
+    height: 1000px;
+    margin-top: 1500px;
+  }
+  .profile-page .profile-body .profile-content p {
     width: 100%;
     text-align: justify;
   }
@@ -2231,24 +2257,25 @@ option {
     font-size: 0.8em;
   }
 
+  .profile-page .profile-registration {
+    position: absolute;
+    padding-right: 40px !important;
+  }
+
   /* Payment */
   .payment-page .container-fluid row:last-of-type {
     position: relative;
   }
 
   .payment-page .payment-body {
-    height: 1000px;
+    height: 0px;
+    margin-top: 800px;
   }
 
   .payment-registration {
     position: absolute;
-    margin-top: 50px;
     border: 0px !important;
     padding-right: 40px !important;
-  }
-
-  .payment-registration form {
-    margin-top: 50px;
   }
 
   .payment-registration .payment-input .col-4 .input-group,
@@ -2261,22 +2288,23 @@ option {
     font-size: 0.8em;
   }
 
-  .payment-page .payment-body .payment-footer {
-    margin-top: 800px;
-  }
-
   /*  Password Reset*/
   .pr-page .pr-body {
     height: 500px;
   }
   .pr-page .pr-registration {
-    border: 0px !important;
-    border-bottom-right-radius: 0px !important;
     margin-bottom: 30px;
     position: absolute;
+    padding-right: 40px !important;
   }
 
   /* Accounts */
+  .accounts-page .accounts-body {
+    margin-top: 1000px;
+    visibility: hidden;
+    height: 0px;
+  }
+
   .accounts-page .accounts-body .accounts-content {
     width: 100%;
   }
@@ -2285,6 +2313,12 @@ option {
     text-align: center;
     padding-left: 40px;
   }
+
+  .accounts-page .accounts-registration {
+    position: absolute;
+    padding-right: 35px !important;
+  }
+
   .accounts-page .accounts-registration img {
     margin-top: 5px;
     height: 50px;
@@ -2298,5 +2332,24 @@ option {
     padding: 5px 7px 5px 7px;
     font-size: 0.5em;
     margin-left: 0px;
+  }
+
+  .verify-page .verify-body {
+    height: 1000px;
+    margin-top: 1900px;
+    padding-right: 40px !important;
+  }
+  .verify-page .verify-registration {
+    position: absolute;
+    padding-right: 40px !important;
+  }
+
+  /* Login */
+  .login-page .login-body {
+    margin-top: 500px;
+  }
+  .login-page .login-registration {
+    position: absolute;
+    padding-right: 40px !important;
   }
 }
