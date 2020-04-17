@@ -54,3 +54,18 @@
           }, false);
       });
   }
+
+  $('#button-addon2').click(function(){
+    switch($('#password').attr('type')) {
+        case 'password':
+            // code block
+            $('#password').attr('type', 'text')
+            break;
+        case 'text':
+            // code block
+            $('#password').attr('type', 'password')
+            break;
+        default:
+            // code block
+    } 
+})
