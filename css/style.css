@@ -1,16 +1,19 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600|Roboto|Roboto+Mono");
+@import url("variables.css");
 
 /* Navigation */
 
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif !important;
   overflow-x: hidden;
 }
 
-.bg-dark {
-  background-color: #370974 !important;
+input:focus {
+  outline: none !important;
+  box-shadow: none !important;
 }
 
+/* 
 .navbar .navbar-brand {
   margin-left: 35px;
 }
@@ -71,6 +74,35 @@ body {
 
 .navbar-2 .navbar-nav .nav-item:last-of-type {
   margin-right: 25px;
+} */
+
+.nav-link {
+  font-size: 13px !important;
+  font-weight: 500;
+}
+
+.navbar .nav-item .nav-link {
+  position: relative;
+}
+
+.navbar .nav-item .nav-link:hover::before {
+  width: 100% !important;
+}
+
+.navbar .nav-item .nav-link::before {
+  content: "";
+  width: 0;
+  height: 2px;
+  position: absolute;
+  left: 1px;
+  bottom: 5px;
+  z-index: 1;
+  background: var(--primary-color);
+  transition: width 0.3s ease-out;
+}
+
+.landing-page a.nav-link {
+  color: var(--primary-color) !important;
 }
 
 .footer {
@@ -106,13 +138,15 @@ body {
   margin-left: 1200px;
 }
 
+a {
+  color: var(--primary-color);
+}
+
 #cancel-button,
 #save-button,
 #submit-button {
   margin-top: 50px;
   color: #ffffff;
-  font-family: "Roboto Mono", monospace;
-  text-transform: uppercase;
   font-size: 1em;
   height: 50px;
 }
@@ -133,6 +167,27 @@ body {
   margin-top: 50px;
   color: #ffffff;
   background-color: #41b661;
+  box-shadow: 0 10px 60px -40px rgba(0, 0, 0, 0.15);
+  position: relative;
+  font-size: 13px;
+}
+
+#submit-button::before {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  content: "";
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  transition: 0.3s;
+  height: 50%;
+  opacity: 0.2;
+}
+
+#submit-button:hover::before {
+  height: 0;
+  opacity: 0;
 }
 
 #lf-span {
@@ -144,7 +199,7 @@ body {
   padding-left: 50px;
   padding-right: 50px;
   padding-bottom: 100px;
-  color: #370974;
+  color: var(--primary-color);
 }
 
 .page #page-border {
@@ -166,7 +221,7 @@ body {
   border-bottom: 1.5px solid rgba(55, 9, 116, 0.5);
   border-bottom-left-radius: 10px;
   padding: 20px 20px 20px 30px;
-  color: #370974;
+  color: var(--primary-color);
 }
 
 .page #page-border-3 {
@@ -175,7 +230,7 @@ body {
   border-right: 1.5px solid rgba(55, 9, 116, 0.5);
   border-bottom: 1.5px solid rgba(55, 9, 116, 0.5);
   border-bottom-right-radius: 10px;
-  padding: 50px 80px 50px 80px;
+  padding: 50px 50px 50px 50px;
 }
 
 .page-body .wrapper {
@@ -190,11 +245,13 @@ body {
 
 .page .page-main-title h3 {
   text-align: center;
-  font-size: 1.4em;
+  font-size: 1.2em;
+  font-weight: 400;
 }
 
 .page .page-sub-title h4 {
   font-size: 1.3em;
+  font-weight: 400;
 }
 
 /* Index Page  */
@@ -390,7 +447,6 @@ body {
 .login-page .login-body .login-heading li {
   list-style: circle;
   padding: 10px;
-  font-family: "Roboto Mono", monospace;
 }
 
 .login-page .login-body .login-footer,
@@ -408,7 +464,7 @@ ul {
   float: left;
   margin-right: 70px;
   list-style: circle;
-  font-family: "Roboto Mono", monospace;
+
   margin-bottom: 50px;
   margin-top: 50px;
 }
@@ -418,12 +474,11 @@ ul {
   color: #370974;
   font-family: "Roboto", sans-serif;
   font-weight: bold;
-  font-size: 17px;
+  font-size: 14px;
 }
 
 .login-page .login-registration input {
-  font-family: "Roboto Mono", monospace;
-  font-size: 17px;
+  font-size: 14px;
   border: 1px solid rgba(55, 9, 116, 0.5);
   height: 50px;
   border-radius: 6px;
@@ -437,7 +492,7 @@ ul {
 option {
   -webkit-appearance: none;
   -moz-appearance: none;
-  font-family: "Roboto Mono", monospace;
+
   color: #370974;
 }
 
@@ -452,7 +507,7 @@ option {
 
 .login-page .login-registration small p {
   font-size: 14px;
-  font-family: "Roboto Mono", monospace;
+
   color: #370974;
 }
 
@@ -514,7 +569,6 @@ option {
 
 .verify-page .verify-body .verify-heading #verified,
 #unverified {
-  font-family: "Roboto Mono", monospace;
   text-transform: lowercase;
   font-size: 0.7em;
 }
@@ -549,11 +603,11 @@ option {
   color: #370974;
   font-family: "Roboto", sans-serif;
   font-weight: bold;
-  font-size: 17px;
+  font-size: 14px;
 }
+
 .verify-registration input {
-  font-family: "Roboto Mono", monospace;
-  font-size: 17px;
+  font-size: 14px;
   border: 1px solid rgba(55, 9, 116, 0.5);
   height: 50px;
   border-radius: 6px;
@@ -567,7 +621,7 @@ option {
 option {
   -webkit-appearance: none;
   -moz-appearance: none;
-  font-family: "Roboto Mono", monospace;
+
   color: #370974;
   height: 50px;
   border: 1px solid rgba(55, 9, 116, 0.5);
@@ -584,7 +638,7 @@ option {
 
 .verify-registration small p {
   font-size: 14px;
-  font-family: "Roboto Mono", monospace;
+
   color: #370974;
 }
 
@@ -599,43 +653,27 @@ option {
   margin-bottom: 0px;
 }
 
-/* .verify-registration .upload-drop-zone {
-  background-color: #cccccc;
-  border: 1px solid #370974;
-  line-height: 100px;
-  text-align: center;
-  border-radius: 5px;
-  width: 100%;
-} */
-.verify-registration .custom-file {
-  width: 100%;
-  height: 100px;
-  padding: 0px;
-  border: 1px solid #370974;
-  border-radius: 5px;
-  position: relative;
-  background-color: #cccccc;
-}
-
-.verify-registration .custom-file .custom-file-input {
+.verify-registration .custom-file,
+.verify-registration .custom-file .custom-file-input,
+.verify-registration .custom-file .custom-file-label {
   height: 100px;
 }
 
-.verify-registration .custom-file label {
-  position: absolute;
-  color: #ffffff;
-  padding-left: 10px;
-  padding-top: 15px;
-  font-weight: 200;
-  text-transform: capitalize;
-  top: 0px;
+.verify-registration .custom-file .custom-file-label {
+  border: 1px solid #37097480;
+}
+
+.verify-registration
+  .custom-file
+  .custom-file-input
+  ~ .custom-file-label::after {
+  content: none;
 }
 
 /*  Sign Up  */
 
 .signup-page .container-fluid {
   margin: auto;
-  box-shadow: 2px 2px rgba(55, 9, 116, 0.26);
   border-radius: 10px;
   height: auto;
   background-color: #ffffff;
@@ -655,7 +693,7 @@ option {
 }
 
 .signup-page .signup-body .signup-heading .media .media-body p {
-  font-family: "Roboto Mono", monospace;
+  font-size: 13px;
   text-align: justify;
 }
 
@@ -672,7 +710,7 @@ option {
   float: left;
   margin-right: 70px;
   list-style: circle;
-  font-family: "Roboto Mono", monospace;
+  font-size: 13px;
 }
 
 .signup-page .signup-body .signup-footer ul {
@@ -681,30 +719,28 @@ option {
 }
 
 .signup-registration label {
-  text-transform: uppercase;
-  color: #370974;
-  font-family: "Roboto", sans-serif;
-  font-weight: bold;
-  font-size: 17px;
+  color: var(--primary-color);
+  font-size: 13px;
 }
+
 .signup-registration input {
-  font-family: "Roboto Mono", monospace;
-  font-size: 17px;
+  font-size: 13px;
   border: 1px solid rgba(55, 9, 116, 0.5);
   height: 50px;
   border-radius: 6px;
+  color: var(--primary-color);
 }
 
 .signup-registration input::placeholder {
-  color: #370974;
+  color: var(--primary-color);
 }
 
 .signup-registration select,
 option {
   -webkit-appearance: none;
   -moz-appearance: none;
-  font-family: "Roboto Mono", monospace;
-  color: #370974;
+
+  color: var(--primary-color);
   height: 50px;
   border: 1px solid rgba(55, 9, 116, 0.5);
 }
@@ -719,9 +755,7 @@ option {
 }
 
 .signup-registration small p {
-  font-size: 14px;
-  font-family: "Roboto Mono", monospace;
-  color: #370974;
+  color: red;
 }
 
 .signup-registration small span {
@@ -746,7 +780,12 @@ option {
 
 .signup-registration .signup-ag {
   margin-top: 10px;
-  color: #41b661;
+  color: var(--primary-color);
+}
+
+.signup-registration .signup-ag a {
+  font-weight: 500;
+  font-size: 14px;
 }
 
 /*  Change Number */
@@ -793,7 +832,6 @@ option {
   float: left;
   margin-right: 70px;
   list-style: circle;
-  font-family: "Roboto Mono", monospace;
 }
 
 .cp-page .cp-body .cp-footer ul {
@@ -806,11 +844,11 @@ option {
   color: #370974;
   font-family: "Roboto", sans-serif;
   font-weight: bold;
-  font-size: 17px;
+  font-size: 14px;
 }
+
 .cp-page .cp-registration input {
-  font-family: "Roboto Mono", monospace;
-  font-size: 17px;
+  font-size: 14px;
   border: 1px solid rgba(55, 9, 116, 0.5);
   height: 50px;
   border-radius: 6px;
@@ -824,7 +862,7 @@ option {
 option {
   -webkit-appearance: none;
   -moz-appearance: none;
-  font-family: "Roboto Mono", monospace;
+
   color: #370974;
   height: 50px;
   border: 1px solid rgba(55, 9, 116, 0.5);
@@ -841,7 +879,7 @@ option {
 
 .cp-page .cp-registration small p {
   font-size: 14px;
-  font-family: "Roboto Mono", monospace;
+
   color: #370974;
 }
 
@@ -921,11 +959,11 @@ option {
   color: #370974;
   font-family: "Roboto", sans-serif;
   font-weight: bold;
-  font-size: 17px;
+  font-size: 14px;
 }
+
 .vn-page .vn-registration input {
-  font-family: "Roboto Mono", monospace;
-  font-size: 17px;
+  font-size: 14px;
   border: 1px solid rgba(55, 9, 116, 0.5);
   height: 50px;
   border-radius: 6px;
@@ -939,7 +977,7 @@ option {
 option {
   -webkit-appearance: none;
   -moz-appearance: none;
-  font-family: "Roboto Mono", monospace;
+
   color: #370974;
   height: 50px;
   border: 1px solid rgba(55, 9, 116, 0.5);
@@ -956,7 +994,7 @@ option {
 
 .vn-page .vn-registration small p {
   font-size: 14px;
-  font-family: "Roboto Mono", monospace;
+
   color: #370974;
 }
 
@@ -1017,6 +1055,7 @@ option {
   height: 200px;
   width: 200px;
 }
+
 .accounts-page .container-fluid {
   margin: auto;
   box-shadow: 2px 2px rgba(55, 9, 116, 0.26);
@@ -1049,7 +1088,6 @@ option {
 
 .accounts-page .accounts-body .accounts-heading #verified,
 #unverified {
-  font-family: "Roboto Mono", monospace;
   text-transform: lowercase;
   font-size: 0.7em;
 }
@@ -1061,7 +1099,6 @@ option {
 
 .accounts-page .accounts-body .accounts-content p {
   text-align: justify;
-  font-family: "Roboto Mono", monospace;
 }
 
 .accounts-page .accounts-body .accounts-footer {
@@ -1073,7 +1110,6 @@ option {
   float: left;
   margin-right: 70px;
   list-style: circle;
-  font-family: "Roboto Mono", monospace;
 }
 
 .accounts-page .accounts-body .accounts-footer ul {
@@ -1100,7 +1136,6 @@ option {
 }
 
 .accounts-page .accounts-registration .accounts-button .btn-normal {
-  font-family: "Roboto Mono", monospace;
   background: #ffffff;
   color: #370974;
   border: 1px solid rgba(55, 9, 116, 0.5);
@@ -1111,7 +1146,6 @@ option {
 }
 
 .accounts-page .accounts-registration .accounts-button .btn-verified {
-  font-family: "Roboto Mono", monospace;
   background: #41b661;
   color: #ffffff;
   border-radius: 50px;
@@ -1128,12 +1162,11 @@ option {
 }
 
 .accounts-page .accounts-registration .label-small {
-  font-family: "Roboto Mono", monospace;
   font-size: 0.8em;
 }
+
 .accounts-page .accounts-registration input {
-  font-family: "Roboto Mono", monospace;
-  font-size: 17px;
+  font-size: 14px;
   border: 1px solid rgba(55, 9, 116, 0.5);
   height: 50px;
   border-radius: 6px;
@@ -1147,7 +1180,7 @@ option {
 option {
   -webkit-appearance: none;
   -moz-appearance: none;
-  font-family: "Roboto Mono", monospace;
+
   color: #370974;
   height: 50px;
   border: 1px solid rgba(55, 9, 116, 0.5);
@@ -1164,7 +1197,7 @@ option {
 
 .accounts-page .accounts-registration small p {
   font-size: 14px;
-  font-family: "Roboto Mono", monospace;
+
   color: #370974;
 }
 
@@ -1239,11 +1272,11 @@ option {
   color: #370974;
   font-family: "Roboto", sans-serif;
   font-weight: bold;
-  font-size: 17px;
+  font-size: 14px;
 }
+
 .payment-page .payment-registration input {
-  font-family: "Roboto Mono", monospace;
-  font-size: 17px;
+  font-size: 14px;
   border: 1px solid rgba(55, 9, 116, 0.5);
   height: 50px;
   border-radius: 6px;
@@ -1257,7 +1290,7 @@ option {
 option {
   -webkit-appearance: none;
   -moz-appearance: none;
-  font-family: "Roboto Mono", monospace;
+
   color: #370974;
   height: 50px;
   border: 1px solid rgba(55, 9, 116, 0.5);
@@ -1274,7 +1307,7 @@ option {
 
 .payment-page .payment-registration small p {
   font-size: 14px;
-  font-family: "Roboto Mono", monospace;
+
   color: #370974;
 }
 
@@ -1297,6 +1330,7 @@ option {
   border-radius: 5px;
   width: 100%;
 }
+
 .payment-page .payment-registration .payment-submit {
   margin-top: 200px;
 }
@@ -1348,13 +1382,11 @@ option {
   text-align: left;
   width: 447px;
   margin-top: 20px;
-  font-family: "Roboto Mono", monospace;
 }
 
 .upload-page .upload-body .upload-heading li {
   list-style: none;
   margin-bottom: 5px;
-  font-family: "Roboto Mono", monospace;
 }
 
 .upload-page .upload-body .upload-footer {
@@ -1366,7 +1398,6 @@ option {
   float: left;
   margin-right: 70px;
   list-style: circle;
-  font-family: "Roboto Mono", monospace;
 }
 
 .upload-page .upload-body .upload-footer ul {
@@ -1374,16 +1405,20 @@ option {
   padding-left: 20px;
 }
 
+.upload-registration {
+  padding: 50px 30px 50px 30px !important;
+}
+
 .upload-registration label {
   text-transform: uppercase;
   color: #370974;
   font-family: "Roboto", sans-serif;
   font-weight: bold;
-  font-size: 17px;
+  font-size: 14px;
 }
+
 .upload-registration input {
-  font-family: "Roboto Mono", monospace;
-  font-size: 17px;
+  font-size: 14px;
   border: 1px solid rgba(55, 9, 116, 0.5);
   height: 50px;
   border-radius: 6px;
@@ -1395,7 +1430,7 @@ option {
 
 .upload-registration small p {
   font-size: 14px;
-  font-family: "Roboto Mono", monospace;
+
   color: #370974;
 }
 
@@ -1410,7 +1445,7 @@ option {
 option {
   -webkit-appearance: none;
   -moz-appearance: none;
-  font-family: "Roboto Mono", monospace;
+
   color: #370974;
   height: 50px;
   border: 1px solid rgba(55, 9, 116, 0.5);
@@ -1421,7 +1456,6 @@ option {
 }
 
 .upload-registration textarea::placeholder {
-  font-family: "Roboto Mono", monospace;
   font-size: 0.85em;
   color: #370974;
 }
@@ -1431,45 +1465,61 @@ option {
   height: 100px;
   padding: 0px;
   border: 1px solid #37097480;
-  position: relative;
 }
 
 .upload-registration .custom-file .custom-file-input {
   height: 100px;
 }
 
-.upload-registration .custom-file .upload-drop-zone {
-  position: absolute;
-}
-
-.upload-registration .upload-drop-zone {
-  width: 100%;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  padding-left: 0px;
-  padding-right: 0px;
-}
-
-.upload-registration .upload-drop-zone img {
+.upload-registration .custom-file img {
   width: 120px;
   height: 62px;
-  /* padding-left: 30px; */
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  margin-top: 17px;
 }
-.upload-registration .upload-drop-zone p {
-  margin-top: 20px;
-  font-size: 0.85em;
-}
-.upload-registration .upload-drop-zone .btn {
+
+.upload-registration .custom-file .btn {
   background-color: #370974;
   border-radius: 10px;
   padding: 0px 35px;
-  margin-left: 20px;
-  margin-top: 12px;
+  margin-left: 200px;
+  margin-top: 10px;
   height: 35px;
   color: #ffffff;
-  font-family: "Roboto Mono", monospace;
   font-size: 0.81em;
   text-transform: uppercase;
+  position: absolute;
+  left: 300px;
+  top: 0px;
+  margin-top: 35px;
+}
+
+.upload-registration .custom-file .custom-file-label {
+  font-size: 0.85em;
+  background-color: #ffffff00;
+  border: 0px;
+  text-transform: none;
+  font-weight: 300;
+  padding: 0px;
+  margin: 40px 0 0 150px;
+  height: auto;
+  width: auto;
+  /* position: absolute; */
+}
+
+label,
+.btn:focus,
+.btn:active {
+  outline: none !important;
+  box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+}
+
+.upload-registration .custom-file .custom-file-label::after {
+  content: none;
+  outline: none;
 }
 
 .upload-registration .upload-tags {
@@ -1492,7 +1542,7 @@ option {
 
 .upload-registration .upload-check .custom-control label {
   font-weight: 300;
-  font-family: "Roboto Mono", monospace;
+
   font-size: 0.9em;
 }
 
@@ -1505,6 +1555,7 @@ option {
   margin-left: -30px !important;
   margin-right: -15px;
 }
+
 .checkout-page h4 {
   color: #707070;
   font-size: 2em;
@@ -1528,7 +1579,6 @@ option {
 
 .checkout-page .billing-address input,
 .checkout-page .billing-address textarea {
-  font-family: "Roboto Mono", monospace;
   font-weight: 300;
   color: #370974;
   height: 50px;
@@ -1537,7 +1587,6 @@ option {
 
 .checkout-page .billing-address .form-text p {
   color: #370974;
-  font-family: "Roboto Mono", monospace;
 }
 
 .checkout-page .billing-address input::placeholder {
@@ -1552,7 +1601,6 @@ option {
 .checkout-page .billing-address select,
 option {
   color: #370974;
-  font-family: "Roboto Mono", monospace;
 }
 
 .checkout-page .payment-details {
@@ -1569,7 +1617,7 @@ option {
 
 .checkout-page .payment-details input {
   color: #370974;
-  font-family: "Roboto Mono", monospace;
+
   font-weight: 300;
   border-top: none;
   border-left: none;
@@ -1620,6 +1668,7 @@ option {
   margin-right: 100px;
   margin-top: 50px;
 }
+
 .checkout-page .cart .card .card-body {
   position: absolute;
   margin-left: 180px;
@@ -1663,6 +1712,7 @@ option {
   margin-top: 20px;
   width: 100%;
 }
+
 .dashboard-tabs .tabs p {
   float: left;
   color: #370974;
@@ -1693,6 +1743,7 @@ option {
   margin-top: 20px;
   margin-bottom: 20px;
 }
+
 .dashboard-tabs-2 .tabs a {
   float: left;
   color: #370974;
@@ -1801,7 +1852,6 @@ option {
 
 .profile-page .profile-body .profile-heading #verified,
 #unverified {
-  font-family: "Roboto Mono", monospace;
   text-transform: lowercase;
   font-size: 0.7em;
 }
@@ -1809,7 +1859,6 @@ option {
 .profile-page .profile-body .profile-content {
   margin-top: 50px;
   margin-bottom: 100px;
-  font-family: "Roboto Mono", monospace;
 }
 
 .profile-page .profile-content p {
@@ -1826,8 +1875,6 @@ option {
   float: left;
   margin-right: 70px;
   list-style: circle;
-
-  font-family: "Roboto Mono", monospace;
 }
 
 .profile-page .profile-body .profile-footer ul {
@@ -1840,11 +1887,11 @@ option {
   color: #370974;
   font-family: "Roboto", sans-serif;
   font-weight: bold;
-  font-size: 17px;
+  font-size: 14px;
 }
+
 .profile-registration input {
-  font-family: "Roboto Mono", monospace;
-  font-size: 17px;
+  font-size: 14px;
   border: 1px solid rgba(55, 9, 116, 0.5);
   height: 50px;
   border-radius: 6px;
@@ -1858,7 +1905,7 @@ option {
 option {
   -webkit-appearance: none;
   -moz-appearance: none;
-  font-family: "Roboto Mono", monospace;
+
   color: #370974;
   height: 50px;
   border: 1px solid rgba(55, 9, 116, 0.5);
@@ -1875,7 +1922,7 @@ option {
 
 .profile-registration small p {
   font-size: 14px;
-  font-family: "Roboto Mono", monospace;
+
   color: #370974;
 }
 
@@ -1928,10 +1975,12 @@ option {
   height: 62px;
   /* padding-left: 30px; */
 }
+
 .profile-registration .upload-drop-zone p {
   margin-top: 20px;
   font-size: 0.85em;
 }
+
 .profile-registration .upload-drop-zone .btn {
   background-color: #370974;
   border-radius: 10px;
@@ -1940,7 +1989,7 @@ option {
   margin-top: 12px;
   height: 35px;
   color: #ffffff;
-  font-family: "Roboto Mono", monospace;
+
   font-size: 0.81em;
   text-transform: uppercase;
 }
@@ -1976,7 +2025,6 @@ option {
 .pr-page .pr-body .pr-heading li {
   list-style: circle;
   padding: 10px;
-  font-family: "Roboto Mono", monospace;
 }
 
 .pr-page .pr-body .pr-footer,
@@ -1994,7 +2042,7 @@ ul {
   float: left;
   margin-right: 70px;
   list-style: circle;
-  font-family: "Roboto Mono", monospace;
+
   margin-bottom: 50px;
   margin-top: 50px;
 }
@@ -2004,12 +2052,11 @@ ul {
   color: #370974;
   font-family: "Roboto", sans-serif;
   font-weight: bold;
-  font-size: 17px;
+  font-size: 14px;
 }
 
 .pr-page .pr-registration input {
-  font-family: "Roboto Mono", monospace;
-  font-size: 17px;
+  font-size: 14px;
   border: 1px solid rgba(55, 9, 116, 0.5);
   height: 50px;
   border-radius: 6px;
@@ -2023,7 +2070,6 @@ ul {
 option {
   -webkit-appearance: none;
   -moz-appearance: none;
-  font-family: "Roboto Mono", monospace;
   color: #370974;
 }
 
@@ -2038,7 +2084,6 @@ option {
 
 .pr-page .pr-registration small p {
   font-size: 14px;
-  font-family: "Roboto Mono", monospace;
   color: #370974;
 }
 
@@ -2046,7 +2091,6 @@ option {
   color: #41b661;
   font-weight: bold;
   font-size: 14px;
-  font-family: "Roboto", sans-serif;
 }
 
 .pr-page .pr-registration .form-group {
@@ -2070,6 +2114,28 @@ option {
 
   .input-names .col-md-6:last-of-type {
     margin-top: 24px;
+  }
+
+  .custom-file .upload-drop-zone img {
+    width: 60px;
+    height: 31.5px;
+  }
+
+  .custom-file .upload-drop-zone p {
+    margin-top: 10px;
+    font-size: 0.65em;
+  }
+
+  .custom-file .upload-drop-zone .btn {
+    background-color: #370974;
+    border-radius: 5px;
+    padding: 0px 10px;
+    margin-left: 10px;
+    margin-top: 8.5px;
+    height: 17.5px;
+    color: #ffffff;
+    font-size: 0.5em;
+    text-transform: uppercase;
   }
 
   /* Page and Navbar Settings */
@@ -2120,40 +2186,20 @@ option {
 
   /* Sign Up Page */
   .signup-page .signup-body {
-    height: 0px;
-    margin-top: 1000px;
-    visibility: hidden;
-  }
-  .signup-page .signup-body h4 {
-    text-align: center;
+    margin-top: 200px;
   }
 
-  .signup-page .signup-body .signup-heading .media {
-    margin-top: 30px;
-    text-align: center;
-    position: relative;
-  }
-
-  .signup-page .signup-body .signup-heading .media .img {
-    padding: 0px;
-    margin: 0px;
-    width: 100%;
-    position: absolute;
-  }
-
-  .signup-page .signup-body .signup-heading .media .img img {
-    height: 200px;
-    width: 65%;
-    margin-right: 0px;
-  }
-
+  .signup-page .signup-body h4,
+  .signup-page .signup-body .signup-heading .media,
+  .signup-page .signup-body .signup-heading .media .img,
   .signup-page .signup-body .signup-heading .media .media-body {
-    margin-top: 230px;
+    visibility: hidden;
   }
 
   .signup-page .signup-body .signup-footer li {
-    margin-right: 40px;
+    margin-right: 35px;
     font-size: 0.8em;
+    padding-left: 0px;
   }
 
   .signup-page .signup-registration {
@@ -2162,21 +2208,19 @@ option {
   }
 
   /* Verify Number */
-  .vn-page .container-fluid row:last-of-type {
-    position: relative;
-  }
 
-  .vn-page .page-sub-title h4 {
-    text-align: center;
+  .vn-page .vn-body h4,
+  .vn-page .vn-body .vn-heading .media,
+  .vn-page .vn-body .vn-heading {
+    visibility: hidden;
   }
 
   .vn-page .vn-body {
-    height: 1000px;
-    margin-top: 800px;
+    margin-top: 250px;
   }
 
   .vn-page .vn-body .vn-footer li {
-    margin-right: 40px;
+    margin-right: 30px;
     font-size: 0.8em;
   }
 
@@ -2186,28 +2230,16 @@ option {
     padding-right: 40px !important;
   }
 
-  .vn-page .vn-registration form {
-    /* margin-top: 100px; */
-  }
-
   /* Upload Page */
-  .upload-page .upload-body .upload-heading p {
-    width: 100%;
-  }
 
-  .upload-page .upload-body .upload-footer {
-    position: absolute;
-    top: 1450px;
-  }
-
-  .upload-page .upload-body .upload-footer li {
-    margin-right: 40px;
-    font-size: 0.8em;
+  .upload-page .upload-body h4,
+  .upload-page .upload-body .upload-heading .media,
+  .upload-page .upload-body .upload-heading {
+    visibility: hidden;
   }
 
   .upload-page .upload-body {
-    height: 1000px;
-    margin-top: 700px;
+    margin-top: 250px;
   }
 
   .upload-page .upload-registration {
@@ -2215,45 +2247,25 @@ option {
     padding-right: 40px !important;
   }
 
-  .upload-page .upload-registration #save-button {
-    margin-bottom: 100px;
-  }
-
-  .custom-file .upload-drop-zone img {
-    width: 60px;
-    height: 31.5px;
-  }
-
-  .custom-file .upload-drop-zone p {
-    margin-top: 10px;
-    font-size: 0.65em;
-  }
-
-  .custom-file .upload-drop-zone .btn {
-    background-color: #370974;
-    border-radius: 5px;
-    padding: 0px 10px;
-    margin-left: 10px;
-    margin-top: 8.5px;
-    height: 17.5px;
-    color: #ffffff;
-    font-family: "Roboto Mono", monospace;
-    font-size: 0.5em;
-    text-transform: uppercase;
+  .upload-page .upload-body .upload-footer li {
+    margin-right: 35px;
+    font-size: 0.8em;
   }
 
   /*  Profile Page */
-  .profile-page .profile-body {
-    height: 1000px;
-    margin-top: 1500px;
+
+  .profile-page .profile-body h4,
+  .profile-page .profile-body .profile-content,
+  .profile-page .profile-body .profile-heading {
+    visibility: hidden;
   }
-  .profile-page .profile-body .profile-content p {
-    width: 100%;
-    text-align: justify;
+
+  .profile-page .profile-body {
+    margin-top: 1100px;
   }
 
   .profile-page .profile-body .profile-footer li {
-    margin-right: 40px;
+    margin-right: 35px;
     font-size: 0.8em;
   }
 
@@ -2263,13 +2275,15 @@ option {
   }
 
   /* Payment */
-  .payment-page .container-fluid row:last-of-type {
-    position: relative;
+
+  .payment-page .payment-body h4,
+  .payment-page .payment-body .payment-content,
+  .payment-page .payment-body .payment-heading {
+    visibility: hidden;
   }
 
   .payment-page .payment-body {
-    height: 0px;
-    margin-top: 800px;
+    margin-top: 300px;
   }
 
   .payment-registration {
@@ -2278,20 +2292,21 @@ option {
     padding-right: 40px !important;
   }
 
-  .payment-registration .payment-input .col-4 .input-group,
-  .col-2 .input-group {
-    margin-top: 25px;
+  .payment-registration .payment-input label {
+    letter-spacing: -0.6px;
   }
 
   .payment-page .payment-body .payment-footer li {
-    margin-right: 40px;
+    margin-right: 35px;
     font-size: 0.8em;
   }
 
   /*  Password Reset*/
   .pr-page .pr-body {
     height: 500px;
+    visibility: hidden;
   }
+
   .pr-page .pr-registration {
     margin-bottom: 30px;
     position: absolute;
@@ -2299,57 +2314,93 @@ option {
   }
 
   /* Accounts */
-  .accounts-page .accounts-body {
-    margin-top: 1000px;
+
+  .accounts-page .accounts-body h4,
+  .accounts-page .accounts-body .accounts-heading .media,
+  .accounts-page .accounts-body .accounts-heading {
     visibility: hidden;
-    height: 0px;
   }
 
-  .accounts-page .accounts-body .accounts-content {
-    width: 100%;
+  .accounts-page .accounts-body {
+    margin-top: 250px;
   }
-
-  .accounts-page .accounts-body .accounts-heading .buttons {
-    text-align: center;
-    padding-left: 40px;
-  }
-
   .accounts-page .accounts-registration {
     position: absolute;
     padding-right: 35px !important;
   }
-
   .accounts-page .accounts-registration img {
     margin-top: 5px;
     height: 50px;
     width: 50px;
   }
-  .accounts-page .accounts-registration .accounts-button .btn-verified {
-    font-family: "Roboto Mono", monospace;
-    background: #41b661;
-    color: #ffffff;
-    border-radius: 50px;
-    padding: 5px 7px 5px 7px;
-    font-size: 0.5em;
-    margin-left: 0px;
+
+  .accounts-page .accounts-body .accounts-footer li {
+    margin-right: 30px;
+    font-size: 0.8em;
   }
 
-  .verify-page .verify-body {
-    height: 1000px;
-    margin-top: 1900px;
-    padding-right: 40px !important;
+  /* Verify  */
+  .verify-page .verify-body h4,
+  .verify-page .verify-body .verify-heading .media,
+  .verify-page .verify-body .verify-heading {
+    visibility: hidden;
   }
+
   .verify-page .verify-registration {
     position: absolute;
     padding-right: 40px !important;
   }
 
-  /* Login */
-  .login-page .login-body {
-    margin-top: 500px;
+  .verify-page .verify-body {
+    margin-top: 1400px;
   }
+
+  .verify-page .verify-body .verify-footer li {
+    margin-right: 35px;
+    font-size: 0.8em;
+  }
+
+  /* Login */
+
+  .login-page .login-body h4,
+  .login-page .login-body .login-heading,
+  .login-page .login-body .login-heading {
+    visibility: hidden;
+  }
+
+  .login-page .login-body .login-footer {
+    margin-left: 0px;
+    padding-left: 0px;
+  }
+
+  .login-page .login-body .login-footer li {
+    margin-right: 30px;
+    font-size: 0.8em;
+  }
+
   .login-page .login-registration {
     position: absolute;
     padding-right: 40px !important;
+  }
+
+  /* Change Password */
+  .cp-page .cp-body h4,
+  .cp-page .cp-body .cp-heading,
+  .cp-page .cp-body .cp-heading {
+    visibility: hidden;
+  }
+
+  .cp-page .cp-body {
+    margin-top: 350px;
+  }
+
+  .cp-page .cp-registration {
+    position: absolute;
+    padding-right: 40px !important;
+  }
+
+  .cp-page .cp-body .cp-footer li {
+    margin-right: 35px;
+    font-size: 0.8em;
   }
 }

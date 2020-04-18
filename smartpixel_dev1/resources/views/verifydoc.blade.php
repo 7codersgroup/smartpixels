@@ -1,65 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
+@extends('layouts.app')
 
-<head>
-    <!-- Required meta tags -->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit==no" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+@section('content')
 
-    <!-- Bootstrap CSS-->
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/all.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <title>SmartPixels - Verify</title>
-</head>
-
-<body>
-    <!--Header-->
-    <section class="">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="#">SmartPixels</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">
-                            Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Competitions</a>
-                    </li>
-                    <li class="nav-item"><a class="nav-link" href="#">Support</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Submit Photos</a></li>
-                    <!-- <li class="nav-item nav-border">
-                <a href="#" class="btn nav-button nav-link">
-                  Hi Danie
-                </a>
-              </li> -->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link btn nav-button" href="#" id="navbarDropdown" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Hi, Daniel
-                            <span class="fas fa-angle-down fa-lg"></span>
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Something else here</a>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </section>
-    <!--End Header -->
-
-    <div class="page-body">
+<div class="page-body">
         <div class="wrapper">
         </div>
         <div class="page">
@@ -105,18 +48,19 @@
                             </div>
                         </div>
                         <div class="col-md-6 verify-registration" id="page-border-3">
-                            <form>
+                            <form action="{{ route('doc.verify.post') }}" method="POST" enctype="multipart/form-data">
+                            @csrf
                                 <div class="form-group mb-4">
                                     <div class="form-row">
                                         <div class="col">
-                                            <label for="exampleInputEmail1">First Name <span> *</span>
+                                            <label for="firstname">First Name <span> *</span>
                                             </label>
-                                            <input type="text" class="form-control" placeholder="First Name" />
+                                            <input id="firstname" type="text" class="form-control" placeholder="First Name" name="firstname" />
                                         </div>
                                         <div class="col">
-                                            <label for="exampleInputEmail1">Last Name <span> *</span>
+                                            <label for="lastname">Last Name <span> *</span>
                                             </label>
-                                            <input type="text" class="form-control" placeholder="Last Name" />
+                                            <input id="lastname" type="text" class="form-control" placeholder="Last Name" name="lastname"/>
                                         </div>
                                     </div>
                                 </div>
@@ -127,24 +71,24 @@
                                     <div class="form-row">
                                         <div class="col">
                                             <div class="input-group">
-                                                <input type="number" class="form-control" placeholder="Date" />
+                                                <input type="number" class="form-control" placeholder="Date" name="birth_day"/>
                                             </div>
                                         </div>
                                         <div class="col">
                                             <div class="input-group">
-                                                <input type="number" class="form-control" placeholder="Month" />
+                                                <input type="number" class="form-control" placeholder="Month" name="birth_month"/>
                                             </div>
                                         </div>
                                         <div class="col">
                                             <div class="input-group">
-                                                <input type="number" class="form-control" placeholder=Year />
+                                                <input type="number" class="form-control" placeholder=Year name="birth_year"/>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="form-group mb-4">
                                     <label for="exampleFormControlTextarea1">Address<span> *</span></label>
-                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="address"></textarea>
                                     <small id="passwordHelpBlock" class="form-text text-muted mb-4">
                                         <p class="mt-2">
                                             Please fill in your address as it appears in your medium of identification
@@ -156,7 +100,7 @@
                                         City<span> *</span>
                                     </label>
                                     <div class="input-group">
-                                        <input type="tel" class="form-control" placeholder="" />
+                                        <input type="tel" class="form-control" placeholder="" name="city"/>
                                     </div>
                                 </div>
                                 <div class="form-group mb-4">
@@ -164,7 +108,7 @@
                                         Zip Code<span> *</span>
                                     </label>
                                     <div class="input-group">
-                                        <input type="tel" class="form-control" placeholder="" />
+                                        <input type="tel" class="form-control" placeholder="" name="zip_code"/>
                                     </div>
                                 </div>
                                 <div class="form-group mb-4">
@@ -199,12 +143,9 @@
                                     <label for="exampleInputZipCode1">
                                         Upload Scanned Identity Document<span> *</span>
                                     </label>
-                                    <div class="upload-file input-group mb-3">
-                                        <div class="custom-file">
-                                            <input type="file" class="custom-file-input" id="validatedCustomFile"
-                                                required>
-                                            <label class="custom-file-label" or="validatedCustomFile">Drop document
-                                                here! or click here to select document</label>
+                                    <div class="input-group mb-3">
+                                        <div class="upload-drop-zone" id="drop-zone">
+                                            Drop document here! or click here to select document
                                         </div>
                                     </div>
                                     <small id="passwordHelpBlock" class="form-text text-muted mb-4">
@@ -220,12 +161,9 @@
                                     <label for="exampleInputZipCode1">
                                         Upload Selfie<span> *</span>
                                     </label>
-                                    <div class="upload-file input-group mb-3">
-                                        <div class="custom-file">
-                                            <input type="file" class="custom-file-input" id="validatedCustomFile"
-                                                required>
-                                            <label class="custom-file-label" or="validatedCustomFile">Drop document
-                                                here! or click here to select document</label>
+                                    <div class="input-group mb-3">
+                                        <div class="upload-drop-zone" id="drop-zone">
+                                            Drop document here! or click here to select document
                                         </div>
                                     </div>
                                     <small id="passwordHelpBlock" class="form-text text-muted mb-4">
@@ -258,12 +196,9 @@
                                     <label for="exampleInputZipCode1">
                                         Upload Proof of Address <span> *</span>
                                     </label>
-                                    <div class="upload-file input-group mb-3">
-                                        <div class="custom-file">
-                                            <input type="file" class="custom-file-input" id="validatedCustomFile"
-                                                required>
-                                            <label class="custom-file-label" or="validatedCustomFile">Drop document
-                                                here! or click here to select document</label>
+                                    <div class="input-group mb-3">
+                                        <div class="upload-drop-zone" id="drop-zone">
+                                            Drop document here! or click here to select document
                                         </div>
                                     </div>
                                     <small id="passwordHelpBlock" class="form-text text-muted mb-4">
@@ -289,14 +224,4 @@
             </section>
         </div>
     </div>
-</body>
-
-<!-- Optional JavaScript -->
-<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="js/jquery-3.3.1.min.js"></script>
-<script src="js/popper.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="https://kit.fontawesome.com/e9480ff5ec.js" crossorigin="anonymous"></script>
-<script src="js/utility.js"></script>
-
-</html>
+@endsection
