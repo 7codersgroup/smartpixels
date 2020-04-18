@@ -15,65 +15,65 @@ input:focus {
 
 /* 
 .navbar .navbar-brand {
-  margin-left: 35px;
+margin-left: 35px;
 }
 
 .navbar-dark .navbar-nav .nav-link {
-  color: rgb(255, 255, 255, 1);
-  font-family: "Montserrat", sans-serif;
-  font-size: 0.85em;
+color: rgb(255, 255, 255, 1);
+font-family: "Montserrat", sans-serif;
+font-size: 0.85em;
 }
 
 .navbar-nav > li {
-  margin: 0 25px;
+margin: 0 25px;
 }
 
 .navbar-nav > li:last-child {
-  margin-right: 35px;
+margin-right: 35px;
 }
 
 .navbar-nav > li .nav-button {
-  border: 0.5px solid #ffffff;
-  font-size: 1em;
-  border-radius: 10px;
-  background-color: #370974;
-  font-weight: 600;
+border: 0.5px solid #ffffff;
+font-size: 1em;
+border-radius: 10px;
+background-color: var(--primary-color);
+font-weight: 600;
 }
 
 .navbar-nav .nav-button {
-  padding-left: 20px !important;
-  padding-right: 20px !important;
+padding-left: 20px !important;
+padding-right: 20px !important;
 }
 
 .navbar-nav .fas {
-  color: #ffffff;
-  margin-left: 10px;
+color: #ffffff;
+margin-left: 10px;
 }
 
 .navbar-nav .dropdown-menu {
-  left: -81px;
-  margin-top: 8px;
-  border-radius: 0px;
-  background-color: #370974;
-  color: #ffffff;
+left: -81px;
+margin-top: 8px;
+border-radius: 0px;
+background-color: var(--primary-color);
+color: #ffffff;
 }
 
 .navbar-nav .dropdown-menu .dropdown-item {
-  color: #ffffff;
-  text-align: right;
+color: #ffffff;
+text-align: right;
 }
 
 .navbar-nav .dropdown-menu .dropdown-item:hover {
-  color: #370974;
-  background-color: #ffffff;
+color: var(--primary-color);
+background-color: #ffffff;
 }
 
 .navbar-2 .navbar-nav .nav-item {
-  margin: 0px 50px;
+margin: 0px 50px;
 }
 
 .navbar-2 .navbar-nav .nav-item:last-of-type {
-  margin-right: 25px;
+margin-right: 25px;
 } */
 
 .nav-link {
@@ -106,13 +106,13 @@ input:focus {
 }
 
 .footer {
-  background-color: #370974;
+  background-color: var(--primary-color);
   padding: 50px 50px;
   margin-top: 100px;
 }
 
 .footer .container-fluid {
-  background-color: #370974;
+  background-color: var(--primary-color);
 }
 
 .footer .footer-content p {
@@ -155,12 +155,43 @@ a {
   margin-top: 50px;
   color: #ffffff;
   background-color: #41b661;
+  box-shadow: 0 10px 60px -40px rgba(0, 0, 0, 0.15);
+  position: relative;
+  font-size: 13px;
+}
+
+#save-button::before {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  content: "";
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  transition: 0.3s;
+  height: 50%;
+  opacity: 0.2;
+}
+
+#save-button:hover::before {
+  height: 0;
+  opacity: 0;
 }
 
 #cancel-button {
   margin-top: 50px;
-  border: 1px solid #370974;
-  color: #370974;
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+  font-size: 13px;
+  box-shadow: 0 10px 60px -40px rgba(0, 0, 0, 0.15);
+}
+
+#cancel-button:hover {
+  margin-top: 50px;
+  border: 1px solid var(--primary-color);
+  color: #fff;
+  font-size: 13px;
+  background: var(--primary-color);
 }
 
 #submit-button {
@@ -204,7 +235,7 @@ a {
 
 .page #page-border {
   margin-bottom: 0px;
-  border-top: 1.5px solid #37097480;
+  border-top: 1.5px solid rgba(55, 9, 116, 0.5);
   border-right: 1.5px solid rgba(55, 9, 116, 0.5);
   border-left: 1.5px solid rgba(55, 9, 116, 0.5);
 
@@ -302,7 +333,7 @@ a {
 }
 
 .index-page .banner {
-  background-color: #370974;
+  background-color: var(--primary-color);
   color: #ffffff;
   height: 152px;
   padding-top: 50px;
@@ -326,7 +357,7 @@ a {
 
 .index-explore .explore-heading h2 {
   text-align: center;
-  color: #370974;
+  color: var(--primary-color);
   margin-bottom: 50px;
   font-size: 2.5em;
   font-weight: 300;
@@ -342,7 +373,7 @@ a {
 }
 
 .index-explore .explore-card .card {
-  border: 1px solid #370974;
+  border: 1px solid var(--primary-color);
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 
@@ -393,7 +424,7 @@ a {
 
 .index-contributor .contributor-heading h2 {
   text-align: center;
-  color: #370974;
+  color: var(--primary-color);
   margin-bottom: 50px;
   font-size: 2.5em;
   font-weight: 300;
@@ -414,14 +445,13 @@ a {
   font-weight: 400;
   font-size: 1.7em;
   font-family: "Montserrat", sans-serif;
-  color: #370974;
+  color: var(--primary-color);
 }
 
 /* Login Page */
 
 .login-page .container-fluid {
   margin: auto;
-  box-shadow: 2px 2px rgba(55, 9, 116, 0.26);
   border-radius: 10px;
   height: auto;
   background-color: #ffffff;
@@ -447,6 +477,7 @@ a {
 .login-page .login-body .login-heading li {
   list-style: circle;
   padding: 10px;
+  font-size: 13px;
 }
 
 .login-page .login-body .login-footer,
@@ -467,13 +498,12 @@ ul {
 
   margin-bottom: 50px;
   margin-top: 50px;
+  font-size: 13px;
 }
 
 .login-page .login-registration label {
-  text-transform: uppercase;
-  color: #370974;
+  color: var(--primary-color);
   font-family: "Roboto", sans-serif;
-  font-weight: bold;
   font-size: 14px;
 }
 
@@ -485,7 +515,8 @@ ul {
 }
 
 .login-page .login-registration input::placeholder {
-  color: #370974;
+  color: var(--primary-color);
+  font-size: 13px;
 }
 
 .login-page .login-registration select,
@@ -493,7 +524,7 @@ option {
   -webkit-appearance: none;
   -moz-appearance: none;
 
-  color: #370974;
+  color: var(--primary-color);
 }
 
 .login-page .login-registration textarea {
@@ -502,13 +533,13 @@ option {
 
 .login-page .login-registration .fa-eye-slash,
 .fa-angle-down {
-  color: #370974;
+  color: var(--primary-color);
 }
 
 .login-page .login-registration small p {
   font-size: 14px;
 
-  color: #370974;
+  color: var(--primary-color);
 }
 
 .login-page .login-registration small span {
@@ -524,7 +555,7 @@ option {
 
 .login-page .login-registration .upload-drop-zone {
   background-color: #cccccc;
-  border: 1px solid #370974;
+  border: 1px solid var(--primary-color);
   line-height: 100px;
   text-align: center;
   border-radius: 5px;
@@ -600,7 +631,7 @@ option {
 
 .verify-registration label {
   text-transform: uppercase;
-  color: #370974;
+  color: var(--primary-color);
   font-family: "Roboto", sans-serif;
   font-weight: bold;
   font-size: 14px;
@@ -614,7 +645,7 @@ option {
 }
 
 .verify-registration input::placeholder {
-  color: #370974;
+  color: var(--primary-color);
 }
 
 .verify-registration select,
@@ -622,7 +653,7 @@ option {
   -webkit-appearance: none;
   -moz-appearance: none;
 
-  color: #370974;
+  color: var(--primary-color);
   height: 50px;
   border: 1px solid rgba(55, 9, 116, 0.5);
 }
@@ -633,13 +664,13 @@ option {
 
 .verify-registration .fa-eye-slash,
 .fa-angle-down {
-  color: #370974;
+  color: var(--primary-color);
 }
 
 .verify-registration small p {
   font-size: 14px;
 
-  color: #370974;
+  color: var(--primary-color);
 }
 
 .verify-registration small span {
@@ -657,6 +688,23 @@ option {
 .verify-registration .custom-file .custom-file-input,
 .verify-registration .custom-file .custom-file-label {
   height: 100px;
+  /* .verify-registration .upload-drop-zone {
+background-color: #cccccc;
+border: 1px solid var(--primary-color);
+line-height: 100px;
+text-align: center;
+border-radius: 5px;
+width: 100%;
+} */
+}
+.verify-registration .custom-file {
+  width: 100%;
+  height: 100px;
+  padding: 0px;
+  border: 1px solid var(--primary-color);
+  border-radius: 5px;
+  position: relative;
+  background-color: #cccccc;
 }
 
 .verify-registration .custom-file .custom-file-label {
@@ -751,7 +799,7 @@ option {
 
 .signup-registration .fa-eye-slash,
 .fa-angle-down {
-  color: #370974;
+  color: var(--primary-color);
 }
 
 .signup-registration small p {
@@ -771,7 +819,7 @@ option {
 
 .signup-registration .upload-drop-zone {
   background-color: #cccccc;
-  border: 1px solid #370974;
+  border: 1px solid var(--primary-color);
   line-height: 100px;
   text-align: center;
   border-radius: 5px;
@@ -832,6 +880,7 @@ option {
   float: left;
   margin-right: 70px;
   list-style: circle;
+  font-size: 13px;
 }
 
 .cp-page .cp-body .cp-footer ul {
@@ -840,22 +889,19 @@ option {
 }
 
 .cp-page .cp-registration label {
-  text-transform: uppercase;
-  color: #370974;
-  font-family: "Roboto", sans-serif;
-  font-weight: bold;
-  font-size: 14px;
+  color: var(--primary-color);
+  font-size: 13px;
 }
 
 .cp-page .cp-registration input {
-  font-size: 14px;
-  border: 1px solid rgba(55, 9, 116, 0.5);
+  font-size: 13px;
+  border: 1px solid var(--primary-color);
   height: 50px;
   border-radius: 6px;
 }
 
 .cp-page .cp-registration input::placeholder {
-  color: #370974;
+  color: var(--primary-color);
 }
 
 .cp-page .cp-registration select,
@@ -863,7 +909,7 @@ option {
   -webkit-appearance: none;
   -moz-appearance: none;
 
-  color: #370974;
+  color: var(--primary-color);
   height: 50px;
   border: 1px solid rgba(55, 9, 116, 0.5);
 }
@@ -874,13 +920,13 @@ option {
 
 .cp-page .cp-registration .fa-eye-slash,
 .fa-angle-down {
-  color: #370974;
+  color: var(--primary-color);
 }
 
 .cp-page .cp-registration small p {
-  font-size: 14px;
+  /*  font-size: 14px;*/
 
-  color: #370974;
+  color: var(--primary-color);
 }
 
 .cp-page .cp-registration small span {
@@ -896,7 +942,7 @@ option {
 
 .cp-page .cp-registration .upload-drop-zone {
   background-color: #cccccc;
-  border: 1px solid #370974;
+  border: 1px solid var(--primary-color);
   line-height: 100px;
   text-align: center;
   border-radius: 5px;
@@ -956,7 +1002,7 @@ option {
 
 .vn-page .vn-registration label {
   text-transform: uppercase;
-  color: #370974;
+  color: var(--primary-color);
   font-family: "Roboto", sans-serif;
   font-weight: bold;
   font-size: 14px;
@@ -970,7 +1016,7 @@ option {
 }
 
 .vn-page .vn-registration input::placeholder {
-  color: #370974;
+  color: var(--primary-color);
 }
 
 .vn-page .vn-registration select,
@@ -978,7 +1024,7 @@ option {
   -webkit-appearance: none;
   -moz-appearance: none;
 
-  color: #370974;
+  color: var(--primary-color);
   height: 50px;
   border: 1px solid rgba(55, 9, 116, 0.5);
 }
@@ -989,13 +1035,13 @@ option {
 
 .vn-page .vn-registration .fa-eye-slash,
 .fa-angle-down {
-  color: #370974;
+  color: var(--primary-color);
 }
 
 .vn-page .vn-registration small p {
   font-size: 14px;
 
-  color: #370974;
+  color: var(--primary-color);
 }
 
 .vn-page .vn-registration small span {
@@ -1011,7 +1057,7 @@ option {
 
 .vn-page .vn-registration .upload-drop-zone {
   background-color: #cccccc;
-  border: 1px solid #370974;
+  border: 1px solid var(--primary-color);
   line-height: 100px;
   text-align: center;
   border-radius: 5px;
@@ -1024,7 +1070,7 @@ option {
   position: absolute;
   margin: 0 auto;
   left: 170px;
-  top: 730px;
+  top: 650px;
 }
 
 .page-body .page .account-image-2 {
@@ -1042,18 +1088,18 @@ option {
 }
 
 .page-body .page .account-image-1 img {
-  height: 500px;
-  width: 500px;
+  height: 300px;
+  width: 300px;
 }
 
 .page-body .page .account-image-2 img {
-  height: 250px;
-  width: 250px;
+  height: 200px;
+  width: 200px;
 }
 
 .page-body .page .account-image-3 img {
-  height: 200px;
-  width: 200px;
+  height: 120px;
+  width: 120px;
 }
 
 .accounts-page .container-fluid {
@@ -1094,11 +1140,11 @@ option {
 
 .accounts-page .accounts-body .accounts-content {
   margin-top: 20px;
-  width: 60%;
 }
 
 .accounts-page .accounts-body .accounts-content p {
   text-align: justify;
+  font-size: 13px;
 }
 
 .accounts-page .accounts-body .accounts-footer {
@@ -1110,6 +1156,7 @@ option {
   float: left;
   margin-right: 70px;
   list-style: circle;
+  font-size: 13px;
 }
 
 .accounts-page .accounts-body .accounts-footer ul {
@@ -1119,8 +1166,8 @@ option {
 
 .accounts-page .accounts-registration img {
   margin-top: 5px;
-  height: 84px;
-  width: 84px;
+  height: 60px;
+  width: 60px;
 }
 
 .accounts-page .accounts-registration .form-group {
@@ -1137,12 +1184,19 @@ option {
 
 .accounts-page .accounts-registration .accounts-button .btn-normal {
   background: #ffffff;
-  color: #370974;
-  border: 1px solid rgba(55, 9, 116, 0.5);
-  /* padding: 3px 15px 3px 15px; */
-  font-size: 1em;
-  height: 50px;
-  text-transform: uppercase;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  box-shadow: 0 10px 60px -40px rgba(0, 0, 0, 0.15);
+  font-size: 0.8em;
+  transition: 0.5s;
+}
+
+.accounts-page .accounts-registration .accounts-button .btn-normal:hover {
+  background: var(--primary-color);
+  color: #ffffff;
+  border: 1px solid var(--primary-color);
+  box-shadow: 0 10px 60px -40px rgba(0, 0, 0, 0.15);
+  font-size: 0.8em;
 }
 
 .accounts-page .accounts-registration .accounts-button .btn-verified {
@@ -1155,10 +1209,9 @@ option {
 }
 
 .accounts-page .accounts-registration label {
-  color: #370974;
-  font-family: "Roboto", sans-serif;
-  font-weight: 200;
-  font-size: 1.5em;
+  color: var(--primary-color);
+  font-weight: 400;
+  font-size: 1.2em;
 }
 
 .accounts-page .accounts-registration .label-small {
@@ -1173,7 +1226,7 @@ option {
 }
 
 .accounts-page .accounts-registration input::placeholder {
-  color: #370974;
+  color: var(--primary-color);
 }
 
 .accounts-page .accounts-registration select,
@@ -1181,7 +1234,7 @@ option {
   -webkit-appearance: none;
   -moz-appearance: none;
 
-  color: #370974;
+  color: var(--primary-color);
   height: 50px;
   border: 1px solid rgba(55, 9, 116, 0.5);
 }
@@ -1192,13 +1245,13 @@ option {
 
 .accounts-page .accounts-registration .fa-eye-slash,
 .fa-angle-down {
-  color: #370974;
+  color: var(--primary-color);
 }
 
 .accounts-page .accounts-registration small p {
   font-size: 14px;
 
-  color: #370974;
+  color: var(--primary-color);
 }
 
 .accounts-page .accounts-registration small span {
@@ -1210,7 +1263,7 @@ option {
 
 .accounts-page .accounts-registration .upload-drop-zone {
   background-color: #cccccc;
-  border: 1px solid #370974;
+  border: 1px solid var(--primary-color);
   line-height: 100px;
   text-align: center;
   border-radius: 5px;
@@ -1260,6 +1313,7 @@ option {
   float: left;
   margin-right: 70px;
   list-style: circle;
+  font-size: 13px;
 }
 
 .payment-page .payment-body .payment-footer ul {
@@ -1268,22 +1322,21 @@ option {
 }
 
 .payment-page .payment-registration label {
-  text-transform: uppercase;
-  color: #370974;
-  font-family: "Roboto", sans-serif;
-  font-weight: bold;
-  font-size: 14px;
+  color: var(--primary-color);
+  font-size: 13px;
 }
 
 .payment-page .payment-registration input {
   font-size: 14px;
-  border: 1px solid rgba(55, 9, 116, 0.5);
+  border: 1px solid var(--primary-color);
   height: 50px;
   border-radius: 6px;
+  font-size: 14px;
 }
 
 .payment-page .payment-registration input::placeholder {
-  color: #370974;
+  color: var(--primary-color);
+  font-size: 14px;
 }
 
 .payment-page .payment-registration select,
@@ -1291,7 +1344,7 @@ option {
   -webkit-appearance: none;
   -moz-appearance: none;
 
-  color: #370974;
+  color: var(--primary-color);
   height: 50px;
   border: 1px solid rgba(55, 9, 116, 0.5);
 }
@@ -1302,13 +1355,13 @@ option {
 
 .payment-page .payment-registration .fa-eye-slash,
 .fa-angle-down {
-  color: #370974;
+  color: var(--primary-color);
 }
 
 .payment-page .payment-registration small p {
   font-size: 14px;
 
-  color: #370974;
+  color: var(--primary-color);
 }
 
 .payment-page .payment-registration small span {
@@ -1324,7 +1377,7 @@ option {
 
 .payment-page .payment-registration .upload-drop-zone {
   background-color: #cccccc;
-  border: 1px solid #370974;
+  border: 1px solid var(--primary-color);
   line-height: 100px;
   text-align: center;
   border-radius: 5px;
@@ -1411,7 +1464,7 @@ option {
 
 .upload-registration label {
   text-transform: uppercase;
-  color: #370974;
+  color: var(--primary-color);
   font-family: "Roboto", sans-serif;
   font-weight: bold;
   font-size: 14px;
@@ -1424,14 +1477,19 @@ option {
   border-radius: 6px;
 }
 
+.upload-registration .form-check-input {
+  height: 100%;
+  top: -15px;
+}
+
 .upload-registration input::placeholder {
-  color: #370974;
+  color: var(--primary-color);
 }
 
 .upload-registration small p {
   font-size: 14px;
 
-  color: #370974;
+  color: var(--primary-color);
 }
 
 .upload-registration small span {
@@ -1446,7 +1504,7 @@ option {
   -webkit-appearance: none;
   -moz-appearance: none;
 
-  color: #370974;
+  color: var(--primary-color);
   height: 50px;
   border: 1px solid rgba(55, 9, 116, 0.5);
 }
@@ -1457,14 +1515,15 @@ option {
 
 .upload-registration textarea::placeholder {
   font-size: 0.85em;
-  color: #370974;
+  color: var(--primary-color);
 }
 
 .upload-registration .custom-file {
   width: 100%;
   height: 100px;
   padding: 0px;
-  border: 1px solid #37097480;
+  border: 1px solid var(--primary-color) 80;
+  position: relative;
 }
 
 .upload-registration .custom-file .custom-file-input {
@@ -1481,19 +1540,16 @@ option {
 }
 
 .upload-registration .custom-file .btn {
-  background-color: #370974;
+  background-color: var(--primary-color);
   border-radius: 10px;
   padding: 0px 35px;
-  margin-left: 200px;
-  margin-top: 10px;
   height: 35px;
   color: #ffffff;
   font-size: 0.81em;
   text-transform: uppercase;
   position: absolute;
-  left: 300px;
-  top: 0px;
-  margin-top: 35px;
+  left: 330px;
+  top: 33px;
 }
 
 .upload-registration .custom-file .custom-file-label {
@@ -1519,11 +1575,10 @@ label,
 
 .upload-registration .custom-file .custom-file-label::after {
   content: none;
-  outline: none;
 }
 
 .upload-registration .upload-tags {
-  border: 1px solid #37097480;
+  border: 1px solid var(--primary-color) 80;
   width: 100%;
   border-radius: 5px;
   padding-top: 15px;
@@ -1567,7 +1622,7 @@ label,
 }
 
 .checkout-page .billing-address {
-  border: 1px solid #3709749d;
+  border: 1px solid var(--primary-color) 9d;
   padding: 50px;
 }
 
@@ -1580,49 +1635,49 @@ label,
 .checkout-page .billing-address input,
 .checkout-page .billing-address textarea {
   font-weight: 300;
-  color: #370974;
+  color: var(--primary-color);
   height: 50px;
-  border: 1px solid #370974;
+  border: 1px solid var(--primary-color);
 }
 
 .checkout-page .billing-address .form-text p {
-  color: #370974;
+  color: var(--primary-color);
 }
 
 .checkout-page .billing-address input::placeholder {
-  color: #370974;
+  color: var(--primary-color);
 }
 
 .checkout-page .billing-address select {
   height: 50px;
-  border: 1px solid #370974;
+  border: 1px solid var(--primary-color);
 }
 
 .checkout-page .billing-address select,
 option {
-  color: #370974;
+  color: var(--primary-color);
 }
 
 .checkout-page .payment-details {
-  border: 1px solid #370974;
+  border: 1px solid var(--primary-color);
   padding: 50px;
 }
 
 .checkout-page .payment-details label {
-  color: #370974;
+  color: var(--primary-color);
   font-family: "Roboto", san-serif;
   font-weight: 300;
   text-transform: uppercase;
 }
 
 .checkout-page .payment-details input {
-  color: #370974;
+  color: var(--primary-color);
 
   font-weight: 300;
   border-top: none;
   border-left: none;
   border-right: none;
-  border-bottom: 1px solid #370974;
+  border-bottom: 1px solid var(--primary-color);
   height: 50px;
   border-radius: 0px;
   margin-bottom: 50px;
@@ -1634,7 +1689,7 @@ option {
 }
 
 .checkout-page .checkout-cart hr {
-  border: 1px solid #370974;
+  border: 1px solid var(--primary-color);
   border-style: dashed;
 }
 
@@ -1653,7 +1708,7 @@ option {
 
 .checkout-page .checkout-cart .cart-pay button {
   margin-top: 20px;
-  background-color: #370974;
+  background-color: var(--primary-color);
   color: #ffffff;
 }
 
@@ -1715,7 +1770,7 @@ option {
 
 .dashboard-tabs .tabs p {
   float: left;
-  color: #370974;
+  color: var(--primary-color);
   text-transform: uppercase;
   font-family: "Montserrat", sans-serif;
   font-size: 1.2em;
@@ -1746,7 +1801,7 @@ option {
 
 .dashboard-tabs-2 .tabs a {
   float: left;
-  color: #370974;
+  color: var(--primary-color);
   font-family: "Montserrat", sans-serif;
   font-size: 1.2em;
   height: 100%;
@@ -1778,7 +1833,7 @@ option {
 }
 
 .dashboard-explore .dashboard-card .card {
-  border: 1px solid #370974;
+  border: 1px solid var(--primary-color);
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 
@@ -1822,7 +1877,6 @@ option {
 
 .profile-page .container-fluid {
   margin: auto;
-  box-shadow: 2px 2px rgba(55, 9, 116, 0.26);
   border-radius: 10px;
   height: auto;
   background-color: #ffffff;
@@ -1863,7 +1917,7 @@ option {
 
 .profile-page .profile-content p {
   text-align: left;
-  width: 447px;
+  font-size: 14px;
 }
 
 .profile-page .profile-body .profile-footer {
@@ -1875,6 +1929,7 @@ option {
   float: left;
   margin-right: 70px;
   list-style: circle;
+  font-size: 13px;
 }
 
 .profile-page .profile-body .profile-footer ul {
@@ -1883,11 +1938,8 @@ option {
 }
 
 .profile-registration label {
-  text-transform: uppercase;
-  color: #370974;
-  font-family: "Roboto", sans-serif;
-  font-weight: bold;
-  font-size: 14px;
+  color: var(--primary-color);
+  font-size: 13px;
 }
 
 .profile-registration input {
@@ -1898,7 +1950,8 @@ option {
 }
 
 .profile-registration input::placeholder {
-  color: #370974;
+  color: var(--primary-color);
+  font-size: 13px;
 }
 
 .profile-registration select,
@@ -1906,7 +1959,7 @@ option {
   -webkit-appearance: none;
   -moz-appearance: none;
 
-  color: #370974;
+  color: var(--primary-color);
   height: 50px;
   border: 1px solid rgba(55, 9, 116, 0.5);
 }
@@ -1917,13 +1970,13 @@ option {
 
 .profile-registration .fa-eye-slash,
 .fa-angle-down {
-  color: #370974;
+  color: var(--primary-color);
 }
 
 .profile-registration small p {
-  font-size: 14px;
+  font-size: 13px;
 
-  color: #370974;
+  color: var(--primary-color);
 }
 
 .profile-registration small span {
@@ -1938,19 +1991,19 @@ option {
 }
 
 /* .profile-registration .upload-drop-zone {
-  background-color: #cccccc;
-  border: 1px solid #370974;
-  line-height: 100px;
-  text-align: center;
-  border-radius: 5px;
-  width: 100%;
+background-color: #cccccc;
+border: 1px solid var(--primary-color);
+line-height: 100px;
+text-align: center;
+border-radius: 5px;
+width: 100%;
 } */
 
 .profile-registration .custom-file {
   width: 100%;
   height: 100px;
   padding: 0px;
-  border: 1px solid #37097480;
+  border: 1px solid var(--primary-color) 80;
   position: relative;
 }
 
@@ -1958,40 +2011,52 @@ option {
   height: 100px;
 }
 
-.profile-registration .custom-file .upload-drop-zone {
-  position: absolute;
-}
-
-.profile-registration .upload-drop-zone {
-  width: 100%;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  padding-left: 0px;
-  padding-right: 0px;
-}
-
-.profile-registration .upload-drop-zone img {
+.profile-registration .custom-file img {
   width: 120px;
   height: 62px;
-  /* padding-left: 30px; */
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  margin-top: 17px;
 }
 
-.profile-registration .upload-drop-zone p {
-  margin-top: 20px;
-  font-size: 0.85em;
-}
-
-.profile-registration .upload-drop-zone .btn {
-  background-color: #370974;
+.profile-registration .custom-file .btn {
+  background-color: var(--primary-color);
   border-radius: 10px;
   padding: 0px 35px;
-  margin-left: 20px;
-  margin-top: 12px;
+  /* margin-left: 30px; */
   height: 35px;
   color: #ffffff;
-
   font-size: 0.81em;
   text-transform: uppercase;
+  position: absolute;
+  left: 320px;
+  top: 30px;
+}
+
+.profile-registration .custom-file .custom-file-label {
+  font-size: 0.75em;
+  background-color: #ffffff00;
+  border: 0px;
+  text-transform: none;
+  font-weight: 300;
+  padding: 0px;
+  margin: 40px 0 0 130px;
+  height: auto;
+  width: auto;
+  /* position: absolute; */
+}
+
+label,
+.btn:focus,
+.btn:active {
+  outline: none !important;
+  box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+}
+
+.profile-registration .custom-file .custom-file-label::after {
+  content: none;
 }
 
 /*  Password Reset */
@@ -2048,11 +2113,8 @@ ul {
 }
 
 .pr-page .pr-registration label {
-  text-transform: uppercase;
-  color: #370974;
-  font-family: "Roboto", sans-serif;
-  font-weight: bold;
-  font-size: 14px;
+  color: var(--primary-color);
+  font-size: 13px;
 }
 
 .pr-page .pr-registration input {
@@ -2063,14 +2125,14 @@ ul {
 }
 
 .pr-page .pr-registration input::placeholder {
-  color: #370974;
+  color: var(--primary-color);
 }
 
 .pr-page .pr-registration select,
 option {
   -webkit-appearance: none;
   -moz-appearance: none;
-  color: #370974;
+  color: var(--primary-color);
 }
 
 .pr-page .pr-registration textarea {
@@ -2079,12 +2141,12 @@ option {
 
 .pr-page .pr-registration .fa-eye-slash,
 .fa-angle-down {
-  color: #370974;
+  color: var(--primary-color);
 }
 
 .pr-page .pr-registration small p {
   font-size: 14px;
-  color: #370974;
+  color: var(--primary-color);
 }
 
 .pr-page .pr-registration small span {
@@ -2119,23 +2181,22 @@ option {
   .custom-file .upload-drop-zone img {
     width: 60px;
     height: 31.5px;
+    top: 20px;
+    left: 0px;
   }
 
-  .custom-file .upload-drop-zone p {
-    margin-top: 10px;
-    font-size: 0.65em;
+  .custom-file .custom-file-label {
+    top: 5px;
+    left: -60px;
+    font-size: 0.5em;
   }
 
   .custom-file .upload-drop-zone .btn {
-    background-color: #370974;
-    border-radius: 5px;
-    padding: 0px 10px;
-    margin-left: 10px;
-    margin-top: 8.5px;
-    height: 17.5px;
-    color: #ffffff;
-    font-size: 0.5em;
-    text-transform: uppercase;
+    top: 38px;
+    height: 30px;
+    left: 240px;
+    padding: 7px;
+    font-size: 0.6em;
   }
 
   /* Page and Navbar Settings */
@@ -2178,10 +2239,7 @@ option {
   }
 
   .navbar-nav .nav-item .nav-button {
-    font-size: 0.8em;
-    width: 50%;
-    margin-top: 15px;
-    margin-bottom: 10px;
+    text-align: left;
   }
 
   /* Sign Up Page */
@@ -2245,6 +2303,25 @@ option {
   .upload-page .upload-registration {
     position: absolute;
     padding-right: 40px !important;
+    padding-left: 10px !important;
+  }
+
+  .upload-registration .custom-file .upload-drop-zone .btn {
+    left: 230px;
+    padding: 5px 10px;
+  }
+
+  .upload-registration .custom-file .upload-drop-zone img {
+    width: 60px;
+    height: 31.5px;
+    top: 20px;
+    left: -5px;
+  }
+
+  .upload-registration .custom-file .custom-file-label {
+    top: 5px;
+    left: -95px;
+    font-size: 0.8em;
   }
 
   .upload-page .upload-body .upload-footer li {
@@ -2264,9 +2341,17 @@ option {
     margin-top: 1100px;
   }
 
+  /*  Profile Page */
+  .profile-page .profile-content p {
+    width: 100%;
+    text-align: justify;
+    font-size: 13px !important;
+  }
+
   .profile-page .profile-body .profile-footer li {
     margin-right: 35px;
     font-size: 0.8em;
+    font-size: 13px;
   }
 
   .profile-page .profile-registration {
@@ -2303,14 +2388,12 @@ option {
 
   /*  Password Reset*/
   .pr-page .pr-body {
-    height: 500px;
+    height: 200px;
     visibility: hidden;
   }
 
   .pr-page .pr-registration {
     margin-bottom: 30px;
-    position: absolute;
-    padding-right: 40px !important;
   }
 
   /* Accounts */

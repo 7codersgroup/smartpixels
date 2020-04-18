@@ -11,52 +11,62 @@
   <link rel="stylesheet" href="css/bootstrap.min.css" />
   <link rel="stylesheet" href="css/all.css" />
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/hamburgers.css" />
   <title>SmartPixels - Profile Update</title>
 </head>
 
-<body>
-  <!--Header-->
-  <section class="">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <a class="navbar-brand" href="#">SmartPixels</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+<body class="landing-page">
+  <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-light py-md-1 mob-pad px-md-0">
+      <a class="navbar-brand" href="index.html"><img src="img/logo.svg" alt="Smartpixels logo" width="90"
+          class="mob" /></a>
+      <button class="hamburger hamburger--3dx-r navbar-toggler" type="button" data-toggle="collapse"
+        data-target="#navbarNav" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
       </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto landing-page">
+          <li class="nav-item mx-md-4 my-md-0 postion-relative">
+            <a class="nav-link px-0" href="index.html">Home.</a>
+          </li>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">
-              Home <span class="sr-only">(current)</span></a>
+          <li class="nav-item mx-md-4 my-md-0 postion-relative">
+            <a class="nav-link px-0" href="upload.html">Upload.</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Competitions</a>
+
+          <li class="nav-item mx-md-4 my-md-0 postion-relative">
+            <a class="nav-link px-0" href="faq.html">FAQ.</a>
           </li>
-          <li class="nav-item"><a class="nav-link" href="#">Support</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Submit Photos</a></li>
-          <!-- <li class="nav-item nav-border">
-                <a href="#" class="btn nav-button nav-link">
-                  Hi Danie
-                </a>
-              </li> -->
-          <li class="nav-item dropdown">
-            <a class="nav-link btn nav-button" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">
-              Hi, Daniel
-              <span class="fas fa-angle-down fa-lg"></span>
+
+          <li class="dropdown nav-item mx-md-4 my-md-0 postion-relative">
+            <a class="dropdown-toggle nav-link px-0" href="#" id="dropdownMenuButton" data-toggle="dropdown"
+              aria-haspopup="false" aria-expanded="false">
+              Hi Daniel
             </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Something else here</a>
-            </div>
+            <ul class="dropdown-menu drop-left" aria-labelledby="dropdownMenuButton">
+              <li class="nav-item">
+                <a class="dropdown-item nav-link text-dark font-13" href="dashboard.html">Dashboard</a>
+              </li>
+              <li class="nav-item">
+                <a class="dropdown-item nav-link text-dark font-13" href="accounts.html">Manage Account</a>
+              </li>
+              <li class="nav-item">
+                <a class="dropdown-item nav-link text-dark font-13" href="#">Logout</a>
+              </li>
+
+            </ul>
+          </li>
+
+          <li class="nav-item mx-md-4 my-md-0 postion-relative">
+            <a class="nav-link px-0" href="contact.html">Contact Us.</a>
           </li>
         </ul>
       </div>
     </nav>
-  </section>
+  </div>
   <!--End Header -->
 
   <div class="page-body">
@@ -67,11 +77,11 @@
         <div class="container-fluid">
           <div class="row">
             <div class="col-md-12 page-main-title" id="page-border">
-              <h3>Profile Update</h3>
+              <h3 class="mb-0">Profile Update</h3>
             </div>
           </div>
           <div class="row">
-            <div class="col-md-6 profile-body page-sub-title" id="page-border-2">
+            <div class="col-md-6 profile-body page-sub-title order-last order-lg-first" id="page-border-2">
               <h4>Update Profile Information</h4>
               <div class="profile-content">
                 <p>
@@ -108,8 +118,8 @@
                       </label>
                       <input type="text" class="form-control" placeholder="Last Name" />
                     </div>
-                    <small id="passwordHelpBlock" class="form-text text-muted mb-4">
-                      <p class="mt-2">
+                    <small id="passwordHelpBlock" class="form-text text-muted">
+                      <p class="mt-2 mb-0 text-danger">
                         Please fill in your name as it appears in your medium of identification
                       </p>
                     </small>
@@ -119,20 +129,15 @@
                   <label for="exampleFormControlSelect1">
                     Country<span> *</span>
                   </label>
-                  <div class="input-group">
-                    <select class="form-control" id="exampleFormControlSelect1" aria-describedby="button-addon1">
-                      <option>Please select your nationality</option>
-                      <option>2</option>
-                      <option>3</option>
-                      <option>4</option>
-                      <option>5</option>
-                    </select>
-                    <div class="input-group-append ">
-                      <button class="btn btn-outline-secondary" type="button" id="button-addon">
-                        <span class="fas fa-angle-down fa-lg"></span>
-                      </button>
-                    </div>
-                  </div>
+
+                  <select class="form-control">
+                    <option>Please select your nationality</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                  </select>
+
                 </div>
                 <div class="form-group mb-4">
                   <label for="exampleInputTelephone1">
@@ -166,19 +171,22 @@
                   <label for="exampleInputZipCode1">
                     UPLOAD PROFILE PICTURE<span> *</span>
                   </label>
+                  <!-- <div class="custom-file">
+                      <input type="file" class="custom-file-input" id="validatedCustomFile" placeholder="" required>
+                      <div class="form-row upload-drop-zone">
+                        <img src="./img/1x.png" />
+                        <p>Drop and drop your photos here or</p>
+                        <button type="submit" class="btn">Browse</button>
+                      </div>
+                    </div> -->
                   <div class="custom-file">
                     <input type="file" class="custom-file-input" id="validatedCustomFile" placeholder="" required>
-                    <div class="form-row upload-drop-zone">
+                    <label class="custom-file-label" or="validatedCustomFile">Drag and Drop Photos Here</label>
+                    <div class="upload-drop-zone ">
                       <img src="./img/1x.png" />
-                      <p>Drop and drop your photos here or</p>
                       <button type="submit" class="btn">Browse</button>
                     </div>
                   </div>
-                  <small id="passwordHelpBlock" class="form-text text-muted mb-4">
-                    <p class="mt-2">
-                      Please ensure that this dislays your face clearly
-                    </p>
-                  </small>
                 </div>
                 <div class="form-row">
                   <div class="col-md-6">
@@ -202,6 +210,7 @@
 <script src="js/jquery-3.3.1.min.js"></script>
 <script src="js/popper.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script src="js/utility.js"></script>
 <script src="https://kit.fontawesome.com/e9480ff5ec.js" crossorigin="anonymous"></script>
 
 </html>
