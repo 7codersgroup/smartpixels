@@ -113,6 +113,7 @@
     </section>
 
     <!--		Last section-->
+    @guest
     <section class="my-5">
       <div class="container">
         <div class="row justify-content-center">
@@ -128,13 +129,15 @@
                 >
               Get started with Smartpixels
             </h1>
-
-            <a class="btn btn-primary-gradient" href="sign-up.html"
+            @if (Route::has('register'))
+            <a class="btn btn-primary-gradient" href="{{ route('register') }}"
                >Create an account</a
               >
+              @endif
           </div>
+          
         </div>
       </div>
     </section>
-
+@endguest
 @endsection

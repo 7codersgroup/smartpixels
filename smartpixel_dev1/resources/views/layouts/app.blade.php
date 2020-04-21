@@ -28,42 +28,51 @@
     <link href="{{ asset('css/all.css') }}" rel="stylesheet">
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
 </head>
-<body>
-  
-     <!--Header-->
-     <section class="">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="#">Smart Pixels</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">
-                            Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Competitions</a>
-                    </li>
-                    <li class="nav-item"><a class="nav-link" href="#">Support</a></li>
-                    @guest
-                    <li class="nav-item"><a class="nav-link" href="{{ route('login') }}">Sign In</a></li>
-                    @if (Route::has('register'))
-                    <li class="nav-item nav-border">
-                        <a href="{{ route('register') }}" class="btn btn-dark nav-link">Create Account</a>
-                    </li>
-                    @endif
+<body class="landing-page">
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg navbar-light py-md-1 mob-pad px-md-0">
+                <a class="navbar-brand" href="index.html"
+                   ><img
+                         src="img/logo.svg"
+                         alt="Smartpixels logo"
+                         width="90"
+                         class="mob"
+                         /></a>
+                <button
+                        class="hamburger hamburger--3dx-r navbar-toggler"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#navbarNav"
+                        aria-controls="navbarSupportedContent"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                        >
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto landing-page">
+                        <li class="nav-item mx-md-4 my-md-0 postion-relative">
+                            <a class="nav-link px-0" href="index.html">Home.</a>
+                        </li>
+                        @guest
+                        @if (Route::has('register'))
+                        <li class="nav-item mx-md-4 my-md-0 postion-relative">
+                            <a class="nav-link px-0" href="{{ route('register') }}">Sell.</a>
+                        </li>
+                        
+                        <li class="nav-item mx-md-4 my-md-0 postion-relative">
+                            <a class="nav-link px-0" href="{{ route('login') }}">Sign in.</a>
+                        </li> 
+                        @endif
                     @else
-                    <li class="nav-item dropdown">
-                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                    {{ Auth::user()->name }} <span class="caret"></span>
-                                </a>
-
-                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="{{ route('logout') }}"
+                    <li class="nav-item mx-md-4 my-md-0 postion-relative">
+              <a class="nav-link px-0" href="upload.html">Upload.</a>
+            </li>
+            <li class="nav-item mx-md-4 my-md-0 postion-relative">
+            <a class=" nav-link text-dark font-13" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
                                         {{ __('Logout') }}
@@ -72,19 +81,49 @@
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                                         @csrf
                                     </form>
-                                </div>
-                            </li>     
-                      @endguest               
-                          </ul>
-            </div>
-        </nav>
-    </section>
-    <!--End Header -->
+                        </li>
+            <li class="dropdown nav-item mx-md-4 my-md-0 postion-relative">
+              <a class="dropdown-toggle nav-link px-0" href="#" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="false" aria-expanded="false">
+                 {{ Auth::user()->firstname }}
+              </a>
+              <ul class="dropdown-menu drop-left" aria-labelledby="dropdownMenuButton">
+                <li class="nav-item">
+                  <a class="dropdown-item nav-link text-dark font-13" href="dashboard.html">Dashboard</a>
+                </li>
+                <li class="nav-item">
+                  <a class="dropdown-item nav-link text-dark font-13" href="accounts.html">Manage Account</a>
+                </li>
+                <li class="nav-item">
+                  <a class="dropdown-item nav-link text-dark font-13" href="{{ route('logout') }}"
+                                       onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                        {{ __('Logout') }}
+                                    </a>
 
-    
-@yield('content')
+                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                        @csrf
+                                    </form>
+                </li>
 
+              </ul>
+            </li>
+                                @endguest
+                        <li class="nav-item mx-md-4 my-md-0 postion-relative">
+                            <a class="nav-link px-0" href="faq.html">FAQ.</a>
+                        </li>
 
+                        <li class="nav-item mx-md-4 my-md-0 postion-relative">
+                            <a class="nav-link px-0" href="contact.html">Contact Us.</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <!--Header-->
+        <!--End Header -->
+       
+        @yield('content')
 
-</body>
+    </body>
+
 </html>
