@@ -1,100 +1,140 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+@extends('layouts.app2')
 
-        <title>Laravel</title>
+@section('content_new')
 
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
-
-        <!-- Styles -->
-        <style>
-            html, body {
-                background-color: #fff;
-                color: #636b6f;
-                font-family: 'Nunito', sans-serif;
-                font-weight: 200;
-                height: 100vh;
-                margin: 0;
-            }
-
-            .full-height {
-                height: 100vh;
-            }
-
-            .flex-center {
-                align-items: center;
-                display: flex;
-                justify-content: center;
-            }
-
-            .position-ref {
-                position: relative;
-            }
-
-            .top-right {
-                position: absolute;
-                right: 10px;
-                top: 18px;
-            }
-
-            .content {
-                text-align: center;
-            }
-
-            .title {
-                font-size: 84px;
-            }
-
-            .links > a {
-                color: #636b6f;
-                padding: 0 25px;
-                font-size: 13px;
-                font-weight: 600;
-                letter-spacing: .1rem;
-                text-decoration: none;
-                text-transform: uppercase;
-            }
-
-            .m-b-md {
-                margin-bottom: 30px;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
-                <div class="top-right links">
-                    @auth
-                        <a href="{{ url('/home') }}">Home</a>
-                    @else
-                        <a href="{{ route('login') }}">Login</a>
-
-                        @if (Route::has('register'))
-                            <a href="{{ route('register') }}">Register</a>
-                        @endif
-                    @endauth
-                </div>
-            @endif
-
-            <div class="content">
-                <div class="title m-b-md">
-                    Laravel
-                </div>
-
-                <div class="links">
-                    <a href="https://laravel.com/docs">Docs</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://blog.laravel.com">Blog</a>
-                    <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://vapor.laravel.com">Vapor</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
-                </div>
-            </div>
+<section class="height_normalize position-relative motmot">
+      <div class="position-relative">
+        <div class="overflow-hidden">
+          <div class="mti-hero-image">
+            <picture>
+              <img
+                   src="https://fpcover.cdnpk.net/image/20200325043919.jpg"
+                   class="mti-hero-image mti-hero-image--cover mti-hero-image--large js-hero-image-full container-full"
+                   />
+            </picture>
+          </div>
         </div>
-    </body>
-</html>
+
+        <div
+             class="container-absolute to-all medium-black-overlay maximum-in-front"
+             >
+          <div class="v-align container-full">
+            <div
+                 class="padding-left-xlarge padding-right-xlarge padding-bottom-small"
+                 >
+              <div class="margin-bottom-xlarge center-align">
+                <div class="container-max">
+                  <h1 class="no-margin white-text text-xslarge light">
+                    Find the perfect pixel asset for your next project
+                  </h1>
+                </div>
+              </div>
+              <div class="padding-top-large">
+                <form
+                      method="get"
+                      action="search.html"
+                      class="js-search-form"
+                      >
+                  <div class="container-relative white hero-input-group">
+                    <div class="input-box" data-active="input">
+                      <div class="container-table">
+                        <div class="container-table-cell no-stretch">
+                          <div class="select-box input-box__select-box">
+                            <select
+                                    class="js-filter-view-type"
+                                    data-t="filter-asset-type"
+                                    >
+                              <option selected="selected" value="images">
+                                Images
+                              </option>
+                            </select>
+                          </div>
+                        </div>
+                        <div
+                             class="container-table-cell container-full container-relative"
+                             >
+                          <input
+                                 name="k"
+                                 class="js-search-text-input input--silent input--full light input--xlarge"
+                                 type="text"
+                                 placeholder="Search"
+                                 autocomplete="off"
+                                 />
+                        </div>
+                        <div class="container-table-cell no-stretch">
+                          <div class="px-4 position-relative">
+                            <img
+                                 src="img/camera.svg"
+                                 class="img-fluid position-absolute"
+                                 width="35"
+                                 style="bottom: -15px; left: 0px;"
+                                 />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="container-absolute to-the-bottom to-the-right">
+            <div class="margin-xlarge padding-xlarge">
+              <a
+                 class="white-text"
+                 href="artist.html"
+                 data-ingest-clicktype="contributor-name"
+                 ><p class="font-light">
+                <i>Feature by </i
+                  ><strong data-t="main-header-attribution-text"
+                           >masterkraft</strong
+                >
+                </p></a
+                >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--		second section-->
+    <section class="intro">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 text-center">
+            <h5 class="my-md- my-3 font-weight-light secondary mb-4">
+              You can explore a wide range collections of incredible
+              high-resolution, royalty-free, stock assets tailored for Africans
+              by Africans
+            </h5>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--		Last section-->
+    <section class="my-5">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 text-center">
+            <img
+                 src="img/logo.svg"
+                 class="img-fluid"
+                 alt="Smartpixels logo"
+                 width="200"
+                 />
+            <h1
+                class="my-md-5 my-3 wf_7baf2059d414453a9b61affe1 secondary mb-4"
+                >
+              Get started with Smartpixels
+            </h1>
+
+            <a class="btn btn-primary-gradient" href="sign-up.html"
+               >Create an account</a
+              >
+          </div>
+        </div>
+      </div>
+    </section>
+
+@endsection
