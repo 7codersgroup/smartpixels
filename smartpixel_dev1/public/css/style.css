@@ -1,37 +1,144 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600|Roboto|Roboto+Mono");
+@import url("variables.css");
 
 /* Navigation */
 
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Poppins', sans-serif !important;
   overflow-x: hidden;
 }
 
-.bg-dark {
-  background-color: #370974 !important;
+/* 
+.navbar .navbar-brand {
+margin-left: 35px;
 }
 
 .navbar-dark .navbar-nav .nav-link {
-  color: rgb(255, 255, 255, 1);
-  font-family: "Montserrat", sans-serif;
-  font-size: 0.85em;
+color: rgb(255, 255, 255, 1);
+font-family: "Montserrat", sans-serif;
+font-size: 0.85em;
 }
 
 .navbar-nav > li {
-  margin: 0px 45px;
+margin: 0 25px;
+}
+
+.navbar-nav > li:last-child {
+margin-right: 35px;
 }
 
 .navbar-nav > li .nav-button {
-  border: 0.5px solid #ffffff;
-  font-size: 1em;
-  border-radius: 10px;
-  background-color: #370974;
-  font-weight: 600;
+border: 0.5px solid #ffffff;
+font-size: 1em;
+border-radius: 10px;
+background-color: var(--primary-color);
+font-weight: 600;
 }
 
 .navbar-nav .nav-button {
-  padding-left: 20px !important;
-  padding-right: 20px !important;
+padding-left: 20px !important;
+padding-right: 20px !important;
+}
+
+.navbar-nav .fas {
+color: #ffffff;
+margin-left: 10px;
+}
+
+.navbar-nav .dropdown-menu {
+left: -81px;
+margin-top: 8px;
+border-radius: 0px;
+background-color: var(--primary-color);
+color: #ffffff;
+}
+
+.navbar-nav .dropdown-menu .dropdown-item {
+color: #ffffff;
+text-align: right;
+}
+
+.navbar-nav .dropdown-menu .dropdown-item:hover {
+color: var(--primary-color);
+background-color: #ffffff;
+}
+
+.navbar-2 .navbar-nav .nav-item {
+margin: 0px 50px;
+}
+
+.navbar-2 .navbar-nav .nav-item:last-of-type {
+margin-right: 25px;
+} */
+
+
+.nav-link {
+  font-size: 13px !important;
+  font-weight: 500;
+}
+
+.navbar .nav-item .nav-link {
+  position: relative;
+}
+
+.navbar .nav-item .nav-link:hover::before {
+  width: 100% !important;
+}
+
+.navbar .nav-item .nav-link::before {
+  content: '';
+  width: 0;
+  height: 2px;
+  position: absolute;
+  left: 1px;
+  bottom: 5px;
+  z-index: 1;
+  background: var(--primary-color);
+  transition: width 0.3s ease-out;
+}
+
+.landing-page a.nav-link {
+  color: var(--primary-color) !important;
+}
+
+
+
+
+.footer {
+  background-color: var(--primary-color);
+  padding: 50px 50px;
+  margin-top: 100px;
+}
+
+.footer .container-fluid {
+  background-color: var(--primary-color);
+}
+
+.footer .footer-content p {
+  float: left;
+  color: #ffffff;
+  margin: 0px;
+  font-size: 1.1em;
+  font-family: "Roboto", sans-serif;
+  font-weight: 200;
+}
+
+.footer .footer-content {
+  padding: 0px;
+}
+
+.footer .footer-content p:last-of-type {
+  float: right;
+  /* margin-right: 100px; */
+}
+
+.footer .footer-content p:nth-last-of-type(2) {
+  float: left;
+  margin-left: 1200px;
+}
+
+a {
+  color: var(--primary-color);
 }
 
 #cancel-button,
@@ -39,28 +146,81 @@ body {
 #submit-button {
   margin-top: 50px;
   color: #ffffff;
-  font-family: "Roboto Mono", monospace;
-  text-transform: uppercase;
   font-size: 1em;
   height: 50px;
 }
+
+
 
 #save-button {
   margin-top: 50px;
   color: #ffffff;
   background-color: #41b661;
+  box-shadow: 0 10px 60px -40px rgba(0, 0, 0, .15);
+  position: relative;
+  font-size: 13px;
+}
+
+#save-button::before {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  content: '';
+  background-color: rgba(0, 0, 0, .5);
+  z-index: 1;
+  transition: .3s;
+  height: 50%;
+  opacity: .2;
+}
+
+#save-button:hover::before {
+  height: 0;
+  opacity: 0;
 }
 
 #cancel-button {
   margin-top: 50px;
-  border: 1px solid #370974;
-  color: #370974;
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+  font-size: 13px;
+  box-shadow: 0 10px 60px -40px rgba(0, 0, 0, .15);
+}
+
+#cancel-button:hover {
+  margin-top: 50px;
+  border: 1px solid var(--primary-color);
+  color: #fff;
+  font-size: 13px;
+  background: var(--primary-color);
 }
 
 #submit-button {
   margin-top: 50px;
   color: #ffffff;
   background-color: #41b661;
+  box-shadow: 0 10px 60px -40px rgba(0, 0, 0, .15);
+  position: relative;
+  font-size: 13px;
+}
+
+
+#submit-button::before {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  content: '';
+  background-color: rgba(0, 0, 0, .5);
+  z-index: 1;
+  transition: .3s;
+  height: 50%;
+  opacity: .2;
+}
+
+#submit-button:hover::before {
+  height: 0;
+  opacity: 0;
 }
 
 #lf-span {
@@ -72,12 +232,12 @@ body {
   padding-left: 50px;
   padding-right: 50px;
   padding-bottom: 100px;
-  color: #370974;
+  color: var(--primary-color);
 }
 
 .page #page-border {
   margin-bottom: 0px;
-  border-top: 1.5px solid #37097480;
+  border-top: 1.5px solid rgba(55, 9, 116, 0.5);
   border-right: 1.5px solid rgba(55, 9, 116, 0.5);
   border-left: 1.5px solid rgba(55, 9, 116, 0.5);
 
@@ -94,7 +254,7 @@ body {
   border-bottom: 1.5px solid rgba(55, 9, 116, 0.5);
   border-bottom-left-radius: 10px;
   padding: 20px 20px 20px 30px;
-  color: #370974;
+  color: var(--primary-color);
 }
 
 .page #page-border-3 {
@@ -103,7 +263,7 @@ body {
   border-right: 1.5px solid rgba(55, 9, 116, 0.5);
   border-bottom: 1.5px solid rgba(55, 9, 116, 0.5);
   border-bottom-right-radius: 10px;
-  padding: 50px 80px 50px 80px;
+  padding: 50px 50px 50px 50px;
 }
 
 .page-body .wrapper {
@@ -113,23 +273,187 @@ body {
 .page-body {
   position: relative;
   margin: 0 auto;
-  background-image: url(../img/body_mask@2x.png); 
+  background-image: url(../img/body_mask@2x.png);
 }
 
 .page .page-main-title h3 {
   text-align: center;
-  font-size: 1.4em;
+  font-size: 1.2em;
+  font-weight: 400;
 }
 
 .page .page-sub-title h4 {
   font-size: 1.3em;
+  font-weight: 400;
+}
+
+/* Index Page  */
+.index-page {
+  position: relative;
+  margin: 0 auto;
+}
+
+.featured-image .img-container {
+  /* position: absolute; */
+  width: 100%;
+  height: 755px;
+  overflow: hidden;
+}
+
+.featured-image .wrapper {
+  background-color: #00000060;
+  position: absolute;
+  height: 755px;
+  width: 100%;
+  top: 0px;
+}
+
+.featured-image .search-form {
+  position: absolute;
+  right: 20%;
+  width: 60%;
+  top: 245px;
+}
+
+.featured-image .search-form p {
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.2em;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.featured-image .search-form input {
+  height: 60px;
+  border-color: #ffffff;
+  border: 1px solid #ffffff;
+}
+
+.featured-image .search-form .btn {
+  background-color: #ffffff;
+  border-color: #ffffff;
+}
+
+.index-page .banner {
+  background-color: var(--primary-color);
+  color: #ffffff;
+  height: 152px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.index-page .banner p {
+  text-align: center;
+  font-size: 2em;
+  font-family: "Montserrat", sans-serif;
+  margin-left: -50px;
+}
+
+.index-page .banner .btn {
+  color: #ffffff;
+  font-size: 0.9;
+  border: 2px solid #ffffff;
+  border-radius: 50px;
+  margin-left: 75px;
+}
+
+.index-explore .explore-heading h2 {
+  text-align: center;
+  color: var(--primary-color);
+  margin-bottom: 50px;
+  font-size: 2.5em;
+  font-weight: 300;
+}
+
+.index-explore {
+  margin-top: 100px;
+  padding: 0 50px;
+}
+
+.index-explore .row {
+  margin-bottom: 50px;
+}
+
+.index-explore .explore-card .card {
+  border: 1px solid var(--primary-color);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  position: relative;
+}
+
+.index-explore .explore-card .card img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.index-explore .explore-card .card .card-body {
+  position: absolute;
+  width: 100%;
+  background-color: #00000041;
+  color: #ffffff;
+  bottom: 0px;
+  padding: 10px;
+  /* padding-top: 8px; */
+  text-align: center;
+}
+
+.index-explore .explore-card .card .card-body p {
+  float: left;
+  margin: 0 auto;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+.index-explore .explore-card .card .card-body p:last-of-type {
+  float: right;
+}
+
+.index-explore .explore-card .card .card-body span {
+  margin-left: 10px;
+}
+
+.index-contributor .row {
+  margin-top: 100px;
+}
+
+.index-contributor {
+  margin-top: 100px;
+  padding: 0px 50px;
+}
+
+.index-contributor .contributor-heading h2 {
+  text-align: center;
+  color: var(--primary-color);
+  margin-bottom: 50px;
+  font-size: 2.5em;
+  font-weight: 300;
+}
+
+.index-contributor .card {
+  border: none;
+  align-items: center;
+}
+
+.index-contributor .card img {
+  height: 250px;
+  width: 250px;
+}
+
+.index-contributor .card .card-body h5 {
+  margin-top: 20px;
+  font-weight: 400;
+  font-size: 1.7em;
+  font-family: "Montserrat", sans-serif;
+  color: var(--primary-color);
 }
 
 /* Login Page */
 
 .login-page .container-fluid {
   margin: auto;
-  box-shadow: 2px 2px rgba(55, 9, 116, 0.26);
   border-radius: 10px;
   height: auto;
   background-color: #ffffff;
@@ -155,6 +479,7 @@ body {
 .login-page .login-body .login-heading li {
   list-style: circle;
   padding: 10px;
+  font-size: 13px;
 }
 
 .login-page .login-body .login-footer,
@@ -172,34 +497,37 @@ ul {
   float: left;
   margin-right: 70px;
   list-style: circle;
+
+  margin-bottom: 50px;
+  margin-top: 50px;
+  font-size: 13px;
 }
 
 .login-page .login-registration label {
-  text-transform: uppercase;
-  color: #370974;
+  color: var(--primary-color);
   font-family: "Roboto", sans-serif;
-  font-weight: bold;
-  font-size: 17px;
+  font-size: 14px;
 }
 
 .login-page .login-registration input {
-  font-family: "Roboto Mono", monospace;
-  font-size: 17px;
+
+  font-size: 14px;
   border: 1px solid rgba(55, 9, 116, 0.5);
   height: 50px;
   border-radius: 6px;
 }
 
 .login-page .login-registration input::placeholder {
-  color: #370974;
+  color: var(--primary-color);
+  font-size: 13px;
 }
 
 .login-page .login-registration select,
 option {
   -webkit-appearance: none;
   -moz-appearance: none;
-  font-family: "Roboto Mono", monospace;
-  color: #370974;
+
+  color: var(--primary-color);
 }
 
 .login-page .login-registration textarea {
@@ -208,13 +536,13 @@ option {
 
 .login-page .login-registration .fa-eye-slash,
 .fa-angle-down {
-  color: #370974;
+  color: var(--primary-color);
 }
 
 .login-page .login-registration small p {
   font-size: 14px;
-  font-family: "Roboto Mono", monospace;
-  color: #370974;
+
+  color: var(--primary-color);
 }
 
 .login-page .login-registration small span {
@@ -230,7 +558,7 @@ option {
 
 .login-page .login-registration .upload-drop-zone {
   background-color: #cccccc;
-  border: 1px solid #370974;
+  border: 1px solid var(--primary-color);
   line-height: 100px;
   text-align: center;
   border-radius: 5px;
@@ -275,7 +603,7 @@ option {
 
 .verify-page .verify-body .verify-heading #verified,
 #unverified {
-  font-family: "Roboto Mono", monospace;
+
   text-transform: lowercase;
   font-size: 0.7em;
 }
@@ -307,29 +635,30 @@ option {
 
 .verify-registration label {
   text-transform: uppercase;
-  color: #370974;
+  color: var(--primary-color);
   font-family: "Roboto", sans-serif;
   font-weight: bold;
-  font-size: 17px;
+  font-size: 14px;
 }
+
 .verify-registration input {
-  font-family: "Roboto Mono", monospace;
-  font-size: 17px;
+
+  font-size: 14px;
   border: 1px solid rgba(55, 9, 116, 0.5);
   height: 50px;
   border-radius: 6px;
 }
 
 .verify-registration input::placeholder {
-  color: #370974;
+  color: var(--primary-color);
 }
 
 .verify-registration select,
 option {
   -webkit-appearance: none;
   -moz-appearance: none;
-  font-family: "Roboto Mono", monospace;
-  color: #370974;
+
+  color: var(--primary-color);
   height: 50px;
   border: 1px solid rgba(55, 9, 116, 0.5);
 }
@@ -340,13 +669,13 @@ option {
 
 .verify-registration .fa-eye-slash,
 .fa-angle-down {
-  color: #370974;
+  color: var(--primary-color);
 }
 
 .verify-registration small p {
   font-size: 14px;
-  font-family: "Roboto Mono", monospace;
-  color: #370974;
+
+  color: var(--primary-color);
 }
 
 .verify-registration small span {
@@ -360,20 +689,42 @@ option {
   margin-bottom: 0px;
 }
 
-.verify-registration .upload-drop-zone {
-  background-color: #cccccc;
-  border: 1px solid #370974;
-  line-height: 100px;
-  text-align: center;
-  border-radius: 5px;
+/* .verify-registration .upload-drop-zone {
+background-color: #cccccc;
+border: 1px solid var(--primary-color);
+line-height: 100px;
+text-align: center;
+border-radius: 5px;
+width: 100%;
+} */
+.verify-registration .custom-file {
   width: 100%;
+  height: 100px;
+  padding: 0px;
+  border: 1px solid var(--primary-color);
+  border-radius: 5px;
+  position: relative;
+  background-color: #cccccc;
+}
+
+.verify-registration .custom-file .custom-file-input {
+  height: 100px;
+}
+
+.verify-registration .custom-file label {
+  position: absolute;
+  color: #ffffff;
+  padding-left: 10px;
+  padding-top: 15px;
+  font-weight: 200;
+  text-transform: capitalize;
+  top: 0px;
 }
 
 /*  Sign Up  */
 
 .signup-page .container-fluid {
   margin: auto;
-  box-shadow: 2px 2px rgba(55, 9, 116, 0.26);
   border-radius: 10px;
   height: auto;
   background-color: #ffffff;
@@ -392,6 +743,11 @@ option {
   width: 135px;
 }
 
+.signup-page .signup-body .signup-heading .media .media-body p {
+  font-size: 13px;
+  text-align: justify;
+}
+
 .signup-page .signup-body .signup-heading .media p:last-child {
   margin-top: 30px;
 }
@@ -405,6 +761,8 @@ option {
   float: left;
   margin-right: 70px;
   list-style: circle;
+  font-size: 13px;
+
 }
 
 .signup-page .signup-body .signup-footer ul {
@@ -413,30 +771,28 @@ option {
 }
 
 .signup-registration label {
-  text-transform: uppercase;
-  color: #370974;
-  font-family: "Roboto", sans-serif;
-  font-weight: bold;
-  font-size: 17px;
+  color: var(--primary-color);
+  font-size: 13px;
 }
+
 .signup-registration input {
-  font-family: "Roboto Mono", monospace;
-  font-size: 17px;
+  font-size: 13px;
   border: 1px solid rgba(55, 9, 116, 0.5);
   height: 50px;
   border-radius: 6px;
+  color: var(--primary-color);
 }
 
 .signup-registration input::placeholder {
-  color: #370974;
+  color: var(--primary-color);
 }
 
 .signup-registration select,
 option {
   -webkit-appearance: none;
   -moz-appearance: none;
-  font-family: "Roboto Mono", monospace;
-  color: #370974;
+
+  color: var(--primary-color);
   height: 50px;
   border: 1px solid rgba(55, 9, 116, 0.5);
 }
@@ -447,13 +803,11 @@ option {
 
 .signup-registration .fa-eye-slash,
 .fa-angle-down {
-  color: #370974;
+  color: var(--primary-color);
 }
 
 .signup-registration small p {
-  font-size: 14px;
-  font-family: "Roboto Mono", monospace;
-  color: #370974;
+  color: red;
 }
 
 .signup-registration small span {
@@ -469,11 +823,21 @@ option {
 
 .signup-registration .upload-drop-zone {
   background-color: #cccccc;
-  border: 1px solid #370974;
+  border: 1px solid var(--primary-color);
   line-height: 100px;
   text-align: center;
   border-radius: 5px;
   width: 100%;
+}
+
+.signup-registration .signup-ag {
+  margin-top: 10px;
+  color: var(--primary-color);
+}
+
+.signup-registration .signup-ag a {
+  font-weight: 500;
+  font-size: 14px;
 }
 
 /*  Change Number */
@@ -520,6 +884,7 @@ option {
   float: left;
   margin-right: 70px;
   list-style: circle;
+  font-size: 13px;
 }
 
 .cp-page .cp-body .cp-footer ul {
@@ -528,30 +893,27 @@ option {
 }
 
 .cp-page .cp-registration label {
-  text-transform: uppercase;
-  color: #370974;
-  font-family: "Roboto", sans-serif;
-  font-weight: bold;
-  font-size: 17px;
+  color: var(--primary-color);
+  font-size: 13px;
 }
+
 .cp-page .cp-registration input {
-  font-family: "Roboto Mono", monospace;
-  font-size: 17px;
-  border: 1px solid rgba(55, 9, 116, 0.5);
+  font-size: 13px;
+  border: 1px solid var(--primary-color);
   height: 50px;
   border-radius: 6px;
 }
 
 .cp-page .cp-registration input::placeholder {
-  color: #370974;
+  color: var(--primary-color);
 }
 
 .cp-page .cp-registration select,
 option {
   -webkit-appearance: none;
   -moz-appearance: none;
-  font-family: "Roboto Mono", monospace;
-  color: #370974;
+
+  color: var(--primary-color);
   height: 50px;
   border: 1px solid rgba(55, 9, 116, 0.5);
 }
@@ -562,13 +924,13 @@ option {
 
 .cp-page .cp-registration .fa-eye-slash,
 .fa-angle-down {
-  color: #370974;
+  color: var(--primary-color);
 }
 
 .cp-page .cp-registration small p {
-  font-size: 14px;
-  font-family: "Roboto Mono", monospace;
-  color: #370974;
+  /*  font-size: 14px;*/
+
+  color: var(--primary-color);
 }
 
 .cp-page .cp-registration small span {
@@ -584,7 +946,7 @@ option {
 
 .cp-page .cp-registration .upload-drop-zone {
   background-color: #cccccc;
-  border: 1px solid #370974;
+  border: 1px solid var(--primary-color);
   line-height: 100px;
   text-align: center;
   border-radius: 5px;
@@ -634,6 +996,7 @@ option {
   float: left;
   margin-right: 70px;
   list-style: circle;
+  font-family: "Roboto Monospace", monospace;
 }
 
 .vn-page .vn-body .vn-footer ul {
@@ -643,29 +1006,30 @@ option {
 
 .vn-page .vn-registration label {
   text-transform: uppercase;
-  color: #370974;
+  color: var(--primary-color);
   font-family: "Roboto", sans-serif;
   font-weight: bold;
-  font-size: 17px;
+  font-size: 14px;
 }
+
 .vn-page .vn-registration input {
-  font-family: "Roboto Mono", monospace;
-  font-size: 17px;
+
+  font-size: 14px;
   border: 1px solid rgba(55, 9, 116, 0.5);
   height: 50px;
   border-radius: 6px;
 }
 
 .vn-page .vn-registration input::placeholder {
-  color: #370974;
+  color: var(--primary-color);
 }
 
 .vn-page .vn-registration select,
 option {
   -webkit-appearance: none;
   -moz-appearance: none;
-  font-family: "Roboto Mono", monospace;
-  color: #370974;
+
+  color: var(--primary-color);
   height: 50px;
   border: 1px solid rgba(55, 9, 116, 0.5);
 }
@@ -676,13 +1040,13 @@ option {
 
 .vn-page .vn-registration .fa-eye-slash,
 .fa-angle-down {
-  color: #370974;
+  color: var(--primary-color);
 }
 
 .vn-page .vn-registration small p {
   font-size: 14px;
-  font-family: "Roboto Mono", monospace;
-  color: #370974;
+
+  color: var(--primary-color);
 }
 
 .vn-page .vn-registration small span {
@@ -698,7 +1062,7 @@ option {
 
 .vn-page .vn-registration .upload-drop-zone {
   background-color: #cccccc;
-  border: 1px solid #370974;
+  border: 1px solid var(--primary-color);
   line-height: 100px;
   text-align: center;
   border-radius: 5px;
@@ -711,7 +1075,7 @@ option {
   position: absolute;
   margin: 0 auto;
   left: 170px;
-  top: 730px;
+  top: 650px;
 }
 
 .page-body .page .account-image-2 {
@@ -729,19 +1093,20 @@ option {
 }
 
 .page-body .page .account-image-1 img {
-  height: 500px;
-  width: 500px;
+  height: 300px;
+  width: 300px;
 }
 
 .page-body .page .account-image-2 img {
-  height: 250px;
-  width: 250px;
-}
-
-.page-body .page .account-image-3 img {
   height: 200px;
   width: 200px;
 }
+
+.page-body .page .account-image-3 img {
+  height: 120px;
+  width: 120px;
+}
+
 .accounts-page .container-fluid {
   margin: auto;
   box-shadow: 2px 2px rgba(55, 9, 116, 0.26);
@@ -774,18 +1139,19 @@ option {
 
 .accounts-page .accounts-body .accounts-heading #verified,
 #unverified {
-  font-family: "Roboto Mono", monospace;
+
   text-transform: lowercase;
   font-size: 0.7em;
 }
 
-.accounts-page .accounts-body .account-content {
+.accounts-page .accounts-body .accounts-content {
   margin-top: 20px;
 }
 
-.accounts-page .account-content p {
-  text-align: left;
-  width: 447px;
+.accounts-page .accounts-body .accounts-content p {
+  text-align: justify;
+  font-size: 13px;
+
 }
 
 .accounts-page .accounts-body .accounts-footer {
@@ -797,6 +1163,8 @@ option {
   float: left;
   margin-right: 70px;
   list-style: circle;
+  font-size: 13px;
+
 }
 
 .accounts-page .accounts-body .accounts-footer ul {
@@ -806,8 +1174,8 @@ option {
 
 .accounts-page .accounts-registration img {
   margin-top: 5px;
-  height: 84px;
-  width: 84px;
+  height: 60px;
+  width: 60px;
 }
 
 .accounts-page .accounts-registration .form-group {
@@ -823,18 +1191,24 @@ option {
 }
 
 .accounts-page .accounts-registration .accounts-button .btn-normal {
-  font-family: "Roboto Mono", monospace;
   background: #ffffff;
-  color: #370974;
-  border: 1px solid rgba(55, 9, 116, 0.5);
-  /* padding: 3px 15px 3px 15px; */
-  font-size: 1em;
-  height: 50px;
-  text-transform: uppercase;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  box-shadow: 0 10px 60px -40px rgba(0, 0, 0, .15);
+  font-size: .8em;
+  transition: .5s;
+}
+
+.accounts-page .accounts-registration .accounts-button .btn-normal:hover {
+  background: var(--primary-color);
+  color:  #ffffff;
+  border: 1px solid var(--primary-color);
+  box-shadow: 0 10px 60px -40px rgba(0, 0, 0, .15);
+  font-size: .8em;
 }
 
 .accounts-page .accounts-registration .accounts-button .btn-verified {
-  font-family: "Roboto Mono", monospace;
+
   background: #41b661;
   color: #ffffff;
   border-radius: 50px;
@@ -844,34 +1218,34 @@ option {
 }
 
 .accounts-page .accounts-registration label {
-  color: #370974;
-  font-family: "Roboto", sans-serif;
-  font-weight: 200;
-  font-size: 1.5em;
+  color: var(--primary-color);
+  font-weight: 400;
+  font-size: 1.2em;
 }
 
 .accounts-page .accounts-registration .label-small {
-  font-family: "Roboto Mono", monospace;
+
   font-size: 0.8em;
 }
+
 .accounts-page .accounts-registration input {
-  font-family: "Roboto Mono", monospace;
-  font-size: 17px;
+
+  font-size: 14px;
   border: 1px solid rgba(55, 9, 116, 0.5);
   height: 50px;
   border-radius: 6px;
 }
 
 .accounts-page .accounts-registration input::placeholder {
-  color: #370974;
+  color: var(--primary-color);
 }
 
 .accounts-page .accounts-registration select,
 option {
   -webkit-appearance: none;
   -moz-appearance: none;
-  font-family: "Roboto Mono", monospace;
-  color: #370974;
+
+  color: var(--primary-color);
   height: 50px;
   border: 1px solid rgba(55, 9, 116, 0.5);
 }
@@ -882,13 +1256,13 @@ option {
 
 .accounts-page .accounts-registration .fa-eye-slash,
 .fa-angle-down {
-  color: #370974;
+  color: var(--primary-color);
 }
 
 .accounts-page .accounts-registration small p {
   font-size: 14px;
-  font-family: "Roboto Mono", monospace;
-  color: #370974;
+
+  color: var(--primary-color);
 }
 
 .accounts-page .accounts-registration small span {
@@ -900,7 +1274,7 @@ option {
 
 .accounts-page .accounts-registration .upload-drop-zone {
   background-color: #cccccc;
-  border: 1px solid #370974;
+  border: 1px solid var(--primary-color);
   line-height: 100px;
   text-align: center;
   border-radius: 5px;
@@ -936,7 +1310,7 @@ option {
   margin: auto;
   box-shadow: 2px 2px rgba(55, 9, 116, 0.26);
   border-radius: 10px;
-  height: auto;
+  /* height: auto; */
   background-color: #ffffff;
 }
 
@@ -950,6 +1324,7 @@ option {
   float: left;
   margin-right: 70px;
   list-style: circle;
+  font-size: 13px;
 }
 
 .payment-page .payment-body .payment-footer ul {
@@ -958,30 +1333,30 @@ option {
 }
 
 .payment-page .payment-registration label {
-  text-transform: uppercase;
-  color: #370974;
-  font-family: "Roboto", sans-serif;
-  font-weight: bold;
-  font-size: 17px;
+  color: var(--primary-color);
+  font-size: 13px;
 }
+
 .payment-page .payment-registration input {
-  font-family: "Roboto Mono", monospace;
-  font-size: 17px;
-  border: 1px solid rgba(55, 9, 116, 0.5);
+
+  font-size: 14px;
+  border: 1px solid var(--primary-color);
   height: 50px;
   border-radius: 6px;
+  font-size: 14px;
 }
 
 .payment-page .payment-registration input::placeholder {
-  color: #370974;
+  color: var(--primary-color);
+  font-size: 14px;
 }
 
 .payment-page .payment-registration select,
 option {
   -webkit-appearance: none;
   -moz-appearance: none;
-  font-family: "Roboto Mono", monospace;
-  color: #370974;
+
+  color: var(--primary-color);
   height: 50px;
   border: 1px solid rgba(55, 9, 116, 0.5);
 }
@@ -992,13 +1367,13 @@ option {
 
 .payment-page .payment-registration .fa-eye-slash,
 .fa-angle-down {
-  color: #370974;
+  color: var(--primary-color);
 }
 
 .payment-page .payment-registration small p {
   font-size: 14px;
-  font-family: "Roboto Mono", monospace;
-  color: #370974;
+
+  color: var(--primary-color);
 }
 
 .payment-page .payment-registration small span {
@@ -1014,12 +1389,13 @@ option {
 
 .payment-page .payment-registration .upload-drop-zone {
   background-color: #cccccc;
-  border: 1px solid #370974;
+  border: 1px solid var(--primary-color);
   line-height: 100px;
   text-align: center;
   border-radius: 5px;
   width: 100%;
 }
+
 .payment-page .payment-registration .payment-submit {
   margin-top: 200px;
 }
@@ -1069,15 +1445,16 @@ option {
 
 .upload-page .upload-body .upload-heading p {
   text-align: left;
-  width: 447px;
   margin-top: 20px;
-  font-family: "Roboto Mono", monospace;
+  font-size: 14px;
+
 }
 
 .upload-page .upload-body .upload-heading li {
   list-style: none;
   margin-bottom: 5px;
-  font-family: "Roboto Mono", monospace;
+  font-size: 14px;
+  list-style: circle;
 }
 
 .upload-page .upload-body .upload-footer {
@@ -1089,39 +1466,40 @@ option {
   float: left;
   margin-right: 70px;
   list-style: circle;
-  font-family: "Roboto Mono", monospace;
+  font-size: 14px;
+
 }
 
 .upload-page .upload-body .upload-footer ul {
   /* border: 1px solid blue; */
   padding-left: 20px;
 }
+
 .upload-registration {
   padding: 50px 30px 50px 30px !important;
 }
+
 .upload-registration label {
-  text-transform: uppercase;
-  color: #370974;
-  font-family: "Roboto", sans-serif;
-  font-weight: bold;
-  font-size: 17px;
+  color: var(--primary-color);
+  font-size: 13px !important;
 }
+
 .upload-registration input {
-  font-family: "Roboto Mono", monospace;
-  font-size: 17px;
+
+  font-size: 14px;
   border: 1px solid rgba(55, 9, 116, 0.5);
   height: 50px;
   border-radius: 6px;
 }
 
 .upload-registration input::placeholder {
-  color: #370974;
+  color: var(--primary-color);
 }
 
 .upload-registration small p {
   font-size: 14px;
-  font-family: "Roboto Mono", monospace;
-  color: #370974;
+
+  color: var(--primary-color);
 }
 
 .upload-registration small span {
@@ -1135,8 +1513,8 @@ option {
 option {
   -webkit-appearance: none;
   -moz-appearance: none;
-  font-family: "Roboto Mono", monospace;
-  color: #370974;
+
+  color: var(--primary-color);
   height: 50px;
   border: 1px solid rgba(55, 9, 116, 0.5);
 }
@@ -1146,15 +1524,29 @@ option {
 }
 
 .upload-registration textarea::placeholder {
-  font-family: "Roboto Mono", monospace;
+
   font-size: 0.85em;
-  color: #370974;
+  color: var(--primary-color);
+}
+
+.upload-registration .custom-file {
+  width: 100%;
+  height: 100px;
+  padding: 0px;
+  border: 1px solid var(--primary-color);
+  position: relative;
+}
+
+.upload-registration .custom-file .custom-file-input {
+  height: 100px;
+}
+
+.upload-registration .custom-file .upload-drop-zone {
+  position: absolute;
 }
 
 .upload-registration .upload-drop-zone {
-  border: 1px solid #37097480;
   width: 100%;
-  border-radius: 5px;
   padding-top: 30px;
   padding-bottom: 30px;
   padding-left: 0px;
@@ -1166,25 +1558,27 @@ option {
   height: 62px;
   /* padding-left: 30px; */
 }
+
 .upload-registration .upload-drop-zone p {
   margin-top: 20px;
   font-size: 0.85em;
 }
+
 .upload-registration .upload-drop-zone .btn {
-  background-color: #370974;
+  background-color: var(--primary-color);
   border-radius: 10px;
   padding: 0px 35px;
   margin-left: 20px;
   margin-top: 12px;
   height: 35px;
   color: #ffffff;
-  font-family: "Roboto Mono", monospace;
+
   font-size: 0.81em;
   text-transform: uppercase;
 }
 
 .upload-registration .upload-tags {
-  border: 1px solid #37097480;
+  border: 1px solid var(--primary-color);
   width: 100%;
   border-radius: 5px;
   padding-top: 15px;
@@ -1203,17 +1597,20 @@ option {
 
 .upload-registration .upload-check .custom-control label {
   font-weight: 300;
-  font-family: "Roboto Mono", monospace;
+
   font-size: 0.9em;
 }
 
 /* Checkout Page */
-.nav-2 {
-  margin-left: 65px;
-}
 .page-body-2 {
   margin-top: -100px;
 }
+
+.checkout-page {
+  margin-left: -30px !important;
+  margin-right: -15px;
+}
+
 .checkout-page h4 {
   color: #707070;
   font-size: 2em;
@@ -1225,7 +1622,7 @@ option {
 }
 
 .checkout-page .billing-address {
-  border: 1px solid #3709749d;
+  border: 1px solid var(--primary-color)9d;
   padding: 50px;
 }
 
@@ -1237,65 +1634,65 @@ option {
 
 .checkout-page .billing-address input,
 .checkout-page .billing-address textarea {
-  font-family: "Roboto Mono", monospace;
+
   font-weight: 300;
-  color: #370974;
+  color: var(--primary-color);
   height: 50px;
-  border: 1px solid #370974;
+  border: 1px solid var(--primary-color);
 }
 
 .checkout-page .billing-address .form-text p {
-  color: #370974;
-  font-family: "Roboto Mono", monospace;
+  color: var(--primary-color);
+
 }
 
 .checkout-page .billing-address input::placeholder {
-  color: #370974;
+  color: var(--primary-color);
 }
 
 .checkout-page .billing-address select {
   height: 50px;
-  border: 1px solid #370974;
+  border: 1px solid var(--primary-color);
 }
 
 .checkout-page .billing-address select,
 option {
-  color: #370974;
-  font-family: "Roboto Mono", monospace;
+  color: var(--primary-color);
+
 }
 
 .checkout-page .payment-details {
-  border: 1px solid #370974;
+  border: 1px solid var(--primary-color);
   padding: 50px;
 }
 
 .checkout-page .payment-details label {
-  color: #370974;
+  color: var(--primary-color);
   font-family: "Roboto", san-serif;
   font-weight: 300;
   text-transform: uppercase;
 }
 
 .checkout-page .payment-details input {
-  color: #370974;
-  font-family: "Roboto Mono", monospace;
+  color: var(--primary-color);
+
   font-weight: 300;
   border-top: none;
   border-left: none;
   border-right: none;
-  border-bottom: 1px solid #370974;
+  border-bottom: 1px solid var(--primary-color);
   height: 50px;
   border-radius: 0px;
   margin-bottom: 50px;
 }
 
 .checkout-page .checkout-cart {
-  border: 1px solid #370974;
+  border: 1px solid #cccccc;
   padding: 50px;
 }
 
 .checkout-page .checkout-cart hr {
-  border: 1px solid #370974;
+  border: 1px solid var(--primary-color);
   border-style: dashed;
 }
 
@@ -1314,10 +1711,697 @@ option {
 
 .checkout-page .checkout-cart .cart-pay button {
   margin-top: 20px;
-  background-color: #370974;
+  background-color: var(--primary-color);
   color: #ffffff;
 }
 
 .checkout-page .checkout-cart .form-group {
   margin-bottom: 0px;
+}
+
+/* Cart */
+.checkout-page .cart .card {
+  border: 1px solid #cccccc;
+  border-radius: 0px;
+  margin-right: 100px;
+  margin-top: 50px;
+}
+
+.checkout-page .cart .card .card-body {
+  position: absolute;
+  margin-left: 180px;
+}
+
+.checkout-page .cart .card .card-img-top {
+  height: 200px;
+  width: 200px;
+  float: left;
+  padding: 15px;
+}
+
+.checkout-page .cart .card .card-body {
+  color: #707070;
+  font-family: "Montserrat", sans-serif;
+}
+
+.checkout-page .cart .card .card-body h5 {
+  font-size: 1.7em;
+}
+
+.checkout-page .cart .card .card-body p {
+  font-size: 1.35em;
+}
+
+.checkout-page .cart .card .card-body a {
+  font-weight: 600;
+}
+
+/*  Dashboard */
+
+.dashboard {
+  background-color: #f7f7fa;
+}
+
+.dashboard-tabs {
+  margin: 0 50px;
+}
+
+.dashboard-tabs .tabs {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.dashboard-tabs .tabs p {
+  float: left;
+  color: var(--primary-color);
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2em;
+}
+
+.dashboard-tabs .tabs p:nth-last-of-type(3) {
+  margin-left: 100px;
+}
+
+.dashboard-tabs .tabs p:nth-last-of-type(2) {
+  float: right;
+}
+
+.dashboard-tabs .tabs p:nth-last-of-type(4) {
+  margin-left: 100px;
+}
+
+.dashboard-tabs-2 {
+  margin: 0px;
+  padding: 0 50px;
+  background-color: #ffffff;
+}
+
+.dashboard-tabs-2 .tabs {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.dashboard-tabs-2 .tabs a {
+  float: left;
+  color: var(--primary-color);
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2em;
+  height: 100%;
+}
+
+.dashboard-tabs-2 .tabs a:nth-last-of-type(2) {
+  margin-left: 100px;
+}
+
+.dashboard-tabs-2 .tabs a:nth-last-of-type(1) {
+  margin-left: 100px;
+}
+
+.dashboard-tabs-2 .tabs a:hover {
+  text-decoration: none;
+}
+
+.dashboard-explore .container-fluid {
+  padding: 0px;
+}
+
+.dashboard-explore {
+  margin-top: 100px;
+  padding: 0 50px;
+}
+
+.dashboard-explore .row {
+  margin-bottom: 50px;
+}
+
+.dashboard-explore .dashboard-card .card {
+  border: 1px solid var(--primary-color);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  position: relative;
+}
+
+.dashboard-explore .dashboard-card .card img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.dashboard-explore .dashboard-card .card .card-body {
+  position: absolute;
+  width: 100%;
+  background-color: #00000041;
+  color: #ffffff;
+  bottom: 0px;
+  padding: 10px;
+  /* padding-top: 8px; */
+  text-align: center;
+}
+
+.dashboard-explore .dashboard-card .card .card-body p {
+  float: left;
+  margin: 0 auto;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+.dashboard-explore .dashboard-card .card .card-body p:last-of-type {
+  float: right;
+}
+
+.dashboard-explore .dashboard-card .card .card-body span {
+  margin-left: 10px;
+}
+
+/*  Profile Update */
+
+.profile-page .container-fluid {
+  margin: auto;
+  border-radius: 10px;
+  height: auto;
+  background-color: #ffffff;
+}
+
+.profile-page .profile-body .profile-heading {
+  margin-bottom: 170px;
+}
+
+.profile-page .profile-body .profile-heading #verified {
+  background-color: red;
+  padding: 3px 5px 3px 5px;
+  width: 80px;
+  color: #ffffff;
+  border-radius: 20px;
+  margin-right: 30px;
+}
+
+.profile-page .profile-body .profile-heading #unverified {
+  background-color: #41b661;
+  padding: 3px 5px 3px 5px;
+  width: 90px;
+  color: #ffffff;
+  border-radius: 20px;
+  margin-left: 0px;
+}
+
+.profile-page .profile-body .profile-heading #verified,
+#unverified {
+
+  text-transform: lowercase;
+  font-size: 0.7em;
+}
+
+.profile-page .profile-body .profile-content {
+  margin-top: 50px;
+  margin-bottom: 100px;
+
+}
+
+.profile-page .profile-content p {
+  text-align: left;
+  font-size: 14px;
+}
+
+.profile-page .profile-body .profile-footer {
+  overflow: auto;
+  margin-left: 0px;
+}
+
+.profile-page .profile-body .profile-footer li {
+  float: left;
+  margin-right: 70px;
+  list-style: circle;
+  font-size: 13px;
+
+}
+
+.profile-page .profile-body .profile-footer ul {
+  /* border: 1px solid blue; */
+  padding-left: 20px;
+}
+
+.profile-registration label {
+  color: var(--primary-color);
+  font-size: 13px;
+}
+
+.profile-registration input {
+
+  font-size: 14px;
+  border: 1px solid rgba(55, 9, 116, 0.5);
+  height: 50px;
+  border-radius: 6px;
+}
+
+.profile-registration input::placeholder {
+  color: var(--primary-color);
+  font-size: 13px;
+}
+
+.profile-registration select,
+option {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  color: var(--primary-color);
+  height: 50px;
+  border: 1px solid rgba(55, 9, 116, 0.5);
+}
+
+.profile-registration textarea {
+  border: 1px solid rgba(55, 9, 116, 0.5);
+}
+
+.profile-registration .fa-eye-slash,
+.fa-angle-down {
+  color: var(--primary-color);
+}
+
+.profile-registration small p {
+  font-size: 13px;
+
+  color: var(--primary-color);
+}
+
+.profile-registration small span {
+  color: #41b661;
+  font-weight: bold;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+}
+
+.profile-registration .form-group {
+  margin-bottom: 0px;
+}
+
+/* .profile-registration .upload-drop-zone {
+background-color: #cccccc;
+border: 1px solid var(--primary-color);
+line-height: 100px;
+text-align: center;
+border-radius: 5px;
+width: 100%;
+} */
+
+.profile-registration .custom-file {
+  width: 100%;
+  height: 100px;
+  padding: 0px;
+  border: 1px solid var(--primary-color)80;
+  position: relative;
+}
+
+.profile-registration .custom-file .custom-file-input {
+  height: 100px;
+}
+
+.profile-registration .custom-file .upload-drop-zone {
+  position: absolute;
+}
+
+.profile-registration .upload-drop-zone {
+  width: 100%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.profile-registration .upload-drop-zone img {
+  width: 120px;
+  height: 62px;
+  /* padding-left: 30px; */
+}
+
+.profile-registration .upload-drop-zone p {
+  margin-top: 20px;
+  font-size: 0.85em;
+}
+
+.profile-registration .upload-drop-zone .btn {
+  background-color: var(--primary-color);
+  border-radius: 10px;
+  padding: 0px 35px;
+  margin-left: 20px;
+  margin-top: 12px;
+  height: 35px;
+  color: #ffffff;
+
+  font-size: 0.81em;
+  text-transform: uppercase;
+}
+
+/*  Password Reset */
+
+.pr-page .container-fluid {
+  margin: auto;
+  box-shadow: 2px 2px rgba(55, 9, 116, 0.26);
+  border-radius: 10px;
+  height: auto;
+  background-color: #ffffff;
+  margin-bottom: 70px;
+}
+
+.pr-page .pr-heading {
+  margin-left: 20px;
+}
+
+.pr-page .pr-body .pr-heading {
+  margin-bottom: 200px;
+}
+
+.pr-page .pr-body .pr-heading button {
+  font-size: 1em;
+}
+
+.pr-page .pr-body .pr-heading img {
+  height: 200px;
+  width: 200px;
+}
+
+.pr-page .pr-body .pr-heading li {
+  list-style: circle;
+  padding: 10px;
+
+}
+
+.pr-page .pr-body .pr-footer,
+ul {
+  /* border: 1px solid blue; */
+  padding-left: 20px;
+}
+
+.pr-page .pr-body .pr-footer {
+  overflow: auto;
+  margin-left: 0px;
+}
+
+.pr-page .pr-body .pr-footer li {
+  float: left;
+  margin-right: 70px;
+  list-style: circle;
+
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.pr-page .pr-registration label {
+  color: var(--primary-color);
+  font-size: 13px;
+}
+
+.pr-page .pr-registration input {
+
+  font-size: 14px;
+  border: 1px solid rgba(55, 9, 116, 0.5);
+  height: 50px;
+  border-radius: 6px;
+}
+
+.pr-page .pr-registration input::placeholder {
+  color: var(--primary-color);
+}
+
+.pr-page .pr-registration select,
+option {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  color: var(--primary-color);
+}
+
+.pr-page .pr-registration textarea {
+  border: 1px solid rgba(55, 9, 116, 0.5);
+}
+
+.pr-page .pr-registration .fa-eye-slash,
+.fa-angle-down {
+  color: var(--primary-color);
+}
+
+.pr-page .pr-registration small p {
+  font-size: 14px;
+  color: var(--primary-color);
+}
+
+.pr-page .pr-registration small span {
+  color: #41b661;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.pr-page .pr-registration .form-group {
+  margin-bottom: 0px;
+}
+
+.pr-page .pr-registration .btn {
+  margin-bottom: 140px;
+}
+
+/* Mobile Respionsiveness */
+@media (max-width: 576px) {
+
+  /* Generic */
+  html {
+    overflow-y: auto;
+  }
+
+  .input-names .col-md-6:last-of-type {
+    margin-top: 24px;
+  }
+
+  /* Page and Navbar Settings */
+  .page {
+    padding-top: 50px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .page #page-border {
+    border: 1.5px solid rgba(55, 9, 116, 0.5);
+    border-bottom: 0px;
+  }
+
+  .page #page-border-2 {
+    border: 1.5px solid rgba(55, 9, 116, 0.5);
+    border-bottom-left-radius: 0px;
+  }
+
+  .page #page-border-3 {
+    border: 1.5px solid rgba(55, 9, 116, 0.5);
+    padding: 30px 20px 30px 20px;
+  }
+
+  .page .page-sub-title h4 {
+    margin-top: 30px;
+    font-size: 1.3em;
+    text-align: center;
+    width: 100%;
+  }
+
+  .navbar .navbar-brand {
+    margin-left: 0px;
+  }
+
+  .navbar-nav .nav-item {
+    margin: 0px 0px;
+  }
+
+  .navbar-nav .nav-item .nav-button {
+    font-size: 0.8em;
+    width: 50%;
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
+
+  /* Sign Up Page */
+  .signup-page .signup-body h4 {
+    text-align: center;
+  }
+
+  .signup-page .signup-body .signup-heading .media {
+    margin-top: 30px;
+    text-align: center;
+    position: relative;
+  }
+
+  .signup-page .signup-body .signup-heading .media .img {
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    position: absolute;
+  }
+
+  .signup-page .signup-body .signup-heading .media .img img {
+    height: 200px;
+    width: 65%;
+    margin-right: 0px;
+  }
+
+  .signup-page .signup-body .signup-heading .media .media-body {
+    margin-top: 230px;
+  }
+
+  .signup-page .signup-body .signup-footer li {
+    margin-right: 40px;
+    font-size: 0.8em;
+  }
+
+  /* Verify Number */
+  .vn-page .container-fluid row:last-of-type {
+    position: relative;
+  }
+
+  .vn-page .page-sub-title h4 {
+    text-align: center;
+  }
+
+  .vn-page .vn-body {
+    height: 1000px;
+  }
+
+  .vn-page .vn-body .vn-footer {
+    margin-top: 800px;
+  }
+
+  .vn-page .vn-body .vn-footer li {
+    margin-right: 40px;
+    font-size: 0.8em;
+  }
+
+  .vn-page .vn-registration {
+    position: absolute;
+    border: 0px !important;
+  }
+
+  .vn-page .vn-registration form {
+    margin-top: 100px;
+  }
+
+  /* Upload Page */
+  .upload-page .upload-body .upload-heading p {
+    width: 100%;
+  }
+
+  .upload-page .upload-body .upload-footer {
+    position: absolute;
+    top: 1450px;
+  }
+
+  .upload-page .upload-body .upload-footer li {
+    margin-right: 40px;
+    font-size: 0.8em;
+    font-size: 13px;
+  }
+
+  .upload-page .upload-registration #save-button {
+    margin-bottom: 100px;
+  }
+
+  .custom-file .upload-drop-zone img {
+    width: 60px;
+    height: 31.5px;
+  }
+
+  .custom-file .upload-drop-zone p {
+    margin-top: 10px;
+    font-size: 0.65em;
+  }
+
+  .custom-file .upload-drop-zone .btn {
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    padding: 0px 17.5px;
+    margin-left: 10px;
+    margin-top: 7px;
+    height: 17.5px;
+    color: #ffffff;
+    font-size: 0.5em;
+    text-transform: uppercase;
+  }
+
+  /*  Profile Page */
+  .profile-page .profile-content p {
+    width: 100%;
+    text-align: justify;
+    font-size: 13px !important;
+  }
+
+  .profile-page .profile-body .profile-footer li {
+    margin-right: 40px;
+    font-size: 0.8em;
+    font-size: 13px;
+  }
+
+  /* Payment */
+  .payment-page .container-fluid row:last-of-type {
+    position: relative;
+  }
+
+  .payment-page .payment-body {
+    height: 1000px;
+  }
+
+  .payment-registration {
+    position: absolute;
+    margin-top: 50px;
+    border: 0px !important;
+    padding-right: 40px !important;
+  }
+
+  .payment-registration form {
+    margin-top: 50px;
+  }
+
+  .payment-registration .payment-input .col-4 .input-group,
+  .col-2 .input-group {
+    margin-top: 25px;
+  }
+
+  .payment-page .payment-body .payment-footer li {
+    margin-right: 40px;
+    font-size: 0.8em;
+  }
+
+  .payment-page .payment-body .payment-footer {
+    margin-top: 800px;
+  }
+
+  /*  Password Reset*/
+  .pr-page .pr-body {
+    height: 500px;
+  }
+
+  .pr-page .pr-registration {
+    border: 0px !important;
+    border-bottom-right-radius: 0px !important;
+    margin-bottom: 30px;
+  }
+
+  /* Accounts */
+  .accounts-page .accounts-body .accounts-content {
+    width: 100%;
+  }
+
+  .accounts-page .accounts-body .accounts-heading .buttons {
+    text-align: center;
+    padding-left: 40px;
+  }
+
+  .accounts-page .accounts-registration img {
+    margin-top: 5px;
+    height: 50px;
+    width: 50px;
+  }
+
+  .accounts-page .accounts-registration .accounts-button .btn-verified {
+    background: #41b661;
+    color: #ffffff;
+    border-radius: 50px;
+    padding: 5px 7px 5px 7px;
+    font-size: 0.5em;
+    margin-left: 0px;
+  }
 }
