@@ -689,12 +689,12 @@ option {
 .verify-registration .custom-file .custom-file-label {
   height: 100px;
   /* .verify-registration .upload-drop-zone {
-background-color: #cccccc;
-border: 1px solid var(--primary-color);
-line-height: 100px;
-text-align: center;
-border-radius: 5px;
-width: 100%;
+  background-color: #cccccc;
+  border: 1px solid var(--primary-color);
+  line-height: 100px;
+  text-align: center;
+  border-radius: 5px;
+  width: 100%;
 } */
 }
 .verify-registration .custom-file {
@@ -715,9 +715,9 @@ width: 100%;
 }
 
 .verify-registration
-  .custom-file
-  .custom-file-input
-  ~ .custom-file-label::after {
+.custom-file
+.custom-file-input
+~ .custom-file-label::after {
   content: none;
 }
 
@@ -1762,77 +1762,13 @@ option {
   background-color: #f7f7fa;
 }
 
-.dashboard-tabs {
-  margin: 0 50px;
+.dashboard-info {
+  background-color: var(--primary-color);
+  color: #fff;
 }
 
-.dashboard-tabs .tabs {
-  margin-top: 20px;
-  width: 100%;
-}
-
-.dashboard-tabs .tabs p {
-  float: left;
-  color: var(--primary-color);
-  text-transform: uppercase;
-  font-family: "Montserrat", sans-serif;
-  font-size: 1.2em;
-}
-
-.dashboard-tabs .tabs p:nth-last-of-type(3) {
-  margin-left: 100px;
-}
-
-.dashboard-tabs .tabs p:nth-last-of-type(2) {
-  float: right;
-}
-
-.dashboard-tabs .tabs p:nth-last-of-type(4) {
-  margin-left: 100px;
-}
-
-.dashboard-tabs-2 {
-  margin: 0px;
-  padding: 0 50px;
-  background-color: #ffffff;
-}
-
-.dashboard-tabs-2 .tabs {
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-.dashboard-tabs-2 .tabs a {
-  float: left;
-  color: var(--primary-color);
-  font-family: "Montserrat", sans-serif;
-  font-size: 1.2em;
-  height: 100%;
-}
-
-.dashboard-tabs-2 .tabs a:nth-last-of-type(2) {
-  margin-left: 100px;
-}
-
-.dashboard-tabs-2 .tabs a:nth-last-of-type(1) {
-  margin-left: 100px;
-}
-
-.dashboard-tabs-2 .tabs a:hover {
-  text-decoration: none;
-}
-
-.dashboard-explore .container-fluid {
-  padding: 0px;
-}
-
-.dashboard-explore {
-  margin-top: 100px;
-  padding: 0 50px;
-}
-
-.dashboard-explore .row {
-  margin-bottom: 50px;
+.dashboard-info a {
+  color: #fff;
 }
 
 .dashboard-explore .dashboard-card .card {
