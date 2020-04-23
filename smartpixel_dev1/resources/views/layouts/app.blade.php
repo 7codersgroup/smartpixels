@@ -69,7 +69,7 @@
                         @endif
                     @else
                     <li class="nav-item mx-md-4 my-md-0 postion-relative">
-              <a class="nav-link px-0" href="upload.html">Upload.</a>
+              <a class="nav-link px-0" href="{{ route('upload') }}">Upload.</a>
             </li>
             <li class="nav-item mx-md-4 my-md-0 postion-relative">
             <a class=" nav-link text-dark font-13" href="{{ route('logout') }}"
@@ -77,6 +77,10 @@
                                                      document.getElementById('logout-form').submit();">
                                         {{ __('Logout') }}
                                     </a>
+                    <li class="nav-item dropdown">
+                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                    {{ Auth::user()->firstname }} <span class="caret"></span>
+                                </a>
 
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                                         @csrf
