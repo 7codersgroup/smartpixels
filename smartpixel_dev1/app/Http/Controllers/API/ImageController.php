@@ -4,15 +4,22 @@ namespace App\Http\Controllers\API;
    
 use Illuminate\Http\Request;
 use App\Http\Controllers\API\BaseController as BaseController;
+<<<<<<< Updated upstream
 use App\Product;
 use Validator;
 use App\Http\Resources\Product as ProductResource;
+=======
+use App\Image;
+use Validator;
+use App\Http\Resources\Image as ImageResource;
+>>>>>>> Stashed changes
    
 class ImageController extends BaseController
 {
     /**
      * Display a listing of the resource.
      *
+<<<<<<< Updated upstream
      * @return \Illuminate\Http\Response
      */
     public function index()
@@ -20,6 +27,15 @@ class ImageController extends BaseController
         $products = Product::all();
     
         return $this->sendResponse(ProductResource::collection($products), 'Products retrieved successfully.');
+=======
+     * @return \Illuminate\Http\Responses
+     */
+    public function index()
+    {
+        $image = Image::all();
+    
+        return $this->sendResponse(ImageResource::collection($image), 'Image retrieved successfully.');
+>>>>>>> Stashed changes
     }
     /**
      * Store a newly created resource in storage.
@@ -32,19 +48,24 @@ class ImageController extends BaseController
         $input = $request->all();
    
         $validator = Validator::make($input, [
+            'url' => 'required',
+            'user_id'=> 'required',
             'title' => 'required',
             'location' => 'required',
-            'tags' => 'required',
-            'price' => 'required'
+            'description' => 'required',
+            'category' => 'required',
+            'tag' => 'required',
+            'price' => 'required',
+            'rating' => 'required'
         ]);
    
         if($validator->fails()){
             return $this->sendError('Validation Error.', $validator->errors());       
         }
    
-        $product = Product::create($input);
+        $image = Image::create($input);
    
-        return $this->sendResponse(new ProductResource($product), 'Asset uploaded successfully.');
+        return $this->sendResponse(new ImageResource($image), 'Asset uploaded successfully.');
     } 
    
     /**
@@ -55,13 +76,13 @@ class ImageController extends BaseController
      */
     public function show($id)
     {
-        $product = Product::find($id);
+        $image = Image::find($id);
   
-        if (is_null($product)) {
-            return $this->sendError('Product not found.');
+        if (is_null($image)) {
+            return $this->sendError('Image not found.');
         }
    
-        return $this->sendResponse(new ProductResource($product), 'Product retrieved successfully.');
+        return $this->sendResponse(new ImageResource($image), 'Image retrieved successfully.');
     }
     
     /**
@@ -71,24 +92,34 @@ class ImageController extends BaseController
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Product $product)
+    public function update(Request $request, Image $image)
     {
         $input = $request->all();
    
         $validator = Validator::make($input, [
-            'name' => 'required',
-            'detail' => 'required'
+            'title' => 'required',
+            'location' => 'required',
+            'description' => 'required',
+            'category' => 'required',
+            'tag' => 'required',
+            'price' => 'required',
+            'rating' => 'required'
         ]);
    
         if($validator->fails()){
             return $this->sendError('Validation Error.', $validator->errors());       
         }
    
-        $product->name = $input['name'];
-        $product->detail = $input['detail'];
-        $product->save();
+        $image->title = $input['title'];
+        $image->location = $input['location'];
+        $image->description = $input['description'];
+        $image->category = $input['category'];
+        $image->tag = $input['tag'];
+        $image->price = $input['price'];
+        $image->rating = $input['rating'];
+        $image->save();
    
-        return $this->sendResponse(new ProductResource($product), 'Product updated successfully.');
+        return $this->sendResponse(new ImageResource($image), 'Image updated successfully.');
     }
    
     /**
@@ -97,10 +128,10 @@ class ImageController extends BaseController
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Product $product)
+    public function destroy(Image $image)
     {
-        $product->delete();
+        $image->delete();
    
-        return $this->sendResponse([], 'Product deleted successfully.');
+        return $this->sendResponse([], 'Image deleted successfully.');
     }
 }
