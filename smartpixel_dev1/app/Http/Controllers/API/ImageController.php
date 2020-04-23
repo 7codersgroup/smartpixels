@@ -4,30 +4,15 @@ namespace App\Http\Controllers\API;
    
 use Illuminate\Http\Request;
 use App\Http\Controllers\API\BaseController as BaseController;
-<<<<<<< Updated upstream
-use App\Product;
-use Validator;
-use App\Http\Resources\Product as ProductResource;
-=======
 use App\Image;
 use Validator;
 use App\Http\Resources\Image as ImageResource;
->>>>>>> Stashed changes
    
 class ImageController extends BaseController
 {
     /**
      * Display a listing of the resource.
      *
-<<<<<<< Updated upstream
-     * @return \Illuminate\Http\Response
-     */
-    public function index()
-    {
-        $products = Product::all();
-    
-        return $this->sendResponse(ProductResource::collection($products), 'Products retrieved successfully.');
-=======
      * @return \Illuminate\Http\Responses
      */
     public function index()
@@ -35,7 +20,6 @@ class ImageController extends BaseController
         $image = Image::all();
     
         return $this->sendResponse(ImageResource::collection($image), 'Image retrieved successfully.');
->>>>>>> Stashed changes
     }
     /**
      * Store a newly created resource in storage.
