@@ -69,13 +69,13 @@
                         @endif
                     @else
                     <li class="nav-item mx-md-4 my-md-0 postion-relative">
-              <a class="nav-link px-0" href="upload.html">Upload.</a>
+              <a class="nav-link px-0" href="{{ route('upload') }}">Upload.</a>
             </li>
             <li class="nav-item mx-md-4 my-md-0 postion-relative">
             <a class=" nav-link text-dark font-13" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
-                                        {{ __('Logout') }}
+                                        {{ __('Logout.') }}
                                     </a>
 
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
