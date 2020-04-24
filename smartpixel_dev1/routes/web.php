@@ -19,7 +19,7 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+
 
 Auth::routes(['verify' => true]);
 
@@ -29,9 +29,12 @@ Route::post('verifydoc', 'VerifydocController@VerifyDocPost')->name('doc.verify.
 Route::get('verify-number', 'VerifyNumberController@verifyNumber')->name('verify-number');
 //Route::post('verifydoc', 'VerifydocController@VerifyDocPost')->name('doc.verify.post');
 
-Route::get('checkout', 'CheckoutController@checkout')->name('checkout');
 
-Route::get('account', 'AccountController@account')->name('account');
 
-Route::get('upload', 'UploadController@imageUpload')->name('upload');
 
+Route::group(['middleware' => 'auth'], function () {
+    Route::get('/home', 'HomeController@index')->name('home');
+    Route::get('upload', 'UploadController@imageUpload')->name('upload');
+    Route::get('checkout', 'CheckoutController@checkout')->name('checkout');
+    Route::get('account', 'AccountController@account')->name('account');    
+});
