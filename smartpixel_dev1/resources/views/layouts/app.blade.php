@@ -77,15 +77,7 @@
                                                      document.getElementById('logout-form').submit();">
                                         {{ __('Logout.') }}
                                     </a>
-                    <li class="nav-item dropdown">
-                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                    {{ Auth::user()->firstname }} <span class="caret"></span>
-                                </a>
-
-                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                                        @csrf
-                                    </form>
-                        </li>
+                    
             <li class="dropdown nav-item mx-md-4 my-md-0 postion-relative">
               <a class="dropdown-toggle nav-link px-0" href="#" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="false" aria-expanded="false">
                  {{ Auth::user()->firstname }}
