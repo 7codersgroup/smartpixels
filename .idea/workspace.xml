@@ -1,0 +1,585 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="cbd6f795-d52c-4941-aaa0-5721efb1051f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smartpixel_dev1/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/smartpixel_dev1/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smartpixel_dev1/app/Http/Controllers/API/ImageController.php" beforeDir="false" afterPath="$PROJECT_DIR$/smartpixel_dev1/app/Http/Controllers/API/ImageController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smartpixel_dev1/app/Http/Controllers/UploadController.php" beforeDir="false" afterPath="$PROJECT_DIR$/smartpixel_dev1/app/Http/Controllers/UploadController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smartpixel_dev1/app/Image.php" beforeDir="false" afterPath="$PROJECT_DIR$/smartpixel_dev1/app/Image.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smartpixel_dev1/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/smartpixel_dev1/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smartpixel_dev1/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/smartpixel_dev1/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smartpixel_dev1/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/smartpixel_dev1/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smartpixel_dev1/database/migrations/2020_04_23_142247_change_user_id_type_in_images.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/smartpixel_dev1/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/smartpixel_dev1/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smartpixel_dev1/resources/views/upload.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/smartpixel_dev1/resources/views/upload.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smartpixel_dev1/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/smartpixel_dev1/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smartpixel_dev1/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/smartpixel_dev1/routes/web.php" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/smartpixel_dev1/composer.json</pharConfigPath>
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="smartpixels@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="smartpixels@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="smartpixels@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="smartpixels: schema" type="76f4a085:MysqlImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="smartpixels@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="smartpixels: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="images: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="FileEditorManager">
+    <splitter split-orientation="horizontal" split-proportion="0.65057284">
+      <split-first>
+        <leaf>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/smartpixel_dev1/resources/views/dashboard.blade.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="120">
+                  <caret line="8" column="60" selection-start-line="8" selection-start-column="60" selection-end-line="8" selection-end-column="60" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/smartpixel_dev1/database/migrations/2020_04_26_200956_add_review_to_images.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="225">
+                  <caret line="17" column="49" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="49" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/smartpixel_dev1/resources/views/layouts/app.blade.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="135">
+                  <caret line="17" column="62" selection-start-line="17" selection-start-column="62" selection-end-line="17" selection-end-column="62" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/smartpixel_dev1/.env">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-308" />
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/smartpixel_dev1/app/Http/Controllers/DashboardController.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="300">
+                  <caret line="20" column="105" selection-start-line="20" selection-start-column="105" selection-end-line="20" selection-end-column="105" />
+                  <folding>
+                    <element signature="e#40#54#0#PHP" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="das://a8950978-493d-4210-8bcb-ffb993534153/schema/smartpixels/table/images">
+              <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+                <state>
+                  <filtering enabled="true" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/smartpixel_dev1/app/Http/Controllers/UploadController.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="44">
+                  <caret line="73" column="42" selection-start-line="73" selection-start-column="30" selection-end-line="73" selection-end-column="42" />
+                  <folding>
+                    <element signature="e#44#77#0#PHP" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/smartpixel_dev1/app/Image.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="255">
+                  <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/dashboard.html">
+              <provider selected="true" editor-type-id="text-editor" />
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/dashboard.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-1127">
+                  <caret line="17" column="12" selection-start-line="14" selection-start-column="4" selection-end-line="17" selection-end-column="12" />
+                  <folding>
+                    <element signature="n#div#2;n#body#0;n#html#0;n#!!top" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/smartpixel_dev1/routes/web.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="360">
+                  <caret line="24" column="29" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/smartpixel_dev1/routes/web.php" />
+        <option value="$PROJECT_DIR$/smartpixel_dev1/app/Image.php" />
+        <option value="$PROJECT_DIR$/smartpixel_dev1/resources/views/layouts/app.blade.php" />
+        <option value="$PROJECT_DIR$/smartpixel_dev1/app/Http/Controllers/UploadController.php" />
+        <option value="$PROJECT_DIR$/smartpixel_dev1/database/migrations/2020_04_28_143150_add_likesdownloads_to_images.php" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
+        <option value="$PROJECT_DIR$/smartpixel_dev1/resources/views/dashboard.blade.php" />
+        <option value="$PROJECT_DIR$/smartpixel_dev1/app/Http/Controllers/DashboardController.php" />
+      </list>
+    </option>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/smartpixel_dev1/vendor/brick/math" />
+      <path value="$PROJECT_DIR$/smartpixel_dev1/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/smartpixel_dev1/vendor/psr/http-factory" />
+      <path value="$PROJECT_DIR$/smartpixel_dev1/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/smartpixel_dev1/vendor/sebastian/global-state" />
+      <path value="$PROJECT_DIR$/smartpixel_dev1/vendor/psr/event-dispatcher" />
+      <path value="$PROJECT_DIR$/smartpixel_dev1/vendor/sebastian/recursion-context" />
+      <path value="$PROJECT_DIR$/smartpixel_dev1/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/smartpixel_dev1/vendor/sebastian/object-enumerator" />
+      <path value="$PROJECT_DIR$/smartpixel_dev1/vendor/psr/simple-cache" />
+      <path value="$PROJECT_DIR$/smartpixel_dev1/vendor/doctrine/cache" />
+      <path value="$PROJECT_DIR$/smartpixel_dev1/vendor/sebastian/object-reflector" />
+      <path value="$PROJECT_DIR$/smartpixel_dev1/vendor/doctrine/instantiator" />
+      <path value="$PROJECT_DIR$/smartpixel_dev1/vendor/sebastian/diff" />
+      <path value="$PROJECT_DIR$/smartpixel_dev1/vendor/doctrine/dbal" />
+      <path value="$PROJECT_DIR$/smartpixel_dev1/vendor/sebastian/type" />
+      <path value="$PROJECT_DIR$/smartpixel_dev1/vendor/doctrine/event-manager" />
+      <path value="$PROJECT_DIR$/smartpixel_dev1/vendor/sebastian/version" />
+      <path value="$PROJECT_DIR$/smartpixel_dev1/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/smartpixel_dev1/vendor/sebastian/comparator" />
+      <path value="$PROJECT_DIR$/smartpixel_dev1/vendor/doctrine/lexer" />
+      <path value="$PROJECT_DIR$/smartpixel_dev1/vendor/sebastian/environment" />
+      <path value="$PROJECT_DIR$/smartpixel_dev1/vendor/sebastian/exporter" />
+      <path value="$PROJECT_DIR$/smartpixel_dev1/vendor/sebastian/resource-operations" />
+      <path value="$PROJECT_DIR$/smartpixel_dev1/vendor/sebastian/code-unit-reverse-lookup" />
+      <path value="$PROJECT_DIR$/smartpixel_dev1/vendor/vlucas/phpdotenv" />
+      <path value="$PROJECT_DIR$/smartpixel_dev1/vendor/nikic/php-parser" />
+      <path value="$PROJECT_DIR$/smartpixel_dev1/vendor/fruitcake/laravel-cors" />
+      <path value="$PROJECT_DIR$/smartpixel_dev1/vendor/uxweb/sweet-alert" />
+      <path value="$PROJECT_DIR$/smartpixel_dev1/vendor/opis/closure" />
+      <path value="$PROJECT_DIR$/smartpixel_dev1/vendor/symfony/console" />
+      <path value="$PROJECT_DIR$/smartpixel_dev1/vendor/firebase/php-jwt" />
+      <path value="$PROJECT_DIR$/smartpixel_dev1/vendor/symfony/process" />
+      <path value="$PROJECT_DIR$/smartpixel_dev1/vendor/symfony/service-contracts" />
+      <path value="$PROJECT_DIR$/smartpixel_dev1/vendor/symfony/mime" />
+      <path value="$PROJECT_DIR$/smartpixel_dev1/vendor/symfony/polyfill-iconv" />
+      <path value="$PROJECT_DIR$/smartpixel_dev1/vendor/symfony/var-dumper" />
+      <path value="$PROJECT_DIR$/smartpixel_dev1/vendor/symfony/polyfill-intl-idn" />
+      <path value="$PROJECT_DIR$/smartpixel_dev1/vendor/symfony/polyfill-php72" />
+      <path value="$PROJECT_DIR$/smartpixel_dev1/vendor/symfony/polyfill-php73" />
+      <path value="$PROJECT_DIR$/smartpixel_dev1/vendor/symfony/http-kernel" />
+      <path value="$PROJECT_DIR$/smartpixel_dev1/vendor/symfony/finder" />
+      <path value="$PROJECT_DIR$/smartpixel_dev1/vendor/symfony/routing" />
+      <path value="$PROJECT_DIR$/smartpixel_dev1/vendor/symfony/css-selector" />
+      <path value="$PROJECT_DIR$/smartpixel_dev1/vendor/voku/portable-ascii" />
+      <path value="$PROJECT_DIR$/smartpixel_dev1/vendor/symfony/error-handler" />
+      <path value="$PROJECT_DIR$/smartpixel_dev1/vendor/symfony/event-dispatcher" />
+      <path value="$PROJECT_DIR$/smartpixel_dev1/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/smartpixel_dev1/vendor/symfony/translation" />
+      <path value="$PROJECT_DIR$/smartpixel_dev1/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/smartpixel_dev1/vendor/symfony/event-dispatcher-contracts" />
+      <path value="$PROJECT_DIR$/smartpixel_dev1/vendor/symfony/http-foundation" />
+      <path value="$PROJECT_DIR$/smartpixel_dev1/vendor/laravel/tinker" />
+      <path value="$PROJECT_DIR$/smartpixel_dev1/vendor/symfony/psr-http-message-bridge" />
+      <path value="$PROJECT_DIR$/smartpixel_dev1/vendor/laravel/framework" />
+      <path value="$PROJECT_DIR$/smartpixel_dev1/vendor/symfony/translation-contracts" />
+      <path value="$PROJECT_DIR$/smartpixel_dev1/vendor/laravel/passport" />
+      <path value="$PROJECT_DIR$/smartpixel_dev1/vendor/laravel/ui" />
+      <path value="$PROJECT_DIR$/smartpixel_dev1/vendor/phpoption/phpoption" />
+      <path value="$PROJECT_DIR$/smartpixel_dev1/vendor/defuse/php-encryption" />
+      <path value="$PROJECT_DIR$/smartpixel_dev1/vendor/ixudra/curl" />
+      <path value="$PROJECT_DIR$/smartpixel_dev1/vendor/guzzlehttp/guzzle" />
+      <path value="$PROJECT_DIR$/smartpixel_dev1/vendor/guzzlehttp/psr7" />
+      <path value="$PROJECT_DIR$/smartpixel_dev1/vendor/guzzlehttp/promises" />
+      <path value="$PROJECT_DIR$/smartpixel_dev1/vendor/laminas/laminas-zendframework-bridge" />
+      <path value="$PROJECT_DIR$/smartpixel_dev1/vendor/laminas/laminas-diactoros" />
+      <path value="$PROJECT_DIR$/smartpixel_dev1/vendor/phpspec/prophecy" />
+      <path value="$PROJECT_DIR$/smartpixel_dev1/vendor/nesbot/carbon" />
+      <path value="$PROJECT_DIR$/smartpixel_dev1/vendor/mockery/mockery" />
+      <path value="$PROJECT_DIR$/smartpixel_dev1/vendor/paragonie/random_compat" />
+      <path value="$PROJECT_DIR$/smartpixel_dev1/vendor/psy/psysh" />
+      <path value="$PROJECT_DIR$/smartpixel_dev1/vendor/hamcrest/hamcrest-php" />
+      <path value="$PROJECT_DIR$/smartpixel_dev1/vendor/fzaninotto/faker" />
+      <path value="$PROJECT_DIR$/smartpixel_dev1/vendor/jrm2k6/cloudder" />
+      <path value="$PROJECT_DIR$/smartpixel_dev1/vendor/myclabs/deep-copy" />
+      <path value="$PROJECT_DIR$/smartpixel_dev1/vendor/phpseclib/phpseclib" />
+      <path value="$PROJECT_DIR$/smartpixel_dev1/vendor/league/flysystem" />
+      <path value="$PROJECT_DIR$/smartpixel_dev1/vendor/league/oauth2-server" />
+      <path value="$PROJECT_DIR$/smartpixel_dev1/vendor/league/event" />
+      <path value="$PROJECT_DIR$/smartpixel_dev1/vendor/league/commonmark" />
+      <path value="$PROJECT_DIR$/smartpixel_dev1/vendor/facade/ignition-contracts" />
+      <path value="$PROJECT_DIR$/smartpixel_dev1/vendor/facade/flare-client-php" />
+      <path value="$PROJECT_DIR$/smartpixel_dev1/vendor/facade/ignition" />
+      <path value="$PROJECT_DIR$/smartpixel_dev1/vendor/tijsverkoyen/css-to-inline-styles" />
+      <path value="$PROJECT_DIR$/smartpixel_dev1/vendor/dragonmantank/cron-expression" />
+      <path value="$PROJECT_DIR$/smartpixel_dev1/vendor/ramsey/collection" />
+      <path value="$PROJECT_DIR$/smartpixel_dev1/vendor/ramsey/uuid" />
+      <path value="$PROJECT_DIR$/smartpixel_dev1/vendor/jakub-onderka/php-console-highlighter" />
+      <path value="$PROJECT_DIR$/smartpixel_dev1/vendor/jakub-onderka/php-console-color" />
+      <path value="$PROJECT_DIR$/smartpixel_dev1/vendor/phar-io/manifest" />
+      <path value="$PROJECT_DIR$/smartpixel_dev1/vendor/phar-io/version" />
+      <path value="$PROJECT_DIR$/smartpixel_dev1/vendor/webmozart/assert" />
+      <path value="$PROJECT_DIR$/smartpixel_dev1/vendor/theseer/tokenizer" />
+      <path value="$PROJECT_DIR$/smartpixel_dev1/vendor/lcobucci/jwt" />
+      <path value="$PROJECT_DIR$/smartpixel_dev1/vendor/phpdocumentor/reflection-docblock" />
+      <path value="$PROJECT_DIR$/smartpixel_dev1/vendor/phpdocumentor/type-resolver" />
+      <path value="$PROJECT_DIR$/smartpixel_dev1/vendor/phpdocumentor/reflection-common" />
+      <path value="$PROJECT_DIR$/smartpixel_dev1/vendor/php-http/message-factory" />
+      <path value="$PROJECT_DIR$/smartpixel_dev1/vendor/swiftmailer/swiftmailer" />
+      <path value="$PROJECT_DIR$/smartpixel_dev1/vendor/monolog/monolog" />
+      <path value="$PROJECT_DIR$/smartpixel_dev1/vendor/fideloper/proxy" />
+      <path value="$PROJECT_DIR$/smartpixel_dev1/vendor/dnoegel/php-xdg-base-dir" />
+      <path value="$PROJECT_DIR$/smartpixel_dev1/vendor/cloudinary/cloudinary_php" />
+      <path value="$PROJECT_DIR$/smartpixel_dev1/vendor/scrivo/highlight.php" />
+      <path value="$PROJECT_DIR$/smartpixel_dev1/vendor/composer" />
+      <path value="$PROJECT_DIR$/smartpixel_dev1/vendor/filp/whoops" />
+      <path value="$PROJECT_DIR$/smartpixel_dev1/vendor/phpunit/php-file-iterator" />
+      <path value="$PROJECT_DIR$/smartpixel_dev1/vendor/egulias/email-validator" />
+      <path value="$PROJECT_DIR$/smartpixel_dev1/vendor/phpunit/php-timer" />
+      <path value="$PROJECT_DIR$/smartpixel_dev1/vendor/phpunit/php-text-template" />
+      <path value="$PROJECT_DIR$/smartpixel_dev1/vendor/phpunit/php-token-stream" />
+      <path value="$PROJECT_DIR$/smartpixel_dev1/vendor/phpunit/php-code-coverage" />
+      <path value="$PROJECT_DIR$/smartpixel_dev1/vendor/ralouphie/getallheaders" />
+      <path value="$PROJECT_DIR$/smartpixel_dev1/vendor/asm89/stack-cors" />
+      <path value="$PROJECT_DIR$/smartpixel_dev1/vendor/phpunit/phpunit" />
+      <path value="$PROJECT_DIR$/smartpixel_dev1/vendor/nyholm/psr7" />
+      <path value="$PROJECT_DIR$/smartpixel_dev1/vendor/nunomaduro/collision" />
+      <path value="$PROJECT_DIR$/smartpixel_dev1/vendor/realrashid/sweet-alert" />
+    </include_path>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-7" />
+    <option name="width" value="697" />
+    <option name="height" value="775" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="smartpixels2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="smartpixels2" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="smartpixels2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="smartpixels2" type="462c0819:PsiDirectoryNode" />
+              <item name="smartpixel_dev1" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="smartpixels2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="smartpixels2" type="462c0819:PsiDirectoryNode" />
+              <item name="smartpixel_dev1" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="smartpixels2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="smartpixels2" type="462c0819:PsiDirectoryNode" />
+              <item name="smartpixel_dev1" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="smartpixels2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="smartpixels2" type="462c0819:PsiDirectoryNode" />
+              <item name="smartpixel_dev1" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
+              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="smartpixels2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="smartpixels2" type="462c0819:PsiDirectoryNode" />
+              <item name="smartpixel_dev1" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
+              <item name="Middleware" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="smartpixels2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="smartpixels2" type="462c0819:PsiDirectoryNode" />
+              <item name="smartpixel_dev1" type="462c0819:PsiDirectoryNode" />
+              <item name="database" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="smartpixels2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="smartpixels2" type="462c0819:PsiDirectoryNode" />
+              <item name="smartpixel_dev1" type="462c0819:PsiDirectoryNode" />
+              <item name="database" type="462c0819:PsiDirectoryNode" />
+              <item name="migrations" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="smartpixels2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="smartpixels2" type="462c0819:PsiDirectoryNode" />
+              <item name="smartpixel_dev1" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="smartpixels2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="smartpixels2" type="462c0819:PsiDirectoryNode" />
+              <item name="smartpixel_dev1" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="smartpixels2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="smartpixels2" type="462c0819:PsiDirectoryNode" />
+              <item name="smartpixel_dev1" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="smartpixels2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="smartpixels2" type="462c0819:PsiDirectoryNode" />
+              <item name="smartpixel_dev1" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="layouts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="smartpixels2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="smartpixels2" type="462c0819:PsiDirectoryNode" />
+              <item name="smartpixel_dev1" type="462c0819:PsiDirectoryNode" />
+              <item name="routes" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="database.console.LAST_STATE" value="false" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="cbd6f795-d52c-4941-aaa0-5721efb1051f" name="Default Changelist" comment="" />
+      <created>1588070138596</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1588070138596</updated>
+      <workItem from="1588070140580" duration="11735000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="11735000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Favorites" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.19062027" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Statistic" />
+      <window_info active="true" anchor="bottom" id="Terminal" sideWeight="0.49924356" visible="true" weight="0.16743472" />
+      <window_info anchor="bottom" id="Event Log" sideWeight="0.50075644" side_tool="true" weight="0.16743472" />
+      <window_info anchor="bottom" id="Database Console" weight="0.32872504" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Remote Host" />
+      <window_info anchor="right" id="Database" visible="true" weight="0.20801815" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/smartpixel_dev1/resources/views/upload.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="2" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/smartpixel_dev1/app/Image.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/smartpixel_dev1/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="29" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/smartpixel_dev1/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-308" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/smartpixel_dev1/app/Http/Controllers/UploadController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="73" column="42" selection-start-line="73" selection-start-column="30" selection-end-line="73" selection-end-column="42" />
+          <folding>
+            <element signature="e#44#77#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/smartpixel_dev1/resources/views/layouts/app.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="17" column="62" selection-start-line="17" selection-start-column="62" selection-end-line="17" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/a8950978-493d-4210-8bcb-ffb993534153/console.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/smartpixel_dev1/database/migrations/2020_04_28_143150_add_likesdownloads_to_images.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="17" column="64" selection-start-line="17" selection-start-column="64" selection-end-line="17" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/smartpixel_dev1/database/migrations/2020_04_26_200956_add_review_to_images.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="17" column="49" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://a8950978-493d-4210-8bcb-ffb993534153/schema/smartpixels/table/images">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/smartpixel_dev1/resources/views/dashboard.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="60" selection-start-line="8" selection-start-column="60" selection-end-line="8" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/smartpixel_dev1/app/Http/Controllers/DashboardController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="105" selection-start-line="20" selection-start-column="105" selection-end-line="20" selection-end-column="105" />
+          <folding>
+            <element signature="e#40#54#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

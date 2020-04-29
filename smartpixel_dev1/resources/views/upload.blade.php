@@ -43,10 +43,11 @@
                 </div>
               </div>
               <div class="col-md-6 upload-registration" id="page-border-3">
-                <form>
+                <form role="form" enctype="multipart/form-data" method="post" action="{{ route('uploadImage')  }}"> 
+                @csrf
                   <div class="upload-file input-group mb-3">
                     <div class="custom-file">
-                      <input type="file" class="custom-file-input" id="validatedCustomFile" placeholder="" required>
+                      <input type="file" class="custom-file-input" name="image_name" id="validatedCustomFile" placeholder="" required >
                       <label class="custom-file-label" or="validatedCustomFile">Drag and Drop Photos Here</label>
                       <div class="form-row upload-drop-zone">
                         <img src="./img/1x.png" />
@@ -57,43 +58,45 @@
 
                   <div class="form-group mb-4">
                     <label for="title">Title<span> *</span></label>
-                    <input class="form-control" id="title"
+                    <input class="form-control" id="title" name="title"
                            placeholder="Enter the image title or alt text (this can be beneficial for search engine)" />
                   </div>
 
                   <div class="form-group mb-4">
                     <label for="img_description">Brief Description<span> *</span></label>
-                    <textarea class="form-control" id="img_description"
+                    <textarea class="form-control" id="img_description" name="description"
                               placeholder="Give a very short description of your image"></textarea>
                   </div>
 
                   <div class="form-group mb-4">
                     <label for="exampleFormControlTextarea1">SEO Tags / Keywords<span> *</span></label>
                     <div class="upload-tags">
+                    <input class="form-control" id="tags" name="tag" placeholder="Tags" />
+
                       <button>Teacher<img src="" /></button>
                       <button>School<img src="" /></button>
                     </div>
                   </div>
 
                   <div class="form-group mb-4"><label for="categoty">Category<span> *</span></label>
-                    <select class="custom-select" id="categoty">
+                    <select class="custom-select" id="category" name="category">
                       <option selected disabled>Select image category</option>
                     </select>
                   </div>
 
                   <div class="form-group mb-4">
                     <label for="shot_location">Location<span> *</span></label>
-                    <input class="form-control" id="shot_location" placeholder="Enter the location the shot was taken" />
+                    <input class="form-control" id="shot_location" name = "location" placeholder="Enter the location the shot was taken" />
                   </div>
 
                   <div class="form-group mb-4">
                     <label for="cost_price">Cost Price<span> *</span></label>
-                    <input class="form-control" type="text" id="cost_price" placeholder="Enter the price you wish to sell this asset" onkeypress="if ( isNaN( String.fromCharCode(event.keyCode) )) return false;" />
+                    <input class="form-control" type="text" id="cost_price" name="price" placeholder="Enter the price you wish to sell this asset" onkeypress="if ( isNaN( String.fromCharCode(event.keyCode) )) return false;" />
                   </div>
 
                   <div class="form-group upload-check">
                     <div class="custom-control custom-checkbox">
-                      <input type="checkbox" class="custom-control-input" id="image_rating" name="image_rating">
+                      <input type="checkbox" class="custom-control-input" id="image_rating" name="rating">
                       <label class="custom-control-label" for="image_rating">IMAGE IS RATED 18+</label>
                     </div>
 
