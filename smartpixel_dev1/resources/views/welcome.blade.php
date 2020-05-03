@@ -129,7 +129,7 @@
               Get started with Smartpixels
             </h1>
 
-            <a class="btn btn-primary-gradient" href="sign-up.html"
+            <a class="btn btn-primary-gradient" href="{{ route('register') }}"
                >Create an account</a
               >
           </div>

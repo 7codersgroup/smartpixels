@@ -19,4 +19,5 @@ Route::post('login', 'API\RegisterController@login');
    
 Route::middleware('auth:api')->group( function () {
     Route::resource('products', 'API\ProductController');
+    Route::resource('images', 'API\ImageController');
 });
