@@ -10,6 +10,7 @@
     <!-- Bootstrap CSS-->
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/all.css" />
+    <link rel="stylesheet" href="css/selectize.default.css" />
     <link rel="stylesheet" href="css/style.css" />
     <title>SmartPixels - Upload</title>
   </head>
@@ -134,11 +135,9 @@
                   </div>
 
                   <div class="form-group mb-4">
-                    <label for="exampleFormControlTextarea1">SEO Tags / Keywords<span> *</span></label>
-                    <div class="upload-tags">
-                      <button>Teacher<img src="" /></button>
-                      <button>School<img src="" /></button>
-                    </div>
+                    <label for="seo-tags">SEO Tags / Keywords<span> *</span></label>
+                    <input class="demo-default" id="seo-tags"
+                           placeholder="Enter the keywords for image (this can be beneficial for search engine)" />
                   </div>
 
                   <div class="form-group mb-4"><label for="categoty">Category<span> *</span></label>
@@ -202,6 +201,8 @@
   <script src="js/popper.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="https://kit.fontawesome.com/e9480ff5ec.js" crossorigin="anonymous"></script>
+  <script src="js/index.js"></script>
+  <script src="js/selectize.min.js"></script>
   <script src="js/utility.js"></script>
 
 </html>

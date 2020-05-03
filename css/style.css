@@ -2437,3 +2437,12 @@ option {
     font-size: 0.8em;
   }
 }
+
+.selectize-input {
+  border: 1px solid #d0d0d0;
+  padding: 0px 8px;
+}
+
+.selectize-control.multi .selectize-input.has-items {
+    padding: 0px 8px;
+}

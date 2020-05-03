@@ -85,3 +85,9 @@ $(".custom-file-input").on("change", function () {
 $(function () {
   $('[data-toggle="tooltip"]').tooltip()
 })
+
+$('#seo-tags').selectize({
+    persist: false,
+    createOnBlur: true,
+    create: true
+});
