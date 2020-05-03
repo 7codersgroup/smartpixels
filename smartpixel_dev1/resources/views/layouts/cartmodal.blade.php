@@ -1,8 +1,10 @@
-
+@if ($message = Session::get('add'))
 <!-- Button trigger modal -->
+{{--
 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#addToCart">
     Launch demo modal
 </button>
+--}}
 
 <!-- Modal -->
 <div class="modal fade" id="addToCart" tabindex="-1" role="dialog" aria-hidden="true">
@@ -28,3 +30,4 @@
         </div>
     </div>
 </div>
+@endif

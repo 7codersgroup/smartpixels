@@ -24,273 +24,67 @@
 
 <body class="landing">
 @extends('layouts.searchnavbar')
-<!--   navigation ends-->
 
+<!--   navigation ends-->
 <!--		second section-->
 
 <!-- Product Catagories Area Start -->
-<div class="products-catagories-area clearfix mt-push-top">
-    <div class="amado-pro-catagory clearfix">
-        @foreach($images ?? '' as $detail)
-        <!-- Single Catagory -->
-        <div class="single-products-catagory clearfix">
-            <a href="shop.html">
-                <img src="{{$detail->url}}" alt="" />
+    <div class="products-catagories-area clearfix mt-push-top">
 
-            </a>
+        <div class="amado-pro-catagory clearfix">
 
-            <!-- Hover Content -->
-            <span class="like">
+
+
+
+        @foreach($images  as $detail)
+            <!-- Single Catagory -->
+                <div class="single-products-catagory clearfix">
+                    <a href="shop.html">
+                        <img src="{{$detail->url}}" alt="" />
+
+                    </a>
+
+                    <!-- Hover Content -->
+                    <span class="like">
             <i class="fa fa-heart-o"></i>
             <i class="fa fa-heart"></i>
           </span>
 
-            <span class="artist">
-            <a href="artist.html"> <i class="fa fa-user-o text-white"></i></a>
+                    <span class="artist">
+            <a href="artist.html{{$detail->user_id}}"> <i class="fa fa-user-o text-white"></i></a>
           </span>
+                    <form action="{{route ('product.add.cart')}}" method="post" role="form" id="addToCart">
+                        @csrf
+                        <figcaption>
+                            <div>
+                                <p class="img-title mb-0">{{$detail->title}}</p>
+                                <div class="stats">
+                                    <i class="fa fa-cloud-download"> </i> 2k
+                                    <i class="fa fa-heart"> </i> {{$detail->likes}}
+                                </div>
+                            </div>
 
-            <figcaption>
-                <div>
-                    <p class="img-title mb-0">{{$detail->title}}</p>
-                    <div class="stats">
-                        <i class="fa fa-cloud-download"> </i> 2k
-                        <i class="fa fa-heart"> </i> {{$detail->likes}}
-                    </div>
+                            <dd>
+
+                                <input type="hidden" name="imageId" value="{{ $detail->id }}">
+                                <input type="hidden" name="title" value="{{ $detail->title }}">
+                                <input type="hidden" name="url" value="{{ $detail->url }}">
+                                <input type="hidden" name="price" id="finalPrice" value="{{ $detail->price }}">
+
+                            </dd>
+
+                            <button class="btn btn-primary ml-auto"  type="submit" data-toggle="modal" data-target="#addToCart">Buy</button>
+
+
+                        </figcaption>
+                    </form>
                 </div>
+            @endforeach
 
-                <button class="btn btn-primary ml-auto" data-toggle="modal" data-target="#addToCart">Buy</button>
-            </figcaption>
-
-        </div>
-@endforeach
-        <!-- Single Catagory -->
-        <div class="single-products-catagory clearfix">
-            <a href="shop.html">
-                <img src="img/bg-img/2.jpg" alt="" />
-            </a>
-
-            <!-- Hover Content -->
-            <span class="like">
-            <i class="fa fa-heart-o"></i>
-            <i class="fa fa-heart"></i>
-          </span>
-
-            <span class="artist">
-            <a href="artist.html"> <i class="fa fa-user-o text-white"></i></a>
-          </span>
-
-            <figcaption>
-                <div>
-                    <p class="img-title mb-0">Woman with mask in quarantine looking at the...</p>
-                    <div class="stats">
-                        <i class="fa fa-cloud-download"> </i> 2k
-                        <i class="fa fa-heart"> </i> 118
-                    </div>
-                </div>
-
-                <button class="btn btn-primary ml-auto" data-toggle="modal" data-target="#addToCart">Buy</button>
-            </figcaption>
-        </div>
-
-        <!-- Single Catagory -->
-        <div class="single-products-catagory clearfix">
-            <a href="shop.html">
-                <img src="img/bg-img/3.jpg" alt="" />
-            </a>
-            <!-- Hover Content -->
-            <span class="like">
-            <i class="fa fa-heart-o"></i>
-            <i class="fa fa-heart"></i>
-          </span>
-
-            <span class="artist">
-            <a href="artist.html"> <i class="fa fa-user-o text-white"></i></a>
-          </span>
-
-            <figcaption>
-                <div>
-                    <p class="img-title mb-0">Woman with mask in quarantine looking at the...</p>
-                    <div class="stats">
-                        <i class="fa fa-cloud-download"> </i> 2k
-                        <i class="fa fa-heart"> </i> 118
-                    </div>
-                </div>
-
-                <button class="btn btn-primary ml-auto" data-toggle="modal" data-target="#addToCart">Buy</button>
-            </figcaption>
-        </div>
-
-        <!-- Single Catagory -->
-        <div class="single-products-catagory clearfix">
-            <a href="shop.html">
-                <img src="img/bg-img/4.jpg" alt="" />
-            </a>
-
-            <!-- Hover Content -->
-            <span class="like">
-            <i class="fa fa-heart-o"></i>
-            <i class="fa fa-heart"></i>
-          </span>
-
-            <span class="artist">
-            <a href="artist.html"> <i class="fa fa-user-o text-white"></i></a>
-          </span>
-
-            <figcaption>
-                <div>
-                    <p class="img-title mb-0">Woman with mask in quarantine looking at the...</p>
-                    <div class="stats">
-                        <i class="fa fa-cloud-download"> </i> 2k
-                        <i class="fa fa-heart"> </i> 118
-                    </div>
-                </div>
-
-                <button class="btn btn-primary ml-auto" data-toggle="modal" data-target="#addToCart">Buy</button>
-            </figcaption>
-        </div>
-
-        <!-- Single Catagory -->
-        <div class="single-products-catagory clearfix">
-            <a href="shop.html">
-                <img src="img/bg-img/5.jpg" alt="" />
-            </a>
-            <!-- Hover Content -->
-            <span class="like">
-            <i class="fa fa-heart-o"></i>
-            <i class="fa fa-heart"></i>
-          </span>
-
-            <span class="artist">
-            <a href="artist.html"> <i class="fa fa-user-o text-white"></i></a>
-          </span>
-
-            <figcaption>
-                <div>
-                    <p class="img-title mb-0">Woman with mask in quarantine looking at the...</p>
-                    <div class="stats">
-                        <i class="fa fa-cloud-download"> </i> 2k
-                        <i class="fa fa-heart"> </i> 118
-                    </div>
-                </div>
-
-                <button class="btn btn-primary ml-auto" data-toggle="modal" data-target="#addToCart">Buy</button>
-            </figcaption>
-        </div>
-
-        <!-- Single Catagory -->
-        <div class="single-products-catagory clearfix">
-            <a href="shop.html">
-                <img src="img/bg-img/6.jpg" alt="" />
-            </a>
-            <!-- Hover Content -->
-            <span class="like">
-            <i class="fa fa-heart-o"></i>
-            <i class="fa fa-heart"></i>
-          </span>
-
-            <span class="artist">
-            <a href="artist.html"> <i class="fa fa-user-o text-white"></i></a>
-          </span>
-
-            <figcaption>
-                <div>
-                    <p class="img-title mb-0">Woman with mask in quarantine looking at the...</p>
-                    <div class="stats">
-                        <i class="fa fa-cloud-download"> </i> 2k
-                        <i class="fa fa-heart"> </i> 118
-                    </div>
-                </div>
-
-                <button class="btn btn-primary ml-auto" data-toggle="modal" data-target="#addToCart">Buy</button>
-            </figcaption>
-        </div>
-
-        <!-- Single Catagory -->
-        <div class="single-products-catagory clearfix">
-            <a href="shop.html">
-                <img src="img/bg-img/7.jpg" alt="" />
-            </a>
-            <!-- Hover Content -->
-            <span class="like">
-            <i class="fa fa-heart-o"></i>
-            <i class="fa fa-heart"></i>
-          </span>
-
-            <span class="artist">
-            <a href="artist.html"> <i class="fa fa-user-o text-white"></i></a>
-          </span>
-
-            <figcaption>
-                <div>
-                    <p class="img-title mb-0">Woman with mask in quarantine looking at the...</p>
-                    <div class="stats">
-                        <i class="fa fa-cloud-download"> </i> 2k
-                        <i class="fa fa-heart"> </i> 118
-                    </div>
-                </div>
-
-                <button class="btn btn-primary ml-auto" data-toggle="modal" data-target="#addToCart">Buy</button>
-            </figcaption>
-        </div>
-
-        <!-- Single Catagory -->
-        <div class="single-products-catagory clearfix">
-            <a href="shop.html">
-                <img src="img/bg-img/8.jpg" alt="" />
-            </a>
-            <!-- Hover Content -->
-            <span class="like">
-            <i class="fa fa-heart-o"></i>
-            <i class="fa fa-heart"></i>
-          </span>
-
-            <span class="artist">
-            <a href="artist.html"> <i class="fa fa-user-o text-white"></i></a>
-          </span>
-
-            <figcaption>
-                <div>
-                    <p class="img-title mb-0">Woman with mask in quarantine looking at the...</p>
-                    <div class="stats">
-                        <i class="fa fa-cloud-download"> </i> 2k
-                        <i class="fa fa-heart"> </i> 118
-                    </div>
-                </div>
-
-                <button class="btn btn-primary ml-auto" data-toggle="modal" data-target="#addToCart">Buy</button>
-            </figcaption>
-        </div>
-
-        <!-- Single Catagory -->
-        <div class="single-products-catagory clearfix">
-            <a href="shop.html">
-                <img src="img/bg-img/9.jpg" alt="" />
-            </a>
-            <!-- Hover Content -->
-            <span class="like">
-            <i class="fa fa-heart-o"></i>
-            <i class="fa fa-heart"></i>
-          </span>
-
-            <span class="artist">
-            <a href="artist.html"> <i class="fa fa-user-o text-white"></i></a>
-          </span>
-
-            <figcaption>
-                <div>
-                    <p class="img-title mb-0">Woman with mask in quarantine looking at the...</p>
-                    <div class="stats">
-                        <i class="fa fa-cloud-download"> </i> 2k
-                        <i class="fa fa-heart"> </i> 118
-                    </div>
-                </div>
-
-                <button class="btn btn-primary ml-auto" data-toggle="modal" data-target="#addToCart">Buy</button>
-            </figcaption>
         </div>
     </div>
-</div>
 <!-- Product Catagories Area End -->
+
 
 <!--		Footer section-->
 <section class="font-circular">
@@ -386,38 +180,7 @@
         </div>
     </div>
 </section>
-
-
-<!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#addToCart">
-    Launch demo modal
-</button>
-
-<!-- Modal -->
-<div class="modal fade" id="addToCart" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-            <div class="modal-header border-0 pb-0">
-                <h6 class="modal-title text-left">Asset Added to your Cart</h6>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <img src="img/close.png" alt="close modal" />
-                </button>
-            </div>
-            <div class="modal-body">
-                <p class="mb-4">Woman with mask in quarantine looking at the</p>
-                <div class="row">
-                    <div class="col-lg-6 my-2">
-                        <button class="btn btn-pixel-outline btn-block" data-dismiss="modal">CONTINUE</button>
-                    </div>
-                    <div class="col-lg-6 my-2">
-                        <a href="cart-items.html" class="btn btn-pixel btn-block">CHECKOUT</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
+@include('layouts.cartmodal')
 <script src="js/jquery-3.3.1.min.js"></script>
 <script src="js/popper.min.js"></script>
 <script src="js/bootstrap.min.js"></script>

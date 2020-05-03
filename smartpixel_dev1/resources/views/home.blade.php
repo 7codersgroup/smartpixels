@@ -31,7 +31,7 @@
               </div>
               <div class="padding-top-large">
                 <form
-                      method="POST"
+                      method="get"
                       action="/search"
                       class="js-search-form"
                       role="search"

@@ -1,4 +1,4 @@
-
+@include('flash-message')
 <div class="">
     <div class="container-fluid">
         <nav
@@ -82,17 +82,19 @@
                         <li class="nav-item mx-md-4 my-md-0 postion-relative">
                             <a class="nav-link px-0" href="{{ route('upload') }}">Upload.</a>
                         </li>
-
+                        <li class="nav-item mx-md-4 my-md-0 postion-relative">
+                            <a class="nav-link px-0" href="{{ route('checkout.cart') }}">Cart.<span class="">{{\Cart::session(Auth::id())->getContent()->count()}}</span></a>
+                        </li>
                         <li class="dropdown nav-item mx-md-4 my-md-0 postion-relative">
                             <a class="dropdown-toggle nav-link px-0" href="#" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="false" aria-expanded="false">
-                                {{ Auth::user()->firstname }}
+                               Hi {{ Auth::user()->firstname }}
                             </a>
                             <ul class="dropdown-menu drop-left" aria-labelledby="dropdownMenuButton">
                                 <li class="nav-item">
-                                    <a class="dropdown-item nav-link text-dark font-13" href="dashboard.html">Dashboard</a>
+                                    <a class="dropdown-item nav-link text-dark font-13" href="{{ route ('dashboard') }}">Dashboard</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="dropdown-item nav-link text-dark font-13" href="accounts.html">Manage Account</a>
+                                    <a class="dropdown-item nav-link text-dark font-13" href="{{ route ('account') }}">Manage Account</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="dropdown-item nav-link text-dark font-13" href="{{ route('logout') }}"
@@ -120,4 +122,5 @@
             </div>
         </nav>
     </div>
+
 </div>

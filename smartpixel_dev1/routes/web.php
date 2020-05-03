@@ -45,15 +45,31 @@
 		Route::get ('checkout', 'CheckoutController@checkout')->name ('checkout');
 		Route::get ('account', 'AccountController@account')->name ('account');
 		Route::get ('dashboard', 'DashboardController@dashboard')->name ('dashboard');
+		Route::get('/cart', 'CartController@getCart')->name('checkout.cart');
+		Route::get('/cart/item/{id}/remove', 'CartController@removeItem')->name('checkout.cart.remove');
+		Route::get('/cart/clear', 'CartController@clearCart')->name('checkout.cart.clear');
+		Route::post('/search/add/cart', 'SearchController@addToCart')->name('product.add.cart');
+		Route::get('/cart', 'CartController@getCart')->name('checkout.cart');
+		Route::get('/cart/item/{id}/remove', 'CartController@removeItem')->name('checkout.cart.remove');
+		Route::get('/cart/clear', 'CartController@clearCart')->name('checkout.cart.clear');
+		
 	});
+	
+	
+	Route::get('users', 'ArtistController@users')->name('users');
+	Route::get('user/{id}', 'ArtistController@user')->name('user.view');
+	Route::post('follow', 'ArtistController@followUserRequest')->name('follow');
 	
 	Route::any ( '/search', function (Request $request) {
 		$q = $request->input ( 'query' );
 		//$images = Image::where ( 'title', 'LIKE', '%' . $q . '%' )->orWhere ( 'description', 'LIKE', '%' . $q . '%' )->get ();
-		$images = DB::table('images')->join('users', 'user_id', '=', 'users.id')->where ( 'title', 'LIKE', '%' . $q . '%' )->orWhere ( 'description', 'LIKE', '%' . $q . '%' )->get ();
+		$images = DB::table('images')->join('users', 'user_id', '=', 'users.id')
+				->where ( 'title', 'LIKE', '%' . $q . '%' )
+				->orWhere ( 'description', 'LIKE', '%' . $q . '%' )
+				->get ();
 		if (count ( $images ) > 0)
 			return view ( 'search', compact ( 'images' ));
 		else
-			return view ( 'search' , compact ( 'images' ))->with('message', 'No Image found. Try to search again !' );
+			return redirect (\route ('search'))->with('success', 'No related Image found. Try to search again !' );
 	} );
 

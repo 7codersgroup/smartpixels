@@ -18,4 +18,9 @@ class Image extends Model
     protected $fillable = [
         'url','title', 'description', 'tags', 'category', 'location', 'price', 'rating', 'user_id', 'tag'
     ];
+	
+	public static function find ($imageId)
+	{
+	
+	}
 }

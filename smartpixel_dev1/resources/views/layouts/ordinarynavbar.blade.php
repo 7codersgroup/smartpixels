@@ -20,6 +20,7 @@
             <span class="hamburger-inner"></span>
           </span>
         </button>
+
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto landing-page">
                 <li class="nav-item mx-md-4 my-md-0 postion-relative">
@@ -39,10 +40,12 @@
                     <li class="nav-item mx-md-4 my-md-0 postion-relative">
                         <a class="nav-link px-0" href="{{ route('upload') }}">Upload.</a>
                     </li>
-
+                    <li class="nav-item mx-md-4 my-md-0 postion-relative">
+                        <a class="nav-link px-0" href="{{ route('checkout.cart') }}">Cart.<span class="">{{\Cart::session(Auth::id())->getContent()->count()}}</span></a>
+                    </li>
                     <li class="dropdown nav-item mx-md-4 my-md-0 postion-relative">
                         <a class="dropdown-toggle nav-link px-0" href="#" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="false" aria-expanded="false">
-                            {{ Auth::user()->firstname }}
+                           Hi {{ Auth::user()->firstname }}
                         </a>
                         <ul class="dropdown-menu drop-left" aria-labelledby="dropdownMenuButton">
                             <li class="nav-item">

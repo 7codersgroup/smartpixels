@@ -168,6 +168,8 @@ return [
          */
         JD\Cloudder\CloudderServiceProvider::class,
         Ixudra\Curl\CurlServiceProvider::class,
+	    Darryldecode\Cart\CartServiceProvider::class,
+	    Overtrue\LaravelFollow\FollowServiceProvider::class,
 
         /*
          * Application Service Providers...
@@ -231,7 +233,7 @@ return [
         'View' => Illuminate\Support\Facades\View::class,
         'Cloudder' => JD\Cloudder\Facades\Cloudder::class,
         'Curl' => Ixudra\Curl\Facades\Curl::class,
-
+	    'Cart' => Darryldecode\Cart\Facades\CartFacade::class
 
     ],
 
