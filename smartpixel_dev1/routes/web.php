@@ -56,8 +56,8 @@
 	});
 	
 	
-	Route::get('users', 'ArtistController@users')->name('users');
-	Route::get('user/{id}', 'ArtistController@user')->name('user.view');
+	//Route::get('users', 'ArtistController@users')->name('users');
+	Route::get('artist/{id}', 'ArtistController@user')->name('artist.view');
 	Route::post('follow', 'ArtistController@followUserRequest')->name('follow');
 	
 	Route::any ( '/search', function (Request $request) {
