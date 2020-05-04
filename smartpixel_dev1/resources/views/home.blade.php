@@ -8,8 +8,8 @@
           <div class="mti-hero-image">
             <picture>
               <img
-                   src="https://fpcover.cdnpk.net/image/20200325043919.jpg"
-                   class="mti-hero-image mti-hero-image--cover mti-hero-image--large js-hero-image-full container-full"
+                      src="{{asset ('img/featured.jpg')}}"
+                      class="mti-hero-image mti-hero-image--cover mti-hero-image--large js-hero-image-full container-full"
                    />
             </picture>
           </div>

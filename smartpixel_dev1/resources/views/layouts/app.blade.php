@@ -8,10 +8,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
     <!-- Bootstrap CSS-->
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/all.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/hamburgers.css" />
+    <link rel="stylesheet" href="{{asset ('css/bootstrap.min.css')}}" />
+    <link rel="stylesheet" href="{{asset ('css/all.css')}}" />
+    <link rel="stylesheet" href="{{asset ('css/style.css')}}" />
+    <link rel="stylesheet" href="{{asset ('css/hamburgers.css')}}" />
     <title>{{ config('app.name', 'Frikapix') }}</title>
 </head>
 
