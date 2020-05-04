@@ -68,9 +68,19 @@
                       </label>
                       <div class="form-row accounts-button">
                         <div class="col-">
+                        @if (session('resent'))
+                        <div class="alert alert-success" role="alert">
+                            {{ __('A fresh verification link has been sent to your email address.') }}
+                        </div>
+                    @endif
+
+                  
+                        <form class="" method="POST" action="{{ route('verification.resend') }}">
+                          @csrf
                           <button type="submit" class="btn btn-normal btn-block">
                             Send it Again
                           </button>
+                        </form>
                         </div>
                         <div class="col- my-auto">
                           <button type="submit" class="btn btn-verified btn-block">

@@ -32,9 +32,11 @@
               <div class="padding-top-large">
                 <form
                       method="get"
-                      action="search.html"
+                      action="/search"
                       class="js-search-form"
+                      role="search"
                       >
+                    @csrf
                   <div class="container-relative white hero-input-group">
                     <div class="input-box" data-active="input">
                       <div class="container-table">
@@ -54,7 +56,7 @@
                              class="container-table-cell container-full container-relative"
                              >
                           <input
-                                 name="k"
+                                 name="query"
                                  class="js-search-text-input input--silent input--full light input--xlarge"
                                  type="text"
                                  placeholder="Search"

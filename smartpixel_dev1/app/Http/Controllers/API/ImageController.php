@@ -118,4 +118,12 @@ class ImageController extends BaseController
    
         return $this->sendResponse([], 'Image deleted successfully.');
     }
+
+    public function search(Request $request) {
+        $data = Image::select("title")
+                ->where("title", "LIKE", "%{$request->query}%")
+                ->get();
+
+                return response() -> json($data);
+    }
 }
