@@ -4,8 +4,13 @@
 /* Navigation */
 
 body {
-  font-family: 'Poppins', sans-serif !important;
+  font-family: "Poppins", sans-serif !important;
   overflow-x: hidden;
+}
+
+input:focus {
+  outline: none !important;
+  box-shadow: none !important;
 }
 
 /* 
@@ -71,7 +76,6 @@ margin: 0px 50px;
 margin-right: 25px;
 } */
 
-
 .nav-link {
   font-size: 13px !important;
   font-weight: 500;
@@ -86,7 +90,7 @@ margin-right: 25px;
 }
 
 .navbar .nav-item .nav-link::before {
-  content: '';
+  content: "";
   width: 0;
   height: 2px;
   position: absolute;
@@ -100,9 +104,6 @@ margin-right: 25px;
 .landing-page a.nav-link {
   color: var(--primary-color) !important;
 }
-
-
-
 
 .footer {
   background-color: var(--primary-color);
@@ -150,13 +151,11 @@ a {
   height: 50px;
 }
 
-
-
 #save-button {
   margin-top: 50px;
   color: #ffffff;
   background-color: #41b661;
-  box-shadow: 0 10px 60px -40px rgba(0, 0, 0, .15);
+  box-shadow: 0 10px 60px -40px rgba(0, 0, 0, 0.15);
   position: relative;
   font-size: 13px;
 }
@@ -166,12 +165,12 @@ a {
   right: 0;
   bottom: 0;
   left: 0;
-  content: '';
-  background-color: rgba(0, 0, 0, .5);
+  content: "";
+  background-color: rgba(0, 0, 0, 0.5);
   z-index: 1;
-  transition: .3s;
+  transition: 0.3s;
   height: 50%;
-  opacity: .2;
+  opacity: 0.2;
 }
 
 #save-button:hover::before {
@@ -184,7 +183,7 @@ a {
   border: 1px solid var(--primary-color);
   color: var(--primary-color);
   font-size: 13px;
-  box-shadow: 0 10px 60px -40px rgba(0, 0, 0, .15);
+  box-shadow: 0 10px 60px -40px rgba(0, 0, 0, 0.15);
 }
 
 #cancel-button:hover {
@@ -199,23 +198,22 @@ a {
   margin-top: 50px;
   color: #ffffff;
   background-color: #41b661;
-  box-shadow: 0 10px 60px -40px rgba(0, 0, 0, .15);
+  box-shadow: 0 10px 60px -40px rgba(0, 0, 0, 0.15);
   position: relative;
   font-size: 13px;
 }
-
 
 #submit-button::before {
   position: absolute;
   right: 0;
   bottom: 0;
   left: 0;
-  content: '';
-  background-color: rgba(0, 0, 0, .5);
+  content: "";
+  background-color: rgba(0, 0, 0, 0.5);
   z-index: 1;
-  transition: .3s;
+  transition: 0.3s;
   height: 50%;
-  opacity: .2;
+  opacity: 0.2;
 }
 
 #submit-button:hover::before {
@@ -510,7 +508,6 @@ ul {
 }
 
 .login-page .login-registration input {
-
   font-size: 14px;
   border: 1px solid rgba(55, 9, 116, 0.5);
   height: 50px;
@@ -603,7 +600,6 @@ option {
 
 .verify-page .verify-body .verify-heading #verified,
 #unverified {
-
   text-transform: lowercase;
   font-size: 0.7em;
 }
@@ -642,7 +638,6 @@ option {
 }
 
 .verify-registration input {
-
   font-size: 14px;
   border: 1px solid rgba(55, 9, 116, 0.5);
   height: 50px;
@@ -689,14 +684,19 @@ option {
   margin-bottom: 0px;
 }
 
-/* .verify-registration .upload-drop-zone {
-background-color: #cccccc;
-border: 1px solid var(--primary-color);
-line-height: 100px;
-text-align: center;
-border-radius: 5px;
-width: 100%;
+.verify-registration .custom-file,
+.verify-registration .custom-file .custom-file-input,
+.verify-registration .custom-file .custom-file-label {
+  height: 100px;
+  /* .verify-registration .upload-drop-zone {
+  background-color: #cccccc;
+  border: 1px solid var(--primary-color);
+  line-height: 100px;
+  text-align: center;
+  border-radius: 5px;
+  width: 100%;
 } */
+}
 .verify-registration .custom-file {
   width: 100%;
   height: 100px;
@@ -707,18 +707,18 @@ width: 100%;
   background-color: #cccccc;
 }
 
-.verify-registration .custom-file .custom-file-input {
-  height: 100px;
+.verify-registration .custom-file .custom-file-label {
+  border: 1px solid #37097480;
+  top: -1px;
+  left: -1px;
+  right: -1px;
 }
 
-.verify-registration .custom-file label {
-  position: absolute;
-  color: #ffffff;
-  padding-left: 10px;
-  padding-top: 15px;
-  font-weight: 200;
-  text-transform: capitalize;
-  top: 0px;
+.verify-registration
+.custom-file
+.custom-file-input
+~ .custom-file-label::after {
+  content: none;
 }
 
 /*  Sign Up  */
@@ -762,7 +762,6 @@ width: 100%;
   margin-right: 70px;
   list-style: circle;
   font-size: 13px;
-
 }
 
 .signup-page .signup-body .signup-footer ul {
@@ -1013,7 +1012,6 @@ option {
 }
 
 .vn-page .vn-registration input {
-
   font-size: 14px;
   border: 1px solid rgba(55, 9, 116, 0.5);
   height: 50px;
@@ -1139,7 +1137,6 @@ option {
 
 .accounts-page .accounts-body .accounts-heading #verified,
 #unverified {
-
   text-transform: lowercase;
   font-size: 0.7em;
 }
@@ -1151,7 +1148,6 @@ option {
 .accounts-page .accounts-body .accounts-content p {
   text-align: justify;
   font-size: 13px;
-
 }
 
 .accounts-page .accounts-body .accounts-footer {
@@ -1164,7 +1160,6 @@ option {
   margin-right: 70px;
   list-style: circle;
   font-size: 13px;
-
 }
 
 .accounts-page .accounts-body .accounts-footer ul {
@@ -1194,21 +1189,20 @@ option {
   background: #ffffff;
   color: var(--primary-color);
   border: 1px solid var(--primary-color);
-  box-shadow: 0 10px 60px -40px rgba(0, 0, 0, .15);
-  font-size: .8em;
-  transition: .5s;
+  box-shadow: 0 10px 60px -40px rgba(0, 0, 0, 0.15);
+  font-size: 0.8em;
+  transition: 0.5s;
 }
 
 .accounts-page .accounts-registration .accounts-button .btn-normal:hover {
   background: var(--primary-color);
-  color:  #ffffff;
+  color: #ffffff;
   border: 1px solid var(--primary-color);
-  box-shadow: 0 10px 60px -40px rgba(0, 0, 0, .15);
-  font-size: .8em;
+  box-shadow: 0 10px 60px -40px rgba(0, 0, 0, 0.15);
+  font-size: 0.8em;
 }
 
 .accounts-page .accounts-registration .accounts-button .btn-verified {
-
   background: #41b661;
   color: #ffffff;
   border-radius: 50px;
@@ -1224,12 +1218,10 @@ option {
 }
 
 .accounts-page .accounts-registration .label-small {
-
   font-size: 0.8em;
 }
 
 .accounts-page .accounts-registration input {
-
   font-size: 14px;
   border: 1px solid rgba(55, 9, 116, 0.5);
   height: 50px;
@@ -1338,7 +1330,6 @@ option {
 }
 
 .payment-page .payment-registration input {
-
   font-size: 14px;
   border: 1px solid var(--primary-color);
   height: 50px;
@@ -1447,7 +1438,6 @@ option {
   text-align: left;
   margin-top: 20px;
   font-size: 14px;
-
 }
 
 .upload-page .upload-body .upload-heading li {
@@ -1467,7 +1457,6 @@ option {
   margin-right: 70px;
   list-style: circle;
   font-size: 14px;
-
 }
 
 .upload-page .upload-body .upload-footer ul {
@@ -1485,11 +1474,15 @@ option {
 }
 
 .upload-registration input {
-
   font-size: 14px;
   border: 1px solid rgba(55, 9, 116, 0.5);
   height: 50px;
   border-radius: 6px;
+}
+
+.upload-registration .form-check-input {
+  height: 100%;
+  top: -15px;
 }
 
 .upload-registration input::placeholder {
@@ -1524,7 +1517,6 @@ option {
 }
 
 .upload-registration textarea::placeholder {
-
   font-size: 0.85em;
   color: var(--primary-color);
 }
@@ -1541,40 +1533,51 @@ option {
   height: 100px;
 }
 
-.upload-registration .custom-file .upload-drop-zone {
-  position: absolute;
-}
-
-.upload-registration .upload-drop-zone {
-  width: 100%;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  padding-left: 0px;
-  padding-right: 0px;
-}
-
-.upload-registration .upload-drop-zone img {
+.upload-registration .custom-file img {
   width: 120px;
   height: 62px;
-  /* padding-left: 30px; */
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  margin-top: 17px;
 }
 
-.upload-registration .upload-drop-zone p {
-  margin-top: 20px;
-  font-size: 0.85em;
-}
-
-.upload-registration .upload-drop-zone .btn {
+.upload-registration .custom-file .btn {
   background-color: var(--primary-color);
   border-radius: 10px;
   padding: 0px 35px;
-  margin-left: 20px;
-  margin-top: 12px;
   height: 35px;
   color: #ffffff;
-
   font-size: 0.81em;
   text-transform: uppercase;
+  position: absolute;
+  left: 365px;
+  top: 33px;
+}
+
+.upload-registration .custom-file .custom-file-label {
+  font-size: 0.85em;
+  background-color: #ffffff00;
+  border: 0px;
+  text-transform: none;
+  font-weight: 300;
+  padding: 0px;
+  margin: 40px 0 0 150px;
+  height: auto;
+  width: auto;
+  /* position: absolute; */
+}
+
+label,
+.btn:focus,
+.btn:active {
+  outline: none !important;
+  box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+}
+
+.upload-registration .custom-file .custom-file-label::after {
+  content: none;
 }
 
 .upload-registration .upload-tags {
@@ -1622,7 +1625,7 @@ option {
 }
 
 .checkout-page .billing-address {
-  border: 1px solid var(--primary-color)9d;
+  border: 1px solid var(--primary-color) 9d;
   padding: 50px;
 }
 
@@ -1634,7 +1637,6 @@ option {
 
 .checkout-page .billing-address input,
 .checkout-page .billing-address textarea {
-
   font-weight: 300;
   color: var(--primary-color);
   height: 50px;
@@ -1643,7 +1645,6 @@ option {
 
 .checkout-page .billing-address .form-text p {
   color: var(--primary-color);
-
 }
 
 .checkout-page .billing-address input::placeholder {
@@ -1658,7 +1659,6 @@ option {
 .checkout-page .billing-address select,
 option {
   color: var(--primary-color);
-
 }
 
 .checkout-page .payment-details {
@@ -1762,77 +1762,13 @@ option {
   background-color: #f7f7fa;
 }
 
-.dashboard-tabs {
-  margin: 0 50px;
+.dashboard-info {
+  background-color: var(--primary-color);
+  color: #fff;
 }
 
-.dashboard-tabs .tabs {
-  margin-top: 20px;
-  width: 100%;
-}
-
-.dashboard-tabs .tabs p {
-  float: left;
-  color: var(--primary-color);
-  text-transform: uppercase;
-  font-family: "Montserrat", sans-serif;
-  font-size: 1.2em;
-}
-
-.dashboard-tabs .tabs p:nth-last-of-type(3) {
-  margin-left: 100px;
-}
-
-.dashboard-tabs .tabs p:nth-last-of-type(2) {
-  float: right;
-}
-
-.dashboard-tabs .tabs p:nth-last-of-type(4) {
-  margin-left: 100px;
-}
-
-.dashboard-tabs-2 {
-  margin: 0px;
-  padding: 0 50px;
-  background-color: #ffffff;
-}
-
-.dashboard-tabs-2 .tabs {
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-.dashboard-tabs-2 .tabs a {
-  float: left;
-  color: var(--primary-color);
-  font-family: "Montserrat", sans-serif;
-  font-size: 1.2em;
-  height: 100%;
-}
-
-.dashboard-tabs-2 .tabs a:nth-last-of-type(2) {
-  margin-left: 100px;
-}
-
-.dashboard-tabs-2 .tabs a:nth-last-of-type(1) {
-  margin-left: 100px;
-}
-
-.dashboard-tabs-2 .tabs a:hover {
-  text-decoration: none;
-}
-
-.dashboard-explore .container-fluid {
-  padding: 0px;
-}
-
-.dashboard-explore {
-  margin-top: 100px;
-  padding: 0 50px;
-}
-
-.dashboard-explore .row {
-  margin-bottom: 50px;
+.dashboard-info a {
+  color: #fff;
 }
 
 .dashboard-explore .dashboard-card .card {
@@ -1909,7 +1845,6 @@ option {
 
 .profile-page .profile-body .profile-heading #verified,
 #unverified {
-
   text-transform: lowercase;
   font-size: 0.7em;
 }
@@ -1917,7 +1852,6 @@ option {
 .profile-page .profile-body .profile-content {
   margin-top: 50px;
   margin-bottom: 100px;
-
 }
 
 .profile-page .profile-content p {
@@ -1935,7 +1869,6 @@ option {
   margin-right: 70px;
   list-style: circle;
   font-size: 13px;
-
 }
 
 .profile-page .profile-body .profile-footer ul {
@@ -1949,7 +1882,6 @@ option {
 }
 
 .profile-registration input {
-
   font-size: 14px;
   border: 1px solid rgba(55, 9, 116, 0.5);
   height: 50px;
@@ -2010,7 +1942,7 @@ width: 100%;
   width: 100%;
   height: 100px;
   padding: 0px;
-  border: 1px solid var(--primary-color)80;
+  border: 1px solid var(--primary-color) 80;
   position: relative;
 }
 
@@ -2018,40 +1950,52 @@ width: 100%;
   height: 100px;
 }
 
-.profile-registration .custom-file .upload-drop-zone {
-  position: absolute;
-}
-
-.profile-registration .upload-drop-zone {
-  width: 100%;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  padding-left: 0px;
-  padding-right: 0px;
-}
-
-.profile-registration .upload-drop-zone img {
+.profile-registration .custom-file img {
   width: 120px;
   height: 62px;
-  /* padding-left: 30px; */
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  margin-top: 17px;
 }
 
-.profile-registration .upload-drop-zone p {
-  margin-top: 20px;
-  font-size: 0.85em;
-}
-
-.profile-registration .upload-drop-zone .btn {
+.profile-registration .custom-file .btn {
   background-color: var(--primary-color);
   border-radius: 10px;
   padding: 0px 35px;
-  margin-left: 20px;
-  margin-top: 12px;
+  /* margin-left: 30px; */
   height: 35px;
   color: #ffffff;
-
   font-size: 0.81em;
   text-transform: uppercase;
+  position: absolute;
+  left: 320px;
+  top: 30px;
+}
+
+.profile-registration .custom-file .custom-file-label {
+  font-size: 0.75em;
+  background-color: #ffffff00;
+  border: 0px;
+  text-transform: none;
+  font-weight: 300;
+  padding: 0px;
+  margin: 40px 0 0 130px;
+  height: auto;
+  width: auto;
+  /* position: absolute; */
+}
+
+label,
+.btn:focus,
+.btn:active {
+  outline: none !important;
+  box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+}
+
+.profile-registration .custom-file .custom-file-label::after {
+  content: none;
 }
 
 /*  Password Reset */
@@ -2085,7 +2029,6 @@ width: 100%;
 .pr-page .pr-body .pr-heading li {
   list-style: circle;
   padding: 10px;
-
 }
 
 .pr-page .pr-body .pr-footer,
@@ -2114,7 +2057,6 @@ ul {
 }
 
 .pr-page .pr-registration input {
-
   font-size: 14px;
   border: 1px solid rgba(55, 9, 116, 0.5);
   height: 50px;
@@ -2162,14 +2104,38 @@ option {
 
 /* Mobile Respionsiveness */
 @media (max-width: 576px) {
-
   /* Generic */
   html {
     overflow-y: auto;
   }
 
+  body {
+    overflow-y: hidden;
+  }
+
   .input-names .col-md-6:last-of-type {
     margin-top: 24px;
+  }
+
+  .custom-file .upload-drop-zone img {
+    width: 60px;
+    height: 31.5px;
+    top: 20px;
+    left: 0px;
+  }
+
+  .custom-file .custom-file-label {
+    top: 5px;
+    left: -60px;
+    font-size: 0.5em;
+  }
+
+  .custom-file .upload-drop-zone .btn {
+    top: 38px;
+    height: 30px;
+    left: 240px;
+    padding: 7px;
+    font-size: 0.6em;
   }
 
   /* Page and Navbar Settings */
@@ -2180,18 +2146,20 @@ option {
   }
 
   .page #page-border {
-    border: 1.5px solid rgba(55, 9, 116, 0.5);
+    padding-top: 30px;
+    border: none;
     border-bottom: 0px;
   }
 
   .page #page-border-2 {
-    border: 1.5px solid rgba(55, 9, 116, 0.5);
+    border: 0px;
     border-bottom-left-radius: 0px;
+    padding: 20px 20px 20px 20px;
   }
 
   .page #page-border-3 {
-    border: 1.5px solid rgba(55, 9, 116, 0.5);
-    padding: 30px 20px 30px 20px;
+    border: 0px;
+    padding: 30px 10px 80px 10px;
   }
 
   .page .page-sub-title h4 {
@@ -2210,116 +2178,111 @@ option {
   }
 
   .navbar-nav .nav-item .nav-button {
-    font-size: 0.8em;
-    width: 50%;
-    margin-top: 15px;
-    margin-bottom: 10px;
+    text-align: left;
   }
 
   /* Sign Up Page */
-  .signup-page .signup-body h4 {
-    text-align: center;
+  .signup-page .signup-body {
+    margin-top: 200px;
   }
 
-  .signup-page .signup-body .signup-heading .media {
-    margin-top: 30px;
-    text-align: center;
-    position: relative;
-  }
-
-  .signup-page .signup-body .signup-heading .media .img {
-    padding: 0px;
-    margin: 0px;
-    width: 100%;
-    position: absolute;
-  }
-
-  .signup-page .signup-body .signup-heading .media .img img {
-    height: 200px;
-    width: 65%;
-    margin-right: 0px;
-  }
-
+  .signup-page .signup-body h4,
+  .signup-page .signup-body .signup-heading .media,
+  .signup-page .signup-body .signup-heading .media .img,
   .signup-page .signup-body .signup-heading .media .media-body {
-    margin-top: 230px;
+    visibility: hidden;
   }
 
   .signup-page .signup-body .signup-footer li {
-    margin-right: 40px;
+    margin-right: 35px;
     font-size: 0.8em;
+    padding-left: 0px;
+  }
+
+  .signup-page .signup-registration {
+    position: absolute;
+    padding-right: 40px !important;
   }
 
   /* Verify Number */
-  .vn-page .container-fluid row:last-of-type {
-    position: relative;
-  }
 
-  .vn-page .page-sub-title h4 {
-    text-align: center;
+  .vn-page .vn-body h4,
+  .vn-page .vn-body .vn-heading .media,
+  .vn-page .vn-body .vn-heading {
+    visibility: hidden;
   }
 
   .vn-page .vn-body {
-    height: 1000px;
-  }
-
-  .vn-page .vn-body .vn-footer {
-    margin-top: 800px;
+    margin-top: 250px;
   }
 
   .vn-page .vn-body .vn-footer li {
-    margin-right: 40px;
+    margin-right: 30px;
     font-size: 0.8em;
   }
 
   .vn-page .vn-registration {
     position: absolute;
     border: 0px !important;
-  }
-
-  .vn-page .vn-registration form {
-    margin-top: 100px;
+    padding-right: 40px !important;
   }
 
   /* Upload Page */
-  .upload-page .upload-body .upload-heading p {
-    width: 100%;
+
+  .upload-page .upload-body h4,
+  .upload-page .upload-body .upload-heading .media,
+  .upload-page .upload-body .upload-heading {
+    visibility: hidden;
   }
 
-  .upload-page .upload-body .upload-footer {
+  .upload-page .upload-body {
+    margin-top: 700px;
+  }
+
+  .upload-page .upload-registration {
     position: absolute;
-    top: 1450px;
+    padding-right: 40px !important;
+    padding-left: 10px !important;
   }
-
   .upload-page .upload-body .upload-footer li {
     margin-right: 40px;
     font-size: 0.8em;
     font-size: 13px;
   }
 
-  .upload-page .upload-registration #save-button {
-    margin-bottom: 100px;
+  .upload-registration .custom-file .upload-drop-zone .btn {
+    left: 230px;
+    padding: 5px 10px;
   }
 
-  .custom-file .upload-drop-zone img {
+  .upload-registration .custom-file .upload-drop-zone img {
     width: 60px;
     height: 31.5px;
+    top: 20px;
+    left: -5px;
   }
 
-  .custom-file .upload-drop-zone p {
-    margin-top: 10px;
-    font-size: 0.65em;
+  .upload-registration .custom-file .custom-file-label {
+    top: 5px;
+    left: -95px;
+    font-size: 0.8em;
   }
 
-  .custom-file .upload-drop-zone .btn {
-    background-color: var(--primary-color);
-    border-radius: 5px;
-    padding: 0px 17.5px;
-    margin-left: 10px;
-    margin-top: 7px;
-    height: 17.5px;
-    color: #ffffff;
-    font-size: 0.5em;
-    text-transform: uppercase;
+  .upload-page .upload-body .upload-footer li {
+    margin-right: 35px;
+    font-size: 0.8em;
+  }
+
+  /*  Profile Page */
+
+  .profile-page .profile-body h4,
+  .profile-page .profile-body .profile-content,
+  .profile-page .profile-body .profile-heading {
+    visibility: hidden;
+  }
+
+  .profile-page .profile-body {
+    margin-top: 1100px;
   }
 
   /*  Profile Page */
@@ -2330,78 +2293,156 @@ option {
   }
 
   .profile-page .profile-body .profile-footer li {
-    margin-right: 40px;
+    margin-right: 35px;
     font-size: 0.8em;
     font-size: 13px;
   }
 
+  .profile-page .profile-registration {
+    position: absolute;
+    padding-right: 40px !important;
+  }
+
   /* Payment */
-  .payment-page .container-fluid row:last-of-type {
-    position: relative;
+
+  .payment-page .payment-body h4,
+  .payment-page .payment-body .payment-content,
+  .payment-page .payment-body .payment-heading {
+    visibility: hidden;
   }
 
   .payment-page .payment-body {
-    height: 1000px;
+    margin-top: 300px;
   }
 
   .payment-registration {
     position: absolute;
-    margin-top: 50px;
     border: 0px !important;
     padding-right: 40px !important;
   }
 
-  .payment-registration form {
-    margin-top: 50px;
-  }
-
-  .payment-registration .payment-input .col-4 .input-group,
-  .col-2 .input-group {
-    margin-top: 25px;
+  .payment-registration .payment-input label {
+    letter-spacing: -0.6px;
   }
 
   .payment-page .payment-body .payment-footer li {
-    margin-right: 40px;
+    margin-right: 35px;
     font-size: 0.8em;
-  }
-
-  .payment-page .payment-body .payment-footer {
-    margin-top: 800px;
   }
 
   /*  Password Reset*/
   .pr-page .pr-body {
-    height: 500px;
+    height: 200px;
+    visibility: hidden;
   }
 
   .pr-page .pr-registration {
-    border: 0px !important;
-    border-bottom-right-radius: 0px !important;
     margin-bottom: 30px;
   }
 
   /* Accounts */
-  .accounts-page .accounts-body .accounts-content {
-    width: 100%;
+
+  .accounts-page .accounts-body h4,
+  .accounts-page .accounts-body .accounts-heading .media,
+  .accounts-page .accounts-body .accounts-heading {
+    visibility: hidden;
   }
 
-  .accounts-page .accounts-body .accounts-heading .buttons {
-    text-align: center;
-    padding-left: 40px;
+  .accounts-page .accounts-body {
+    margin-top: 250px;
   }
-
+  .accounts-page .accounts-registration {
+    position: absolute;
+    padding-right: 35px !important;
+  }
   .accounts-page .accounts-registration img {
     margin-top: 5px;
     height: 50px;
     width: 50px;
   }
 
-  .accounts-page .accounts-registration .accounts-button .btn-verified {
-    background: #41b661;
-    color: #ffffff;
-    border-radius: 50px;
-    padding: 5px 7px 5px 7px;
-    font-size: 0.5em;
-    margin-left: 0px;
+  .accounts-page .accounts-body .accounts-footer li {
+    margin-right: 30px;
+    font-size: 0.8em;
   }
+
+  /* Verify  */
+  .verify-page .verify-body h4,
+  .verify-page .verify-body .verify-heading .media,
+  .verify-page .verify-body .verify-heading {
+    visibility: hidden;
+  }
+
+  .verify-page .verify-registration {
+    position: absolute;
+    padding-right: 40px !important;
+  }
+
+  .verify-page .verify-body {
+    margin-top: 1400px;
+  }
+
+  .verify-page .verify-body .verify-footer li {
+    margin-right: 35px;
+    font-size: 0.8em;
+  }
+
+  .verify-registration .custom-file .custom-file-label {
+    top: -1px;
+    left: -1px;
+    right: -1px;
+  }
+
+  /* Login */
+
+  .login-page .login-body h4,
+  .login-page .login-body .login-heading,
+  .login-page .login-body .login-heading {
+    visibility: hidden;
+  }
+
+  .login-page .login-body .login-footer {
+    margin-left: 0px;
+    padding-left: 0px;
+  }
+
+  .login-page .login-body .login-footer li {
+    margin-right: 30px;
+    font-size: 0.8em;
+  }
+
+  .login-page .login-registration {
+    position: absolute;
+    padding-right: 40px !important;
+  }
+
+  /* Change Password */
+  .cp-page .cp-body h4,
+  .cp-page .cp-body .cp-heading,
+  .cp-page .cp-body .cp-heading {
+    visibility: hidden;
+  }
+
+  .cp-page .cp-body {
+    margin-top: 350px;
+  }
+
+  .cp-page .cp-registration {
+    position: absolute;
+    padding-right: 40px !important;
+  }
+
+  .cp-page .cp-body .cp-footer li {
+    margin-right: 35px;
+    font-size: 0.8em;
+  }
+}
+
+.selectize-input {
+  border: 1px solid #d0d0d0;
+  padding: 0px 8px;
+}
+
+.selectize-control.multi .selectize-input.has-items {
+    padding: 0px 8px;
 }

@@ -82,9 +82,7 @@
                         <li class="nav-item mx-md-4 my-md-0 postion-relative">
                             <a class="nav-link px-0" href="{{ route('upload') }}">Upload.</a>
                         </li>
-                        <li class="nav-item mx-md-4 my-md-0 postion-relative">
-                            <a class="nav-link px-0" href="{{ route('checkout.cart') }}">Cart.<span class="">{{\Cart::session(Auth::id())->getContent()->count()}}</span></a>
-                        </li>
+
                         <li class="dropdown nav-item mx-md-4 my-md-0 postion-relative">
                             <a class="dropdown-toggle nav-link px-0" href="#" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="false" aria-expanded="false">
                                Hi {{ Auth::user()->firstname }}
@@ -109,6 +107,9 @@
                                 </li>
 
                             </ul>
+                        </li>
+                        <li class="nav-item mx-md-4 my-md-0 postion-relative">
+                            <a class="nav-link px-0" href="{{ route('checkout.cart') }}">View Cart.<span class="badge badge-secondary">{{\Cart::session(Auth::id())->getContent()->count()}}</span></a>
                         </li>
                     @endguest
                     <li class="nav-item mx-md-4 my-md-0 postion-relative">

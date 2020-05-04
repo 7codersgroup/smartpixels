@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cbd6f795-d52c-4941-aaa0-5721efb1051f" name="Default Changelist" comment="" />
+    <list default="true" id="cbd6f795-d52c-4941-aaa0-5721efb1051f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smartpixel_dev1/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/smartpixel_dev1/public/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smartpixel_dev1/public/js/utility.js" beforeDir="false" afterPath="$PROJECT_DIR$/smartpixel_dev1/public/js/utility.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smartpixel_dev1/resources/views/artist.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/smartpixel_dev1/resources/views/artist.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smartpixel_dev1/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/smartpixel_dev1/resources/views/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smartpixel_dev1/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/smartpixel_dev1/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smartpixel_dev1/resources/views/layouts/ordinarynavbar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/smartpixel_dev1/resources/views/layouts/ordinarynavbar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smartpixel_dev1/resources/views/layouts/searchnavbar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/smartpixel_dev1/resources/views/layouts/searchnavbar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smartpixel_dev1/resources/views/search.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/smartpixel_dev1/resources/views/search.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smartpixel_dev1/resources/views/upload.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/smartpixel_dev1/resources/views/upload.blade.php" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,23 +60,14 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.3155416">
+    <splitter split-orientation="horizontal" split-proportion="0.743833">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/smartpixel_dev1/resources/views/flash-message.blade.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="405">
-                  <caret line="27" column="22" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="22" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/smartpixel_dev1/app/Http/Controllers/ArtistController.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="424">
-                  <caret line="43" column="42" selection-start-line="43" selection-start-column="42" selection-end-line="43" selection-end-column="42" />
+                <state relative-caret-position="99">
+                  <caret line="27" column="5" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
                   <folding>
                     <element signature="e#40#53#0#PHP" expanded="true" />
                   </folding>
@@ -74,69 +76,88 @@
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/smartpixel_dev1/app/Http/Controllers/DashboardController.php">
+            <entry file="file://$PROJECT_DIR$/smartpixel_dev1/resources/views/home.blade.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="300">
-                  <caret line="20" column="8" selection-start-line="20" selection-end-line="21" />
+                <state relative-caret-position="63">
+                  <caret line="65" column="31" selection-start-line="65" selection-start-column="31" selection-end-line="65" selection-end-column="31" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/smartpixel_dev1/resources/views/layouts/searchnavbar.blade.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="353">
+                  <caret line="112" column="29" selection-start-line="112" selection-start-column="29" selection-end-line="112" selection-end-column="29" />
                   <folding>
-                    <element signature="e#40#54#0#PHP" expanded="true" />
+                    <element signature="n#ul#0;n#li#5;n#ul#0;n#div#1;n#nav#0;n#div#0;n#div#0;n#!!top" />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/smartpixel_dev1/resources/views/layouts/app.blade14.php">
-              <provider selected="true" editor-type-id="text-editor" />
+            <entry file="file://$PROJECT_DIR$/smartpixel_dev1/resources/views/upload.blade.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="169">
+                  <caret line="89" column="34" selection-start-line="89" selection-start-column="34" selection-end-line="89" selection-end-column="34" />
+                </state>
+              </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/smartpixel_dev1/app/Http/Resources/Product.php">
-              <provider selected="true" editor-type-id="text-editor" />
+            <entry file="das://a8950978-493d-4210-8bcb-ffb993534153/schema/smartpixels/table/images">
+              <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+                <state>
+                  <filtering enabled="true" />
+                </state>
+              </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/smartpixel_dev1/app/Http/Controllers/API/RegisterController.php">
-              <provider selected="true" editor-type-id="text-editor" />
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/smartpixel_dev1/app/Http/Controllers/AccountController.php">
-              <provider selected="true" editor-type-id="text-editor" />
+            <entry file="file://$PROJECT_DIR$/smartpixel_dev1/resources/views/layouts/ordinary_header.blade.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="255">
+                  <caret line="17" selection-start-line="17" selection-end-line="17" />
+                </state>
+              </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/smartpixel_dev1/resources/views/search.blade.php">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="165">
-                  <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="56" selection-end-column="19" />
-                  <folding>
-                    <element signature="n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-                  </folding>
+                  <caret line="11" column="3" lean-forward="true" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="37" />
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/artist.html">
+            <entry file="file://$PROJECT_DIR$/smartpixel_dev1/resources/views/artist.blade.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="4320">
-                  <caret line="411" column="23" selection-start-line="411" selection-start-column="23" selection-end-line="411" selection-end-column="23" />
-                  <folding>
-                    <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
-                    <element signature="n#section#0;n#body#0;n#html#0;n#!!top" />
-                    <element signature="n#button#0;n#body#0;n#html#0;n#!!top" />
-                    <element signature="n#div#2;n#body#0;n#html#0;n#!!top" />
-                  </folding>
+                <state relative-caret-position="334">
+                  <caret line="54" column="57" selection-start-line="54" selection-start-column="57" selection-end-line="54" selection-end-column="57" />
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/smartpixel_dev1/app/Http/Controllers/API/ImageController.php">
+            <entry file="file://$PROJECT_DIR$/smartpixel_dev1/resources/views/layouts/image_listing.blade.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="60">
-                  <caret line="4" column="28" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
+                <state relative-caret-position="225">
+                  <caret line="15" column="42" selection-start-line="15" selection-start-column="42" selection-end-line="15" selection-end-column="42" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/smartpixel_dev1/resources/views/layouts/ordinarynavbar.blade.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="414">
+                  <caret line="71" column="25" selection-start-line="71" selection-start-column="25" selection-end-line="71" selection-end-column="25" />
+                  <folding>
+                    <element signature="n#ul#0;n#li#5;n#ul#0;n#div#0;n#nav#0;n#div#0;n#!!top" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -145,27 +166,6 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/smartpixel_dev1/resources/views/artist.blade.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="225">
-                  <caret line="27" selection-start-line="27" selection-end-line="27" />
-                  <folding>
-                    <element signature="e#1868#3614#0#HTML" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="das://a8950978-493d-4210-8bcb-ffb993534153/schema/smartpixels/table/user_follower">
-              <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-                <state>
-                  <filtering enabled="true" />
-                </state>
-              </provider>
-            </entry>
-          </file>
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/smartpixel_dev1/public/js/follow.js">
               <provider selected="true" editor-type-id="text-editor">
@@ -185,16 +185,40 @@
               <provider selected="true" editor-type-id="text-editor" />
             </entry>
           </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/upload.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-1571">
+                  <caret line="70" selection-start-line="70" selection-end-line="70" />
+                  <folding>
+                    <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/smartpixel_dev1/vendor/overtrue/laravel-follow/src/Events/Unfollowed.php">
               <provider selected="true" editor-type-id="text-editor" />
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/smartpixel_dev1/vendor/overtrue/laravel-follow/src/Followable.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="139">
-                  <caret line="38" column="7" selection-start-line="38" selection-start-column="7" selection-end-line="38" selection-end-column="7" />
+                <state relative-caret-position="92">
+                  <caret line="52" column="35" selection-start-line="52" selection-start-column="35" selection-end-line="52" selection-end-column="35" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/index.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="1290">
+                  <caret line="86" column="21" selection-start-line="86" selection-start-column="21" selection-end-line="86" selection-end-column="21" />
+                  <folding>
+                    <element signature="n#section#3;n#body#0;n#html#0;n#!!top" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -254,33 +278,34 @@
         <option value="$PROJECT_DIR$/smartpixel_dev1/app/Http/Controllers/DashboardController.php" />
         <option value="$PROJECT_DIR$/smartpixel_dev1/app/Http/Controllers/HomeController.php" />
         <option value="$PROJECT_DIR$/artist.html" />
-        <option value="$PROJECT_DIR$/smartpixel_dev1/resources/views/upload.blade.php" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/smartpixel_dev1/resources/views/home.blade.php" />
         <option value="$PROJECT_DIR$/smartpixel_dev1/resources/views/layouts/search.blade.php" />
         <option value="$PROJECT_DIR$/cart-items.html" />
         <option value="$PROJECT_DIR$/smartpixel_dev1/app/Image.php" />
         <option value="$PROJECT_DIR$/smartpixel_dev1/resources/views/flashmessage.blade.php" />
         <option value="$PROJECT_DIR$/smartpixel_dev1/app/Http/Controllers/CartController.php" />
         <option value="$PROJECT_DIR$/smartpixel_dev1/app/Http/Controllers/SearchController.php" />
-        <option value="$PROJECT_DIR$/smartpixel_dev1/resources/views/layouts/app.blade.php" />
         <option value="$PROJECT_DIR$/smartpixel_dev1/resources/views/cart.blade.php" />
         <option value="$PROJECT_DIR$/smartpixel_dev1/resources/views/layouts/cartmodal.blade.php" />
         <option value="$PROJECT_DIR$/smartpixel_dev1/config/app.php" />
-        <option value="$PROJECT_DIR$/smartpixel_dev1/resources/views/layouts/ordinarynavbar.blade.php" />
-        <option value="$PROJECT_DIR$/smartpixel_dev1/resources/views/layouts/searchnavbar.blade.php" />
         <option value="$PROJECT_DIR$/smartpixel_dev1/resources/views/dashboard.blade.php" />
         <option value="$PROJECT_DIR$/smartpixel_dev1/resources/views/layouts/footercity.blade.php" />
         <option value="$PROJECT_DIR$/smartpixel_dev1/resources/views/layouts/app2.blade.php" />
         <option value="$PROJECT_DIR$/smartpixel_dev1/resources/views/flash-message.blade.php" />
-        <option value="$PROJECT_DIR$/smartpixel_dev1/resources/views/search.blade.php" />
         <option value="$PROJECT_DIR$/smartpixel_dev1/app/User.php" />
         <option value="$PROJECT_DIR$/smartpixel_dev1/routes/web.php" />
-        <option value="$PROJECT_DIR$/smartpixel_dev1/resources/views/layouts/ordinary_header.blade.php" />
         <option value="$PROJECT_DIR$/smartpixel_dev1/app/Http/Controllers/ArtistController.php" />
-        <option value="$PROJECT_DIR$/smartpixel_dev1/resources/views/artist.blade.php" />
         <option value="$PROJECT_DIR$/smartpixel_dev1/public/js/follow.js" />
         <option value="$PROJECT_DIR$/smartpixel_dev1/vendor/overtrue/laravel-follow/src/Followable.php" />
+        <option value="$PROJECT_DIR$/smartpixel_dev1/resources/views/layouts/app.blade.php" />
+        <option value="$PROJECT_DIR$/smartpixel_dev1/resources/views/home.blade.php" />
+        <option value="$PROJECT_DIR$/smartpixel_dev1/resources/views/layouts/ordinary_header.blade.php" />
+        <option value="$PROJECT_DIR$/smartpixel_dev1/resources/views/upload.blade.php" />
+        <option value="$PROJECT_DIR$/smartpixel_dev1/resources/views/layouts/image_listing.blade.php" />
+        <option value="$PROJECT_DIR$/smartpixel_dev1/resources/views/search.blade.php" />
+        <option value="$PROJECT_DIR$/smartpixel_dev1/resources/views/artist.blade.php" />
+        <option value="$PROJECT_DIR$/smartpixel_dev1/resources/views/layouts/ordinarynavbar.blade.php" />
+        <option value="$PROJECT_DIR$/smartpixel_dev1/resources/views/layouts/searchnavbar.blade.php" />
       </list>
     </option>
   </component>
@@ -432,93 +457,13 @@
             <path>
               <item name="smartpixels2" type="b2602c69:ProjectViewProjectNode" />
               <item name="smartpixels2" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="smartpixels2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="smartpixels2" type="462c0819:PsiDirectoryNode" />
               <item name="smartpixel_dev1" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="smartpixels2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="smartpixels2" type="462c0819:PsiDirectoryNode" />
-              <item name="smartpixel_dev1" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="smartpixels2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="smartpixels2" type="462c0819:PsiDirectoryNode" />
-              <item name="smartpixel_dev1" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="smartpixels2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="smartpixels2" type="462c0819:PsiDirectoryNode" />
-              <item name="smartpixel_dev1" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
-              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="smartpixels2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="smartpixels2" type="462c0819:PsiDirectoryNode" />
-              <item name="smartpixel_dev1" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
-              <item name="Resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="smartpixels2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="smartpixels2" type="462c0819:PsiDirectoryNode" />
-              <item name="smartpixel_dev1" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Providers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="smartpixels2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="smartpixels2" type="462c0819:PsiDirectoryNode" />
-              <item name="smartpixel_dev1" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="smartpixels2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="smartpixels2" type="462c0819:PsiDirectoryNode" />
-              <item name="smartpixel_dev1" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="smartpixels2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="smartpixels2" type="462c0819:PsiDirectoryNode" />
-              <item name="smartpixel_dev1" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
-              <item name="migrations" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="smartpixels2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="smartpixels2" type="462c0819:PsiDirectoryNode" />
-              <item name="smartpixel_dev1" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="smartpixels2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="smartpixels2" type="462c0819:PsiDirectoryNode" />
-              <item name="smartpixel_dev1" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="smartpixels2" type="b2602c69:ProjectViewProjectNode" />
               <item name="smartpixels2" type="462c0819:PsiDirectoryNode" />
               <item name="smartpixel_dev1" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="smartpixels2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="smartpixels2" type="462c0819:PsiDirectoryNode" />
-              <item name="smartpixel_dev1" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="smartpixels2" type="b2602c69:ProjectViewProjectNode" />
@@ -534,52 +479,6 @@
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
               <item name="layouts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="smartpixels2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="smartpixels2" type="462c0819:PsiDirectoryNode" />
-              <item name="smartpixel_dev1" type="462c0819:PsiDirectoryNode" />
-              <item name="routes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="smartpixels2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="smartpixels2" type="462c0819:PsiDirectoryNode" />
-              <item name="smartpixel_dev1" type="462c0819:PsiDirectoryNode" />
-              <item name="vendor" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="smartpixels2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="smartpixels2" type="462c0819:PsiDirectoryNode" />
-              <item name="smartpixel_dev1" type="462c0819:PsiDirectoryNode" />
-              <item name="vendor" type="462c0819:PsiDirectoryNode" />
-              <item name="overtrue" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="smartpixels2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="smartpixels2" type="462c0819:PsiDirectoryNode" />
-              <item name="smartpixel_dev1" type="462c0819:PsiDirectoryNode" />
-              <item name="vendor" type="462c0819:PsiDirectoryNode" />
-              <item name="overtrue" type="462c0819:PsiDirectoryNode" />
-              <item name="laravel-follow" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="smartpixels2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="smartpixels2" type="462c0819:PsiDirectoryNode" />
-              <item name="smartpixel_dev1" type="462c0819:PsiDirectoryNode" />
-              <item name="vendor" type="462c0819:PsiDirectoryNode" />
-              <item name="overtrue" type="462c0819:PsiDirectoryNode" />
-              <item name="laravel-follow" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="smartpixels2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="smartpixels2" type="462c0819:PsiDirectoryNode" />
-              <item name="smartpixel_dev1" type="462c0819:PsiDirectoryNode" />
-              <item name="vendor" type="462c0819:PsiDirectoryNode" />
-              <item name="overtrue" type="462c0819:PsiDirectoryNode" />
-              <item name="laravel-follow" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Events" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -605,6 +504,9 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\AppServ\www\smartpixels2\smartpixel_dev1\public\js" />
+      <recent name="C:\AppServ\www\smartpixels2\smartpixel_dev1\public\img" />
+      <recent name="C:\AppServ\www\smartpixels2\smartpixel_dev1\public\css" />
       <recent name="C:\AppServ\www\smartpixels2\smartpixel_dev1\resources\js" />
     </key>
   </component>
@@ -635,7 +537,7 @@
       <workItem from="1588202425234" duration="105000" />
       <workItem from="1588202698805" duration="19012000" />
       <workItem from="1588383634638" duration="28937000" />
-      <workItem from="1588550869211" duration="12406000" />
+      <workItem from="1588550869211" duration="15098000" />
     </task>
     <task id="LOCAL-00001" summary="follow-unfollow">
       <created>1588562477954</created>
@@ -655,13 +557,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="73303000" />
+    <option name="totallyTimeSpent" value="75995000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3139183" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2193646" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Messages" weight="0.32872504" />
@@ -674,7 +576,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Database Console" order="7" weight="0.32872504" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="9" weight="0.640553" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.37480798" />
       <window_info anchor="bottom" id="Database Changes" order="10" />
       <window_info anchor="bottom" id="Statistic" order="11" />
       <window_info anchor="bottom" id="Terminal" order="12" sideWeight="0.49924356" weight="0.9354839" />
@@ -683,31 +585,32 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Remote Host" order="3" weight="0.32967034" />
-      <window_info anchor="right" id="Database" order="4" weight="0.38147566" />
+      <window_info anchor="right" id="Database" order="4" weight="0.38124055" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19667171" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2193646" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Database Console" order="7" weight="0.32872504" />
-      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Database Changes" order="10" />
-      <window_info anchor="bottom" id="Statistic" order="11" />
-      <window_info anchor="bottom" id="Terminal" order="12" sideWeight="0.49924356" visible="true" weight="0.16743472" />
-      <window_info anchor="bottom" id="Event Log" order="13" sideWeight="0.50075644" side_tool="true" weight="0.16743472" />
+      <window_info anchor="bottom" id="Messages" order="0" weight="0.32872504" />
+      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info anchor="bottom" id="Find" order="2" />
+      <window_info anchor="bottom" id="Run" order="3" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="7" />
+      <window_info anchor="bottom" id="Database Console" order="8" weight="0.32872504" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="10" visible="true" weight="0.37480798" />
+      <window_info anchor="bottom" id="Database Changes" order="11" />
+      <window_info anchor="bottom" id="Statistic" order="12" />
+      <window_info anchor="bottom" id="Terminal" order="13" sideWeight="0.49924356" weight="0.9354839" />
+      <window_info anchor="bottom" id="Event Log" order="14" sideWeight="0.50075644" side_tool="true" weight="0.16743472" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Remote Host" order="3" />
-      <window_info anchor="right" id="Database" order="4" weight="0.20801815" />
+      <window_info anchor="right" id="Remote Host" order="3" weight="0.32967034" />
+      <window_info anchor="right" id="Database" order="4" weight="0.38147566" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -758,31 +661,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="follow-unfollow" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="das://a8950978-493d-4210-8bcb-ffb993534153/schema/smartpixels/table/images">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/upload.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="68" selection-end-column="22" />
-          <folding>
-            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#section#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/smartpixel_dev1/app/Http/Controllers/HomeController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="35" column="12" selection-start-line="35" selection-start-column="12" selection-end-line="35" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/home.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="435">
@@ -807,13 +685,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/smartpixel_dev1/resources/views/upload.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="22" selection-start-line="17" selection-end-line="95" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/smartpixel_dev1/app/Http/Controllers/ImageUploadController.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -821,16 +692,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="18" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="210" column="12" selection-start-line="210" selection-start-column="12" selection-end-line="210" selection-end-column="12" />
-          <folding>
-            <element signature="n#section#3;n#body#0;n#html#0;n#!!top" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -862,13 +723,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/smartpixel_dev1/resources/views/home.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="14" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/smartpixel_dev1/app/Http/Controllers/CartController.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -934,13 +788,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/smartpixel_dev1/resources/views/layouts/searchnavbar.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1335">
-          <caret line="89" column="33" selection-start-line="89" selection-start-column="33" selection-end-line="89" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dashboard.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1305">
@@ -948,20 +795,6 @@
           <folding>
             <element signature="n#div#2;n#body#0;n#html#0;n#!!top" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/smartpixel_dev1/resources/views/layouts/ordinarynavbar.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="705">
-          <caret line="47" column="30" selection-start-line="47" selection-start-column="30" selection-end-line="47" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/smartpixel_dev1/resources/views/layouts/app.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="32" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
         </state>
       </provider>
     </entry>
@@ -1002,16 +835,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/smartpixel_dev1/resources/views/search.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="56" selection-end-column="19" />
-          <folding>
-            <element signature="n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/smartpixel_dev1/app/Http/Controllers/DashboardController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
@@ -1042,37 +865,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/smartpixel_dev1/resources/views/layouts/ordinary_header.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/smartpixel_dev1/app/Http/Controllers/ArtistController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="424">
-          <caret line="43" column="42" selection-start-line="43" selection-start-column="42" selection-end-line="43" selection-end-column="42" />
-          <folding>
-            <element signature="e#40#53#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="das://a8950978-493d-4210-8bcb-ffb993534153/schema/smartpixels/table/user_follower">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/smartpixel_dev1/resources/views/artist.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="27" selection-start-line="27" selection-end-line="27" />
-          <folding>
-            <element signature="e#1868#3614#0#HTML" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1104,16 +900,122 @@
     <entry file="file://$PROJECT_DIR$/smartpixel_dev1/vendor/overtrue/laravel-follow/src/Events/Followed.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/smartpixel_dev1/vendor/overtrue/laravel-follow/src/Events/Unfollowed.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/smartpixel_dev1/vendor/overtrue/laravel-follow/src/FollowServiceProvider.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/smartpixel_dev1/vendor/overtrue/laravel-follow/src/Followable.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="38" column="7" selection-start-line="38" selection-start-column="7" selection-end-line="38" selection-end-column="7" />
+        <state relative-caret-position="92">
+          <caret line="52" column="35" selection-start-line="52" selection-start-column="35" selection-end-line="52" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/smartpixel_dev1/vendor/overtrue/laravel-follow/src/Events/Unfollowed.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/smartpixel_dev1/resources/views/layouts/app.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="31" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/smartpixel_dev1/app/Http/Controllers/ArtistController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="99">
+          <caret line="27" column="5" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
+          <folding>
+            <element signature="e#40#53#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1290">
+          <caret line="86" column="21" selection-start-line="86" selection-start-column="21" selection-end-line="86" selection-end-column="21" />
+          <folding>
+            <element signature="n#section#3;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/smartpixel_dev1/resources/views/home.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="65" column="31" selection-start-line="65" selection-start-column="31" selection-end-line="65" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/smartpixel_dev1/resources/views/layouts/ordinary_header.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/upload.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1571">
+          <caret line="70" selection-start-line="70" selection-end-line="70" />
+          <folding>
+            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/smartpixel_dev1/resources/views/upload.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="89" column="34" selection-start-line="89" selection-start-column="34" selection-end-line="89" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://a8950978-493d-4210-8bcb-ffb993534153/schema/smartpixels/table/images">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/smartpixel_dev1/resources/views/layouts/image_listing.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="42" selection-start-line="15" selection-start-column="42" selection-end-line="15" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/smartpixel_dev1/resources/views/search.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="3" lean-forward="true" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/smartpixel_dev1/resources/views/artist.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="334">
+          <caret line="54" column="57" selection-start-line="54" selection-start-column="57" selection-end-line="54" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/smartpixel_dev1/resources/views/layouts/ordinarynavbar.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="71" column="25" selection-start-line="71" selection-start-column="25" selection-end-line="71" selection-end-column="25" />
+          <folding>
+            <element signature="n#ul#0;n#li#5;n#ul#0;n#div#0;n#nav#0;n#div#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/smartpixel_dev1/resources/views/layouts/searchnavbar.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="353">
+          <caret line="112" column="29" selection-start-line="112" selection-start-column="29" selection-end-line="112" selection-end-column="29" />
+          <folding>
+            <element signature="n#ul#0;n#li#5;n#ul#0;n#div#1;n#nav#0;n#div#0;n#div#0;n#!!top" />
+          </folding>
         </state>
       </provider>
     </entry>
