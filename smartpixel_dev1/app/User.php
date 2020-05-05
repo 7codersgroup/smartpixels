@@ -7,10 +7,11 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Passport\HasApiTokens;
 use Overtrue\LaravelFollow\Followable;
+use Overtrue\LaravelLike\Traits\Liker;
 
 class User extends Authenticatable implements MustVerifyEmail
 {
-    use  HasApiTokens, Notifiable, Followable;
+    use  HasApiTokens, Notifiable, Followable, Liker;
 
     /**
      * The attributes that are mass assignable.

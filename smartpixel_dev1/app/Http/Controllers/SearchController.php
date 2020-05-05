@@ -39,4 +39,12 @@ class SearchController extends Controller
 		
 		return redirect()->back()->with('success', 'Item added to cart successfully.');
 	}
+	
+	public function LikePost(Request $request){
+		
+		$post = Image::find($request->id);
+		$response = auth()->user()->toggleLike($post);
+		
+		return response()->json(['success'=>$response]);
+	}
 }

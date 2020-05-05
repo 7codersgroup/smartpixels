@@ -52,13 +52,14 @@
 		Route::get('/cart', 'CartController@getCart')->name('checkout.cart');
 		Route::get('/cart/item/{id}/remove', 'CartController@removeItem')->name('checkout.cart.remove');
 		Route::get('/cart/clear', 'CartController@clearCart')->name('checkout.cart.clear');
-		
+		Route::get('artist/{id}', 'ArtistController@user')->name('artist.view');
+		Route::post('follow', 'ArtistController@followUserRequest')->name('follow');
+		Route::post('like', 'SearchController@LikePost')->name('like');
+		Route::post('like', 'ArtistController@LikePost')->name('like');
 	});
 	
 	
 	//Route::get('users', 'ArtistController@users')->name('users');
-	Route::get('artist/{id}', 'ArtistController@user')->name('artist.view');
-	Route::post('follow', 'ArtistController@followUserRequest')->name('follow');
 	
 	Route::any ( '/search', function (Request $request) {
 		$q = $request->input ( 'query' );

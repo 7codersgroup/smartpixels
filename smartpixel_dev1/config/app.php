@@ -170,6 +170,7 @@ return [
         Ixudra\Curl\CurlServiceProvider::class,
 	    Darryldecode\Cart\CartServiceProvider::class,
 	    Overtrue\LaravelFollow\FollowServiceProvider::class,
+	    Overtrue\LaravelFollow\FollowServiceProvider::class,
 
         /*
          * Application Service Providers...
