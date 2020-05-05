@@ -12,9 +12,10 @@
     <link rel="shortcut icon" href="{{asset ('img/favicon.jpg')}}"/>
     <link rel="apple-touch-icon" href="{{asset ('img/favicon.jpg')}}"/>
 
+    <link rel="stylesheet" href="{{asset ('css/bootstrap.min.css')}}"/>
     <link rel="stylesheet" href="{{asset ('css/global.css')}}"/>
     <link rel="stylesheet" href="{{asset ('css/custom-animation.css')}}"/>
-    <link rel="stylesheet" href="{{asset ('css/bootstrap.min.css')}}"/>
+
     <link rel="stylesheet" href="{{asset ('css/hamburgers.css')}}"/>
 
     <link

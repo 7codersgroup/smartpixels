@@ -64,10 +64,14 @@
 	Route::any ( '/search', function (Request $request) {
 		$q = $request->input ( 'query' );
 		//$images = Image::where ( 'title', 'LIKE', '%' . $q . '%' )->orWhere ( 'description', 'LIKE', '%' . $q . '%' )->get ();
-		$images = DB::table('images')->join('users', 'user_id', '=', 'users.id')
+		/*$images = DB::table('images')->join('users', 'user_id', '=', 'users.id')
 				->where ( 'title', 'LIKE', '%' . $q . '%' )
 				->orWhere ( 'description', 'LIKE', '%' . $q . '%' )
-				->get ();
+				->get ();*/
+		$images = Image::where ( 'title', 'LIKE', '%' . $q . '%' )
+			->orWhere ( 'description', 'LIKE', '%' . $q . '%' )
+			->join('users', 'user_id', '=', 'users.id')
+			->get ();
 		if (count ( $images ) > 0)
 			return view ( 'search', compact ( 'images' ));
 		else

@@ -8,8 +8,7 @@
 
         <!-- Hover Content -->
         <span class="like">
-            <i class="fa fa-heart-o"></i>
-            <i class="fa fa-heart"></i>
+            <i id="like{{$detail->id}}" class="fa {{ Auth::user()->hasLiked($detail) ? 'fa-heart' : 'fa-heart-o' }}"></i>
           </span>
 
         <span class="artist">
@@ -22,7 +21,7 @@
                     <p class="img-title mb-0">{{$detail->title}}</p>
                     <div class="stats">
                         <i class="fa fa-cloud-download"> </i> 2k
-                        <i class="fa fa-heart"> </i> {{$detail->likes}}
+                        <i class="fa fa-heart"> </i> {{ $detail->likers()->get()->count() }}
                     </div>
                 </div>
 
@@ -44,3 +43,4 @@
         </form>
     </div>
 @endforeach
+

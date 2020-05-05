@@ -42,8 +42,8 @@ class SearchController extends Controller
 	
 	public function LikePost(Request $request){
 		
-		$post = Image::find($request->id);
-		$response = auth()->user()->toggleLike($post);
+		$image = Image::find($request->id);
+		$response = Auth::user ()->toggleLike($image);
 		
 		return response()->json(['success'=>$response]);
 	}

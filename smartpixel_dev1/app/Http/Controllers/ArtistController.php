@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Image;
 use App\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -27,8 +28,7 @@ class ArtistController extends Controller
 	public function user($id)
 	{
 		$user = User::find($id);
-		$images = DB::table('images')
-			->where ( 'user_id', '=', $id )
+		$images = Image::where ( 'user_id', '=', $id )
 			->get ();
 		$total_downloads = DB::table('images')->where([['user_id', '=', $id]])->sum ('downloads');
 		$total_resources = DB::table('images')->where([['user_id', '=', $id]])->count ();
