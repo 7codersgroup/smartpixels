@@ -33,12 +33,12 @@
 
             <div class="col-lg-3 col-6">
                 <p class="small mb-0">Likes</p>
-                <p class="small mb-0">...</p>
+                <p class="small mb-0">{{$total_likes}}</p>
             </div>
 
             <div class="col-lg-3 col-6">
                 <p class="small mb-0">Followers</p>
-                <p class="small mb-0">...</p>
+                <p class="small mb-0">{{\Illuminate\Support\Facades\Auth::user ()->followings()->count()}}</p>
             </div>
 
             <div class="col-lg-3 col-6">
@@ -77,7 +77,7 @@
                                 <div class="card">
                                     <img src="{{$image->url}}" class="card-img-top">
                                     <div class="card-body">
-                                        <p>Likes <span> {{$image->likes}}</span></p>
+                                        <p>Likes <span> {{$image->likers()->get()->count()}}</span></p>
                                         <p>Downloads <span> {{$image->downloads}}</span></p>
                                     </div>
                                 </div>

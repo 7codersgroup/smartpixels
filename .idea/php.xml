@@ -122,6 +122,7 @@
       <path value="$PROJECT_DIR$/smartpixel_dev1/vendor/realrashid/sweet-alert" />
       <path value="$PROJECT_DIR$/smartpixel_dev1/vendor/darryldecode/cart" />
       <path value="$PROJECT_DIR$/smartpixel_dev1/vendor/overtrue/laravel-follow" />
+      <path value="$PROJECT_DIR$/smartpixel_dev1/vendor/overtrue/laravel-like" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="7.2" />

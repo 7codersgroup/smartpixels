@@ -21,6 +21,7 @@
         "laravel/tinker": "^2.0",
         "laravel/ui": "^2.0",
         "overtrue/laravel-follow": "^2.1",
+        "overtrue/laravel-like": "^2.0",
         "realrashid/sweet-alert": "^3.1",
         "uxweb/sweet-alert": "^2.0"
     },

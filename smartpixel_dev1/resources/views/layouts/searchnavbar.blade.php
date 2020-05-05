@@ -50,7 +50,7 @@
                                 <div class="container-table-cell no-stretch">
                                     <div class="px-4 position-relative">
                                         <img
-                                                src="img/camera.svg"
+                                                src="{{asset ('img/camera.svg')}}"
                                                 class="img-fluid position-absolute"
                                                 width="35"
                                                 style="bottom: -15px; left: 0px;"

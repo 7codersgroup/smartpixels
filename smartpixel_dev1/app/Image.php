@@ -3,12 +3,14 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use Overtrue\LaravelLike\Traits\Likeable;
 
 /**
  * @property mixed description
  */
 class Image extends Model
 {
+	use Likeable;
     //
     /**
      * The attributes that are mass assignable.
