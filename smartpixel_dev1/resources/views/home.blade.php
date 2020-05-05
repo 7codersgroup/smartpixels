@@ -8,8 +8,8 @@
           <div class="mti-hero-image">
             <picture>
               <img
-                   src="https://fpcover.cdnpk.net/image/20200325043919.jpg"
-                   class="mti-hero-image mti-hero-image--cover mti-hero-image--large js-hero-image-full container-full"
+                      src="{{asset ('img/featured.jpg')}}"
+                      class="mti-hero-image mti-hero-image--cover mti-hero-image--large js-hero-image-full container-full"
                    />
             </picture>
           </div>
@@ -32,9 +32,11 @@
               <div class="padding-top-large">
                 <form
                       method="get"
-                      action="search.html"
+                      action="/search"
                       class="js-search-form"
+                      role="search"
                       >
+                    @csrf
                   <div class="container-relative white hero-input-group">
                     <div class="input-box" data-active="input">
                       <div class="container-table">
@@ -54,7 +56,7 @@
                              class="container-table-cell container-full container-relative"
                              >
                           <input
-                                 name="k"
+                                 name="query"
                                  class="js-search-text-input input--silent input--full light input--xlarge"
                                  type="text"
                                  placeholder="Search"

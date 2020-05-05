@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class ChangeUserIdTypeInImages extends Migration
+class AddLikesdownloadsToImages extends Migration
 {
     /**
      * Run the migrations.
@@ -15,7 +15,8 @@ class ChangeUserIdTypeInImages extends Migration
     {
         Schema::table('images', function (Blueprint $table) {
             //
-            $table->foreignId('user_id')->change();
+	        $table->integer('likes')->nullable()->after ('review');
+	        $table->integer('downloads')->nullable();
         });
     }
 

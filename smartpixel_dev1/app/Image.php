@@ -4,6 +4,9 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
+/**
+ * @property mixed description
+ */
 class Image extends Model
 {
     //
@@ -15,4 +18,9 @@ class Image extends Model
     protected $fillable = [
         'url','title', 'description', 'tags', 'category', 'location', 'price', 'rating', 'user_id', 'tag'
     ];
+	
+	public static function find ($imageId)
+	{
+	
+	}
 }
