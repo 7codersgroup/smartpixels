@@ -800,6 +800,17 @@ a img {
 	z-index: 11;
 }
 
+.single-products-catagory .liked {
+	color: #fff;
+	text-align: center;
+	font-size: 24px;
+	text-shadow: 0 1px 2px rgba(0,0,0,.9);
+	position: absolute;
+	top: 5px;
+	right: 8px;
+	z-index: 11;
+}
+
 .single-products-catagory .artist {
 	text-align: center;
 	font-size: 24px;
