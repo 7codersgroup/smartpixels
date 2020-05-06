@@ -9,7 +9,8 @@
                 <div class="author_bio">
                     <div class="align-item row">
                         <div class="col-4">
-                            <img src="img/avatar.jpg" class="img-fluid rounded-circle" />
+                            <img src="https://res.cloudinary.com/demo/image/upload/d_avatar.png/non_existing_id.png"
+                                 class="img-fluid rounded-circle"/>
                         </div>
                         <div class="col-6">
                             <a href="artist.html">{{$user->firstname}} {{$user->lastname}}</a>

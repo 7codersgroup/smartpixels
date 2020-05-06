@@ -29,6 +29,7 @@ class ArtistController extends Controller
 	{
 		$user = User::find($id);
 		$images = Image::where ( 'user_id', '=', $id )
+			->where ('review', '!=', 'PENDING')
 			->get ();
 		$total_downloads = DB::table('images')->where([['user_id', '=', $id]])->sum ('downloads');
 		$total_resources = DB::table('images')->where([['user_id', '=', $id]])->count ();

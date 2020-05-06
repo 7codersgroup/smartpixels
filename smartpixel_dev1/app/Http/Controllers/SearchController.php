@@ -12,6 +12,7 @@ use Illuminate\Support\Facades\DB;
 
 class SearchController extends Controller
 {
+	
 	public function search()
 	{
 		return view('search');
@@ -40,10 +41,11 @@ class SearchController extends Controller
 		return redirect()->back()->with('success', 'Item added to cart successfully.');
 	}
 	
-	public function LikePost(Request $request){
+	public function likePost (Request $request)
+	{
 		
 		$image = Image::find($request->id);
-		$response = Auth::user ()->toggleLike($image);
+		$response = \Auth::user ()->toggleLike ($image);
 		
 		return response()->json(['success'=>$response]);
 	}
