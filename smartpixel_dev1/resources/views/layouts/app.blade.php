@@ -20,16 +20,16 @@
 @include('layouts.ordinarynavbar')
 <!--Header-->
 <!--End Header -->
-
+@include('flash-message')
 @yield('content')
 
 </body>
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="js/jquery-3.3.1.min.js"></script>
-<script src="js/popper.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/utility.js"></script>
+<script src="{{asset ('js/jquery-3.3.1.min.js')}}"></script>
+<script src="{{asset ('js/popper.min.js')}}"></script>
+<script src="{{asset ('js/bootstrap.min.js')}}"></script>
+<script src="{{asset ('js/utility.js')}}"></script>
 <script src="https://kit.fontawesome.com/e9480ff5ec.js" crossorigin="anonymous"></script>
 
 </html>
