@@ -2,17 +2,23 @@
     <!-- Single Catagory -->
     <div class="single-products-catagory clearfix" data-id="{{ $detail->id }}">
         <a href="">
-            <img `loading="lazy" src="{{$detail->url}}" alt=""/>
+            <img loading="lazy" src="{{$detail->url}}" alt="{{$detail->title}}"/>
 
         </a>
-
-        <!-- Hover Content -->
-        <span class="{{ Auth::user()->hasLiked($detail) ? '' : 'like' }}">
+        @guest
+            @if (Route::has('register'))
+                <span class="like">
             <i id="like{{$detail->id}}" class="fa fa-heart-o"></i>
           </span>
-        <span class="liked {{ Auth::user()->hasLiked($detail) ? 'liked' : '' }}">
-            <i id="like{{$detail->id}}" class="fa fa-heart"></i>
-        </span>
+            @endif
+        @else
+
+        <!-- Hover Content -->
+            <span class="{{ Auth::user()->hasLiked($detail) ? 'liked' : 'like' }}">
+            <i id="like{{$detail->id}}"
+               class="fa {{ Auth::user()->hasLiked($detail) ? 'fa-heart' : 'fa-heart-o' }}"></i>
+          </span>
+        @endguest
         <span class="artist">
             <a href="{{route ('artist')}}/{{$detail->user_id}}"> <i class="fa fa-user-o text-white"></i></a>
           </span>
@@ -30,10 +36,6 @@
                 <dd>
 
                     <input type="hidden" name="imageId" value="{{ $detail->id }}">
-                    <input type="hidden" name="title" value="{{ $detail->title }}">
-                    <input type="hidden" name="url" value="{{ $detail->url }}">
-                    <input type="hidden" name="price" id="finalPrice" value="{{ $detail->price }}">
-
                 </dd>
 
                 <button class="btn btn-primary ml-auto" type="submit" data-toggle="modal"
