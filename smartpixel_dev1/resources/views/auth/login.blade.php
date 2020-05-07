@@ -2,9 +2,6 @@
 
 @section('content')
 
-
-
-
 <div class="page-body">
         <div class="wrapper">
 
@@ -55,7 +52,8 @@
                                         </label>
                                         <div class="input-group">
                                         <input type="password" class="form-control @error('password') is-invalid @enderror" placeholder="Password"
-                                            ria-describedby="button-addon2" name="password" required autocomplete="current-password"/>
+                                               aria-describedby="button-addon2" name="password" required
+                                               autocomplete="current-password"/>
                                             <div class="input-group-append">
                                                 <button class="btn btn-outline-secondary" type="button" id="button-addon2">
                                                     <i class="fas fa-eye-slash"></i>
