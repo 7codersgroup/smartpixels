@@ -2,7 +2,7 @@
     <!-- Single Catagory -->
     <div class="single-products-catagory clearfix" data-id="{{ $detail->id }}">
         <a href="">
-            <img src="{{$detail->url}}" alt=""/>
+            <img `loading="lazy" src="{{$detail->url}}" alt=""/>
 
         </a>
 
