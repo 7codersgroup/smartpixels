@@ -18,14 +18,15 @@
                     </div>
 
                     <div class="my-3">
-                        <button class="btn btn-pixel-outline btn-block follow" data-id="{{ $user->id }}">
-                            <strong>
-                                @if(Auth::user()->isFollowing($user))
-                                    UnFollow
-                                @else
-                                    Follow
-                                @endif
-                            </strong>
+                        @if (Auth::user() != $user)
+                            <button class="btn btn-pixel-outline btn-block follow" data-id="{{ $user->id }}">
+                                <strong>
+                                    @if(Auth::user()->isFollowing($user))
+                                        UnFollow
+                                    @else
+                                        Follow
+                                    @endif
+                                </strong>
 
                         </button>
                     </div>
@@ -37,7 +38,7 @@
                         </div>
                         <div class="col-4">
                             <p class="small mb-1 tl-follower">Followers</p>
-                            <p>{{$user->followings()->count()}}</p>
+                            <p class="tl-follower">{{$user->followers()->count()}}</p>
 
                         </div>
                         <div class="col-4">
@@ -53,6 +54,9 @@
                 <div class="products-catagories-area clearfix">
                     <div class="amado-pro-catagory clearfix">
                         <!-- Single Catagory -->
+                        @if (empty($images))
+
+                        @endif
                         @include('layouts.image_listing')
 
                     </div>
