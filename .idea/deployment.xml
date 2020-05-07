@@ -12,7 +12,7 @@
       <paths name="cloudtest">
         <serverdata>
           <mappings>
-            <mapping deploy="/" local="$PROJECT_DIR$/smartpixel_dev1" web="/" />
+            <mapping deploy="/fricapix" local="$PROJECT_DIR$/smartpixel_dev1" web="/" />
           </mappings>
         </serverdata>
       </paths>

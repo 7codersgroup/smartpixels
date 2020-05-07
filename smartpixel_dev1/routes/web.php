@@ -74,7 +74,6 @@
 			->where ('review', '!=', 'PENDING')
 			->orWhere ( 'description', 'LIKE', '%' . $q . '%' )
 			->orWhere ('tag', 'LIKE', '%' . $q . '%')
-			->join('users', 'user_id', '=', 'users.id')
 			->get ();
 		if (count ( $images ) > 0)
 			return view ( 'search', compact ( 'images' ));

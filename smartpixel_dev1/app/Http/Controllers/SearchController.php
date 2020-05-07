@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 
-use App\Http\Resources\Image;
+use App\Image;
 use Darryldecode\Cart\Cart;
 use Darryldecode\Cart\Exceptions\InvalidItemException;
 use Illuminate\Http\Request;
@@ -21,20 +21,20 @@ class SearchController extends Controller
 	public function addToCart(Request $request)
 	{
 		
-	
-		$image = DB::select("select price from images where id = '$request->imageId'");
-		//$images = DB::table('images')->where('id', '=', $request->imageId)->get();
 		
+		//	$image = DB::select("select price from images where id = '$request->imageId'");
+		$images = Image::where ('id', '=', $request->input ('imageId'))->first ();
+		var_dump ($images->id);
 		
 		
 		\Cart::session(Auth::id ());
 		\Cart::add(array(
-			'id' => uniqid (),
-			'name' => $request->title,
-			'price' => $request->price,
+			'id' => $images->id,
+			'name' => $images->title,
+			'price' => $images->price,
 			'quantity' => 1,
 			'attributes' =>  array(
-				'url' => $request->url
+				'url' => $images->url
 			)
 		));
 		

@@ -13,7 +13,7 @@
                                  class="img-fluid rounded-circle"/>
                         </div>
                         <div class="col-6">
-                            <a href="artist.html">{{$user->firstname}} {{$user->lastname}}</a>
+                            <a href="{{url ("artist/{$user->id}")}}">{{$user->firstname}} {{$user->lastname}}</a>
                         </div>
                     </div>
 
@@ -28,7 +28,9 @@
                                     @endif
                                 </strong>
 
-                        </button>
+                            </button>
+                        @endif
+
                     </div>
                     <hr />
                     <div class="row text-center">
