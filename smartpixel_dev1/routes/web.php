@@ -56,6 +56,8 @@
 		Route::post('follow', 'ArtistController@followUserRequest')->name('follow');
 		Route::post ('like', 'SearchController@likePost')->name ('like');
 		//Route::post('like', 'ArtistController@LikePost')->name('like');
+		Route::get ('change-password', 'ChangePasswordController@index')->name ('change-password');
+		Route::post ('change-password', 'ChangePasswordController@store')->name ('change.password');
 	});
 	
 	
@@ -71,6 +73,7 @@
 		$images = Image::where ( 'title', 'LIKE', '%' . $q . '%' )
 			->where ('review', '!=', 'PENDING')
 			->orWhere ( 'description', 'LIKE', '%' . $q . '%' )
+			->orWhere ('tag', 'LIKE', '%' . $q . '%')
 			->join('users', 'user_id', '=', 'users.id')
 			->get ();
 		if (count ( $images ) > 0)
