@@ -43,6 +43,12 @@
                             <p class="tl-follower">{{$user->followers()->count()}}</p>
 
                         </div>
+                        <!-- TODO: Insert Following Counter-->
+                        {{--Following Count--}}
+                        {{--<div class="col-4">
+                            <p class="small mb-1 tl-follower">Following</p>
+                            <p class="">{{$user->followings()->count()}}</p>
+                        </div>--}}
                         <div class="col-4">
                             <p class="small mb-1">Downloads</p>
                             <p>{{$total_downloads}}</p>

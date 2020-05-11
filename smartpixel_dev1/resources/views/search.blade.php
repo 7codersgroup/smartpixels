@@ -10,7 +10,9 @@
     <div class="amado-pro-catagory clearfix">
 
     @include('layouts.image_listing')
+
     </div>
+    {{ $images->links() }}
 </div>
 <!-- Product Catagories Area End -->
 

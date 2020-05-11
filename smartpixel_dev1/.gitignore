@@ -3,7 +3,6 @@
 /public/storage
 /public/uploads
 /storage/*.key
-/vendor
 .env
 .env.backup
 .phpunit.result.cache

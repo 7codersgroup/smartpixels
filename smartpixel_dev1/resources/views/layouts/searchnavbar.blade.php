@@ -45,6 +45,7 @@
                                             type="text"
                                             placeholder="Search"
                                             autocomplete="off"
+                                            value="{{old ('query')}}"
                                     />
                                 </div>
                                 <div class="container-table-cell no-stretch">

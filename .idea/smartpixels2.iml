@@ -5,6 +5,8 @@
       <sourceFolder url="file://$MODULE_DIR$/smartpixel_dev1/tests" isTestSource="true" packagePrefix="Tests\" />
       <sourceFolder url="file://$MODULE_DIR$/smartpixel_dev1/app" isTestSource="false" packagePrefix="App\" />
       <excludeFolder url="file://$MODULE_DIR$/smartpixel_dev1/vendor/asm89/stack-cors" />
+      <excludeFolder url="file://$MODULE_DIR$/smartpixel_dev1/vendor/auth0/auth0-php" />
+      <excludeFolder url="file://$MODULE_DIR$/smartpixel_dev1/vendor/auth0/login" />
       <excludeFolder url="file://$MODULE_DIR$/smartpixel_dev1/vendor/brick/math" />
       <excludeFolder url="file://$MODULE_DIR$/smartpixel_dev1/vendor/cloudinary/cloudinary_php" />
       <excludeFolder url="file://$MODULE_DIR$/smartpixel_dev1/vendor/composer" />
@@ -39,12 +41,14 @@
       <excludeFolder url="file://$MODULE_DIR$/smartpixel_dev1/vendor/laminas/laminas-zendframework-bridge" />
       <excludeFolder url="file://$MODULE_DIR$/smartpixel_dev1/vendor/laravel/framework" />
       <excludeFolder url="file://$MODULE_DIR$/smartpixel_dev1/vendor/laravel/passport" />
+      <excludeFolder url="file://$MODULE_DIR$/smartpixel_dev1/vendor/laravel/socialite" />
       <excludeFolder url="file://$MODULE_DIR$/smartpixel_dev1/vendor/laravel/tinker" />
       <excludeFolder url="file://$MODULE_DIR$/smartpixel_dev1/vendor/laravel/ui" />
       <excludeFolder url="file://$MODULE_DIR$/smartpixel_dev1/vendor/lcobucci/jwt" />
       <excludeFolder url="file://$MODULE_DIR$/smartpixel_dev1/vendor/league/commonmark" />
       <excludeFolder url="file://$MODULE_DIR$/smartpixel_dev1/vendor/league/event" />
       <excludeFolder url="file://$MODULE_DIR$/smartpixel_dev1/vendor/league/flysystem" />
+      <excludeFolder url="file://$MODULE_DIR$/smartpixel_dev1/vendor/league/oauth1-client" />
       <excludeFolder url="file://$MODULE_DIR$/smartpixel_dev1/vendor/league/oauth2-server" />
       <excludeFolder url="file://$MODULE_DIR$/smartpixel_dev1/vendor/mockery/mockery" />
       <excludeFolder url="file://$MODULE_DIR$/smartpixel_dev1/vendor/monolog/monolog" />

@@ -100,7 +100,7 @@
                                 <div class="card">
                                     <img src="{{$image->url}}" class="card-img-top">
                                     <div class="card-body">
-                                        <p>Likes <span> {{$image->likes}}</span></p>
+                                        <p>Likes <span> {{$image->likers()->get()->count()}}</span></p>
                                         <p>Downloads <span> {{$image->downloads}}</span></p>
                                     </div>
                                 </div>
@@ -122,9 +122,9 @@
                         <div class="col-md-3 my-3">
                             <div class="dashboard-card">
                                 <div class="card">
-                                    <img src="{{$image->url}}" class="card-img-top">
+                                    <img src="{{$image->url}}" class="card-img-top" alt="{{$image->title}}">
                                     <div class="card-body">
-                                        <p>Likes <span> {{$image->likes}}</span></p>
+                                        <p>Likes <span> {{$image->likers()->get()->count()}}</span></p>
                                         <p>Downloads <span> {{$image->downloads}}</span></p>
                                     </div>
                                 </div>
@@ -147,7 +147,7 @@
                                 <div class="card">
                                     <img src="{{$image->url}}" class="card-img-top">
                                     <div class="card-body">
-                                        <p>Likes <span> {{$image->likes}}</span></p>
+                                        <p>Likes <span> {{$image->likers()->get()->count()}}</span></p>
                                         <p>Downloads <span> {{$image->downloads}}</span></p>
                                     </div>
                                 </div>
