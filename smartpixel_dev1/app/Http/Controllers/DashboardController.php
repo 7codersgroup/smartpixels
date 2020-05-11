@@ -18,10 +18,10 @@ class DashboardController extends Controller
 	//	$images = DB::table('images')->where('user_id', '=', Auth::id ())->get();
 		$images = Image::where ( 'user_id', '=', Auth::id () )
 			->get ();
-		$images_review = DB::table('images')->where([['user_id', '=', Auth::id ()], ['review', '=', 'PENDING']])->get();
-		$images_approved = DB::table('images')->where([['user_id', '=', Auth::id ()], ['review', '=', 'APPROVED']])->get();
-		$images_rejected = DB::table('images')->where([['user_id', '=', Auth::id ()], ['review', '=', 'REJECTED']])->get();
-		$total_downloads = DB::table('images')->where([['user_id', '=', Auth::id ()]])->sum ('downloads');
+		$images_review = Image::where ([['user_id', '=', Auth::id ()], ['review', '=', 'PENDING']])->get ();
+		$images_approved = Image::where ([['user_id', '=', Auth::id ()], ['review', '=', 'APPROVED']])->get ();
+		$images_rejected = Image::where ([['user_id', '=', Auth::id ()], ['review', '=', 'REJECTED']])->get ();
+		$total_downloads = Image::where ([['user_id', '=', Auth::id ()]])->sum ('downloads');
 		$total_likes = Image::where ( 'images.user_id', '=', Auth::id () )
 			->join('likes', 'likeable_id', '=', 'images.id')
 			->count();

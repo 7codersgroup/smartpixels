@@ -171,6 +171,7 @@ return [
 	    Darryldecode\Cart\CartServiceProvider::class,
 	    Overtrue\LaravelFollow\FollowServiceProvider::class,
 	    Overtrue\LaravelFollow\FollowServiceProvider::class,
+	    Auth0\Login\LoginServiceProvider::class,
 
         /*
          * Application Service Providers...

@@ -33,7 +33,7 @@
                         </li>
 
                         <li class="nav-item mx-md-4 my-md-0 postion-relative">
-                            <a class="nav-link px-0" href="{{ route('login') }}">Sign in.</a>
+                            <a class="nav-link px-0" href="/login">Sign in.</a>
                         </li>
                     @endif
                 @else
