@@ -17,6 +17,7 @@ return array(
     'App\\Http\\Controllers\\API\\RegisterController' => $baseDir . '/app/Http/Controllers/API/RegisterController.php',
     'App\\Http\\Controllers\\AccountController' => $baseDir . '/app/Http/Controllers/AccountController.php',
     'App\\Http\\Controllers\\ArtistController' => $baseDir . '/app/Http/Controllers/ArtistController.php',
+    'App\\Http\\Controllers\\Auth\\Auth0IndexController' => $baseDir . '/app/Http/Controllers/Auth/Auth0IndexController.php',
     'App\\Http\\Controllers\\Auth\\ConfirmPasswordController' => $baseDir . '/app/Http/Controllers/Auth/ConfirmPasswordController.php',
     'App\\Http\\Controllers\\Auth\\ForgotPasswordController' => $baseDir . '/app/Http/Controllers/Auth/ForgotPasswordController.php',
     'App\\Http\\Controllers\\Auth\\LoginController' => $baseDir . '/app/Http/Controllers/Auth/LoginController.php',

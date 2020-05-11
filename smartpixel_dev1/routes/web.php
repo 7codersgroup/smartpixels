@@ -2,9 +2,7 @@
 	
 	use App\Image;
 	use Illuminate\Http\Request;
-	use Illuminate\Support\Facades\DB;
 	use Illuminate\Support\Facades\Route;
-	use Symfony\Component\Console\Input\Input;
 	
 	
 	/*
@@ -27,11 +25,8 @@
 	Route::get ('/auth0/callback', '\Auth0\Login\Auth0Controller@callback')->name ('auth0-callback');
 	Route::get ('/login', 'Auth\Auth0IndexController@login')->name ('login');
 	Route::get ('/logout', 'Auth\Auth0IndexController@logout')->name ('logout')->middleware ('auth');
-	Auth::routes ();
-	
 	
 	Auth::routes (['verify' => true]);
-	
 	
 	Route::get ('verifydoc', 'VerifydocController@verifyDocs')->name ('verifydoc');
 	Route::post ('verifydoc', 'VerifydocController@VerifyDocPost')->name ('doc.verify.post');
@@ -61,6 +56,7 @@
 		//Route::post('like', 'ArtistController@LikePost')->name('like');
 		Route::get ('change-password', 'ChangePasswordController@index')->name ('change-password');
 		Route::post ('change-password', 'ChangePasswordController@store')->name ('change.password');
+		Route::resource('banking','BankingController');
 	});
 	
 	
