@@ -40,6 +40,7 @@
 			
 			$image_name = $request->file ('image_name')->getRealPath ();;
 			
+			//Cloudder::upload ('Fricapix/preview/' . $image_name, null);
 			Cloudder::upload ($image_name, null);
 			
 			list($width, $height) = getimagesize ($image_name);

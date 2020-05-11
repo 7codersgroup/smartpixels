@@ -54,8 +54,10 @@
 		Route::get('/cart/clear', 'CartController@clearCart')->name('checkout.cart.clear');
 		Route::get('artist/{id}', 'ArtistController@user')->name('artist.view');
 		Route::post('follow', 'ArtistController@followUserRequest')->name('follow');
-		Route::post('like', 'SearchController@LikePost')->name('like');
-		Route::post('like', 'ArtistController@LikePost')->name('like');
+		Route::post ('like', 'SearchController@likePost')->name ('like');
+		//Route::post('like', 'ArtistController@LikePost')->name('like');
+		Route::get ('change-password', 'ChangePasswordController@index')->name ('change-password');
+		Route::post ('change-password', 'ChangePasswordController@store')->name ('change.password');
 	});
 	
 	
@@ -69,8 +71,9 @@
 				->orWhere ( 'description', 'LIKE', '%' . $q . '%' )
 				->get ();*/
 		$images = Image::where ( 'title', 'LIKE', '%' . $q . '%' )
+			->where ('review', '!=', 'PENDING')
 			->orWhere ( 'description', 'LIKE', '%' . $q . '%' )
-			->join('users', 'user_id', '=', 'users.id')
+			->orWhere ('tag', 'LIKE', '%' . $q . '%')
 			->get ();
 		if (count ( $images ) > 0)
 			return view ( 'search', compact ( 'images' ));

@@ -100,7 +100,7 @@
 <script src="{{asset ('js/popper.min.js')}}"></script>
 <script src="{{asset ('js/bootstrap.min.js')}}"></script>
 <script src="https://kit.fontawesome.com/e9480ff5ec.js" crossorigin="anonymous"></script>
-<script src="{{asset ('js/index.js"')}}"></script>
+{{--<script src="{{asset ('js/index.js')}}"></script>--}}
 <script src="{{asset ('js/selectize.min.js')}}"></script>
 <script src="{{asset ('js/plugins.js')}}"></script>
 <script src="{{asset ('js/utility.js')}}"></script>

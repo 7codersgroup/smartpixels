@@ -35,13 +35,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="signup-footer">
-                                <ul>
-                                    <li>Term of Use</li>
-                                    <li>Policy</li>
-                                    <li>Support</li>
-                                </ul>
-                            </div>
+
                         </div>
                         <div class="col-md-6 signup-registration" id="page-border-3">
                         <form method="POST" action="{{ route('register') }}">
@@ -83,49 +77,21 @@
                                 @enderror
                                     </div>
                                 </div>
+
                                 <div class="form-group mb-4">
-                                    <label for="country">
-                                        Country<span> *</span>
-                                    </label>
-                                    <div class="input-group">
-                                        <select id="country" class="form-control" id="exampleFormControlSelect1"
-                                            aria-describedby="button-addon1" name="country">
-                                            <option>...</option>
-                                            <option>2</option>
-                                            <option>3</option>
-                                            <option>4</option>
-                                            <option>5</option>
-                                        </select>
-                                        <div class="input-group-append ">
-                                            <button class="btn btn-outline-secondary" type="button" id="button-addon">
-                                                <span class="fas fa-angle-down fa-lg"></span>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="form-group mb-4">
-                                    <label for="phone">
-                                        Phone Number<span> *</span>
-                                    </label>
-                                    <div class="input-group">
-                                        <input id="phone" type="tel" class="form-control  @error('phone') is-invalid @enderror" placeholder="(+234) 80 SMARTPIXELS" name="phone"/>
-                                    </div>
-                                    @error('phone')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                                </div>
-                                <div class="form-group mb-4">
-                                    <label for="exampleInputPassword1">
+                                    <label for="password">
                                         Password<span> *</span>
                                     </label>
                                     <div class="input-group">
-                                        <input type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="new-password""
-                                            placeholder="Kindly choose a convenient password"
-                                            aria-describedby="button-addon2" />
+                                        <input aria-describedby="button-addon2"
+                                               autocomplete="new-password"
+                                               class="form-control @error('password') is-invalid @enderror"
+                                               id="password" name="password"
+                                               placeholder="Kindly choose a convenient password"
+                                               required
+                                               type="password"/>
                                         <div class="input-group-append">
-                                            <button class="btn btn-outline-secondary" type="button" id="button-addon2">
+                                            <button class="btn btn-outline-secondary" id="button-addon2" type="button">
                                                 <span class="fas fa-eye-slash"></span>
                                             </button>
                                         </div>
@@ -135,26 +101,38 @@
                                     </span>
                                 @enderror
                                     </div>
-                                    <!-- <small id="passwordHelpBlock" class="form-text text-muted mb-4">
-                                        <p class="mt-2">
-                                            Your password must be at least 8
-                                            characters and contain uppercase, lowercase letters and numbers
+                                    <small
+                                            id="passwordHelpBlock"
+                                            class="form-text text-muted mb-4"
+                                    >
+                                        <p class="mt-2 small">
+                                            Your password must be at least 8 characters and contain
+                                            uppercase, lowercase letters and numbers
                                         </p>
                                     </small>
-                                    <small class="form-text text-muted mb-4">
-                                        <span>AT LEAST 8 CHARACTERS</span><br>
-                                        <span id="lf-span">UPPERCASE</span><br>
-                                        <span>LOWERCASE</span><br>
-                                        <span>NUMBER</span>
-                                    </small> -->
                                     <label for="exampleInputPassword1">
                                         Confirm Password<span> *</span>
                                     </label>
                                     <div class="input-group">
-                                        <input type="password" class="form-control" placeholder="Comfirm password" name="password_confirmation" required autocomplete="new-password"
-                                            ria-describedby="button-addon2" />
+                                        <input aria-describedby="button-addon2" autocomplete="new-password"
+                                               class="form-control"
+                                               name="password_confirmation"
+                                               placeholder="Comfirm password" required
+                                               type="password"/>
                                     </div>
                                 </div>
+                            <small
+                                    id="passwordHelpBlock"
+                                    class="form-text text-muted mb-4"
+                            >
+                                <p class="signup-ag">
+                                    By clicking the 'Create Account' button below, you agree
+                                    to Fricapix
+                                    <a href="#">Terms and Conditions</a>,
+                                    <a href="#">Copyright Policies</a> as well as
+                                    <a href="#">Privacy Policy</a>
+                                </p>
+                            </small>
                                 <button type="submit" id="submit-button" class="btn btn-lg btn-block">
                                 {{ __('Register') }}
                                 </button>

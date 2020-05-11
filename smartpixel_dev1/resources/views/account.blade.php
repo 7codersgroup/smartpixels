@@ -173,9 +173,9 @@
                       </label>
                       <div class="form-row accounts-button">
                         <div class="col-">
-                          <button type="submit" class="btn btn-normal btn-block">
+                          <a type="submit" class="btn btn-normal btn-block" href="{{route ('change-password')}}">
                             Change Password
-                          </button>
+                          </a>
                         </div>
                       </div>
                     </div>
