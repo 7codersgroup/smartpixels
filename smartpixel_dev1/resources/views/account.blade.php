@@ -97,45 +97,15 @@
                       <img src="{{asset ('./img/id-card.png')}}" alt="">
                     </div>
                     <div class="col-10">
-                      <label>Verify Identity<span></span></label><br>
+                      <label>Update Profile Information <span></span></label><br>
                       <label class="label-small">
-                        Provide your identity information so as to ensure optimal security
+                        Update your profile information to access more features
                       </label>
                       <div class="form-row accounts-button">
                         <div class="col-">
-                          <button type="submit" class="btn btn-normal btn-block">
-                            Verify
-                          </button>
-                        </div>
-                        <div class="col- my-auto">
-                          <button type="submit" class="btn btn-verified btn-block">
-                            Verified
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="form-group">
-                  <div class="form-row">
-                    <div class="col-2">
-                      <img src="./img/smartphone-2.png" alt="">
-                    </div>
-                    <div class="col-10">
-                      <label>Phone Number Verification <span></span></label><br>
-                      <label class="label-small">
-                        Provide and verify your phone number so as to ensure optimal security
-                      </label>
-                      <div class="form-row accounts-button">
-                        <div class="col-">
-                          <button type="submit" class="btn btn-normal btn-block">
-                            Verify
-                          </button>
-                        </div>
-                        <div class="col- my-auto">
-                          <button type="submit" class="btn btn-verified btn-block">
-                            Verified
-                          </button>
+                          <a href="profile-update.html" class="btn btn-normal btn-block">
+                            Update Profile
+                          </a>
                         </div>
                       </div>
                     </div>
