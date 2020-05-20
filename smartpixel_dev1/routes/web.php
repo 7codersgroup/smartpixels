@@ -57,6 +57,8 @@
 		Route::get ('change-password', 'ChangePasswordController@index')->name ('change-password');
 		Route::post ('change-password', 'ChangePasswordController@store')->name ('change.password');
 		Route::resource('banking','BankingController');
+		Route::get('profile-update',  ['as' => 'profile-update', 'uses' => 'ProfileController@edit']);
+		Route::patch('profile-update/update',  ['as' => 'profile-update', 'uses' => 'ProfileController@update']);
 	});
 	
 	
@@ -70,10 +72,10 @@
 				->orWhere ( 'description', 'LIKE', '%' . $q . '%' )
 				->get ();*/
 		$images = Image::where ('title', 'LIKE', '%' . $q . '%')
-			->where ('review', '!=', 'PENDING')
-			->where ('review', '!=', 'REJECTED')
 			->orWhere ('description', 'LIKE', '%' . $q . '%')
 			->orWhere ('tag', 'LIKE', '%' . $q . '%')
+			->where ('review', '==', 'APPROVED')
+			//->where ('review', '!=', 'REJECTED')
 			->orderby ('created_at')
 			->paginate (15);
 		$request->flashOnly ('query');
@@ -85,3 +87,8 @@
 		}
 	});
 
+
+
+Route::group(['prefix' => 'admin'], function () {
+    Voyager::routes();
+});

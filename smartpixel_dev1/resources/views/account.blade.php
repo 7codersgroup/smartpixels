@@ -7,19 +7,19 @@
     </div>
     <div class="page">
       <div class="account-image-1">
-        <img src="./img/lock-1@2x.png" alt="">
+        <img src="{{asset ('./img/lock-1@2x.png')}}" alt="">
       </div>
       <div class="account-image-2">
-        <img src="./img/smartphone-1.png" alt="">
+        <img src="{{asset ('./img/smartphone-1.png')}}" alt="">
       </div>
       <div class="account-image-3">
-        <img src="./img/id-card-1.png" alt="">
+        <img src="{{asset ('./img/id-card-1.png')}}" alt="">
       </div>
       <section class="accounts-page">
         <div class="container-fluid">
           <div class="row">
             <div class="col-md-12 page-main-title" id="page-border">
-              <h3>Hello Daniel</h3>
+              <h3>Hello {{Auth::user()->firstname}}</h3>
             </div>
           </div>
           <div class="row">
@@ -58,7 +58,7 @@
                 <div class="form-group">
                   <div class="form-row">
                     <div class="col-2">
-                      <img src="./img/email.png" alt="">
+                      <img src="{{asset ('./img/email.png')}}" alt="">
                     </div>
                     <div class="col-10">
                       <label>E-mail Verification <span></span></label><br>
@@ -94,7 +94,7 @@
                 <div class="form-group">
                   <div class="form-row">
                     <div class="col-2">
-                      <img src="./img/id-card.png" alt="">
+                      <img src="{{asset ('./img/id-card.png')}}" alt="">
                     </div>
                     <div class="col-10">
                       <label>Verify Identity<span></span></label><br>
@@ -144,7 +144,7 @@
                 <div class="form-group">
                   <div class="form-row">
                     <div class="col-2">
-                      <img src="./img/credit-card.png" alt="">
+                      <img src="{{asset ('./img/credit-card.png')}}" alt="">
                     </div>
                     <div class="col-10">
                       <label>Payment Method <span></span></label><br>
@@ -153,9 +153,9 @@
                       </label>
                       <div class="form-row accounts-button">
                         <div class="col-">
-                          <button type="submit" class="btn btn-normal btn-block">
+                          <a type="submit" class="btn btn-normal btn-block" href="#">
                             Manage Your Payments
-                          </button>
+                          </a>
                         </div>
                       </div>
                     </div>
@@ -164,7 +164,7 @@
                 <div class="form-group">
                   <div class="form-row">
                     <div class="col-2">
-                      <img src="./img/lock.png" alt="">
+                      <img src="{{asset ('./img/lock.png')}}" alt="">
                     </div>
                     <div class="col-10">
                       <label>Password <span></span></label><br>
