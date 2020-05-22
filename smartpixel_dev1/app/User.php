@@ -9,7 +9,7 @@ use Laravel\Passport\HasApiTokens;
 use Overtrue\LaravelFollow\Followable;
 use Overtrue\LaravelLike\Traits\Liker;
 
-class User extends Authenticatable implements MustVerifyEmail
+class User extends \TCG\Voyager\Models\User implements MustVerifyEmail
 {
     use  HasApiTokens, Notifiable, Followable, Liker;
 

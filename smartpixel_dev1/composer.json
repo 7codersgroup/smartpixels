@@ -9,7 +9,7 @@
     "license": "MIT",
     "require": {
         "php": "^7.2.5",
-      "auth0/login": "^6.0",
+        "auth0/login": "^6.0",
         "darryldecode/cart": "^4.1",
         "doctrine/dbal": "^2.10",
         "fideloper/proxy": "^4.2",
@@ -19,12 +19,13 @@
         "jrm2k6/cloudder": "0.4.*",
         "laravel/framework": "^7.0",
         "laravel/passport": "^8.4",
-      "laravel/socialite": "^4.3",
+        "laravel/socialite": "^4.3",
         "laravel/tinker": "^2.0",
         "laravel/ui": "^2.0",
         "overtrue/laravel-follow": "^2.1",
         "overtrue/laravel-like": "^2.0",
         "realrashid/sweet-alert": "^3.1",
+        "tcg/voyager": "^1.4",
         "uxweb/sweet-alert": "^2.0"
     },
     "require-dev": {
@@ -71,5 +72,11 @@
         "post-create-project-cmd": [
             "@php artisan key:generate --ansi"
         ]
+    },
+    "repositories": {
+        "hooks": {
+            "type": "composer",
+            "url": "https://larapack.io"
+        }
     }
 }
