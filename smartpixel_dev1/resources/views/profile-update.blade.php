@@ -82,7 +82,7 @@
                                 </div>
                                 <div class="form-group mb-4">
                                     <label for="exampleFormControlTextarea1">Address<span> *</span></label>
-                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" name="address" value="{{$user->address}}"></textarea>
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" name="address" value="{{$user->address}}">{{$user->address}}</textarea>
                                 </div>
                                 <div class="form-group mb-4">
                                     <label for="exampleInputCity1">
@@ -114,9 +114,9 @@
                                       </div> -->
                                     <div class="custom-file">
                                         <input type="file" class="custom-file-input" id="validatedCustomFile" placeholder="" required>
-                                        <label class="custom-file-label" or="validatedCustomFile">Drag and Drop Photos Here</label>
+                                        <label class="custom-file-label" for="validatedCustomFile">Drag and Drop Photos Here</label>
                                         <div class="upload-drop-zone ">
-                                            <img src="{{asset ('./img/1x.png')}}" />
+                                            <img src="{{asset ('./img/1x.png')}}"  alt="img"/>
                                             <button type="submit" class="btn">Browse</button>
                                         </div>
                                     </div>
