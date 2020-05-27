@@ -8,7 +8,7 @@ return [
         | Token size
         |--------------------------------------------------------------------------
         |
-        | Here you may specifiy the length of token to verify the identify.
+        | Here you may specify the length of token to verify the identify.
         |
         */
         'length' => 64,

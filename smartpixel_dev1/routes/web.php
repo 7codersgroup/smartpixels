@@ -27,6 +27,7 @@
 	Route::get ('/logout', 'Auth\Auth0IndexController@logout')->name ('logout')->middleware ('auth');
 	Route::get('auth/google', 'Auth\GoogleController@redirectToGoogle');
 	Route::get('auth/google/callback', 'Auth\GoogleController@handleGoogleCallback');
+	Route::get('/login/magic', 'Auth\LoginController@passwordLessLogin')->name ('magic-login');
 	
 	Auth::routes (['verify' => true]);
 	
