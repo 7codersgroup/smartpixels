@@ -61,7 +61,8 @@
 		Route::post ('change-password', 'ChangePasswordController@store')->name ('change.password');
 		Route::resource('banking','BankingController');
 		Route::get('profile-update',  ['as' => 'profile-update', 'uses' => 'ProfileController@edit']);
-		Route::patch('profile-update/update',  ['as' => 'profile-update', 'uses' => 'ProfileController@update']);
+		Route::post('profile-update/update',  'ProfileController@update')->name ('profileUpdate');
+		
 	});
 	
 	

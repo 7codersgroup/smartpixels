@@ -37,7 +37,7 @@
                             </div>
                         </div>
                         <div class="col-md-6 profile-registration" id="page-border-3">
-                            <form method="post" action="{{}}">
+                            <form method="post" action="{{route ('profileUpdate')}}">
                                 @csrf
                                 <div class="form-group mb-4">
                                     <div class="form-row input-names">
@@ -77,19 +77,24 @@
                                         Phone Number<span> *</span>
                                     </label>
                                     <div class="input-group">
-                                        <input type="tel" class="form-control" placeholder="(+234) 80 FRICAPIX" name="phone" value="{{$user->phone}}"/>
+                                        <input type="tel" class="form-control" placeholder="(+234) 80 FRICAPIX" name="phone" @if (isset($user->profile))
+                                        value="{{$user->profile->phone}}"
+                                        @endif/>
                                     </div>
                                 </div>
                                 <div class="form-group mb-4">
                                     <label for="exampleFormControlTextarea1">Address<span> *</span></label>
-                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" name="address" value="{{$user->address}}">{{$user->address}}</textarea>
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" name="address" >@if (isset($user->profile)){{$user->profile->address}}
+                                    @endif</textarea>
                                 </div>
                                 <div class="form-group mb-4">
                                     <label for="exampleInputCity1">
                                         City<span> *</span>
                                     </label>
                                     <div class="input-group">
-                                        <input type="text"  class="form-control" placeholder="" />
+                                        <input type="text"  class="form-control" placeholder="" name="city" @if (isset($user->profile))
+                                        value="{{$user->profile->city}}"
+                                        @endif/>
                                     </div>
                                 </div>
                                 <div class="form-group mb-4">
@@ -97,7 +102,9 @@
                                         Zip Code<span> *</span>
                                     </label>
                                     <div class="input-group">
-                                        <input type="text" class="form-control" placeholder="" />
+                                        <input type="text" class="form-control" placeholder="" name="zip" @if (isset($user->profile))
+                                        value="{{$user->profile->zip}}"
+                                        @endif/>
                                     </div>
                                 </div>
                                 <div class="upload-file input-group mb-4">
@@ -113,7 +120,7 @@
                                         </div>
                                       </div> -->
                                     <div class="custom-file">
-                                        <input type="file" class="custom-file-input" id="validatedCustomFile" placeholder="" required>
+                                        <input type="file" class="custom-file-input" id="validatedCustomFile" placeholder="">
                                         <label class="custom-file-label" for="validatedCustomFile">Drag and Drop Photos Here</label>
                                         <div class="upload-drop-zone ">
                                             <img src="{{asset ('./img/1x.png')}}"  alt="img"/>
