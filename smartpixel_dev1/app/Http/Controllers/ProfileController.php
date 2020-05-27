@@ -6,6 +6,7 @@ use App\Profile;
 use App\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use JD\Cloudder\Facades\Cloudder;
 
 class ProfileController extends Controller
 {
@@ -24,11 +25,12 @@ class ProfileController extends Controller
 		$user = User::find(Auth::id ());
 		$this->validate(request(), [
 			'firstname' => 'required',
-			'lastname' => 'required'
-		
+			'lastname' => 'required',
+			//'image_name' => 'mimes:jpeg,bmp,jpg,png|between:1, 6000',
 		]);
 		$user->firstname = request('firstname');
 		$user->lastname = request('lastname');
+		$user->avatar = $this->imageUploadPost (request ('image_name'));
 		$profile = new Profile;
 		$profile->country = request('country');
 		$profile->address = request('address');
@@ -45,8 +47,8 @@ class ProfileController extends Controller
 		$user = User::find(Auth::id ());
 		$this->validate(request(), [
 			'firstname' => 'required',
-			'lastname' => 'required'
-			
+			'lastname' => 'required',
+			//'image_name' => 'mimes:jpeg,bmp,jpg,png|between:1, 6000',
 		]);
 		if(isset($user->profile)) {
 			$user->firstname = request('firstname');
@@ -56,6 +58,7 @@ class ProfileController extends Controller
 			$user->profile->zip = request('zip');
 			$user->profile->city = request('city');
 			$user->profile->phone = request('phone');
+			$user->avatar = $this->imageUploadPost (request ('image_name'));
 			//$user->password = bcrypt(request('password'));
 			
 			$user->push();
@@ -66,5 +69,15 @@ class ProfileController extends Controller
 		
 		
 		return back();
+	}
+	
+	public function imageUploadPost ($imagePath)
+	{
+		$options = ["folder"=>"samples"];
+		//$imagePath = $imagePath->file($imagePath)->getRealPath();
+		Cloudder::upload ($imagePath, null, $options);
+		list($width, $height) = getimagesize ($imagePath);
+		$image_url = Cloudder::show (Cloudder::getPublicId (), ["width" => $width, "height" => $height]);
+		return $image_url;
 	}
 }

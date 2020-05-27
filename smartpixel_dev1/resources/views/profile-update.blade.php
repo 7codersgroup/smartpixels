@@ -37,7 +37,7 @@
                             </div>
                         </div>
                         <div class="col-md-6 profile-registration" id="page-border-3">
-                            <form method="post" action="{{route ('profileUpdate')}}">
+                            <form method="post" action="{{route ('profileUpdate')}}" enctype="multipart/form-data">
                                 @csrf
                                 <div class="form-group mb-4">
                                     <div class="form-row input-names">
@@ -120,7 +120,7 @@
                                         </div>
                                       </div> -->
                                     <div class="custom-file">
-                                        <input type="file" class="custom-file-input" id="validatedCustomFile" placeholder="">
+                                        <input type="file" class="custom-file-input" id="validatedCustomFile" placeholder="" name="image_name">
                                         <label class="custom-file-label" for="validatedCustomFile">Drag and Drop Photos Here</label>
                                         <div class="upload-drop-zone ">
                                             <img src="{{asset ('./img/1x.png')}}"  alt="img"/>

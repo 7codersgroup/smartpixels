@@ -103,7 +103,7 @@
                       </label>
                       <div class="form-row accounts-button">
                         <div class="col-">
-                          <a href="profile-update.html" class="btn btn-normal btn-block">
+                          <a href="{{route ('profile-update')}}" class="btn btn-normal btn-block">
                             Update Profile
                           </a>
                         </div>
@@ -134,7 +134,7 @@
                 <div class="form-group">
                   <div class="form-row">
                     <div class="col-2">
-                      <img src="{{asset ('./img/lock.png')}}" alt="">
+                      <img src="{{ asset ('./img/lock.png')}}" alt="">
                     </div>
                     <div class="col-10">
                       <label>Password <span></span></label><br>
