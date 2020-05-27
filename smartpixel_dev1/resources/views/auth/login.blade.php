@@ -69,7 +69,7 @@
                                     <button type="submit" id="submit-button" class="btn btn-lg btn-block">
                                         Login
                                     </button>
-
+{{--TODO: add google sign in href="{{ url('auth/google') }}"--}}
 
                                 </form>
                             </div>
