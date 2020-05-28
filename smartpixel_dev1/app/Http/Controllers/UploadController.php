@@ -80,20 +80,6 @@
 			$image->category = $request['category'];
 			$image->review = 'PENDING';
 			
-			/* $response = Curl::to('http://127.0.0.1:8081/api/images')
-			->withData(['title'=>$request['title'], 'url'=>$image_url,  'description'=>$request['description'], 'userId'=>1,
-			'category'=> $request['category'],
-				 'tag'=> $request['tag'],
-				 'price'=> $request['price'],
-				 'rating'=> $request['rating'],
-				 'location'=>$request['location']
-			])
-			->post(); */
-			
-			//var_dump($request);
-			//dd($response);
-			
-			
 			$image->save ();
 		}
 	}

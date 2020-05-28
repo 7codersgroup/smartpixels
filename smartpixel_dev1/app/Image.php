@@ -7,6 +7,16 @@ use Overtrue\LaravelLike\Traits\Likeable;
 
 /**
  * @property mixed description
+ * @property mixed rating
+ * @property mixed location
+ * @property mixed category
+ * @property string review
+ * @property mixed price
+ * @property int|string|null user_id
+ * @property mixed title
+ * @property mixed tag
+ * @property public_id
+ * @property  url
  */
 class Image extends Model
 {
