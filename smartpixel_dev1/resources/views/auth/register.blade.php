@@ -30,7 +30,7 @@
                                             in 2019. Be determined to make it against all odds
                                         </p>
                                         <p>
-                                            Zach Efron - Team Lead @ Smart Pixels
+                                            Zach Efron - Team Lead @ Fricapix
                                         </p>
                                     </div>
                                 </div>

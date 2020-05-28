@@ -10,6 +10,7 @@
     "require": {
         "php": "^7.2.5",
         "auth0/login": "^6.0",
+        "cesargb/laravel-magiclink": "^2.4",
         "darryldecode/cart": "^4.1",
         "doctrine/dbal": "^2.10",
         "fideloper/proxy": "^4.2",
