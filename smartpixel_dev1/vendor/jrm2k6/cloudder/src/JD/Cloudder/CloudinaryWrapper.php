@@ -218,6 +218,7 @@ class CloudinaryWrapper
         $options = array_merge($defaults, $options);
 
         $options = array_merge(['secure' => true], $options);
+        $options = array_merge(['eager' => true], $options);
 
         return $this->getCloudinary()->cloudinary_url($publicId, $options);
     }
