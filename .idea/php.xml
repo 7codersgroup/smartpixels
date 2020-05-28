@@ -137,6 +137,7 @@
       <path value="$PROJECT_DIR$/smartpixel_dev1/vendor/larapack/doctrine-support" />
       <path value="$PROJECT_DIR$/smartpixel_dev1/vendor/larapack/hooks" />
       <path value="$PROJECT_DIR$/smartpixel_dev1/vendor/intervention/image" />
+      <path value="$PROJECT_DIR$/smartpixel_dev1/vendor/cesargb/laravel-magiclink" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="7.2" />

@@ -2,13 +2,15 @@
 
 namespace App;
 
-use Illuminate\Contracts\Auth\MustVerifyEmail;
-use Illuminate\Foundation\Auth\User as Authenticatable;
-use Illuminate\Notifications\Notifiable;
+use Illuminate\{Contracts\Auth\MustVerifyEmail, Notifications\Notifiable};
 use Laravel\Passport\HasApiTokens;
 use Overtrue\LaravelFollow\Followable;
 use Overtrue\LaravelLike\Traits\Liker;
 
+
+/**
+ * @method static first()
+ */
 class User extends \TCG\Voyager\Models\User implements MustVerifyEmail
 {
     use  HasApiTokens, Notifiable, Followable, Liker;
@@ -19,7 +21,7 @@ class User extends \TCG\Voyager\Models\User implements MustVerifyEmail
      * @var array
      */
     protected $fillable = [
-        'firstname', 'lastname', 'email', 'password', 'country', 'phone'
+        'firstname', 'lastname', 'email', 'password', 'country', 'phone', 'google_id'
     ];
 
     /**
@@ -39,4 +41,9 @@ class User extends \TCG\Voyager\Models\User implements MustVerifyEmail
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+	
+	public function profile()
+	{
+		return $this->hasOne(Profile::class);
+	}
 }

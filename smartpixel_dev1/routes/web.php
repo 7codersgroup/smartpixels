@@ -25,6 +25,9 @@
 	Route::get ('/auth0/callback', '\Auth0\Login\Auth0Controller@callback')->name ('auth0-callback');
 	Route::get ('/login', 'Auth\Auth0IndexController@login')->name ('login');
 	Route::get ('/logout', 'Auth\Auth0IndexController@logout')->name ('logout')->middleware ('auth');
+	Route::get('auth/google', 'Auth\GoogleController@redirectToGoogle');
+	Route::get('auth/google/callback', 'Auth\GoogleController@handleGoogleCallback');
+	Route::get('/login/magic', 'Auth\LoginController@passwordLessLogin')->name ('magic-login');
 	
 	Auth::routes (['verify' => true]);
 	
@@ -58,7 +61,8 @@
 		Route::post ('change-password', 'ChangePasswordController@store')->name ('change.password');
 		Route::resource('banking','BankingController');
 		Route::get('profile-update',  ['as' => 'profile-update', 'uses' => 'ProfileController@edit']);
-		Route::patch('profile-update/update',  ['as' => 'profile-update', 'uses' => 'ProfileController@update']);
+		Route::post('profile-update',  'ProfileController@update')->name ('profileUpdate');
+		
 	});
 	
 	

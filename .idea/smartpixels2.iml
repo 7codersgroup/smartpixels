@@ -9,6 +9,7 @@
       <excludeFolder url="file://$MODULE_DIR$/smartpixel_dev1/vendor/auth0/auth0-php" />
       <excludeFolder url="file://$MODULE_DIR$/smartpixel_dev1/vendor/auth0/login" />
       <excludeFolder url="file://$MODULE_DIR$/smartpixel_dev1/vendor/brick/math" />
+      <excludeFolder url="file://$MODULE_DIR$/smartpixel_dev1/vendor/cesargb/laravel-magiclink" />
       <excludeFolder url="file://$MODULE_DIR$/smartpixel_dev1/vendor/cloudinary/cloudinary_php" />
       <excludeFolder url="file://$MODULE_DIR$/smartpixel_dev1/vendor/composer" />
       <excludeFolder url="file://$MODULE_DIR$/smartpixel_dev1/vendor/darryldecode/cart" />

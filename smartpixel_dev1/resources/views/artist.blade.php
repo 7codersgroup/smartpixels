@@ -9,7 +9,7 @@
                 <div class="author_bio">
                     <div class="align-item row">
                         <div class="col-4">
-                            <img src="https://res.cloudinary.com/demo/image/upload/d_avatar.png/non_existing_id.png"
+                            <img src="{{$user->avatar}}"
                                  class="img-fluid rounded-circle"/>
                         </div>
                         <div class="col-6">
