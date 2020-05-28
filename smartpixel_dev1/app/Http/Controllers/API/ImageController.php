@@ -105,13 +105,14 @@ class ImageController extends BaseController
    
         return $this->sendResponse(new ImageResource($image), 'Image updated successfully.');
     }
-   
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
+	
+	/**
+	 * Remove the specified resource from storage.
+	 *
+	 * @param  int $id
+	 * @return \Illuminate\Http\Response
+	 * @throws \Exception
+	 */
     public function destroy(Image $image)
     {
         $image->delete();

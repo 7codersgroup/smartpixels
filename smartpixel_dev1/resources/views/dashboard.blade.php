@@ -22,6 +22,7 @@
 <body class="dashboard">
 <!--Header-->
 @include('layouts.ordinarynavbar')
+@include('flash-message')
 <!--End Header -->
 <div class="dashboard-info mx-0">
     <div class="container-fluid">

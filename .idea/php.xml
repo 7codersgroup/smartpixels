@@ -127,6 +127,16 @@
       <path value="$PROJECT_DIR$/smartpixel_dev1/vendor/laravel/socialite" />
       <path value="$PROJECT_DIR$/smartpixel_dev1/vendor/auth0/login" />
       <path value="$PROJECT_DIR$/smartpixel_dev1/vendor/auth0/auth0-php" />
+      <path value="$PROJECT_DIR$/smartpixel_dev1/vendor/seld/jsonlint" />
+      <path value="$PROJECT_DIR$/smartpixel_dev1/vendor/seld/phar-utils" />
+      <path value="$PROJECT_DIR$/smartpixel_dev1/vendor/justinrainbow/json-schema" />
+      <path value="$PROJECT_DIR$/smartpixel_dev1/vendor/symfony/filesystem" />
+      <path value="$PROJECT_DIR$/smartpixel_dev1/vendor/tcg/voyager" />
+      <path value="$PROJECT_DIR$/smartpixel_dev1/vendor/arrilot/laravel-widgets" />
+      <path value="$PROJECT_DIR$/smartpixel_dev1/vendor/larapack/voyager-hooks" />
+      <path value="$PROJECT_DIR$/smartpixel_dev1/vendor/larapack/doctrine-support" />
+      <path value="$PROJECT_DIR$/smartpixel_dev1/vendor/larapack/hooks" />
+      <path value="$PROJECT_DIR$/smartpixel_dev1/vendor/intervention/image" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="7.2" />
