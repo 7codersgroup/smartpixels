@@ -111,3 +111,13 @@ if($('#magic_link_return').length) {
     $('#magic_link_wrapper').hide('slow');
   });
 }
+
+if($('#bank_info').length) {
+  $('#bank_info').click(function(){
+
+    $("html, body").animate(
+      { scrollTop: "600" }, 3000);
+
+    $('#update_bank_info').toggle('slow');
+  });
+}

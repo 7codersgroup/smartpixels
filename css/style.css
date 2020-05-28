@@ -1276,7 +1276,6 @@ option {
 
 .payment-page .container-fluid {
   margin: auto;
-  box-shadow: 2px 2px rgba(55, 9, 116, 0.26);
   border-radius: 10px;
   /* height: auto; */
   background-color: #ffffff;
@@ -2292,9 +2291,11 @@ option {
   }
 
   .payment-registration {
+    /*
     position: absolute;
     border: 0px !important;
     padding-right: 40px !important;
+    */
   }
 
   .payment-registration .payment-input label {
@@ -2387,12 +2388,12 @@ option {
     font-size: 0.8em;
   }
 
-/*
+  /*
   .login-page .login-registration {
-    position: absolute;
-    padding-right: 40px !important;
-  }
-*/
+  position: absolute;
+  padding-right: 40px !important;
+}
+  */
 
   /* Change Password */
   .cp-page .cp-body h4,
