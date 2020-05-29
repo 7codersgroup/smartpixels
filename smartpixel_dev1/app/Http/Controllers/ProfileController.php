@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use App\Profile;
 use App\User;
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use JD\Cloudder\Facades\Cloudder;
 
@@ -26,7 +25,7 @@ class ProfileController extends Controller
 		$this->validate(request(), [
 			'firstname' => 'required',
 			'lastname' => 'required',
-			//'image_name' => 'mimes:jpeg,bmp,jpg,png|between:1, 6000',
+			'image_name' => 'required|mimes:jpeg,bmp,jpg,png|between:1, 6000',
 		]);
 		$user->firstname = request('firstname');
 		$user->lastname = request('lastname');
@@ -48,7 +47,7 @@ class ProfileController extends Controller
 		$this->validate(request(), [
 			'firstname' => 'required',
 			'lastname' => 'required',
-			//'image_name' => 'mimes:jpeg,bmp,jpg,png|between:1, 6000',
+			'image_name' => 'required|mimes:jpeg,bmp,jpg,png|between:1, 6000',
 		]);
 		if(isset($user->profile)) {
 			$user->firstname = request('firstname');
@@ -66,7 +65,6 @@ class ProfileController extends Controller
 		else {
 			$this->addProfile ();
 		}
-		
 		
 		return back();
 	}

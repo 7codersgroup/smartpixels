@@ -2,10 +2,10 @@
 	
 	namespace App\Http\Controllers;
 	
-	use Illuminate\Http\Request;
 	use App\Rules\MatchOldPassword;
-	use Illuminate\Support\Facades\Hash;
 	use App\User;
+	use Illuminate\Http\Request;
+	use Illuminate\Support\Facades\Hash;
 	
 	class ChangePasswordController extends Controller
 	{
@@ -32,6 +32,7 @@
 		/**
 		 * Show the application dashboard.
 		 *
+		 * @param Request $request
 		 * @return \Illuminate\Contracts\Support\Renderable
 		 */
 		public function store (Request $request)

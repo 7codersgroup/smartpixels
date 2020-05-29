@@ -47,14 +47,34 @@ class LoginController extends Controller
 	 *Todo: Link with magic link form to allow login with magic link
 	 */
 	public function passwordLessLogin() {
-	    $urlToDashBoard = MagicLink::create(
-		    new LoginAction(User::where('email','=', 'mail@mail.com')->first(), redirect('/dashboard'))
-	    )->url;
+		$this->validate (request (), [
+			'magic_link_email' => 'required'
+		]);
+		
+		if (User::where ('email', '=', request ('magic_link_email'))->first () == true) {
+			$urlToDashBoard = MagicLink::create (
+				new LoginAction(User::where ('email', '=', request ('magic_link_email'))->first (), redirect ('/dashboard'))
+			)->url;
+			$details = [
+				'title' => 'Your login link',
+				'body' => $urlToDashBoard
+			];
+			Mail::to (request ('magic_link_email'))->send (new MyTestMail($details));
+		} else {
+			//dd ("Email Blocked");
+			return redirect (\route ('register'))->with ('error', 'You do not have an account with us, Kindly register to continue');
+			
+			//	redirect ('/register')->with ('error', 'Kindly register to use magic link');
+		}
+		
+		/*$urlToDashBoard = MagicLink::create(
+			new LoginAction(User::where('email','=', 'mail@mail.com')->first(), redirect('/dashboard'))
+		)->url;
 		$details = [
 			'title' => 'Your login link',
 			'body' => $urlToDashBoard
 		];
-	    Mail::to ('mrtolusamuel@gmail.com')-> send (new MyTestMail($details));
-		//dd("Email is Sent.");
+		Mail::to ('mrtolusamuel@gmail.com')-> send (new MyTestMail($details));
+		//dd("Email is Sent.");*/
     }
 }
