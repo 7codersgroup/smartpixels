@@ -22,7 +22,7 @@
                     </div>
                     <div class="row">
                         <div class="col-md-6 payment-body page-sub-title" id="page-border-2">
-                            <h4>Kindly add Bank Information</h4>
+                            <h4>Bank Information</h4>
                             <div class="payment-footer">
                                 <ul>
                                     <li><a href="terms-of-use.html">Term of Use</a></li>
@@ -31,8 +31,41 @@
                                 </ul>
                             </div>
                         </div>
+
                         <div class="col-md-6 payment-registration" id="page-border-3">
-                            <form action="{{route ('banking.store')}}" method="post">
+
+                            <div class="form-row">
+                                <div class="form-group col-md-12 mr-md-4">
+                                    <p>Current Bank Information</p>
+                                    <table class="table table-striped table-condensed table-bordered">
+                                        <thead>
+                                        <tr>
+                                            <td align="left">Bank Name</td>
+                                            <td align="left"><b>GTB</b></td>
+                                        </tr>
+                                        <tr>
+                                            <td align="left">Account Name</td>
+                                            <td align="left"><b>OLUFEMI , DANIEL OLADOTUN</b></td>
+                                        </tr>
+                                        <tr>
+                                            <td align="left">Account No.</td>
+                                            <td align="left"><b>0448528538</b></td>
+                                        </tr>
+
+                                        </thead>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <div class="row mt-2">
+                                <div class="col-12">
+                                    <p class="text-danger my-2 font-13 cursor" id="bank_info">Update bank details <i
+                                                class="fa fa-angle-double-right"></i></p>
+                                </div>
+                            </div>
+
+                            <form id="update_bank_info" action="{{route ('banking.store')}}" method="post"
+                                  class="none mt-4">
                                 @csrf
                                 <div class="form-group mb-4">
                                     <label for="exampleInputTelephone1">
@@ -70,7 +103,7 @@
                                     </div>
 
                                 </div>
-                                <div class="form-row payment-submit">
+                                <div class="form-row payment-submit mt-2">
                                     <div class="col-md-6">
                                         <button type="submit" id="cancel-button" class="btn btn-block btn-lg">Cancel</button>
                                     </div>

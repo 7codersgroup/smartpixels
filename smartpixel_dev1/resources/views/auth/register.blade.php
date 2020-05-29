@@ -9,16 +9,17 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-md-12 page-main-title" id="page-border">
-                            <h3>We're glad to have you</h3>
+                            <h3 class="mb-0">We're glad to have you</h3>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-6 signup-body page-sub-title" id="page-border-2">
+                        <div class="col-md-6 signup-body page-sub-title order-last"
+                             id="page-border-2">
                             <h4>Create Your Account</h4>
                             <div class="signup-heading">
                                 <div class="media">
-                                    <img src=" {{ asset('img/img_2.jpg') }}" alt="No Image" class="mr-3 img-thumbnail">
-                                    <div class="media-body">
+                                    <img src=" {{ asset('img/img_2.jpg') }}" alt="No Image" class="img-thumbnail">
+                                    <div class="media-body col-lg-9">
                                         <p>
                                             Friend, things will never remain the same for you. God has made all things
                                             new
@@ -37,12 +38,23 @@
                             </div>
 
                         </div>
-                        <div class="col-md-6 signup-registration" id="page-border-3">
-                        <form method="POST" action="{{ route('register') }}">
+                        <div class="col-md-6 signup-registration order-first order-lg-last"
+                             id="page-border-3">
+                            <form method="post" action="{{ route('register') }}">
                         @csrf
+                                <button
+                                        type="button"
+                                        id="google-button"
+                                        class="btn btn-lg btn-block mt-0"
+                                >
+                                    <img width="20px" style="margin-right:8px" alt="Google sign-in"
+                                         src="{{asset ('img/512px-Google_Logo.svg')}}"/>
+                                    Signup with Google
+                                </button>
+                                <p class="text-center my-4">Or</p>
                                 <div class="form-group mb-4">
-                                    <div class="form-row">
-                                        <div class="col">
+                                    <div class="form-row input-names">
+                                        <div class="col-md-6">
                                             <label for="firstname">First Name <span> *</span>
                                             </label>
                                             <input id="firstname" type="text" class="form-control @error('firstname') is-invalid @enderror" placeholder="First Name"  name="firstname" value="{{ old('firstname') }}" required autocomplete="firstname" autofocus/>
@@ -52,7 +64,7 @@
                                     </span>
                                 @enderror
                                         </div>
-                                        <div class="col">
+                                        <div class="col-md-6">
                                             <label for="lastname">Last Name <span> *</span>
                                             </label>
                                             <input id="lastname" type="text" class="form-control @error('lastname') is-invalid @enderror" placeholder="Last Name"  name="lastname" value="{{ old('lastname') }}" required autocomplete="lastname" autofocus/>
@@ -83,7 +95,7 @@
                                         Password<span> *</span>
                                     </label>
                                     <div class="input-group">
-                                        <input aria-describedby="button-addon2"
+                                        <input
                                                autocomplete="new-password"
                                                class="form-control @error('password') is-invalid @enderror"
                                                id="password" name="password"
