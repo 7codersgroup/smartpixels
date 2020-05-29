@@ -73,7 +73,8 @@
                                     </div>
                                     <div class="row mt-2">
                                         <div class="col-6">
-                                            <p class="my-2 font-13 cursor d-lg-none"><a href="password-reset.html">Forgot
+                                            <p class="my-2 font-13 cursor d-lg-none"><a
+                                                        href="{{ route('password.request') }}">Forgot
                                                     password?</a></p>
                                         </div>
                                         <div class="col-6">
@@ -98,8 +99,7 @@
                                     <button type="submit" id="submit-button" class="btn btn-lg btn-block mt-0">
                                         Login
                                     </button>
-{{--TODO: add google sign in href="{{ url('auth/google') }}"--}}
-<a href="{{route ('magic-login')}}">Magic Login</a>
+
                                 </form>
 
                                 <form class="none" method="post" action="" id="magic_link_wrapper">
