@@ -17,7 +17,7 @@
                         <div class="row">
                             <div class="col-md-6 login-body page-sub-title order-last order-lg-first" id="page-border-2">
                                 <h4>Log into your account</h4>
-                                <div class="login-heading mt-5">
+                                <div class="login-heading mt-lg-5 mb-lg-5 mb-0">
                                     <ul>
                                     @if (Route::has('password.request'))
                                         <li class="my-3"><a href="{{ route('password.request') }}">Forgot password?</a></li>
@@ -34,7 +34,7 @@
                                 </div>
                             </div>
                             <div class="col-md-6 login-registration" id="page-border-3">
-                                <form method="POST" action="{{ route('login') }}">
+                                <form method="POST" action="{{ route('login') }}" id="normal_auth">
                                 @csrf
                                     <div class="form-group mb-4">
                                         <label for="exam">Email Address <span> *</span>
@@ -45,6 +45,11 @@
                                         <strong>{{ $message }}</strong>
                                         </span>
                                         @enderror
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-6">
+
+                                        </div>
                                     </div>
                                     <div class="form-group">
                                         <label for="exampleInputPassword1">
@@ -66,11 +71,62 @@
                                 @enderror
                                         </div>
                                     </div>
-                                    <button type="submit" id="submit-button" class="btn btn-lg btn-block">
+                                    <div class="row mt-2">
+                                        <div class="col-6">
+                                            <p class="my-2 font-13 cursor d-lg-none"><a href="{{route ('change-password')}}">Forgot
+                                                    password?</a></p>
+                                        </div>
+                                        <div class="col-6">
+                                            <p class="text-right text-danger my-2 font-13 cursor" id="magic_link">Login
+                                                with magic link <i class="fa fa-angle-double-right"></i></p>
+                                        </div>
+                                    </div>
+
+                                    <a
+                                            href="{{ url('auth/google') }}  "
+                                            type="button"
+                                            id="google-button"
+                                            class="btn btn-lg btn-block mt-3"
+                                    >
+                                        <img width="20px" style="margin-right:8px" alt="Google sign-in"
+                                             src="img/512px-Google_Logo.svg"/>
+                                        Login with Google
+                                    </a>
+
+                                    <p class="text-center my-2">Or</p>
+
+
+                                    <button type="submit" id="submit-button" class="btn btn-lg btn-block mt-0">
                                         Login
                                     </button>
-{{--TODO: add google sign in href="{{ url('auth/google') }}"--}}
-<a href="{{route ('magic-login')}}">Magic Login</a>
+                                </form>
+
+                                <form class="none" method="post" action="{{ route ('magic-login')}}" id="magic_link_wrapper">
+                                   @csrf
+                                    <div class="row mt-2">
+                                        <div class="col-12">
+                                            <p class="my-2 font-13 text-danger cursor" id="magic_link_return"><i
+                                                        class="fa fa-angle-double-left"></i> Go back</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group mb-4">
+                                        <label for="magic_link_email">Email Address <span> *</span>
+                                        </label>
+                                        <input name="magic_link_email" type="email" class="form-control"
+                                               placeholder="name@example.com"/>
+                                    </div>
+
+                                    <button type="submit" id="submit-button" class="btn btn-lg btn-block mt-0">
+                                        Submit
+                                    </button>
+
+                                    <div class="row mt-2">
+                                        <div class="col-12">
+                                            <p class="my-2 font-13 text-success">You will receive a mail with your magic
+                                                link</p>
+                                        </div>
+                                    </div>
                                 </form>
                             </div>
                         </div>

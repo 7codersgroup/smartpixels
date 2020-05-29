@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
   
 use Illuminate\Http\Request;
-  
+
 class CheckoutController extends Controller
 {
     /**
@@ -15,12 +15,13 @@ class CheckoutController extends Controller
     {
         return view('checkout');
     }
-  
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
+	
+	/**
+	 * Display a listing of the resource.
+	 *
+	 * @param Request $request
+	 * @return \Illuminate\Http\Response
+	 */
     public function checkoutPost(Request $request)
     {
         $request->validate([
