@@ -83,7 +83,8 @@
                                         </div>
                                     </div>
 
-                                    <button
+                                    <a
+                                            href="{{url ('auth/google')}}"
                                             type="button"
                                             id="google-button"
                                             class="btn btn-lg btn-block mt-3"
@@ -91,7 +92,7 @@
                                         <img width="20px" style="margin-right:8px" alt="Google sign-in"
                                              src="img/512px-Google_Logo.svg"/>
                                         Login with Google
-                                    </button>
+                                    </a>
 
                                     <p class="text-center my-2">Or</p>
 
