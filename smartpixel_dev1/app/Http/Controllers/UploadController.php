@@ -25,6 +25,7 @@
 		/**
 		 * Display a listing of the resource.
 		 *
+		 * @param Request $request
 		 * @return \Illuminate\Http\Response
 		 * @throws \Illuminate\Validation\ValidationException
 		 */
@@ -34,42 +35,41 @@
 				'image_name' => 'required|mimes:jpeg,bmp,jpg,png|between:1, 6000',
 			]);
 			
-			$image = $request->file ('image_name');
-			
-			$name = $request->file ('image_name')->getClientOriginalName ();
+			\Cloudinary::config(array(
+				"cloud_name" => env('CLOUDINARY_CLOUD_NAME'),
+				"api_key" => env('CLOUDINARY_API_KEY'),
+				"api_secret" => env('CLOUDINARY_API_SECRET'),
+				"secure" => true
+			));
 			
 			$image_name = $request->file ('image_name')->getRealPath ();;
-			
 			//Cloudder::upload ('Fricapix/preview/' . $image_name, null);
-			Cloudder::upload ($image_name, null);
+			$options = ["public_id"=>"","folder"=>"Fricapix", "type"=>"private", "sign_url"=>true,
+				"eager"=>array("transformation"=>"Main")];
 			
+			//Cloudder::upload ($image_name, null, $options);
 			list($width, $height) = getimagesize ($image_name);
 			
-			$image_url = Cloudder::show (Cloudder::getPublicId (), ["width" => $width, "height" => $height]);
-			
-			//save to uploads directory
-			$image->move (public_path ("uploads"), $name);
+			$result = \Cloudinary\Uploader::upload($image_name,  $options);
+			$image_url = $result['eager'][0]['secure_url'];
+			$public_id = $result['public_id'];
 			
 			//Save images
-			$this->saveImages ($request, $image_url);
-			
-			//SweetAlert::success('Image Uploaded Successfully', '');
-			Alert::success('Success Title', 'Success Message');
+			$this->saveImages ($request, $image_url, $public_id);
 			return redirect ()->route ('dashboard')->with ('status', 'Image Uploaded Successfully');
-			//return redirect()->route('dashboard');
-			
-			
 		}
 		
 		/**
 		 * @param Request $request
 		 * @param $image_url
+		 * @param $public_id
 		 */
-		public function saveImages (Request $request, $image_url)
+		public function saveImages (Request $request, $image_url, $public_id)
 		{
 			$image = new Image();
 			//$image->title = $request->file('image_name')->getClientOriginalName();
 			$image->url = $image_url;
+			$image->public_id = $public_id;
 			$image->description = $request['description'];
 			$image->title = $request['title'];
 			$image->user_id = Auth::id ();
@@ -79,20 +79,6 @@
 			$image->location = $request['location'];
 			$image->category = $request['category'];
 			$image->review = 'PENDING';
-			
-			/* $response = Curl::to('http://127.0.0.1:8081/api/images')
-			->withData(['title'=>$request['title'], 'url'=>$image_url,  'description'=>$request['description'], 'userId'=>1,
-			'category'=> $request['category'],
-				 'tag'=> $request['tag'],
-				 'price'=> $request['price'],
-				 'rating'=> $request['rating'],
-				 'location'=>$request['location']
-			])
-			->post(); */
-			
-			//var_dump($request);
-			//dd($response);
-			
 			
 			$image->save ();
 		}
