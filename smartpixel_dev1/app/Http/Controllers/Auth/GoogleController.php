@@ -3,10 +3,10 @@
 	namespace App\Http\Controllers\Auth;
 	
 	use App\Http\Controllers\Controller;
-	use Laravel\Socialite\Facades\Socialite;
-	use Illuminate\Support\Facades\Auth;
-	use Exception;
 	use App\User;
+	use Exception;
+	use Illuminate\Support\Facades\Auth;
+	use Laravel\Socialite\Facades\Socialite;
 	
 	class GoogleController extends Controller
 	{
@@ -31,7 +31,7 @@
 				
 				$user = Socialite::driver('google')->user();
 				
-				$finduser = User::where('google_id', $user->id)->first();
+				$finduser = User::where ('email', $user->getEmail ())->first ();
 				
 				if($finduser){
 					
@@ -40,9 +40,13 @@
 					return redirect('/home');
 					
 				}else{
+					$splitName = explode (' ', $user->name, 2); // Restricts it to only 2 values, for names like Billy Bob Jones
+					$first_name = $splitName[0];
+					$last_name = !empty($splitName[1]) ? $splitName[1] : ''; // If last name doesn't exist, make it empty
+					
 					$newUser = User::create([
-						'firstname' => $user->givenName,
-						'lastname' => $user->familyName,
+						'firstname' => $first_name,
+						'lastname' => $last_name,
 						'email' => $user->email,
 						'google_id'=> $user->id
 					]);

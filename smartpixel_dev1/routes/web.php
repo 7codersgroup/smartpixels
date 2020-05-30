@@ -19,7 +19,7 @@
 	Route::get ('/', function () {
 		return view ('home');
 	});
-	//Route::get ('/home', 'HomeController@index')->name ('/');
+	Route::get ('/home', 'HomeController@index')->name ('/');
 	Route::get ('/home', 'HomeController@index')->name ('home');
 	//Route::get ('/home', 'HomeController@index')->name ('home');
 	Route::get ('/search', 'SearchController@search')->name ('search');
