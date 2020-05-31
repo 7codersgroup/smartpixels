@@ -123,7 +123,7 @@
                       </label>
                       <div class="form-row accounts-button">
                         <div class="col-">
-                          <a type="submit" class="btn btn-normal btn-block" href="#">
+                            <a type="submit" class="btn btn-normal btn-block" href="{{route ('bank-details')}}">
                             Manage Your Payments
                           </a>
                         </div>
