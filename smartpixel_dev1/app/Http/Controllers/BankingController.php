@@ -25,6 +25,7 @@
 		public function create ()
 		{
 			$user = User::find (Auth::id ());
+			//Todo: Adjust validation and output error on views
 			$this->validate (request (), [
 				'bank_name' => 'required',
 				'account_no' => 'required',

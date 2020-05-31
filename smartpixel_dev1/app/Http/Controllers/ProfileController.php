@@ -21,6 +21,8 @@ class ProfileController extends Controller
 	
 	public function addProfile() {
 		$user = User::find(Auth::id ());
+		
+		//Todo: Adjust validation and output errors on view
 		$this->validate(request(), [
 			'firstname' => 'required',
 			'lastname' => 'required',
