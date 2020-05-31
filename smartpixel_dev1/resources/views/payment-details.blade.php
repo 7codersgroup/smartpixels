@@ -33,7 +33,7 @@
                         </div>
 
                         <div class="col-md-6 payment-registration" id="page-border-3">
-
+                            @if(!empty($banking->bank_name))
                             <div class="form-row">
                                 <div class="form-group col-md-12 mr-md-4">
                                     <p>Current Bank Information</p>
@@ -41,22 +41,35 @@
                                         <thead>
                                         <tr>
                                             <td align="left">Bank Name</td>
-                                            <td align="left"><b>GTB</b></td>
+                                            <td align="left"><b>@if (isset($banking->bank_name))
+                                                        {{$banking->bank_name}}
+                                                    @endif
+
+                                                </b></td>
                                         </tr>
                                         <tr>
                                             <td align="left">Account Name</td>
-                                            <td align="left"><b>OLUFEMI , DANIEL OLADOTUN</b></td>
+                                            <td align="left"><b>@if (isset($banking->account_holder))
+                                                        {{$banking->account_holder}}
+                                                    @endif</b></td>
                                         </tr>
                                         <tr>
                                             <td align="left">Account No.</td>
-                                            <td align="left"><b>0448528538</b></td>
+                                            <td align="left"><b>@if (isset($banking->account_no))
+                                                        {{$banking->account_no}}
+                                                    @endif</b></td>
                                         </tr>
 
                                         </thead>
                                     </table>
                                 </div>
                             </div>
-
+                            @endif
+                            @if(empty($banking->bank_name))
+                                <div class="alert alert-success" role="alert">
+                                    {{ __ ('Click update below to add your account information')}}
+                                </div>
+                            @endif
                             <div class="row mt-2">
                                 <div class="col-12">
                                     <p class="text-danger my-2 font-13 cursor" id="bank_info">Update bank details <i
@@ -64,7 +77,13 @@
                                 </div>
                             </div>
 
-                            <form id="update_bank_info" action="{{route ('banking.store')}}" method="post"
+                            <form id="update_bank_info"
+                                  @if(empty($banking->bank_name))
+                                  action="{{route ('add-bank-details')}}"
+                                  @elseif (!empty($banking->bank_name))
+                                  action="{{route ('update-bank-details')}}"
+                                  @endif
+                                  method="post"
                                   class="none mt-4">
                                 @csrf
                                 <div class="form-group mb-4">
