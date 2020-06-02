@@ -6,8 +6,8 @@
         >
             <a class="navbar-brand" href="{{route ('home')}}"
             ><img
-                        src="img/logo.svg"
-                        alt="Smartpixels logo"
+                        src="{{asset ('img/old_fricapix.png')}}"
+                        alt="Fricapix logo"
                         width="90"
                         class="mob"
                 /></a>

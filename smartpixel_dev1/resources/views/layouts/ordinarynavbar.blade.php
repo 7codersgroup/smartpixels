@@ -2,9 +2,9 @@
     <nav class="navbar navbar-expand-lg navbar-light py-md-1 mob-pad px-md-0">
         <a class="navbar-brand" href="{{ route ('home') }}"
         ><img
-                    src="img/logo.svg"
-                    alt="Smartpixels logo"
-                    width="90"
+                    src="{{asset ('img/fricapix.png')}}"
+                    alt="Fricapix logo"
+                    width="120"
                     class="mob"
             /></a>
         <button
@@ -33,7 +33,7 @@
                         </li>
 
                         <li class="nav-item mx-md-4 my-md-0 postion-relative">
-                            <a class="nav-link px-0" href="/login">Sign in.</a>
+                            <a class="nav-link px-0" href="{{route ('login')}}">Sign in.</a>
                         </li>
                     @endif
                 @else

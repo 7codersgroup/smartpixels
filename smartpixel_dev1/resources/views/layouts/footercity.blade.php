@@ -1,7 +1,7 @@
 <!--		Footer section-->
 <section class="font-circular">
     <div class="container--flex cityline">
-        <img class="cityline__image" src="{{asset ('img/cityline.svg')}}" alt="cityline" />
+        <img class="cityline__image" src="{{ asset ('img/cityline.svg')}}" alt="cityline"/>
     </div>
 
     <div class="footer-bg">

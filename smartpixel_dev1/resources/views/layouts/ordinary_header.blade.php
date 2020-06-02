@@ -6,7 +6,7 @@
     <meta name="description" content=""/>
     <meta name="author" content=""/>
     <title>African stock images | Fricapix</title>
-    <meta name="Description" content="Smartpixels"/>
+    <meta name="Description" content="fricapix"/>
     <meta name="_token" content="{{ csrf_token() }}">
     <!--favicicon-->
     <link rel="shortcut icon" href="{{asset ('img/favicon.jpg')}}"/>

@@ -13,68 +13,9 @@ input:focus {
   box-shadow: none !important;
 }
 
-/* 
-.navbar .navbar-brand {
-margin-left: 35px;
+.none {
+    display: none;
 }
-
-.navbar-dark .navbar-nav .nav-link {
-color: rgb(255, 255, 255, 1);
-font-family: "Montserrat", sans-serif;
-font-size: 0.85em;
-}
-
-.navbar-nav > li {
-margin: 0 25px;
-}
-
-.navbar-nav > li:last-child {
-margin-right: 35px;
-}
-
-.navbar-nav > li .nav-button {
-border: 0.5px solid #ffffff;
-font-size: 1em;
-border-radius: 10px;
-background-color: var(--primary-color);
-font-weight: 600;
-}
-
-.navbar-nav .nav-button {
-padding-left: 20px !important;
-padding-right: 20px !important;
-}
-
-.navbar-nav .fas {
-color: #ffffff;
-margin-left: 10px;
-}
-
-.navbar-nav .dropdown-menu {
-left: -81px;
-margin-top: 8px;
-border-radius: 0px;
-background-color: var(--primary-color);
-color: #ffffff;
-}
-
-.navbar-nav .dropdown-menu .dropdown-item {
-color: #ffffff;
-text-align: right;
-}
-
-.navbar-nav .dropdown-menu .dropdown-item:hover {
-color: var(--primary-color);
-background-color: #ffffff;
-}
-
-.navbar-2 .navbar-nav .nav-item {
-margin: 0px 50px;
-}
-
-.navbar-2 .navbar-nav .nav-item:last-of-type {
-margin-right: 25px;
-} */
 
 .nav-link {
   font-size: 13px !important;
@@ -142,9 +83,14 @@ a {
   color: var(--primary-color);
 }
 
+.cursor {
+    cursor: pointer;
+}
+
 #cancel-button,
 #save-button,
-#submit-button {
+#submit-button,
+#google-button {
   margin-top: 50px;
   color: #ffffff;
   font-size: 1em;
@@ -176,6 +122,35 @@ a {
 #save-button:hover::before {
   height: 0;
   opacity: 0;
+}
+
+
+#google-button {
+    margin-top: 50px;
+    color: #004071;
+    background-color: #fff;
+    box-shadow: 0 10px 60px -40px rgba(0, 0, 0, 0.15);
+    position: relative;
+    font-size: 14px;
+    border: 1px solid #3333;
+}
+
+#google-button::before {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    content: "";
+    background-color: rgba(35, 49, 91, 0.14);
+    z-index: 1;
+    transition: 0.3s;
+    height: 50%;
+    opacity: 0.2;
+}
+
+#google-button:hover::before {
+    height: 0;
+    opacity: 0;
 }
 
 #cancel-button {
@@ -1300,7 +1275,6 @@ option {
 
 .payment-page .container-fluid {
   margin: auto;
-  box-shadow: 2px 2px rgba(55, 9, 116, 0.26);
   border-radius: 10px;
   /* height: auto; */
   background-color: #ffffff;
@@ -2316,9 +2290,11 @@ option {
   }
 
   .payment-registration {
-    position: absolute;
-    border: 0px !important;
-    padding-right: 40px !important;
+      /*
+      position: absolute;
+      border: 0px !important;
+      padding-right: 40px !important;
+      */
   }
 
   .payment-registration .payment-input label {
@@ -2411,10 +2387,12 @@ option {
     font-size: 0.8em;
   }
 
-  .login-page .login-registration {
+    /*
+    .login-page .login-registration {
     position: absolute;
     padding-right: 40px !important;
   }
+    */
 
   /* Change Password */
   .cp-page .cp-body h4,

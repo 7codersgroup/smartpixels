@@ -20,14 +20,16 @@
 		return view ('home');
 	});
 	//Route::get ('/home', 'HomeController@index')->name ('/');
+	Route::get ('/home', 'HomeController@index')->name ('home');
+	//Route::get ('/home', 'HomeController@index')->name ('home');
 	Route::get ('/search', 'SearchController@search')->name ('search');
 	Route::get ('artist', 'ArtistController@index')->name ('artist');
 	Route::get ('/auth0/callback', '\Auth0\Login\Auth0Controller@callback')->name ('auth0-callback');
 	Route::get ('/login', 'Auth\Auth0IndexController@login')->name ('login');
 	Route::get ('/logout', 'Auth\Auth0IndexController@logout')->name ('logout')->middleware ('auth');
-	Route::get('auth/google', 'Auth\GoogleController@redirectToGoogle');
+	Route::get('auth/google', 'Auth\GoogleController@redirectToGoogle')->name ('google');
 	Route::get('auth/google/callback', 'Auth\GoogleController@handleGoogleCallback');
-	Route::get('/login/magic', 'Auth\LoginController@passwordLessLogin')->name ('magic-login');
+	Route::post('/login/magic', 'Auth\LoginController@passwordLessLogin')->name ('magic-login');
 	
 	Auth::routes (['verify' => true]);
 	
@@ -39,8 +41,6 @@
 	
 	
 	Route::group (['middleware' => 'auth'], function () {
-		Route::get ('/home', 'HomeController@index')->name ('home');
-		Route::get ('/home', 'HomeController@index')->name ('home');
 		Route::get ('upload', 'UploadController@imageUpload')->name ('upload');
 		Route::post ('upload', 'UploadController@imageUploadPost')->name ('uploadImage');
 		Route::get ('checkout', 'CheckoutController@checkout')->name ('checkout');
@@ -62,7 +62,6 @@
 		Route::resource('banking','BankingController');
 		Route::get('profile-update',  ['as' => 'profile-update', 'uses' => 'ProfileController@edit']);
 		Route::post('profile-update',  'ProfileController@update')->name ('profileUpdate');
-		
 	});
 	
 	

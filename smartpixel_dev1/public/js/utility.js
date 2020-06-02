@@ -5,6 +5,7 @@
 
   // :: 1.0 Masonary Gallery Active Code
 
+
   var proCata = $(".amado-pro-catagory");
   var singleProCata = ".single-products-catagory";
 
@@ -20,7 +21,8 @@
     });
   }
 
-  // :: 9.0 Tooltip Active Code
+
+    // :: 9.0 Tooltip Active Code
   if ($.fn.tooltip) {
     $('[data-toggle="tooltip"]').tooltip();
   }
@@ -73,7 +75,7 @@ $("#button-addon2").click(function () {
       $("#password").attr("type", "password");
       break;
     default:
-    // code block
+      // code block
   }
 });
 
@@ -84,10 +86,36 @@ $(".custom-file-input").on("change", function () {
 
 $(function () {
   $('[data-toggle="tooltip"]').tooltip()
-})
+});
 
-$('#seo-tags').selectize({
+if ($('#seo-tags').length) {
+    $('#seo-tags').selectize({
     persist: false,
     createOnBlur: true,
     create: true
-});
+    });
+}
+
+if ($('#magic_link').length) {
+    $('#magic_link').click(function () {
+        $('#normal_auth').hide('slow');
+        $('#magic_link_wrapper').show('slow');
+    });
+}
+
+if ($('#magic_link_return').length) {
+    $('#magic_link_return').click(function () {
+        $('#normal_auth').show('slow');
+        $('#magic_link_wrapper').hide('slow');
+    });
+}
+
+if ($('#bank_info').length) {
+    $('#bank_info').click(function () {
+
+        $("html, body").animate(
+            {scrollTop: "600"}, 3000);
+
+        $('#update_bank_info').toggle('slow');
+    });
+}
