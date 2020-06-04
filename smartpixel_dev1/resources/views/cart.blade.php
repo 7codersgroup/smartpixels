@@ -40,7 +40,9 @@
                                 </td>
                                 <td class="price">
                                     <p class="my-0">{{$item->price}}</p>
-                                    <p class="mb-0"><a href="{{ route('checkout.cart.remove', $item->id) }}" class="pixel-color small"><i class="fa fa-trash"></i> Remove</a></p>
+                                    <p class="mb-0"><a href="{{ route('checkout.cart.remove', $item->id) }}"
+                                                       class="pixel-color small"><i class="fa fa-trash"></i> Remove</a>
+                                    </p>
                                 </td>
                             </tr>
                             @endforeach
@@ -52,14 +54,20 @@
                 <div class="col-12 col-lg-4">
                     <div class="cart-summary">
                         <h5>Cart Total</h5>
-                        <ul class="summary-table">
-                            <li><span>subtotal:</span> <span>₦{{\Cart::getSubTotal() }}</span></li>
-                            <li><span>Tax:</span> <span>₦{{$tax =  \Cart::getSubTotal() * 0.075 }} (7.5%)</span></li>
-                            <li><span>total:</span> <span>₦{{\Cart::getSubTotal() + $tax }}</span></li>
-                        </ul>
-                        <div class="cart-btn mt-100">
-                            <button class="btn btn-pixel w-100">Checkout</button>
-                        </div>
+                        <form>
+                            {{csrf_field ()}}
+                            <script src="https://js.paystack.co/v1/inline.js"></script>
+                            <ul class="summary-table">
+                                <li><span>Subtotal:</span> <span>{{__('₦')}}{{ \Cart::getSubTotal(),2 }}</span></li>
+                                <li><span>Tax:</span>
+                                    <span>{{__('₦')}}{{ $tax =  \Cart::getSubTotal() * 0.075 }} (7.5%)</span></li>
+                                <li><span>Total:</span>
+                                    <span>{{__('₦')}}{{ $total = \Cart::getSubTotal() + $tax }}</span></li>
+                            </ul>
+                            <div class="cart-btn mt-100">
+                                <button class="btn btn-pixel w-100" onclick="payWithPaystack()">Checkout</button>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -69,3 +77,33 @@
 
 
 @endsection
+<script>
+    function payWithPaystack() {
+        var handler = PaystackPop.setup({
+            key: 'pk_test_d5f88794a1e4b9f67cc4310209661bde496118dc',
+            email: '{{Auth::user()->email}}',
+            amount: {{$total * 100}},
+            currency: "NGN",
+            ref: '' + Math.floor((Math.random() * 1000000000) + 1), // generates a pseudo-unique reference. Please replace with a reference you generated. Or remove the line entirely so our API will generate one for you
+            firstname: 'Stephen',
+            lastname: 'King',
+            // label: "Optional string that replaces customer email"
+            metadata: {
+                custom_fields: [
+                    {
+                        display_name: "Mobile Number",
+                        variable_name: "mobile_number",
+                        value: "+2348012345678"
+                    }
+                ]
+            },
+            callback: function (response) {
+                alert('success. transaction ref is ' + response.reference);
+            },
+            onClose: function () {
+                alert('window closed');
+            }
+        });
+        handler.openIframe();
+    }
+</script>
