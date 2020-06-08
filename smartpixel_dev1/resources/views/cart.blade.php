@@ -80,7 +80,7 @@
 <script>
     function payWithPaystack() {
         var handler = PaystackPop.setup({
-            key: 'pk_test_d5f88794a1e4b9f67cc4310209661bde496118dc',
+            key: '{{getenv('PAYSTACK_PUBLIC_KEY')}}',
             email: '{{Auth::user()->email}}',
             amount: {{$total * 100}},
             currency: "NGN",
