@@ -103,7 +103,9 @@
 
                                 </form>
 
-                                <form class="none" method="post" action="" id="magic_link_wrapper">
+                                <form class="none" method="post" action="{{route ('magic-login')}}"
+                                      id="magic_link_wrapper">
+                                    @csrf
                                     <div class="row mt-2">
                                         <div class="col-12">
                                             <p class="my-2 font-13 text-danger cursor" id="magic_link_return"><i

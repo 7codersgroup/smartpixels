@@ -136,6 +136,7 @@
       <excludeFolder url="file://$MODULE_DIR$/smartpixel_dev1/vendor/tcg/voyager" />
       <excludeFolder url="file://$MODULE_DIR$/smartpixel_dev1/vendor/theseer/tokenizer" />
       <excludeFolder url="file://$MODULE_DIR$/smartpixel_dev1/vendor/tijsverkoyen/css-to-inline-styles" />
+      <excludeFolder url="file://$MODULE_DIR$/smartpixel_dev1/vendor/unicodeveloper/laravel-paystack" />
       <excludeFolder url="file://$MODULE_DIR$/smartpixel_dev1/vendor/uxweb/sweet-alert" />
       <excludeFolder url="file://$MODULE_DIR$/smartpixel_dev1/vendor/vlucas/phpdotenv" />
       <excludeFolder url="file://$MODULE_DIR$/smartpixel_dev1/vendor/voku/portable-ascii" />

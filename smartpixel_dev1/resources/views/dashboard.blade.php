@@ -8,15 +8,15 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
     <!-- Bootstrap CSS-->
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/all.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/hamburgers.css" />
+    <link rel="stylesheet" href="{{asset ('css/bootstrap.min.css')}}"/>
+    <link rel="stylesheet" href="{{asset ('css/all.css')}}"/>
+    <link rel="stylesheet" href="{{asset ('css/style.css')}}"/>
+    <link rel="stylesheet" href="{{asset ('css/hamburgers.css')}}"/>
     <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <title>Frikapix</title>
+    <title>Fricapix</title>
 </head>
 
 <body class="dashboard">

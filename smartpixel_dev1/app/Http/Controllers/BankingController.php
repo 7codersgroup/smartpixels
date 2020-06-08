@@ -59,6 +59,6 @@
 				$this->create ();
 			}
 			
-			return back ()->with ('success', 'Account details updateds successfully');
+			return back ()->with ('success', 'Account details updated successfully');
 		}
 	}
