@@ -12,6 +12,10 @@
 	padding: 0;
 }
 
+.align-center {
+	align-items: center;
+}
+
 .pixel-color {
 	color: var(--primary-color)
 }
