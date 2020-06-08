@@ -42,7 +42,8 @@
                              id="page-border-3">
                             <form method="post" action="{{ route('register') }}">
                         @csrf
-                                <button
+                                <a
+                                        href="{{url ('auth/google')}}"
                                         type="button"
                                         id="google-button"
                                         class="btn btn-lg btn-block mt-0"
@@ -50,7 +51,7 @@
                                     <img width="20px" style="margin-right:8px" alt="Google sign-in"
                                          src="{{asset ('img/512px-Google_Logo.svg')}}"/>
                                     Signup with Google
-                                </button>
+                                </a>
                                 <p class="text-center my-4">Or</p>
                                 <div class="form-group mb-4">
                                     <div class="form-row input-names">

@@ -48,6 +48,7 @@ class ComposerStaticInit148756e72cef7729b6a7f924e705178b
         '6124b4c8570aa390c21fafd04a26c69f' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
         'decc78cc4436b1292c6c0d151b19445c' => __DIR__ . '/..' . '/phpseclib/phpseclib/phpseclib/bootstrap.php',
         '6b34c85f7b1ad6faa15aa12109e030f2' => __DIR__ . '/..' . '/realrashid/sweet-alert/src/functions.php',
+        'bab4ed692c1fd3872849227e2a85791e' => __DIR__ . '/..' . '/unicodeveloper/laravel-paystack/src/Support/helpers.php',
         'a806c12c6e24e7e4e900847766218dba' => __DIR__ . '/..' . '/uxweb/sweet-alert/src/SweetAlert/functions.php',
     );
 
@@ -74,6 +75,7 @@ class ComposerStaticInit148756e72cef7729b6a7f924e705178b
         'U' => 
         array (
             'UxWeb\\SweetAlert\\' => 17,
+            'Unicodeveloper\\Paystack\\' => 24,
         ),
         'T' => 
         array (
@@ -268,6 +270,10 @@ class ComposerStaticInit148756e72cef7729b6a7f924e705178b
         'UxWeb\\SweetAlert\\' => 
         array (
             0 => __DIR__ . '/..' . '/uxweb/sweet-alert/src/SweetAlert',
+        ),
+        'Unicodeveloper\\Paystack\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/unicodeveloper/laravel-paystack/src',
         ),
         'TijsVerkoyen\\CssToInlineStyles\\' => 
         array (
@@ -6334,6 +6340,12 @@ class ComposerStaticInit148756e72cef7729b6a7f924e705178b
         'TijsVerkoyen\\CssToInlineStyles\\Css\\Rule\\Processor' => __DIR__ . '/..' . '/tijsverkoyen/css-to-inline-styles/src/Css/Rule/Processor.php',
         'TijsVerkoyen\\CssToInlineStyles\\Css\\Rule\\Rule' => __DIR__ . '/..' . '/tijsverkoyen/css-to-inline-styles/src/Css/Rule/Rule.php',
         'TranslationsTableSeeder' => __DIR__ . '/../..' . '/database/seeds/TranslationsTableSeeder.php',
+        'Unicodeveloper\\Paystack\\Exceptions\\IsNullException' => __DIR__ . '/..' . '/unicodeveloper/laravel-paystack/src/Exceptions/isNullException.php',
+        'Unicodeveloper\\Paystack\\Exceptions\\PaymentVerificationFailedException' => __DIR__ . '/..' . '/unicodeveloper/laravel-paystack/src/Exceptions/PaymentVerificationFailedException.php',
+        'Unicodeveloper\\Paystack\\Facades\\Paystack' => __DIR__ . '/..' . '/unicodeveloper/laravel-paystack/src/Facades/Paystack.php',
+        'Unicodeveloper\\Paystack\\Paystack' => __DIR__ . '/..' . '/unicodeveloper/laravel-paystack/src/Paystack.php',
+        'Unicodeveloper\\Paystack\\PaystackServiceProvider' => __DIR__ . '/..' . '/unicodeveloper/laravel-paystack/src/PaystackServiceProvider.php',
+        'Unicodeveloper\\Paystack\\TransRef' => __DIR__ . '/..' . '/unicodeveloper/laravel-paystack/src/TransRef.php',
         'UxWeb\\SweetAlert\\ConvertMessagesIntoSweetAlert' => __DIR__ . '/..' . '/uxweb/sweet-alert/src/SweetAlert/ConvertMessagesIntoSweetAlert.php',
         'UxWeb\\SweetAlert\\LaravelSessionStore' => __DIR__ . '/..' . '/uxweb/sweet-alert/src/SweetAlert/LaravelSessionStore.php',
         'UxWeb\\SweetAlert\\SessionStore' => __DIR__ . '/..' . '/uxweb/sweet-alert/src/SweetAlert/SessionStore.php',

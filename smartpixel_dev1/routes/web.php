@@ -19,7 +19,7 @@
 	Route::get ('/', function () {
 		return view ('home');
 	});
-	//Route::get ('/home', 'HomeController@index')->name ('/');
+	Route::get ('/home', 'HomeController@index')->name ('/');
 	Route::get ('/home', 'HomeController@index')->name ('home');
 	//Route::get ('/home', 'HomeController@index')->name ('home');
 	Route::get ('/search', 'SearchController@search')->name ('search');
@@ -59,7 +59,10 @@
 		//Route::post('like', 'ArtistController@LikePost')->name('like');
 		Route::get ('change-password', 'ChangePasswordController@index')->name ('change-password');
 		Route::post ('change-password', 'ChangePasswordController@store')->name ('change.password');
-		Route::resource('banking','BankingController');
+		//Route::resource('banking','BankingController');
+		Route::get ('banking-details', 'BankingController@index')->name ('bank-details');
+		Route::post ('banking-details/update', 'BankingController@update')->name ('update-bank-details');
+		Route::post ('banking-details/add', 'BankingController@create')->name ('add-bank-details');
 		Route::get('profile-update',  ['as' => 'profile-update', 'uses' => 'ProfileController@edit']);
 		Route::post('profile-update',  'ProfileController@update')->name ('profileUpdate');
 	});

@@ -2,8 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Profile;
-use App\User;
+use App\{Profile, User};
 use Illuminate\Support\Facades\Auth;
 use JD\Cloudder\Facades\Cloudder;
 
@@ -22,6 +21,8 @@ class ProfileController extends Controller
 	
 	public function addProfile() {
 		$user = User::find(Auth::id ());
+		
+		//Todo: Adjust validation and output errors on view
 		$this->validate(request(), [
 			'firstname' => 'required',
 			'lastname' => 'required',
@@ -39,6 +40,7 @@ class ProfileController extends Controller
 		$user->save();
 		$user->profile()->save($profile);
 		
+		return back ()->with ('success', 'Profile saved successfully');
 	}
 	
 	public function update()

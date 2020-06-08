@@ -60,6 +60,7 @@
                                                         class="js-search-text-input input--silent input--full light input--xlarge"
                                                         type="text"
                                                         placeholder="Search"
+                                                        required
                                                         autocomplete="off"
                                                 />
                                             </div>
@@ -84,7 +85,7 @@
                     <div class="margin-xlarge padding-xlarge">
                         <a
                                 class="white-text"
-                                href="artist.html"
+                                href="#"
                                 data-ingest-clicktype="contributor-name"
                         ><p class="font-light">
                                 <i>Feature by </i
