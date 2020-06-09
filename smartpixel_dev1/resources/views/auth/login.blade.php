@@ -73,7 +73,8 @@
                                     </div>
                                     <div class="row mt-2">
                                         <div class="col-6">
-                                            <p class="my-2 font-13 cursor d-lg-none"><a href="password-reset.html">Forgot
+                                            <p class="my-2 font-13 cursor d-lg-none"><a
+                                                        href="{{ route('password.request') }}">Forgot
                                                     password?</a></p>
                                         </div>
                                         <div class="col-6">
@@ -82,7 +83,8 @@
                                         </div>
                                     </div>
 
-                                    <button
+                                    <a
+                                            href="{{url ('auth/google')}}"
                                             type="button"
                                             id="google-button"
                                             class="btn btn-lg btn-block mt-3"
@@ -90,7 +92,7 @@
                                         <img width="20px" style="margin-right:8px" alt="Google sign-in"
                                              src="img/512px-Google_Logo.svg"/>
                                         Login with Google
-                                    </button>
+                                    </a>
 
                                     <p class="text-center my-2">Or</p>
 
@@ -98,11 +100,12 @@
                                     <button type="submit" id="submit-button" class="btn btn-lg btn-block mt-0">
                                         Login
                                     </button>
-{{--TODO: add google sign in href="{{ url('auth/google') }}"--}}
-<a href="{{route ('magic-login')}}">Magic Login</a>
+
                                 </form>
 
-                                <form class="none" method="post" action="" id="magic_link_wrapper">
+                                <form class="none" method="post" action="{{route ('magic-login')}}"
+                                      id="magic_link_wrapper">
+                                    @csrf
                                     <div class="row mt-2">
                                         <div class="col-12">
                                             <p class="my-2 font-13 text-danger cursor" id="magic_link_return"><i

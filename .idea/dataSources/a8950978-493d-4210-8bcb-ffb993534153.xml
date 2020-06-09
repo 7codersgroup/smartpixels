@@ -2505,7 +2505,6 @@ role_id</ColNames>
     <column id="534" parent="270" name="password">
       <Position>7</Position>
       <DataType>varchar(255)|0s</DataType>
-      <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="535" parent="270" name="remember_token">

@@ -45,6 +45,7 @@
                                             type="text"
                                             placeholder="Search"
                                             autocomplete="off"
+                                            required
                                             value="{{old ('query')}}"
                                     />
                                 </div>
