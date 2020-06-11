@@ -1,6 +1,7 @@
 @import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=auto";
 @import url('https://fonts.googleapis.com/css?family=Raleway:400,500,700&display=auto');
 @import url('fonts/circular-std/css/circular-std.css');
+@import url("variables.css");
 
 :root {
 	--primary-color: #004071;
@@ -169,6 +170,14 @@ svg {
 
 .font-semi-bold {
 	font-weight: 600 !important;
+}
+
+.font-weight-500 {
+	font-weight: 500;
+}
+
+.benefits li {
+	list-style: square;
 }
 
 /*footer section*/
