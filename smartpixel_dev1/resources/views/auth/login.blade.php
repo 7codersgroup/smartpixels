@@ -21,7 +21,7 @@
                                     <ul>
                                     @if (Route::has('password.request'))
                                         <li class="my-3"><a href="{{ route('password.request') }}">Forgot password?</a></li>
-                                    @endif    
+                                    @endif
                                         <li class="my-3"><a href="{{ route('register') }}">Create an account</a></li>
                                     </ul>
                                 </div>
@@ -35,11 +35,14 @@
                             </div>
                             <div class="col-md-6 login-registration" id="page-border-3">
                                 <form method="POST" action="{{ route('login') }}" id="normal_auth">
-                                @csrf
+                                    @csrf
                                     <div class="form-group mb-4">
                                         <label for="exam">Email Address <span> *</span>
                                         </label>
-                                        <input type="email" class="form-control @error('email') is-invalid @enderror" placeholder="name@example.com" placeholder="name@example.com" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus />
+                                        <input autocomplete="email" autofocus
+                                               class="form-control @error('email') is-invalid @enderror" name="email"
+                                               placeholder="name@example.com" required type="email"
+                                               value="{{ old('email') }}"/>
                                         @error('email')
                                         <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
@@ -84,13 +87,13 @@
                                     </div>
 
                                     <a
-                                            href="{{url ('auth/google')}}"
-                                            type="button"
-                                            id="google-button"
-                                            class="btn btn-lg btn-block mt-3"
+                                        href="{{url ('auth/google')}}"
+                                        type="button"
+                                        id="google-button"
+                                        class="btn btn-lg btn-block mt-3"
                                     >
-                                        <img width="20px" style="margin-right:8px" alt="Google sign-in"
-                                             src="img/512px-Google_Logo.svg"/>
+                                        <img width="20px" style="margin-right:8px" alt="Google Sign-in"
+                                             src="{{asset('img/512px-Google_Logo.svg')}}"/>
                                         Login with Google
                                     </a>
 

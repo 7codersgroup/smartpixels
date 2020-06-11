@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" serverName="cloudtest">
+  <component name="PublishConfigData" serverName="Testing">
     <serverData>
+      <paths name="Testing">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/" local="$PROJECT_DIR$/smartpixel_dev1" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
       <paths name="Vogue_admin">
         <serverdata>
           <mappings>
