@@ -13,11 +13,11 @@
     <link rel="manifest" href="/site.webmanifest">
     <!-- Bootstrap CSS-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
-    <link rel="stylesheet" href="{{asset ('css/bootstrap.min.css')}}" />
-    <link rel="stylesheet" href="{{asset ('css/all.css')}}" />
-    <link rel="stylesheet" href="{{asset ('css/style.css')}}" />
-    <link rel="stylesheet" href="{{asset ('css/hamburgers.css')}}" />
-    <title>{{ config('app.name', 'Frikapix') }}</title>
+    <link rel="stylesheet" href="{{asset ('css/bootstrap.min.css')}}"/>
+    <link rel="stylesheet" href="{{asset ('css/all.css')}}"/>
+    <link rel="stylesheet" href="{{asset ('css/style.css')}}"/>
+    <link rel="stylesheet" href="{{asset ('css/hamburgers.css')}}"/>
+    <title>@yield('title') | Fricapix</title>
 </head>
 
 

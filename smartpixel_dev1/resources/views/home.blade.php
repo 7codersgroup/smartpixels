@@ -1,5 +1,6 @@
 @extends('layouts.app2')
 
+@section('title', __('African Stock Images'))
 @section('content_new')
 
     <section class="height_normalize position-relative motmot">
