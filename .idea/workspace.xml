@@ -4,13 +4,7 @@
     <option name="SCOPE_TYPE" value="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cbd6f795-d52c-4941-aaa0-5721efb1051f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/smartpixels2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/smartpixels2.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartpixel_dev1/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/smartpixel_dev1/resources/views/auth/login.blade.php" afterDir="false" />
-    </list>
+    <list default="true" id="cbd6f795-d52c-4941-aaa0-5721efb1051f" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -281,7 +275,7 @@
       <workItem from="1591269328508" duration="5164000" />
       <workItem from="1591345663161" duration="21952000" />
       <workItem from="1591707446373" duration="5574000" />
-      <workItem from="1591803459038" duration="6975000" />
+      <workItem from="1591803459038" duration="7280000" />
     </task>
     <task id="LOCAL-00001" summary="follow-unfollow">
       <created>1588562477954</created>
@@ -621,7 +615,14 @@
       <option name="project" value="LOCAL" />
       <updated>1591617767816</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="Magic Link adjustment">
+      <created>1591869366564</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1591869366565</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <option name="trackContextForNewChangelist" value="true" />
     <servers />
   </component>
@@ -725,6 +726,10 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="275" y="42" key="#Deployment/0.0.1366.768/1366.0.1600.900@0.0.1366.768" timestamp="1591808303922" />
+    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1591869362138">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1591869362138" />
     <state x="463" y="138" key="FileChooserDialogImpl" timestamp="1591804453197">
       <screen x="0" y="0" width="1366" height="768" />
     </state>

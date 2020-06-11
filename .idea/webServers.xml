@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="e118cfb9-9761-4d58-b5d2-a1b48a37cac6" name="Testing" url="http://internationalglobalbuziness.com">
+        <fileTransfer rootFolder="/testing.internationalglobalbuziness.com" host="internationalglobalbuziness.com" port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
