@@ -5,29 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cbd6f795-d52c-4941-aaa0-5721efb1051f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/smartpixels2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/smartpixels2.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/a8950978-493d-4210-8bcb-ffb993534153.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/a8950978-493d-4210-8bcb-ffb993534153.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/a8950978-493d-4210-8bcb-ffb993534153/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/a8950978-493d-4210-8bcb-ffb993534153/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/404.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartpixel_dev1/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/smartpixel_dev1/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartpixel_dev1/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/smartpixel_dev1/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartpixel_dev1/resources/views/account.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/smartpixel_dev1/resources/views/account.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartpixel_dev1/resources/views/artist.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/smartpixel_dev1/resources/views/artist.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartpixel_dev1/resources/views/cart.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/smartpixel_dev1/resources/views/cart.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartpixel_dev1/resources/views/change-password.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/smartpixel_dev1/resources/views/change-password.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartpixel_dev1/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/smartpixel_dev1/resources/views/home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartpixel_dev1/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/smartpixel_dev1/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartpixel_dev1/resources/views/layouts/ordinary_header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/smartpixel_dev1/resources/views/layouts/ordinary_header.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartpixel_dev1/resources/views/payment-details.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/smartpixel_dev1/resources/views/payment-details.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartpixel_dev1/resources/views/profile-update.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/smartpixel_dev1/resources/views/profile-update.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartpixel_dev1/resources/views/search.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/smartpixel_dev1/resources/views/search.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartpixel_dev1/resources/views/upload.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/smartpixel_dev1/resources/views/upload.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartpixel_dev1/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/smartpixel_dev1/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartpixel_dev1/vendor/composer/autoload_classmap.php" beforeDir="false" afterPath="$PROJECT_DIR$/smartpixel_dev1/vendor/composer/autoload_classmap.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartpixel_dev1/vendor/composer/autoload_psr4.php" beforeDir="false" afterPath="$PROJECT_DIR$/smartpixel_dev1/vendor/composer/autoload_psr4.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartpixel_dev1/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/smartpixel_dev1/vendor/composer/autoload_static.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartpixel_dev1/vendor/composer/installed.json" beforeDir="false" afterPath="$PROJECT_DIR$/smartpixel_dev1/vendor/composer/installed.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartpixel_dev1/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/views/minimal.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/smartpixel_dev1/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/views/minimal.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smartpixel_dev1/app/Image.php" beforeDir="false" afterPath="$PROJECT_DIR$/smartpixel_dev1/app/Image.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smartpixel_dev1/resources/views/dashboard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/smartpixel_dev1/resources/views/dashboard.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,36 +20,6 @@
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/smartpixel_dev1/composer.json</pharConfigPath>
     <execution />
-  </component>
-  <component name="DatabaseView">
-    <option name="SHOW_INTERMEDIATE" value="true" />
-    <option name="GROUP_DATA_SOURCES" value="true" />
-    <option name="GROUP_SCHEMA" value="true" />
-    <option name="GROUP_CONTENTS" value="false" />
-    <option name="SORT_POSITIONED" value="false" />
-    <option name="SHOW_EMPTY_GROUPS" value="false" />
-    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
-    <option name="HIDDEN_KINDS">
-      <set />
-    </option>
-    <expand>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="smartpixels@localhost" type="feb32156:DbDataSourceImpl" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="smartpixels@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="smartpixels@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="smartpixels: schema" type="76f4a085:MysqlImplModel$Schema" />
-      </path>
-    </expand>
-    <select />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -253,7 +206,7 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
     <property name="database.console.LAST_STATE" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/smartpixel_dev1/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/views" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -302,14 +255,9 @@
       <workItem from="1591345663161" duration="21952000" />
       <workItem from="1591707446373" duration="5574000" />
       <workItem from="1591803459038" duration="7280000" />
-      <workItem from="1591871397437" duration="5327000" />
-    </task>
-    <task id="LOCAL-00001" summary="follow-unfollow">
-      <created>1588562477954</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1588562477954</updated>
+      <workItem from="1591871397437" duration="8377000" />
+      <workItem from="1591992869084" duration="598000" />
+      <workItem from="1592053541098" duration="4602000" />
     </task>
     <task id="LOCAL-00002" summary="follow-unfollow">
       <created>1588562643716</created>
@@ -649,7 +597,14 @@
       <option name="project" value="LOCAL" />
       <updated>1591869366565</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="Page title update">
+      <created>1591876857289</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1591876857291</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <option name="trackContextForNewChangelist" value="true" />
     <servers />
   </component>
@@ -718,7 +673,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="Change Password" />
     <MESSAGE value="Added lazy-loading to image listing" />
     <MESSAGE value="Added Change password routes" />
     <MESSAGE value="Other updates" />
@@ -743,7 +697,8 @@
     <MESSAGE value="Adjusted the search bar: making it a required field" />
     <MESSAGE value="Laravel Paystack package" />
     <MESSAGE value="Magic Link adjustment" />
-    <option name="LAST_COMMIT_MESSAGE" value="Magic Link adjustment" />
+    <MESSAGE value="Page title update" />
+    <option name="LAST_COMMIT_MESSAGE" value="Page title update" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
@@ -753,14 +708,15 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="275" y="42" key="#Deployment/0.0.1366.768/1366.0.1600.900@0.0.1366.768" timestamp="1591808303922" />
-    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1591869362138">
-      <screen x="0" y="0" width="1366" height="768" />
-    </state>
-    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1591869362138" />
-    <state x="1458" y="92" width="1416" height="716" key="DiffContextDialog" timestamp="1591873602719">
+    <state x="1727" y="0" key="CommitChangelistDialog2" timestamp="1591876848260">
       <screen x="1366" y="0" width="1600" height="900" />
     </state>
-    <state x="1458" y="92" width="1416" height="716" key="DiffContextDialog/0.0.1366.768/1366.0.1600.900@1366.0.1600.900" timestamp="1591873602719" />
+    <state x="1727" y="0" key="CommitChangelistDialog2/0.0.1366.768/1366.0.1600.900@1366.0.1600.900" timestamp="1591876848260" />
+    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1591869362138" />
+    <state x="1458" y="92" width="1416" height="716" key="DiffContextDialog" timestamp="1591880484266">
+      <screen x="1366" y="0" width="1600" height="900" />
+    </state>
+    <state x="1458" y="92" width="1416" height="716" key="DiffContextDialog/0.0.1366.768/1366.0.1600.900@1366.0.1600.900" timestamp="1591880484266" />
     <state x="1908" y="162" key="FileChooserDialogImpl" timestamp="1591873267080">
       <screen x="1366" y="0" width="1600" height="900" />
     </state>
@@ -770,6 +726,10 @@
       <screen x="1366" y="0" width="1600" height="900" />
     </state>
     <state x="1667" y="95" key="SettingsEditor/0.0.1366.768/1366.0.1600.900@1366.0.1600.900" timestamp="1591874761427" />
+    <state x="1758" y="170" key="Vcs.Push.Dialog.v2" timestamp="1591876866492">
+      <screen x="1366" y="0" width="1600" height="900" />
+    </state>
+    <state x="1758" y="170" key="Vcs.Push.Dialog.v2/0.0.1366.768/1366.0.1600.900@1366.0.1600.900" timestamp="1591876866492" />
     <state x="568" y="114" width="447" height="539" key="ftp.server.browser" timestamp="1591808204353">
       <screen x="0" y="0" width="1366" height="768" />
     </state>

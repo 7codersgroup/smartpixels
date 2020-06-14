@@ -3,6 +3,7 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use Laravel\Scout\Searchable;
 use Overtrue\LaravelLike\Traits\Likeable;
 
 /**
@@ -15,12 +16,13 @@ use Overtrue\LaravelLike\Traits\Likeable;
  * @property int|string|null user_id
  * @property mixed title
  * @property mixed tag
- * @property public_id
- * @property  url
+ * @property mixed public_id
+ * @property  string url
  */
 class Image extends Model
 {
-	use Likeable;
+    use Likeable, Searchable;
+
     //
     /**
      * The attributes that are mass assignable.
@@ -28,11 +30,11 @@ class Image extends Model
      * @var array
      */
     protected $fillable = [
-        'url','title', 'description', 'tags', 'category', 'location', 'price', 'rating', 'user_id', 'tag'
+        'url', 'title', 'description', 'tags', 'category', 'location', 'price', 'rating', 'user_id', 'tag'
     ];
-	
+
 	public static function find ($imageId)
 	{
-	
-	}
+
+    }
 }
