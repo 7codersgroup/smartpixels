@@ -3,14 +3,29 @@
   <component name="AnalysisUIOptions">
     <option name="SCOPE_TYPE" value="3" />
   </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="cbd6f795-d52c-4941-aaa0-5721efb1051f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/a8950978-493d-4210-8bcb-ffb993534153.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/a8950978-493d-4210-8bcb-ffb993534153.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/a8950978-493d-4210-8bcb-ffb993534153/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/a8950978-493d-4210-8bcb-ffb993534153/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" afterDir="false" />
+    <list default="true" id="cbd6f795-d52c-4941-aaa0-5721efb1051f" name="Default Changelist" comment="Laravel/Scout">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartpixel_dev1/app/Image.php" beforeDir="false" afterPath="$PROJECT_DIR$/smartpixel_dev1/app/Image.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartpixel_dev1/resources/views/dashboard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/smartpixel_dev1/resources/views/dashboard.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smartpixel_dev1/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/smartpixel_dev1/resources/views/auth/login.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smartpixel_dev1/resources/views/auth/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/smartpixel_dev1/resources/views/auth/register.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -257,21 +272,7 @@
       <workItem from="1591803459038" duration="7280000" />
       <workItem from="1591871397437" duration="8377000" />
       <workItem from="1591992869084" duration="598000" />
-      <workItem from="1592053541098" duration="4602000" />
-    </task>
-    <task id="LOCAL-00002" summary="follow-unfollow">
-      <created>1588562643716</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1588562643716</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Updated Upload page to support SEO tags input.&#10;Added View Cart to Header">
-      <created>1588566333395</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1588566333395</updated>
+      <workItem from="1592053541098" duration="5699000" />
     </task>
     <task id="LOCAL-00004" summary="Update on Liking an Image">
       <created>1588667068041</created>
@@ -604,7 +605,21 @@
       <option name="project" value="LOCAL" />
       <updated>1591876857291</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="Laravel/Scout">
+      <created>1592137557198</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1592137557200</updated>
+    </task>
+    <task id="LOCAL-00052" summary="Laravel/Scout">
+      <created>1592137582569</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1592137582569</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <option name="trackContextForNewChangelist" value="true" />
     <servers />
   </component>
@@ -673,7 +688,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="Added lazy-loading to image listing" />
     <MESSAGE value="Added Change password routes" />
     <MESSAGE value="Other updates" />
     <MESSAGE value="Updated Follower Count&#10;Disabled Self Follow&#10;Created a dummy for 0 images found" />
@@ -698,7 +712,8 @@
     <MESSAGE value="Laravel Paystack package" />
     <MESSAGE value="Magic Link adjustment" />
     <MESSAGE value="Page title update" />
-    <option name="LAST_COMMIT_MESSAGE" value="Page title update" />
+    <MESSAGE value="Laravel/Scout" />
+    <option name="LAST_COMMIT_MESSAGE" value="Laravel/Scout" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
@@ -708,11 +723,11 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="275" y="42" key="#Deployment/0.0.1366.768/1366.0.1600.900@0.0.1366.768" timestamp="1591808303922" />
-    <state x="1727" y="0" key="CommitChangelistDialog2" timestamp="1591876848260">
-      <screen x="1366" y="0" width="1600" height="900" />
+    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1592137545687">
+      <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="1727" y="0" key="CommitChangelistDialog2/0.0.1366.768/1366.0.1600.900@1366.0.1600.900" timestamp="1591876848260" />
-    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1591869362138" />
+    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1592137545687" />
     <state x="1458" y="92" width="1416" height="716" key="DiffContextDialog" timestamp="1591880484266">
       <screen x="1366" y="0" width="1600" height="900" />
     </state>
@@ -726,10 +741,11 @@
       <screen x="1366" y="0" width="1600" height="900" />
     </state>
     <state x="1667" y="95" key="SettingsEditor/0.0.1366.768/1366.0.1600.900@1366.0.1600.900" timestamp="1591874761427" />
-    <state x="1758" y="170" key="Vcs.Push.Dialog.v2" timestamp="1591876866492">
-      <screen x="1366" y="0" width="1600" height="900" />
+    <state x="335" y="145" key="Vcs.Push.Dialog.v2" timestamp="1592137622830">
+      <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="1758" y="170" key="Vcs.Push.Dialog.v2/0.0.1366.768/1366.0.1600.900@1366.0.1600.900" timestamp="1591876866492" />
+    <state x="335" y="145" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1592137622830" />
     <state x="568" y="114" width="447" height="539" key="ftp.server.browser" timestamp="1591808204353">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
