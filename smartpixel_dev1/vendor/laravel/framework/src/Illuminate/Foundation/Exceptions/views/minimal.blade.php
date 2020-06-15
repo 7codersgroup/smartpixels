@@ -8,16 +8,36 @@
     <title>@yield('title') | Fricapix</title>
     <meta name="Description" content="fricapix" />
     <!--favicicon-->
-    <link rel="shortcut icon" href="img/favicon.jpg" />
-    <link rel="apple-touch-icon" href="img/favicon.jpg" />
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon_io/site.webmanifest">
+
+    <meta name="description" content="Search millions of royalty free stock images, and photos from Africa. Get inspired by 1000s of new, high-resolution stock images added frequently." />
+    <link rel="canonical" href="http://www.fricapix.com/" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="African Stock Photos, royalty-free images | Fricapix" />
+    <meta property="og:description" content="Search millions of royalty free stock images, and photos from Africa. Get inspired by 1000s of new, high-resolution stock images added frequently." />
+    <meta property="og:url" content="http://www.fricapix.com/" />
+    <meta property="og:site_name" content="fricapix" />
+    <meta property="og:image" content="https://www.fricapix.com/img/social_og_image.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:description" content="Search millions of royalty free stock images, and photos from Africa. Get inspired by 1000s of new, high-resolution stock images added frequently." />
+    <meta name="twitter:title" content="African Stock Photos, royalty-free images | Fricapix" />
+    <meta name="twitter:url" content="http://www.fricapix.com/" />
+    <meta name="twitter:image" content="https://www.fricapix.com/img/social_og_image.jpg" />
+    <script type='application/ld+json'>
+        {"@context":"https://schema.org","@type":"WebSite","@id":"http://www.fricapix.com/#website","url":"http://www.fricapix.com/","name":"fricapix","potentialAction":{"@type":"SearchAction","target":"http://www.fricapix.com/?s={search_term_string}","query-input":"required name=search_term_string"}}
+    </script>
+
     <link rel="stylesheet" href="css/global.css" />
     <link rel="stylesheet" href="css/custom-animation.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link href="css/hamburgers.css" rel="stylesheet"/>
-    <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+    <link rel="stylesheet" href="css/hamburgers.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 </head>
 
 <body class="landing">
@@ -26,7 +46,7 @@
         <nav
             class="navbar navbar-expand-lg navbar-light py-md-1 mob-pad px-md-0"
         >
-            <a class="navbar-brand" href="index.html"
+            <a class="navbar-brand" href="{{route ('home')}}"
             ><img
                     src="img/old_fricapix.png"
                     alt="fricapix logo"
