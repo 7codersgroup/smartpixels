@@ -22,11 +22,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cbd6f795-d52c-4941-aaa0-5721efb1051f" name="Default Changelist" comment="Laravel/Scout">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartpixel_dev1/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/smartpixel_dev1/resources/views/auth/login.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartpixel_dev1/resources/views/auth/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/smartpixel_dev1/resources/views/auth/register.blade.php" afterDir="false" />
-    </list>
+    <list default="true" id="cbd6f795-d52c-4941-aaa0-5721efb1051f" name="Default Changelist" comment="Page Title modification" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -272,14 +268,7 @@
       <workItem from="1591803459038" duration="7280000" />
       <workItem from="1591871397437" duration="8377000" />
       <workItem from="1591992869084" duration="598000" />
-      <workItem from="1592053541098" duration="5699000" />
-    </task>
-    <task id="LOCAL-00004" summary="Update on Liking an Image">
-      <created>1588667068041</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1588667068041</updated>
+      <workItem from="1592053541098" duration="5737000" />
     </task>
     <task id="LOCAL-00005" summary="Update on Liking an Image">
       <created>1588676253245</created>
@@ -619,7 +608,14 @@
       <option name="project" value="LOCAL" />
       <updated>1592137582569</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="Page Title modification">
+      <created>1592139532892</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1592139532892</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <option name="trackContextForNewChangelist" value="true" />
     <servers />
   </component>
@@ -688,7 +684,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="Added Change password routes" />
     <MESSAGE value="Other updates" />
     <MESSAGE value="Updated Follower Count&#10;Disabled Self Follow&#10;Created a dummy for 0 images found" />
     <MESSAGE value="Vendor" />
@@ -713,7 +708,8 @@
     <MESSAGE value="Magic Link adjustment" />
     <MESSAGE value="Page title update" />
     <MESSAGE value="Laravel/Scout" />
-    <option name="LAST_COMMIT_MESSAGE" value="Laravel/Scout" />
+    <MESSAGE value="Page Title modification" />
+    <option name="LAST_COMMIT_MESSAGE" value="Page Title modification" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
