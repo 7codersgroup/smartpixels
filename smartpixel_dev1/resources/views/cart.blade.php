@@ -1,5 +1,6 @@
 @extends('layouts.app2')
 
+@section('title', __('Cart'))
 @section('content_new')
 
 <section class="main-content-wrapper">
@@ -9,26 +10,26 @@
             <div class="row">
 
                 <div class="col-12 col-lg-8">
-                    @if (\Cart::session(Auth::id())->isEmpty())
+                    @if (Cart::session(Auth::id())->isEmpty())
                         <div class="cart-title mt-50">
                             <h4>Your shopping cart is empty.</h4>
                         </div>
                     @else
-                    <div class="cart-title mt-50">
-                        <h4>Your Assets ({{\Cart::session(Auth::id())->getContent()->count()}} items)</h4>
-                    </div>
+                        <div class="cart-title mt-50">
+                            <h4>Your Assets ({{Cart::session(Auth::id())->getContent()->count()}} @if(Cart::session(Auth::id())->getContent()->count() == 1) item)@else items) @endif </h4>
+                        </div>
 
-                    <div class="cart-table clearfix">
-                        <table class="table table-responsive">
-                            <thead>
-                            <tr>
-                                <th></th>
-                                <th>Title</th>
-                                <th>Price</th>
-                            </tr>
+                        <div class="cart-table clearfix">
+                            <table class="table table-responsive">
+                                <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>Title</th>
+                                    <th>Price</th>
+                                </tr>
                             </thead>
                             <tbody>
-                            @foreach(\Cart::session(Auth::id())->getContent() as $item)
+                            @foreach(Cart::session(Auth::id())->getContent() as $item)
                             <tr>
                                 <td class="cart_product_img">
 
@@ -48,8 +49,8 @@
                             @endforeach
                             </tbody>
                         </table>
-                    </div>
-                        @endif
+                        </div>
+                    @endif
                 </div>
                 <div class="col-12 col-lg-4">
                     <div class="cart-summary">
@@ -58,11 +59,11 @@
                             {{csrf_field ()}}
                             <script src="https://js.paystack.co/v1/inline.js"></script>
                             <ul class="summary-table">
-                                <li><span>Subtotal:</span> <span>{{__('₦')}}{{ \Cart::getSubTotal(),2 }}</span></li>
+                                <li><span>Subtotal:</span> <span>{{__('₦')}}{{ Cart::getSubTotal(),2 }}</span></li>
                                 <li><span>Tax:</span>
-                                    <span>{{__('₦')}}{{ $tax =  \Cart::getSubTotal() * 0.075 }} (7.5%)</span></li>
+                                    <span>{{__('₦')}}{{ $tax =  Cart::getSubTotal() * 0.075 }} (7.5%)</span></li>
                                 <li><span>Total:</span>
-                                    <span>{{__('₦')}}{{ $total = \Cart::getSubTotal() + $tax }}</span></li>
+                                    <span>{{__('₦')}}{{ $total = Cart::getSubTotal() + $tax }}</span></li>
                             </ul>
                             <div class="cart-btn mt-100">
                                 <button class="btn btn-pixel w-100" onclick="payWithPaystack()">Checkout</button>

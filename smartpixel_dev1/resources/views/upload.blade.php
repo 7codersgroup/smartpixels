@@ -11,8 +11,8 @@
   <link rel="stylesheet" href="{{asset ('css/bootstrap.min.css')}}" />
   <link rel="stylesheet" href="{{asset ('css/all.css')}}" />
   <link rel="stylesheet" href="{{asset ('css/selectize.default.css')}}" />
-  <link rel="stylesheet" href="{{asset ('css/style.css')}}" />
-  <title>SmartPixels - Upload</title>
+  <link rel="stylesheet" href="{{asset ('css/style.css')}}"/>
+    <title>Upload Asset | Fricapix</title>
 </head>
 
 <body>
@@ -51,26 +51,28 @@
                     <li> Respect the intellectual property of others </li>
                   </ul>
                 </div>
-                <div class="upload-footer">
-                  <ul>
-                    <li><a href="terms-of-use.html">Term of Use</a></li>
-                    <li><a href="privacy-policy.html">Policy</a></li>
-                    <li><a href="#" title="Contact Support">Support</a></li>
-                  </ul>
-                </div>
+                  <div class="upload-footer">
+                      <ul>
+                          <li><a href="terms-of-use.html">Term of Use</a></li>
+                          <li><a href="privacy-policy.html">Policy</a></li>
+                          <li><a href="#" title="Contact Support">Support</a></li>
+                      </ul>
+                  </div>
               </div>
-              <div class="col-md-6 upload-registration" id="page-border-3">
-                <form role="form" enctype="multipart/form-data" method="post" action="{{ route('uploadImage')  }}"> 
-                @csrf
-                  <div class="upload-file input-group mb-3">
-                    <div class="custom-file">
-                      <input type="file" class="custom-file-input" name="image_name" id="validatedCustomFile" placeholder="" required >
-                      <label class="custom-file-label" or="validatedCustomFile">Drag and Drop Photos Here</label>
-                      <div class="form-row upload-drop-zone">
-                        <img src="./img/1x.png" />
-                        <button type="submit" class="btn">Browse</button>
-                      </div>
-                    </div>
+                <div class="col-md-6 upload-registration" id="page-border-3">
+                    <form role="form" enctype="multipart/form-data" method="post" action="{{ route('uploadImage')  }}">
+                        @csrf
+                        <div class="upload-file input-group mb-3">
+                            <div class="custom-file">
+                                <input type="file" class="custom-file-input" name="image_name" id="validatedCustomFile"
+                                       placeholder="" required>
+                                <label class="custom-file-label" or="validatedCustomFile">Drag and Drop Photos
+                                    Here</label>
+                                <div class="form-row upload-drop-zone">
+                                    <img src="./img/1x.png"/>
+                                    <button type="submit" class="btn">Browse</button>
+                                </div>
+                            </div>
                   </div>
 
                   <div class="form-group mb-4">

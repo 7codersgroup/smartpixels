@@ -1,7 +1,7 @@
 <!--		Footer section-->
 <section class="font-circular">
     <div class="container--flex cityline">
-        <img class="cityline__image" src="{{ asset ('img/cityline.svg')}}" alt="cityline"/>
+        <img class="cityline__image" loading="lazy" src="{{ asset ('img/cityline.svg')}}" alt="cityline"/>
     </div>
 
     <div class="footer-bg">
@@ -12,12 +12,12 @@
                         data-aos="fade-up"
                 >
                     <a href="{{route ('home')}}" class="logo"
-                    ><img src="{{asset ('img/logo.sv')}}g" alt="Fricapix logo" width="120"
+                    ><img src="{{asset ('img/fricapix-logo-mark-x2.png')}}" alt="fricapix logo" width="80"
                         /></a>
-                    <a href="#" class="email" title="Send a mail to Fricapix"
+                    <a href="#" class="email" title="Send a mail to fricapix"
                     >hello@fricapix.com</a
                     >
-                    <a href="#" class="phone" title="Call Fricapix"
+                    <a href="#" class="phone" title="Call fricapix"
                     >514.2505.2231</a
                     >
                 </div>
@@ -28,9 +28,9 @@
                 >
                     <h5 class="title">Quick Links</h5>
                     <ul class="list-unstyled">
-                        <li><a href="#" title="Fricapix blog">Blog</a></li>
+                        <li><a href="#" title="fricapix blog">Blog</a></li>
                         <li>
-                            <a href="#" title="Contact Fricapix for questions"
+                            <a href="#" title="Contact fricapix for questions"
                             >Contact Us</a
                             >
                         </li>
@@ -43,19 +43,19 @@
                 >
                     <h5 class="title">About us</h5>
                     <ul class="list-unstyled">
-                        <li><a href="#" title="About Fricapix">About us</a></li>
+                        <li><a href="#" title="About fricapix">About us</a></li>
                         <li>
-                            <a href="#" title="The team behind Fricapix">Team</a>
+                            <a href="#" title="The team behind fricapix">Team</a>
                         </li>
                         <li>
-                            <a href="#" title="Fricapix Media Resources">Media</a>
+                            <a href="#" title="fricapix Media Resources">Media</a>
                         </li>
                     </ul>
                 </div>
                 <!-- /.footer-list -->
                 <div class="col-lg-3 col-lg-2 col-sm-6 col-12 footer-information">
                     <h5 class="title">Our Address</h5>
-                    <p>Fricapix Plaza, Victoria Island <br />Lagos, Nigeria</p>
+                    <p>fricapix Plaza, Victoria Island <br />Lagos, Nigeria</p>
                 </div>
             </div>
         </div>
@@ -69,19 +69,19 @@
                         <li>
                             <a
                                     href="privacy-policy.html"
-                                    title="Fricapix privacy policy"
+                                    title="fricapix privacy policy"
                             >Privacy &amp; Policy.</a
                             >
                         </li>
                         <li>
                             <a
                                     href="faq.html"
-                                    title="Fricapix Frequently asked questions policy"
+                                    title="fricapix Frequently asked questions policy"
                             >Faq.</a
                             >
                         </li>
                         <li>
-                            <a href="terms.html" title="Fricapix Terms of Use"
+                            <a href="terms.html" title="fricapix Terms of Use"
                             >Terms.</a
                             >
                         </li>

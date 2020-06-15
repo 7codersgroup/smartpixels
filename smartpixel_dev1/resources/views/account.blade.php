@@ -1,5 +1,6 @@
 @extends('layouts.app')
 
+@section('title', __('Account Setup'))
 @section('content')
 <div class="page-body">
     <div class="wrapper">
@@ -74,8 +75,8 @@
                         </div>
                     @endif
 
-                  
-                        <form class="" method="POST" action="{{ route('verification.resend') }}">
+
+                            <form class="" method="POST" action="{{ route('verification.resend') }}">
                           @csrf
                           <button type="submit" class="btn btn-normal btn-block">
                             Send it Again

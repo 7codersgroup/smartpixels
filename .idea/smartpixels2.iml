@@ -50,6 +50,7 @@
       <excludeFolder url="file://$MODULE_DIR$/smartpixel_dev1/vendor/larapack/voyager-hooks" />
       <excludeFolder url="file://$MODULE_DIR$/smartpixel_dev1/vendor/laravel/framework" />
       <excludeFolder url="file://$MODULE_DIR$/smartpixel_dev1/vendor/laravel/passport" />
+      <excludeFolder url="file://$MODULE_DIR$/smartpixel_dev1/vendor/laravel/scout" />
       <excludeFolder url="file://$MODULE_DIR$/smartpixel_dev1/vendor/laravel/socialite" />
       <excludeFolder url="file://$MODULE_DIR$/smartpixel_dev1/vendor/laravel/tinker" />
       <excludeFolder url="file://$MODULE_DIR$/smartpixel_dev1/vendor/laravel/ui" />

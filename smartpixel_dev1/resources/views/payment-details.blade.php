@@ -1,5 +1,6 @@
 @extends('layouts.app')
 
+@section('title', __('Update Banking Details'))
 @section('content')
 
     <div class="page-body">
