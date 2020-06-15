@@ -16,7 +16,7 @@
                         </div>
                     @else
                         <div class="cart-title mt-50">
-                            <h4>Your Assets ({{Cart::session(Auth::id())->getContent()->count()}} items)</h4>
+                            <h4>Your Assets ({{Cart::session(Auth::id())->getContent()->count()}} @if(Cart::session(Auth::id())->getContent()->count() == 1) item)@else items) @endif </h4>
                         </div>
 
                         <div class="cart-table clearfix">
