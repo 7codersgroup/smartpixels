@@ -116,7 +116,8 @@ class Paystack
             $quantity = intval(request()->quantity);
 
             $data = [
-                "amount" => intval(request()->amount) * $quantity,
+              //  "amount" => intval(request()->amount) * $quantity,
+                "amount" => $request->session()->get('total') * $quantity,
                 "reference" => request()->reference,
                 "email" => request()->email,
                 "plan" => request()->plan,

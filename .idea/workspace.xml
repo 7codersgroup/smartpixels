@@ -23,39 +23,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cbd6f795-d52c-4941-aaa0-5721efb1051f" name="Default Changelist" comment="Page Title modification">
-      <change afterPath="$PROJECT_DIR$/smartpixel_dev1/public/img/LM HA (blue).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smartpixel_dev1/public/img/favicon_io.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smartpixel_dev1/public/img/favicon_io/android-chrome-192x192.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smartpixel_dev1/public/img/favicon_io/android-chrome-512x512.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smartpixel_dev1/public/img/favicon_io/apple-touch-icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smartpixel_dev1/public/img/favicon_io/favicon-16x16.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smartpixel_dev1/public/img/favicon_io/favicon-32x32.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smartpixel_dev1/public/img/favicon_io/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smartpixel_dev1/public/img/fricapix-artist-testimonial.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smartpixel_dev1/public/img/fricapix-curation-testimonial.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smartpixel_dev1/public/img/fricapix-logo-mark-x2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smartpixel_dev1/public/img/fricapix-logo-x2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smartpixel_dev1/public/img/fricapix-support.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smartpixel_dev1/public/img/placeholder_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smartpixel_dev1/public/img/placeholder_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smartpixel_dev1/public/img/placeholder_3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smartpixel_dev1/public/img/social_og_image.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smartpixel_dev1/.idea/laravel-plugin.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smartpixel_dev1/.idea/symfony2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/webServers.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartpixel_dev1/app/Http/Controllers/SearchController.php" beforeDir="false" afterPath="$PROJECT_DIR$/smartpixel_dev1/app/Http/Controllers/SearchController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartpixel_dev1/public/img/favicon/android-chrome-192x192.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartpixel_dev1/public/img/favicon/android-chrome-512x512.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartpixel_dev1/public/img/favicon/apple-touch-icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartpixel_dev1/public/img/favicon/favicon-16x16.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartpixel_dev1/public/img/favicon/favicon-32x32.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartpixel_dev1/public/img/favicon/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartpixel_dev1/public/img/favicon/site.webmanifest" beforeDir="false" afterPath="$PROJECT_DIR$/smartpixel_dev1/public/img/favicon_io/site.webmanifest" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smartpixel_dev1/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/smartpixel_dev1/.idea/deployment.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smartpixel_dev1/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/smartpixel_dev1/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/smartpixel_dev1/resources/views/cart.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/smartpixel_dev1/resources/views/cart.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartpixel_dev1/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/smartpixel_dev1/resources/views/home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartpixel_dev1/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/smartpixel_dev1/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartpixel_dev1/resources/views/layouts/footercity.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/smartpixel_dev1/resources/views/layouts/footercity.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartpixel_dev1/resources/views/layouts/ordinary_header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/smartpixel_dev1/resources/views/layouts/ordinary_header.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartpixel_dev1/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/views/404.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/smartpixel_dev1/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/views/404.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartpixel_dev1/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/views/minimal.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/smartpixel_dev1/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/views/minimal.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -303,7 +278,9 @@
       <workItem from="1591871397437" duration="8377000" />
       <workItem from="1591992869084" duration="598000" />
       <workItem from="1592053541098" duration="5737000" />
-      <workItem from="1592221023959" duration="5527000" />
+      <workItem from="1592221023959" duration="6297000" />
+      <workItem from="1592233785091" duration="572000" />
+      <workItem from="1592315790790" duration="1982000" />
     </task>
     <task id="LOCAL-00005" summary="Update on Liking an Image">
       <created>1588676253245</created>
@@ -750,10 +727,11 @@
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="275" y="42" key="#Deployment" timestamp="1591808303922">
+    <state x="275" y="42" key="#Deployment" timestamp="1592232477735">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="275" y="42" key="#Deployment/0.0.1366.768/1366.0.1600.900@0.0.1366.768" timestamp="1591808303922" />
+    <state x="275" y="42" key="#Deployment/0.0.1366.768@0.0.1366.768" timestamp="1592232477735" />
     <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1592137545687">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -764,6 +742,10 @@
     </state>
     <state x="1458" y="92" width="1416" height="716" key="DiffContextDialog/0.0.1366.768/1366.0.1600.900@1366.0.1600.900" timestamp="1591880484266" />
     <state x="47" y="-8" width="1209" height="611" maximized="true" key="DiffContextDialog/0.0.1366.768@0.0.1366.768" timestamp="1592222666895" />
+    <state x="92" y="92" width="1182" height="584" key="DirDiffDialog" timestamp="1592232478522">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="92" y="92" width="1182" height="584" key="DirDiffDialog/0.0.1366.768@0.0.1366.768" timestamp="1592232478522" />
     <state x="1908" y="162" key="FileChooserDialogImpl" timestamp="1591873267080">
       <screen x="1366" y="0" width="1600" height="900" />
     </state>

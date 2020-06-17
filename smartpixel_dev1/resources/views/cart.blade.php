@@ -64,6 +64,8 @@
                                     <span>{{__('₦')}}{{ $tax =  Cart::getSubTotal() * 0.075 }} (7.5%)</span></li>
                                 <li><span>Total:</span>
                                     <span>{{__('₦')}}{{ $total = Cart::getSubTotal() + $tax }}</span></li>
+                                {{session ()->put('total', $total)}}
+
                             </ul>
                             <div class="cart-btn mt-100">
                                 <button class="btn btn-pixel w-100" onclick="payWithPaystack()">Checkout</button>
