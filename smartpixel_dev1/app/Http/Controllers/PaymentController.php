@@ -86,6 +86,7 @@
                         'body' => '<p>'.array_values ($images).'</p>'
                     ];*/
                    // Mail::to (Auth::user ()->email)->send (new OrderMail($details));
+                    \Cart::session(Auth::id ())->clear();
                     dd ($images);
                     //return $status;
                 } else {

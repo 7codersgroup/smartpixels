@@ -61,7 +61,7 @@
                             <ul class="summary-table">
                                 <li><span>Subtotal:</span> <span>{{__('₦')}}{{ Cart::getSubTotal(),2 }}</span></li>
                                 <li><span>Tax:</span>
-                                    <span>{{__('₦')}}{{ $tax =  Cart::getSubTotal() * 0.075 }} (7.5%)</span></li>
+                                    <span>{{__('₦')}}{{ $tax =  Cart::getSubTotal() * 0.075 }} @if (Cart::session(Auth::id())->isEmpty()) @else (7.5%)@endif</span></li>
                                 <li><span>Total:</span>
                                     <span>{{__('₦')}}{{ $total = Cart::getSubTotal() + $tax }}</span></li>
                                 {{session ()->put('total', $total*100)}}
@@ -73,7 +73,7 @@
                                 {{session ()->put('ref', $ref)}}
                             </ul>
                             <div class="cart-btn mt-100">
-                                <button class="btn btn-pixel w-100" type="submit" onclick="">Checkout</button>
+                                <button class="btn btn-pixel w-100" type="submit" onclick="" @if (Cart::session(Auth::id())->isEmpty())disabled @endif>Checkout</button>
                             </div>
                         </form>
                     </div>

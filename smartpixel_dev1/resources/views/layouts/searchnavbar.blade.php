@@ -32,7 +32,7 @@
                         class="js-search-form"
                         name="query"
                 >
-                    @csrf
+                    {{csrf_field ()}}
                     <div class="container-relative white hero-input-group">
                         <div class="input-box" data-active="input">
                             <div class="container-table">
