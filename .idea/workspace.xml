@@ -23,14 +23,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cbd6f795-d52c-4941-aaa0-5721efb1051f" name="Default Changelist" comment="Page Title modification">
-      <change afterPath="$PROJECT_DIR$/smartpixel_dev1/.idea/laravel-plugin.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smartpixel_dev1/.idea/symfony2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/webServers.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/smartpixel_dev1/app/Http/Controllers/PaymentController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartpixel_dev1/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/smartpixel_dev1/.idea/deployment.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartpixel_dev1/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/smartpixel_dev1/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/smartpixel_dev1/resources/views/cart.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/smartpixel_dev1/resources/views/cart.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smartpixel_dev1/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/smartpixel_dev1/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smartpixel_dev1/vendor/unicodeveloper/laravel-paystack/src/Paystack.php" beforeDir="false" afterPath="$PROJECT_DIR$/smartpixel_dev1/vendor/unicodeveloper/laravel-paystack/src/Paystack.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,17 +44,6 @@
         <option value="JavaScript File" />
       </list>
     </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>Smartpixels</find>
-      <find>like</find>
-      <find>liked</find>
-      <find>id</find>
-    </findStrings>
-    <replaceStrings>
-      <replace>Fricapix</replace>
-    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
@@ -207,6 +193,7 @@
       <path value="$PROJECT_DIR$/smartpixel_dev1/vendor/cesargb/laravel-magiclink" />
       <path value="$PROJECT_DIR$/smartpixel_dev1/vendor/unicodeveloper/laravel-paystack" />
       <path value="$PROJECT_DIR$/smartpixel_dev1/vendor/laravel/scout" />
+      <path value="$PROJECT_DIR$/smartpixel_dev1/vendor/spatie/laravel-activitylog" />
     </include_path>
   </component>
   <component name="ProjectId" id="1d8OrgKl690APD57fqe5SpdFXPa" />
@@ -280,7 +267,7 @@
       <workItem from="1592053541098" duration="5737000" />
       <workItem from="1592221023959" duration="6297000" />
       <workItem from="1592233785091" duration="572000" />
-      <workItem from="1592315790790" duration="1982000" />
+      <workItem from="1592315790790" duration="2215000" />
     </task>
     <task id="LOCAL-00005" summary="Update on Liking an Image">
       <created>1588676253245</created>

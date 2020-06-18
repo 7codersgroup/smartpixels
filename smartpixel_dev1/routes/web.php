@@ -65,7 +65,8 @@
 		Route::post ('banking-details/add', 'BankingController@create')->name ('add-bank-details');
 		Route::get('profile-update',  ['as' => 'profile-update', 'uses' => 'ProfileController@edit']);
 		Route::post('profile-update',  'ProfileController@update')->name ('profileUpdate');
-		Route::get ('/payment/callback', 'PaymentController@handleGatewayCallback')->name ('paystack.callback');
+        Route::post('/pay', 'PaymentController@redirectToGateway')->name('pay');
+        Route::get ('/payment/callback', 'PaymentController@handleGatewayCallback')->name ('paystack.callback');
 	});
 
 
