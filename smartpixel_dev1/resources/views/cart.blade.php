@@ -69,7 +69,8 @@
                                 <input type="hidden" name="amount" value="{{ $total = Cart::getSubTotal() + $tax }}"> {{-- required in kobo --}}
                                 <input type="hidden" name="quantity" value="1">
                                 <input type="hidden" name="currency" value="NGN">
-                                <input type="hidden" name="reference" value="{{ \Paystack::genTranxRef() }}"> {{-- required --}}
+                                <input type="hidden" name="reference" value="{{ $ref = \Paystack::genTranxRef() }}"> {{-- required --}}
+                                {{session ()->put('ref', $ref)}}
                             </ul>
                             <div class="cart-btn mt-100">
                                 <button class="btn btn-pixel w-100" type="submit" onclick="">Checkout</button>

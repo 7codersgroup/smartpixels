@@ -135,7 +135,7 @@ class Paystack
                 /*
                 * to allow use of metadata on Paystack dashboard and a means to return additional data back to redirect url
                 * form need an input field: <input type="hidden" name="metadata" value="{{ json_encode($array) }}" >
-                *array must be set up as: $array = [ 'custom_fields' => [
+                * array must be set up as: $array = [ 'custom_fields' => [
                 *                                                            ['display_name' => "Cart Id", "variable_name" => "cart_id", "value" => "2"],
                 *                                                            ['display_name' => "Sex", "variable_name" => "sex", "value" => "female"],
                 *                                                            .
