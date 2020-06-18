@@ -10,6 +10,7 @@ use Overtrue\LaravelLike\Traits\Liker;
 
 /**
  * @method static first()
+ * @method static find(int|string|null $id)
  */
 class User extends \TCG\Voyager\Models\User implements MustVerifyEmail
 {
