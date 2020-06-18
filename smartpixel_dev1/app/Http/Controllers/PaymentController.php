@@ -3,12 +3,15 @@
     namespace App\Http\Controllers;
 
     use App\Image;
+    use App\Mail\MyTestMail;
+    use App\Mail\OrderMail;
     use App\Payments;
     use App\User;
     use Darryldecode\Cart\Cart;
     use Illuminate\Http\RedirectResponse;
     use Illuminate\Support\Arr;
     use Illuminate\Support\Facades\Auth;
+    use Illuminate\Support\Facades\Mail;
     use JD\Cloudder\Facades\Cloudder;
     use Unicodeveloper\Paystack\Exceptions\PaymentVerificationFailedException;
     use Unicodeveloper\Paystack\Paystack;
@@ -71,13 +74,18 @@
                     $payment->amount_paid = $paymentDetails['data']['amount'];
                     $payment->status = $paymentDetails['data']['status'];
                     $payment->channel = $paymentDetails['data']['channel'];
-                    $user->push ();
+                    $user->payments()->save($payment);
                     $status[0] = 'success';
                     $status[1] = 'Order Completed Successfully. Check your mail for details';
                     $images = array();
-                    foreach (Cart::session (Auth::id ())->getContent () as $item) {
+                    foreach (\Cart::session (Auth::id ())->getContent () as $item) {
                         $images = Arr::add ($images, $item->id, $this->retrievePrivateLink ($item->id));
                     }
+                    /*$details = [
+                        'title' => 'Your login link',
+                        'body' => '<p>'.array_values ($images).'</p>'
+                    ];*/
+                   // Mail::to (Auth::user ()->email)->send (new OrderMail($details));
                     dd ($images);
                     //return $status;
                 } else {
