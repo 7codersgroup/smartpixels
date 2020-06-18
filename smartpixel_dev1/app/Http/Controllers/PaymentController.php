@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Payments;
-use http\Client\Curl\User;
+use App\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Unicodeveloper\Paystack\Paystack;
@@ -22,7 +22,7 @@ class PaymentController extends Controller
 
     public function saveInvoice() {
        //$user = User::find(Auth::Id());
-        $user = \App\User::find(Auth::id ());
+        $user = User::find(Auth::id ());
         $payment = new Payments();
         $payment->req_amount = session()->get('total') * 1;
         $payment->reference = session()->get('ref');
@@ -30,40 +30,54 @@ class PaymentController extends Controller
     }
     /**
      * Obtain Paystack payment information
-     * @return void
+     * @return \Illuminate\Http\RedirectResponse
      * @throws \Unicodeveloper\Paystack\Exceptions\PaymentVerificationFailedException
      */
     public function handleGatewayCallback()
     {
         $paymentDetails = (new \Unicodeveloper\Paystack\Paystack)->getPaymentData();
-        $this->updatePayment ($paymentDetails);
-      //  dd($paymentDetails);
+        $status = $this->updatePayment ($paymentDetails);
+        return redirect()->route('home')->with($status[0], $status[1]);
+
+        //  dd($paymentDetails);
         // Now you have the payment details,
         // you can store the authorization_code in your db to allow for recurrent subscriptions
         // you can then redirect or do whatever you want
     }
 
     public function updatePayment($paymentDetails) {
-        $user = \App\User::find(Auth::id ());
+        $user = User::find(Auth::id ());
         $payment = $user->payments()
-                        ->where('reference', '=', $paymentDetails['reference'])
+                        ->where('reference', '=', $paymentDetails['data']['reference'])
                         ->first();
-        if($payment->req_amount != $paymentDetails['amount']) {
-            $payment->amount_paid = $paymentDetails['amount'];
-            $payment->status = $paymentDetails['status'];
-            $payment->channel = $paymentDetails['channel'];
+        if($payment->req_amount != $paymentDetails['data']['amount']) {
+            $payment->amount_paid = $paymentDetails['data']['amount'];
+            $payment->status = $paymentDetails['data']['status'];
+            $payment->channel = $paymentDetails['data']['channel'];
             $user->push();
-            redirect ()->route ('home')->with ('error', 'You made an invalid payment');
+            $status[0] = 'error'; $status[1] = 'You made an invalid payment';
+            return $status;
         } else {
-            $payment->amount_paid = $paymentDetails['amount'];
-            $payment->status = $paymentDetails['status'];
-            $payment->channel = $paymentDetails['channel'];
-            $user->push();
-            redirect ()->route ('home')->with ('success', 'Order Completed Successfully. Check your mail for details');
+            if('success' == strtolower ($paymentDetails['data']['amount'])) {
+                $payment->amount_paid = $paymentDetails['data']['amount'];
+                $payment->status = $paymentDetails['data']['status'];
+                $payment->channel = $paymentDetails['data']['channel'];
+                $user->push();
+                $status[0] = 'success'; $status[1] = 'Order Completed Successfully. Check your mail for details';
+
+                return $status;
+            } else {
+                $payment->amount_paid = $paymentDetails['data']['amount'];
+                $payment->status = $paymentDetails['data']['status'];
+                $payment->channel = $paymentDetails['data']['channel'];
+                $user->push();
+                $status[0] = 'success'; $status[1] = 'Your Payment was not successful';
+                return $status;
+            }
+
         }
 
-        $user->payments()->save($payment);
+        //$user->payments()->save($payment);
     }
-
 
 }
