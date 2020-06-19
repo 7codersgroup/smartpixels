@@ -10,6 +10,7 @@ use Overtrue\LaravelLike\Traits\Liker;
 
 /**
  * @method static first()
+ * @method static find(int|string|null $id)
  */
 class User extends \TCG\Voyager\Models\User implements MustVerifyEmail
 {
@@ -41,14 +42,23 @@ class User extends \TCG\Voyager\Models\User implements MustVerifyEmail
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
-	
+
 	public function profile()
 	{
 		return $this->hasOne(Profile::class);
 	}
-	
+
 	public function bank ()
 	{
 		return $this->hasOne (Banking::class);
 	}
+
+    public function payments ()
+    {
+        return $this->hasMany (Payments::class);
+    }
+
+    public function orders() {
+	    return $this->hasMany (Orders::class);
+    }
 }

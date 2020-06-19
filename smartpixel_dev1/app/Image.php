@@ -18,6 +18,7 @@ use Overtrue\LaravelLike\Traits\Likeable;
  * @property mixed tag
  * @property mixed public_id
  * @property  string url
+ * @method static where(string $string, string $string1, $imageId)
  */
 class Image extends Model
 {

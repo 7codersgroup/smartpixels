@@ -105,7 +105,7 @@
                                     </a>
 
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                                        @csrf
+                                        {{csrf_field ()}}
                                     </form>
                                 </li>
 
@@ -149,7 +149,7 @@
 
             <div class="padding-top-large motmot mt-4">
                 <form method="get" action="/search" class="js-search-form">
-                    @csrf
+
                     <div class="container-relative white hero-input-group">
                         <div class="input-box" data-active="input">
                             <div class="container-table">

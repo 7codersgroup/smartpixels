@@ -6,7 +6,7 @@
         >
             <a class="navbar-brand" href="{{route ('home')}}"
             ><img
-                        src="{{asset ('img/old_fricapix.png')}}"
+                        src="{{asset ('img/fricapix.png')}}"
                         alt="Fricapix logo"
                         width="90"
                         class="mob"
@@ -32,7 +32,7 @@
                         class="js-search-form"
                         name="query"
                 >
-                    @csrf
+
                     <div class="container-relative white hero-input-group">
                         <div class="input-box" data-active="input">
                             <div class="container-table">

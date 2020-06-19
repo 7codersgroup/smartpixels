@@ -116,13 +116,14 @@ class Paystack
             $quantity = intval(request()->quantity);
 
             $data = [
-                "amount" => intval(request()->amount) * $quantity,
+              //  "amount" => intval(request()->amount) * $quantity,
+                "amount" => session()->get('total') * $quantity,
                 "reference" => request()->reference,
-                "email" => request()->email,
+                "email" => \Auth::user()->email,
                 "plan" => request()->plan,
-                "first_name" => request()->first_name,
-                "last_name" => request()->last_name,
-                "callback_url" => request()->callback_url,
+                "first_name" => \Auth::user()->firstname,
+                "last_name" => \Auth::user()->lastname,
+                "callback_url" => 'http://testing.internationalglobalbuziness.com/payment/callback',
                 "currency" => (request()->currency != ""  ? request()->currency : "NGN"),
                 /*
                     Paystack allows for transactions to be split into a subaccount -
@@ -134,7 +135,7 @@ class Paystack
                 /*
                 * to allow use of metadata on Paystack dashboard and a means to return additional data back to redirect url
                 * form need an input field: <input type="hidden" name="metadata" value="{{ json_encode($array) }}" >
-                *array must be set up as: $array = [ 'custom_fields' => [
+                * array must be set up as: $array = [ 'custom_fields' => [
                 *                                                            ['display_name' => "Cart Id", "variable_name" => "cart_id", "value" => "2"],
                 *                                                            ['display_name' => "Sex", "variable_name" => "sex", "value" => "female"],
                 *                                                            .

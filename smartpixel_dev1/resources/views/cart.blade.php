@@ -55,18 +55,25 @@
                 <div class="col-12 col-lg-4">
                     <div class="cart-summary">
                         <h5>Cart Total</h5>
-                        <form>
+                        <form method="POST" action="{{ route('pay') }}" accept-charset="UTF-8" role="form">
                             {{csrf_field ()}}
                             <script src="https://js.paystack.co/v1/inline.js"></script>
                             <ul class="summary-table">
                                 <li><span>Subtotal:</span> <span>{{__('₦')}}{{ Cart::getSubTotal(),2 }}</span></li>
                                 <li><span>Tax:</span>
-                                    <span>{{__('₦')}}{{ $tax =  Cart::getSubTotal() * 0.075 }} (7.5%)</span></li>
+                                    <span>{{__('₦')}}{{ $tax =  Cart::getSubTotal() * 0.075 }} @if (Cart::session(Auth::id())->getContent()->count() >= 1) (7.5%) @endif</span></li>
                                 <li><span>Total:</span>
                                     <span>{{__('₦')}}{{ $total = Cart::getSubTotal() + $tax }}</span></li>
+                                {{session ()->put('total', $total*100)}}
+                                <input type="hidden" name="email" value="{{Auth::user()->email}}"> {{-- required --}}
+                                <input type="hidden" name="amount" value="{{ $total = Cart::getSubTotal() + $tax }}"> {{-- required in kobo --}}
+                                <input type="hidden" name="quantity" value="1">
+                                <input type="hidden" name="currency" value="NGN">
+                                <input type="hidden" name="reference" value="{{ $ref = \Paystack::genTranxRef() }}"> {{-- required --}}
+                                {{session ()->put('ref', $ref)}}
                             </ul>
                             <div class="cart-btn mt-100">
-                                <button class="btn btn-pixel w-100" onclick="payWithPaystack()">Checkout</button>
+                                <button class="btn btn-pixel w-100" type="submit" onclick="" @if (Cart::session(Auth::id())->isEmpty())disabled @endif>Checkout</button>
                             </div>
                         </form>
                     </div>
@@ -78,33 +85,3 @@
 
 
 @endsection
-<script>
-    function payWithPaystack() {
-        var handler = PaystackPop.setup({
-            key: '{{getenv('PAYSTACK_PUBLIC_KEY')}}',
-            email: '{{Auth::user()->email}}',
-            amount: {{$total * 100}},
-            currency: "NGN",
-            ref: '' + Math.floor((Math.random() * 1000000000) + 1), // generates a pseudo-unique reference. Please replace with a reference you generated. Or remove the line entirely so our API will generate one for you
-            firstname: 'Stephen',
-            lastname: 'King',
-            // label: "Optional string that replaces customer email"
-            metadata: {
-                custom_fields: [
-                    {
-                        display_name: "Mobile Number",
-                        variable_name: "mobile_number",
-                        value: "+2348012345678"
-                    }
-                ]
-            },
-            callback: function (response) {
-                alert('success. transaction ref is ' + response.reference);
-            },
-            onClose: function () {
-                alert('window closed');
-            }
-        });
-        handler.openIframe();
-    }
-</script>
