@@ -57,4 +57,8 @@ class User extends \TCG\Voyager\Models\User implements MustVerifyEmail
     {
         return $this->hasMany (Payments::class);
     }
+
+    public function orders() {
+	    return $this->hasMany (Orders::class);
+    }
 }

@@ -61,6 +61,7 @@
             $payment = $user->payments ()
                 ->where ('reference', '=', $paymentDetails['data']['reference'])
                 ->first ();
+            $order = $user->orders();
             if ($payment->req_amount != $paymentDetails['data']['amount']) {
                 $payment->amount_paid = $paymentDetails['data']['amount'];
                 $payment->status = $paymentDetails['data']['status'];
@@ -80,7 +81,11 @@
                     $images = array();
                     foreach (\Cart::session (Auth::id ())->getContent () as $item) {
                         $images = Arr::add ($images, $item->id, $this->retrievePrivateLink ($item->id));
+                        $order->order_id = $paymentDetails['data']['reference'];
+                        $order->image_id = $item->id;
+                        $user->orders()->save($order);
                     }
+
                     /*$details = [
                         'title' => 'Your login link',
                         'body' => '<p>'.array_values ($images).'</p>'
@@ -111,8 +116,6 @@
             $image->save ();
             $publicId = $image->public_id;
             return Cloudder::showPrivateUrl ($publicId, 'png');
-            // $image_url = Cloudder::showPrivateUrl($publicId, 'png');
-            // return MagicLink::create(new DownloadFileAction($image_url))->url;
         }
 
     }

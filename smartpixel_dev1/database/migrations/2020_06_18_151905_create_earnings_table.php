@@ -13,8 +13,11 @@ class CreateEarningsTable extends Migration
      */
     public function up()
     {
-        Schema::create('earnings', function (Blueprint $table) {
+        Schema::create('orders', function (Blueprint $table) {
             $table->id();
+            $table->foreignId ('user_id');
+            $table->string ('order_id');
+            $table->smallInteger ('image_id')->nullable ();
             $table->timestamps();
         });
     }
@@ -26,6 +29,6 @@ class CreateEarningsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('earnings');
+        Schema::dropIfExists('orders');
     }
 }
