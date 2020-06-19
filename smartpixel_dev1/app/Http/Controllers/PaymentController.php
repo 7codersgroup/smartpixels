@@ -5,6 +5,7 @@
     use App\Image;
     use App\Mail\MyTestMail;
     use App\Mail\OrderMail;
+    use App\Orders;
     use App\Payments;
     use App\User;
     use Darryldecode\Cart\Cart;
@@ -61,7 +62,7 @@
             $payment = $user->payments ()
                 ->where ('reference', '=', $paymentDetails['data']['reference'])
                 ->first ();
-            $order = $user->orders();
+
             if ($payment->req_amount != $paymentDetails['data']['amount']) {
                 $payment->amount_paid = $paymentDetails['data']['amount'];
                 $payment->status = $paymentDetails['data']['status'];
@@ -81,6 +82,7 @@
                     $images = array();
                     foreach (\Cart::session (Auth::id ())->getContent () as $item) {
                         $images = Arr::add ($images, $item->id, $this->retrievePrivateLink ($item->id));
+                        $order = new Orders();
                         $order->order_id = $paymentDetails['data']['reference'];
                         $order->image_id = $item->id;
                         $user->orders()->save($order);

@@ -61,7 +61,7 @@
                             <ul class="summary-table">
                                 <li><span>Subtotal:</span> <span>{{__('₦')}}{{ Cart::getSubTotal(),2 }}</span></li>
                                 <li><span>Tax:</span>
-                                    <span>{{__('₦')}}{{ $tax =  Cart::getSubTotal() * 0.075 }} @if (Cart::session(Auth::id())->isEmpty()) @else (7.5%)@endif</span></li>
+                                    <span>{{__('₦')}}{{ $tax =  Cart::getSubTotal() * 0.075 }} @if (Cart::session(Auth::id())->getContent()->count() >= 1) (7.5%) @endif</span></li>
                                 <li><span>Total:</span>
                                     <span>{{__('₦')}}{{ $total = Cart::getSubTotal() + $tax }}</span></li>
                                 {{session ()->put('total', $total*100)}}
