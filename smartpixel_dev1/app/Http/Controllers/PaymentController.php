@@ -94,6 +94,7 @@
                     ];*/
                    // Mail::to (Auth::user ()->email)->send (new OrderMail($details));
                     \Cart::session(Auth::id ())->clear();
+                    // Todo: Implement Order page and Order email
                     dd ($images);
                     //return $status;
                 } else {
