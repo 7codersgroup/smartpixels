@@ -1,5 +1,5 @@
 @extends('layouts.app')
-
+@section('title', __('Registration'))
 @section('content')
 <div class="page-body">
         <div class="wrapper">

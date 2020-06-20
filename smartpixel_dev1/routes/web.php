@@ -1,46 +1,46 @@
 <?php
-	
-	use App\Image;
-	use Illuminate\Http\Request;
-	use Illuminate\Support\Facades\Route;
-	
-	
-	/*
-	|--------------------------------------------------------------------------
-	| Web Routes
-	|--------------------------------------------------------------------------
-	|
-	| Here is where you can register web routes for your application. These
-	| routes are loaded by the RouteServiceProvider within a group which
-	| contains the "web" middleware group. Now create something great!
-	|
-	*/
-	
-	Route::get ('/', function () {
-		return view ('home');
-	});
-	Route::get ('/home', 'HomeController@index')->name ('/');
-	Route::get ('/home', 'HomeController@index')->name ('home');
-	//Route::get ('/home', 'HomeController@index')->name ('home');
-	Route::get ('/search', 'SearchController@search')->name ('search');
-	Route::get ('artist', 'ArtistController@index')->name ('artist');
-	Route::get ('/auth0/callback', '\Auth0\Login\Auth0Controller@callback')->name ('auth0-callback');
+
+    use App\Image;
+    use Illuminate\Http\Request;
+    use Illuminate\Support\Facades\Route;
+
+
+    /*
+    |--------------------------------------------------------------------------
+    | Web Routes
+    |--------------------------------------------------------------------------
+    |
+    | Here is where you can register web routes for your application. These
+    | routes are loaded by the RouteServiceProvider within a group which
+    | contains the "web" middleware group. Now create something great!
+    |
+    */
+
+    Route::get ('/', function () {
+        return view ('home');
+    });
+    Route::get ('/home', 'HomeController@index')->name ('/');
+    Route::get ('/home', 'HomeController@index')->name ('home');
+    //Route::get ('/home', 'HomeController@index')->name ('home');
+    Route::get ('/search', 'SearchController@search')->name ('search');
+    Route::get ('artist', 'ArtistController@index')->name ('artist');
+    Route::get ('/auth0/callback', '\Auth0\Login\Auth0Controller@callback')->name ('auth0-callback');
 	Route::get ('/login', 'Auth\Auth0IndexController@login')->name ('login');
 	Route::get ('/logout', 'Auth\Auth0IndexController@logout')->name ('logout')->middleware ('auth');
 	Route::get('auth/google', 'Auth\GoogleController@redirectToGoogle')->name ('google');
 	Route::get('auth/google/callback', 'Auth\GoogleController@handleGoogleCallback');
 	Route::post('/login/magic', 'Auth\LoginController@passwordLessLogin')->name ('magic-login');
-	
+
 	Auth::routes (['verify' => true]);
-	
+
 	Route::get ('verifydoc', 'VerifydocController@verifyDocs')->name ('verifydoc');
 	Route::post ('verifydoc', 'VerifydocController@VerifyDocPost')->name ('doc.verify.post');
-	
-	Route::get ('verify-number', 'VerifyNumberController@verifyNumber')->name ('verify-number');
+
+    Route::get ('verify-number', 'VerifyNumberController@verifyNumber')->name ('verify-number');
 	//Route::post('verifydoc', 'VerifydocController@VerifyDocPost')->name('doc.verify.post');
-	
-	
-	Route::group (['middleware' => 'auth'], function () {
+
+
+    Route::group (['middleware' => 'auth'], function () {
 		Route::get ('upload', 'UploadController@imageUpload')->name ('upload');
 		Route::post ('upload', 'UploadController@imageUploadPost')->name ('uploadImage');
 		Route::get ('checkout', 'CheckoutController@checkout')->name ('checkout');
@@ -65,13 +65,14 @@
 		Route::post ('banking-details/add', 'BankingController@create')->name ('add-bank-details');
 		Route::get('profile-update',  ['as' => 'profile-update', 'uses' => 'ProfileController@edit']);
 		Route::post('profile-update',  'ProfileController@update')->name ('profileUpdate');
-		Route::get ('/payment/callback', 'PaymentController@handleGatewayCallback')->name ('paystack.callback');
+        Route::post('/pay', 'PaymentController@redirectToGateway')->name('pay');
+        Route::get ('/payment/callback', 'PaymentController@handleGatewayCallback')->name ('paystack.callback');
 	});
-	
-	
-	//Route::get('users', 'ArtistController@users')->name('users');
-	
-	Route::any ('/search', function (Request $request) {
+
+
+    //Route::get('users', 'ArtistController@users')->name('users');
+
+    Route::any ('/search', function (Request $request) {
 		$q = $request->input ('query');
 		//$images = Image::where ( 'title', 'LIKE', '%' . $q . '%' )->orWhere ( 'description', 'LIKE', '%' . $q . '%' )->get ();
 		/*$images = DB::table('images')->join('users', 'user_id', '=', 'users.id')

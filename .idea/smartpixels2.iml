@@ -50,6 +50,7 @@
       <excludeFolder url="file://$MODULE_DIR$/smartpixel_dev1/vendor/larapack/voyager-hooks" />
       <excludeFolder url="file://$MODULE_DIR$/smartpixel_dev1/vendor/laravel/framework" />
       <excludeFolder url="file://$MODULE_DIR$/smartpixel_dev1/vendor/laravel/passport" />
+      <excludeFolder url="file://$MODULE_DIR$/smartpixel_dev1/vendor/laravel/scout" />
       <excludeFolder url="file://$MODULE_DIR$/smartpixel_dev1/vendor/laravel/socialite" />
       <excludeFolder url="file://$MODULE_DIR$/smartpixel_dev1/vendor/laravel/tinker" />
       <excludeFolder url="file://$MODULE_DIR$/smartpixel_dev1/vendor/laravel/ui" />
@@ -111,6 +112,7 @@
       <excludeFolder url="file://$MODULE_DIR$/smartpixel_dev1/vendor/sebastian/version" />
       <excludeFolder url="file://$MODULE_DIR$/smartpixel_dev1/vendor/seld/jsonlint" />
       <excludeFolder url="file://$MODULE_DIR$/smartpixel_dev1/vendor/seld/phar-utils" />
+      <excludeFolder url="file://$MODULE_DIR$/smartpixel_dev1/vendor/spatie/laravel-activitylog" />
       <excludeFolder url="file://$MODULE_DIR$/smartpixel_dev1/vendor/swiftmailer/swiftmailer" />
       <excludeFolder url="file://$MODULE_DIR$/smartpixel_dev1/vendor/symfony/console" />
       <excludeFolder url="file://$MODULE_DIR$/smartpixel_dev1/vendor/symfony/css-selector" />

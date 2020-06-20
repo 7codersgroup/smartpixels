@@ -1,5 +1,6 @@
 @include('layouts.ordinary_header')
 
+@section('title', __('Artist'))
 @extends('layouts.searchnavbar')
     <!--		second section-->
 
