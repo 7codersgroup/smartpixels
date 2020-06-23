@@ -22,7 +22,7 @@ use Overtrue\LaravelLike\Traits\Likeable;
  */
 class Image extends Model
 {
-    use Likeable, Searchable;
+    use Likeable;
 
     //
     /**
