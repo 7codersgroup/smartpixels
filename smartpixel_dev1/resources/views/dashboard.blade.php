@@ -79,7 +79,17 @@
                                     <img src="{{$image->url}}" class="card-img-top">
                                     <div class="card-body">
                                         <p>Likes <span> {{$image->likers()->get()->count()}}</span></p>
-                                        <p>Downloads <span> {{$image->downloads}}</span></p>
+                                        <p>Downloads <span> @if ($image->downloads == null)
+                                                    {{__(0)}}
+                                                @else
+                                                    @if($image->downloads >= 1000000)
+                                                        {{round($image->downloads/1000000, 1)."M"}}
+                                                    @elseif($image->downloads >= 1000)
+                                                        {{round($image->downloads/1000, 1)."K"}}
+                                                    @else
+                                                        {{$image->downloads}}
+                                                    @endif
+                                                @endif</span></p>
                                     </div>
                                 </div>
                             </div>
