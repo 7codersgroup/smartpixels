@@ -18,7 +18,7 @@ class DashboardController extends Controller
 	//	$images = DB::table('images')->where('user_id', '=', Auth::id ())->get();
 		$images = Image::where ( 'user_id', '=', Auth::id () )
 			->orderby ('created_at', 'desc')
-            ->paginate (3);
+            ->paginate (20);
 		$images_review = Image::where ([['user_id', '=', Auth::id ()], ['review', '=', 'PENDING']])->orderby ('created_at', 'desc')->paginate (15);
 		$images_approved = Image::where ([['user_id', '=', Auth::id ()], ['review', '=', 'APPROVED']])->orderby ('created_at', 'desc')->paginate (15);
 		$images_rejected = Image::where ([['user_id', '=', Auth::id ()], ['review', '=', 'REJECTED']])->orderby ('created_at', 'desc')->paginate (15);
