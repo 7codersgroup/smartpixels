@@ -29,11 +29,11 @@ return [
         'secret' => env('AWS_SECRET_ACCESS_KEY'),
         'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
     ],
-	
+
 	'google' => [
 		'client_id' => '837489115697-g9n6ji13k55gnoglsbl1m7j2abin3h9u.apps.googleusercontent.com',
 		'client_secret' => 'vDB1D6Q9mDUXPT-iinIm3sSF',
-		'redirect' => 'http://127.0.0.1:8000/auth/google/callback',
+		'redirect' => 'https://beta.fricapix.com/auth/google/callback',
 	],
 
 ];
