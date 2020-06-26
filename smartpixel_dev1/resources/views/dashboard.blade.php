@@ -29,7 +29,18 @@
         <div class="row py-3">
             <div class="col-lg-3 col-6">
                 <p class="small mb-0">Downloads</p>
-                <p class="small mb-0">{{$total_downloads}}</p>
+                <p class="small mb-0">@if ($total_downloads == null)
+                        {{__(0)}}
+                    @else
+                        @if($total_downloads >= 1000000)
+                            {{round($total_downloads/1000000, 1)."M"}}
+                        @elseif($total_downloads >= 1000)
+                            {{round($total_downloads/1000, 1)."K"}}
+                        @else
+                            {{$total_downloads}}
+                        @endif
+                    @endif</p>
+
             </div>
 
             <div class="col-lg-3 col-6">
