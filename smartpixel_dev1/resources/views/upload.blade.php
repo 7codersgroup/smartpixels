@@ -66,7 +66,7 @@
                             <div class="custom-file">
                                 <input type="file" class="custom-file-input" name="image_name" id="validatedCustomFile"
                                        placeholder="" required>
-                                <label class="custom-file-label" or="validatedCustomFile">Drag and Drop Photos
+                                <label class="custom-file-label" for="validatedCustomFile">Drag and Drop Photos
                                     Here</label>
                                 <div class="form-row upload-drop-zone">
                                     <img src="{{asset ('./img/1x.png')}}"/>
@@ -107,7 +107,11 @@
 
                   <div class="form-group mb-4">
                     <label for="cost_price">Cost Price<span> *</span></label>
-                    <input class="form-control" type="text" id="cost_price" name="price" required placeholder="Enter the price you wish to sell this asset" onkeypress="if ( isNaN( String.fromCharCode(event.keyCode) )) return false;" />
+                    <input class="form-control" id="cost_price" name="price"
+                           onkeypress="if ( isNaN( String.fromCharCode(event.keyCode) )) return false;"
+                           placeholder="Enter the price you wish to sell this asset"
+                           required
+                           type="number"/>
                   </div>
 
                   <div class="form-group upload-check">
