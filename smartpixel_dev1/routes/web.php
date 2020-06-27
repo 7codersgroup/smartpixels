@@ -89,7 +89,7 @@
 
         $images = Image::where(function ($query) use ($q) {
             $query->where('title', 'LIKE', '%' . $q . '%')
-                ->where ('review', 'PENDING');
+                ->where ('review', 'APPROVED');
         })->orWhere(function($query) use ($q) {
             $query->where('description', 'LIKE', '%' . $q . '%')
                 ->where ('review', 'APPROVED');
@@ -105,7 +105,8 @@
 			return view ('search', compact ('images'));
 		} else {
 			$request->flashOnly ('query');
-			return view ('search', compact ('images'), ['success', 'No related Image found. Try to search again !']);
+			return view ('search', compact ('images'),
+                ['success', 'No related Image found. Try to search again !']);
 		}
 	});
 
