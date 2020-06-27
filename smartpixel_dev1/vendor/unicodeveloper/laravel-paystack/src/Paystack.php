@@ -123,7 +123,7 @@ class Paystack
                 "plan" => request()->plan,
                 "first_name" => \Auth::user()->firstname,
                 "last_name" => \Auth::user()->lastname,
-                "callback_url" => 'http://testing.internationalglobalbuziness.com/payment/callback',
+                "callback_url" => 'https://beta.fricapix.com/payment/callback',
                 "currency" => (request()->currency != ""  ? request()->currency : "NGN"),
                 /*
                     Paystack allows for transactions to be split into a subaccount -

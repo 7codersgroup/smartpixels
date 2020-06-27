@@ -1,6 +1,6 @@
 @extends('layouts.app2')
 
-@section('title', __('Cart'))
+@section('title', __('African Stock Images'))
 @section('content_new')
 
 <section class="main-content-wrapper">

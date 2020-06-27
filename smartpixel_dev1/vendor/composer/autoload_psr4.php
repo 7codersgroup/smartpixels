@@ -56,6 +56,7 @@ return array(
     'Prophecy\\' => array($vendorDir . '/phpspec/prophecy/src/Prophecy'),
     'PhpParser\\' => array($vendorDir . '/nikic/php-parser/lib/PhpParser'),
     'PhpOption\\' => array($vendorDir . '/phpoption/phpoption/src/PhpOption'),
+    'Pelago\\' => array($vendorDir . '/pelago/emogrifier/src'),
     'Overtrue\\LaravelLike\\' => array($vendorDir . '/overtrue/laravel-like/src'),
     'Overtrue\\LaravelFollow\\' => array($vendorDir . '/overtrue/laravel-follow/src'),
     'Opis\\Closure\\' => array($vendorDir . '/opis/closure/src'),
@@ -120,4 +121,5 @@ return array(
     'Asm89\\Stack\\' => array($vendorDir . '/asm89/stack-cors/src/Asm89/Stack'),
     'Arrilot\\Widgets\\' => array($vendorDir . '/arrilot/laravel-widgets/src'),
     'App\\' => array($baseDir . '/app'),
+    'Algolia\\AlgoliaSearch\\' => array($vendorDir . '/algolia/algoliasearch-client-php/src'),
 );

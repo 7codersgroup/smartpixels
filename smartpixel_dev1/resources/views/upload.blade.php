@@ -24,10 +24,10 @@
       </div>
       <div class="page">
         <div class="upload-image-1">
-          <img src="./img/camera.png" alt="">
+          <img src="{{asset ('./img/camera.png')}}" alt="">
         </div>
         <div class="upload-image-2">
-          <img src="./img/camera-1.png" alt="">
+          <img src="{{asset ('./img/camera-1.png')}}" alt="">
         </div>
         <section class="upload-page">
           <div class="container-fluid">
@@ -66,10 +66,10 @@
                             <div class="custom-file">
                                 <input type="file" class="custom-file-input" name="image_name" id="validatedCustomFile"
                                        placeholder="" required>
-                                <label class="custom-file-label" or="validatedCustomFile">Drag and Drop Photos
+                                <label class="custom-file-label" for="validatedCustomFile">Drag and Drop Photos
                                     Here</label>
                                 <div class="form-row upload-drop-zone">
-                                    <img src="./img/1x.png"/>
+                                    <img src="{{asset ('./img/1x.png')}}"/>
                                     <button type="submit" class="btn">Browse</button>
                                 </div>
                             </div>
@@ -78,13 +78,13 @@
                   <div class="form-group mb-4">
                     <label for="title">Title<span> *</span></label>
                     <input class="form-control" id="title" name="title"
-                           placeholder="Enter the image title or alt text (this can be beneficial for search engine)" />
+                           placeholder="Enter the image title or alt text (this can be beneficial for search engine)" required/>
                   </div>
 
                   <div class="form-group mb-4">
                     <label for="img_description">Brief Description<span> *</span></label>
                     <textarea class="form-control" id="img_description" name="description"
-                              placeholder="Give a very short description of your image"></textarea>
+                              placeholder="Give a very short description of your image" required></textarea>
                   </div>
 
                   <div class="form-group mb-4">
@@ -95,7 +95,7 @@
                   </div>
 
                   <div class="form-group mb-4"><label for="categoty">Category<span> *</span></label>
-                    <select class="custom-select" id="category" name="category">
+                    <select class="custom-select" id="category" name="category" >
                       <option selected disabled>Select image category</option>
                     </select>
                   </div>
@@ -107,7 +107,11 @@
 
                   <div class="form-group mb-4">
                     <label for="cost_price">Cost Price<span> *</span></label>
-                    <input class="form-control" type="text" id="cost_price" name="price" placeholder="Enter the price you wish to sell this asset" onkeypress="if ( isNaN( String.fromCharCode(event.keyCode) )) return false;" />
+                    <input class="form-control" id="cost_price" name="price"
+                           onkeypress="if ( isNaN( String.fromCharCode(event.keyCode) )) return false;"
+                           placeholder="Enter the price you wish to sell this asset"
+                           required
+                           type="number"/>
                   </div>
 
                   <div class="form-group upload-check">
@@ -117,14 +121,14 @@
                     </div>
 
                     <div class="custom-control custom-checkbox">
-                      <input type="checkbox" class="custom-control-input" id="content_right" name="content_right">
+                      <input type="checkbox" class="custom-control-input" id="content_right" name="content_right" required>
                       <label class="custom-control-label" for="content_right">I ONLY UPLOADED CONTENT I OWN RIGHT TO, AND
                         NOT COPIED IMAGES</label>
                     </div>
 
                     <div class="custom-control custom-checkbox">
                       <input type="checkbox" class="custom-control-input" id="creative_common_agreement"
-                             name="creative_common_agreement">
+                             name="creative_common_agreement" required>
                       <label class="custom-control-label" for="creative_common_agreement">I AGREE THAT MY IMAGES ARE
                         RELEASED UNDER
                         CREATIVE COMMON CCO</label>
@@ -132,7 +136,7 @@
                   </div>
                   <div class="form-row">
                     <div class="col-md-6">
-                      <button type="submit" id="cancel-button" class="btn btn-block btn-lg">Cancel</button>
+                      <button href="{{route ('home')}}" id="cancel-button" class="btn btn-block btn-lg">Cancel</button>
                     </div>
                     <div class="col-md-6">
                       <button type="submit" id="save-button" class="btn btn-block btn-lg">Upload</button>

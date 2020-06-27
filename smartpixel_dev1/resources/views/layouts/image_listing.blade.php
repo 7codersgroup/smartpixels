@@ -28,7 +28,17 @@
                 <div>
                     <p class="img-title mb-0">{{$detail->title}}</p>
                     <div class="stats">
-                        <i class="fa fa-cloud-download"> </i> 2k
+                        <i class="fa fa-cloud-download"> </i> @if ($detail->downloads == null)
+                            {{__(0)}}
+                        @else
+                            @if($detail->downloads >= 1000000)
+                                {{round($detail->downloads/1000000, 1)."M"}}
+                            @elseif($detail->downloads >= 1000)
+                                {{round($detail->downloads/1000, 1)."K"}}
+                            @else
+                                {{$detail->downloads}}
+                            @endif
+                        @endif
                         <i class="fa fa-heart"> </i> {{ $detail->likers()->get()->count() }}
                     </div>
                 </div>

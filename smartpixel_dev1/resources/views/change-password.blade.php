@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', __('Change Password'))
+@section('title', __('African Stock Images'))
 @section('content')
 
     <div class="page-body">

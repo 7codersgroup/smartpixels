@@ -1,5 +1,5 @@
 @extends('layouts.app')
-
+@section('title', __('African Stock Images'))
 @section('content')
 <div class="page-body-2">
     <div class="wrapper">

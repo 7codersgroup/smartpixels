@@ -34,7 +34,7 @@
             //$user = User::find(Auth::Id());
             $user = User::find (Auth::id ());
             $payment = new Payments();
-            $payment->req_amount = session ()->get ('total') * 1;
+            $payment->req_amount = (session ()->get ('total') * 1) / 100;
             $payment->reference = session ()->get ('ref');
             $user->payments ()->save ($payment);
         }
@@ -63,8 +63,8 @@
                 ->where ('reference', '=', $paymentDetails['data']['reference'])
                 ->first ();
 
-            if ($payment->req_amount != $paymentDetails['data']['amount']) {
-                $payment->amount_paid = $paymentDetails['data']['amount'];
+            if ($payment->req_amount != ($paymentDetails['data']['amount'] / 100)) {
+                $payment->amount_paid = $paymentDetails['data']['amount'] / 100;
                 $payment->status = $paymentDetails['data']['status'];
                 $payment->channel = $paymentDetails['data']['channel'];
                 $user->push ();
@@ -73,7 +73,7 @@
                 return $status;
             } else {
                 if ('success' == strtolower ($paymentDetails['data']['status'])) {
-                    $payment->amount_paid = $paymentDetails['data']['amount'];
+                    $payment->amount_paid = $paymentDetails['data']['amount'] / 100;
                     $payment->status = $paymentDetails['data']['status'];
                     $payment->channel = $paymentDetails['data']['channel'];
                     $user->payments()->save($payment);
@@ -98,7 +98,7 @@
                     dd ($images);
                     //return $status;
                 } else {
-                    $payment->amount_paid = $paymentDetails['data']['amount'];
+                    $payment->amount_paid = $paymentDetails['data']['amount'] / 100;
                     $payment->status = $paymentDetails['data']['status'];
                     $payment->channel = $paymentDetails['data']['channel'];
                     $user->push ();

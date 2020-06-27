@@ -16,7 +16,7 @@
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <title>Dashboard | Fricapix</title>
+    <title>African Stock Images | Fricapix</title>
 </head>
 
 <body class="dashboard">
@@ -29,7 +29,18 @@
         <div class="row py-3">
             <div class="col-lg-3 col-6">
                 <p class="small mb-0">Downloads</p>
-                <p class="small mb-0">{{$total_downloads}}</p>
+                <p class="small mb-0">@if ($total_downloads == null)
+                        {{__(0)}}
+                    @else
+                        @if($total_downloads >= 1000000)
+                            {{round($total_downloads/1000000, 1)."M"}}
+                        @elseif($total_downloads >= 1000)
+                            {{round($total_downloads/1000, 1)."K"}}
+                        @else
+                            {{$total_downloads}}
+                        @endif
+                    @endif</p>
+
             </div>
 
             <div class="col-lg-3 col-6">
@@ -79,7 +90,17 @@
                                     <img src="{{$image->url}}" class="card-img-top">
                                     <div class="card-body">
                                         <p>Likes <span> {{$image->likers()->get()->count()}}</span></p>
-                                        <p>Downloads <span> {{$image->downloads}}</span></p>
+                                        <p>Downloads <span> @if ($image->downloads == null)
+                                                    {{__(0)}}
+                                                @else
+                                                    @if($image->downloads >= 1000000)
+                                                        {{round($image->downloads/1000000, 1)."M"}}
+                                                    @elseif($image->downloads >= 1000)
+                                                        {{round($image->downloads/1000, 1)."K"}}
+                                                    @else
+                                                        {{$image->downloads}}
+                                                    @endif
+                                                @endif</span></p>
                                     </div>
                                 </div>
                             </div>
@@ -88,8 +109,10 @@
                 </div>
             </div>
         </div>
-    </div>
 
+    </div>
+    {{--Todo: Dtee fix pagination position--}}
+    {{ $images->links() }}
     <div class="tab-pane fade" id="nav-approved" role="tabpanel" aria-labelledby="nav-approved-tab">
         <div class="dashboard-explore">
 
@@ -102,7 +125,17 @@
                                     <img src="{{$image->url}}" class="card-img-top">
                                     <div class="card-body">
                                         <p>Likes <span> {{$image->likers()->get()->count()}}</span></p>
-                                        <p>Downloads <span> {{$image->downloads}}</span></p>
+                                        <p>Downloads <span> @if ($image->downloads == null)
+                                                    {{__(0)}}
+                                                @else
+                                                    @if($image->downloads >= 1000000)
+                                                        {{round($image->downloads/1000000, 1)."M"}}
+                                                    @elseif($image->downloads >= 1000)
+                                                        {{round($image->downloads/1000, 1)."K"}}
+                                                    @else
+                                                        {{$image->downloads}}
+                                                    @endif
+                                                @endif</span></p>
                                     </div>
                                 </div>
                             </div>
@@ -126,7 +159,17 @@
                                     <img src="{{$image->url}}" class="card-img-top" alt="{{$image->title}}">
                                     <div class="card-body">
                                         <p>Likes <span> {{$image->likers()->get()->count()}}</span></p>
-                                        <p>Downloads <span> {{$image->downloads}}</span></p>
+                                        <p>Downloads <span> @if ($image->downloads == null)
+                                                    {{__(0)}}
+                                                @else
+                                                    @if($image->downloads >= 1000000)
+                                                        {{round($image->downloads/1000000, 1)."M"}}
+                                                    @elseif($image->downloads >= 1000)
+                                                        {{round($image->downloads/1000, 1)."K"}}
+                                                    @else
+                                                        {{$image->downloads}}
+                                                    @endif
+                                                @endif</span></p>
                                     </div>
                                 </div>
                             </div>
@@ -149,7 +192,17 @@
                                     <img src="{{$image->url}}" class="card-img-top">
                                     <div class="card-body">
                                         <p>Likes <span> {{$image->likers()->get()->count()}}</span></p>
-                                        <p>Downloads <span> {{$image->downloads}}</span></p>
+                                        <p>Downloads <span> @if ($image->downloads == null)
+                                                    {{__(0)}}
+                                                @else
+                                                    @if($image->downloads >= 1000000)
+                                                        {{round($image->downloads/1000000, 1)."M"}}
+                                                    @elseif($image->downloads >= 1000)
+                                                        {{round($image->downloads/1000, 1)."K"}}
+                                                    @else
+                                                        {{$image->downloads}}
+                                                    @endif
+                                                @endif</span></p>
                                     </div>
                                 </div>
                             </div>
