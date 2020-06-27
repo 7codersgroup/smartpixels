@@ -52,7 +52,17 @@
                         </div>--}}
                         <div class="col-4">
                             <p class="small mb-1">Downloads</p>
-                            <p>{{$total_downloads}}</p>
+                            <p>@if ($total_downloads == null)
+                                    {{__(0)}}
+                                @else
+                                    @if($total_downloads >= 1000000)
+                                        {{round($total_downloads/1000000, 1)."M"}}
+                                    @elseif($total_downloads >= 1000)
+                                        {{round($total_downloads/1000, 1)."K"}}
+                                    @else
+                                        {{$total_downloads}}
+                                    @endif
+                                @endif</p>
                         </div>
                     </div>
                 </div>
