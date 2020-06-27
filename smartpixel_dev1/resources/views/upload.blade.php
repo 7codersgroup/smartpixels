@@ -24,10 +24,10 @@
       </div>
       <div class="page">
         <div class="upload-image-1">
-          <img src="./img/camera.png" alt="">
+          <img src="{{asset ('./img/camera.png')}}" alt="">
         </div>
         <div class="upload-image-2">
-          <img src="./img/camera-1.png" alt="">
+          <img src="{{asset ('./img/camera-1.png')}}" alt="">
         </div>
         <section class="upload-page">
           <div class="container-fluid">
@@ -69,7 +69,7 @@
                                 <label class="custom-file-label" or="validatedCustomFile">Drag and Drop Photos
                                     Here</label>
                                 <div class="form-row upload-drop-zone">
-                                    <img src="./img/1x.png"/>
+                                    <img src="{{asset ('./img/1x.png')}}"/>
                                     <button type="submit" class="btn">Browse</button>
                                 </div>
                             </div>
