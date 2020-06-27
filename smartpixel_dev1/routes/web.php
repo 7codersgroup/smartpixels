@@ -73,19 +73,33 @@
     //Route::get('users', 'ArtistController@users')->name('users');
 
     Route::any ('/search', function (Request $request) {
-		$q = $request->input ('query');
+		 $q = $request->input ('query');
 		//$images = Image::where ( 'title', 'LIKE', '%' . $q . '%' )->orWhere ( 'description', 'LIKE', '%' . $q . '%' )->get ();
 		/*$images = DB::table('images')->join('users', 'user_id', '=', 'users.id')
 				->where ( 'title', 'LIKE', '%' . $q . '%' )
 				->orWhere ( 'description', 'LIKE', '%' . $q . '%' )
 				->get ();*/
-		$images = Image::where ('title', 'LIKE', '%' . $q . '%')
+		/*$images = Image::where ('title', 'LIKE', '%' . $q . '%')
 			->orWhere ('description', 'LIKE', '%' . $q . '%')
 			->orWhere ('tag', 'LIKE', '%' . $q . '%')
 			->where ('review', '==', 'APPROVED')
 			//->where ('review', '!=', 'REJECTED')
-			->orderby ('created_at')
-			->paginate (15);
+			->orderby ('created_at', 'desc')
+			->paginate (15);*/
+
+        $images = Image::where(function ($query) use ($q) {
+            $query->where('title', 'LIKE', '%' . $q . '%')
+                ->where ('review', 'PENDING');
+        })->orWhere(function($query) use ($q) {
+            $query->where('description', 'LIKE', '%' . $q . '%')
+                ->where ('review', 'APPROVED');
+        })->orWhere(function($query) use ($q) {
+            $query->where('tag', 'LIKE', '%' . $q . '%')
+                ->where ('review', 'APPROVED');
+        })->orderby ('created_at', 'desc')
+            ->paginate (15);
+       // ->dd();
+
 		$request->flashOnly ('query');
 		if (count ($images) > 0) {
 			return view ('search', compact ('images'));
