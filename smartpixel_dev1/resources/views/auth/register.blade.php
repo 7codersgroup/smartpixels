@@ -130,7 +130,7 @@
                                         <input aria-describedby="button-addon2" autocomplete="new-password"
                                                class="form-control"
                                                name="password_confirmation"
-                                               placeholder="Comfirm password" required
+                                               placeholder="Confirm password" required
                                                type="password"/>
                                     </div>
                                 </div>

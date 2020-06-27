@@ -63,11 +63,18 @@
                     </div>
                     <div class="col-10">
                       <label>E-mail Verification <span></span></label><br>
-                      <label class="label-small">
+                        @if  (Auth::user()->email_verified_at == null)
+                        <label class="label-small">
                         Your e-mail has not been verified, click the "Send Mail" button to complete
                         the verification
-                      </label>
+                        </label>
+                        @else
+                            <label class="label-small">
+                                Your e-mail has been verified.
+                            </label>
+                        @endif
                       <div class="form-row accounts-button">
+                          @if  (Auth::user()->email_verified_at == null)
                         <div class="col-">
                         @if (session('resent'))
                         <div class="alert alert-success" role="alert">
@@ -75,19 +82,20 @@
                         </div>
                     @endif
 
-
                             <form class="" method="POST" action="{{ route('verification.resend') }}">
-                          @csrf
+                                {{csrf_field ()}}
                           <button type="submit" class="btn btn-normal btn-block">
                             Send it Again
                           </button>
                         </form>
                         </div>
+                          @else
                         <div class="col- my-auto">
                           <button type="submit" class="btn btn-verified btn-block">
                             Verified
                           </button>
                         </div>
+                          @endif
                       </div>
                     </div>
                   </div>
