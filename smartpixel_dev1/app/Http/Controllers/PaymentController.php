@@ -47,8 +47,8 @@
         public function handleGatewayCallback ()
         {
             $paymentDetails = (new Paystack)->getPaymentData ();
-            $this->updatePayment ($paymentDetails);
-            return redirect (\route ('home'))->with ('success', 'Order Completed Successfully. Check your mail for details');
+            $status = $this->updatePayment ($paymentDetails);
+            return redirect (\route ('home'))->with ($status[0], $status[1]);
 
             //  dd($paymentDetails);
             // Now you have the payment details,
@@ -62,6 +62,7 @@
             $payment = $user->payments ()
                 ->where ('reference', '=', $paymentDetails['data']['reference'])
                 ->first ();
+            $paymentModel = new Payments();
 
             if ($payment->req_amount != ($paymentDetails['data']['amount'] / 100)) {
                 $payment->amount_paid = $paymentDetails['data']['amount'] / 100;
@@ -70,6 +71,12 @@
                 $user->push ();
                 $status[0] = 'error';
                 $status[1] = 'You made an invalid payment';
+
+                Activity()
+                    ->performedOn($paymentModel)
+                    ->causedBy(Auth::user ())
+                    ->withProperties(['amount' => $paymentDetails['data']['amount'] / 100, 'reference' => $paymentDetails['data']['reference']])
+                    ->log('Payment was not successful');
                 return $status;
             } else {
                 if ('success' == strtolower ($paymentDetails['data']['status'])) {
@@ -88,19 +95,22 @@
                         $user->orders()->save($order);
                     }
 
-                    /*$details = [
-                        'title' => 'Your login link',
-                        'body' => '<p>'.array_values ($images).'</p>'
-                    ];*/
-                   // Mail::to (Auth::user ()->email)->send (new OrderMail($details));
                     \Cart::session(Auth::id ())->clear();
-                    // Todo: Implement Order page and Order email
-                    $details = $images;
-                    //dd ($details, $images);
+
+                    Activity()
+                        ->performedOn($paymentModel)
+                        ->causedBy(Auth::user ())
+                        ->withProperties([
+                            'amount' => $paymentDetails['data']['amount'] / 100,
+                            'order_id' => $order->order_id,
+                            'reference' => $paymentDetails['data']['reference']
+                            ])
+                        ->log('Made a successful order');
                     Mail::to (Auth::user()->email)->send (new OrderMail($images));
-                    return redirect (\route ('home'))->with ('success', 'Order Completed Successfully. Check your mail for details');
-                   // dd ($images);
-                    //return $status;
+                    $status[0] = 'success';
+                    $status[1] = 'Order completed successfully. Check your mail for details';
+                    return $status;
+                    //return redirect (\route ('home'))->with ('success', 'Order Completed Successfully. Check your mail for details');
                 } else {
                     $payment->amount_paid = $paymentDetails['data']['amount'] / 100;
                     $payment->status = $paymentDetails['data']['status'];
@@ -108,9 +118,13 @@
                     $user->push ();
                     $status[0] = 'error';
                     $status[1] = 'Your Payment was not successful';
+                    Activity()
+                        ->performedOn($paymentModel)
+                        ->causedBy(Auth::user ())
+                        ->withProperties(['amount' => $paymentDetails['data']['amount'] / 100, 'reference' => $paymentDetails['data']['reference']])
+                        ->log('Payment was not successful');
                     return $status;
                 }
-
             }
 
             //$user->payments()->save($payment);
