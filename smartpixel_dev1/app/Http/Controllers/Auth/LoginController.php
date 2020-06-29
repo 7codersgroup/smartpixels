@@ -43,9 +43,6 @@ class LoginController extends Controller
         $this->middleware('guest')->except('logout');
     }
 
-	/**
-	 *Todo: Link with magic link form to allow login with magic link
-	 */
 	public function passwordLessLogin() {
 		$this->validate (request (), [
 			'magic_link_email' => 'required'
@@ -61,12 +58,9 @@ class LoginController extends Controller
 				'email' => request ('magic_link_email')
 			];
 			Mail::to (request ('magic_link_email'))->send (new MyTestMail($details));
-			return back ()->with ('success', 'Kindly check your email for the Magic Link');
+			return back ()->with ('success', 'Kindly check your email for the Magic Login Link');
 		} else {
-			//dd ("Email Blocked");
 			return redirect (\route ('register'))->with ('error', 'You do not have an account with us, Kindly register to continue');
-
-			//	redirect ('/register')->with ('error', 'Kindly register to use magic link');
 		}
 
 		/*$urlToDashBoard = MagicLink::create(
