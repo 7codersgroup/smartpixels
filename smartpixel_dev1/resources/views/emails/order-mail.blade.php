@@ -48,7 +48,7 @@
 
                                                                                 @php $i =1 @endphp
                                                                                 @foreach($details as $image)
-                                                                                    <a href="{{$image}}" style="min-width:196px;border-top:13px solid;border-bottom:13px solid;border-right:24px solid;border-left:24px solid;border-color:#004071;border-radius:4px;background-color:#004071;color:#ffffff;font-size:18px;line-height:18px;word-break:break-word;display:inline-block;text-align:center;font-weight:400;text-decoration:none!important" target="_blank"> Download now {{$i}}</a>
+                                                                                    <a href="{{$image}}" style="min-width:196px;border-top:13px solid;border-bottom:13px solid;border-right:24px solid;border-left:24px solid;border-color:#004071;border-radius:4px;background-color:#004071;color:#ffffff;font-size:18px;line-height:18px;word-break:break-word;display:inline-block;text-align:center;font-weight:400;text-decoration:none!important" target="_blank"> Download {{$i}}</a>
                                                                                     @php $i++ @endphp
                                                                                 @endforeach
                                                                                 <br><br>
