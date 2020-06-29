@@ -10,7 +10,7 @@ use Illuminate\Queue\SerializesModels;
 class MyTestMail extends Mailable
 {
     use Queueable, SerializesModels;
-    
+
     public $details;
 
     /**
@@ -31,6 +31,6 @@ class MyTestMail extends Mailable
     public function build()
     {
         return $this->subject ('Magic Login Link')
-	        ->view('emails.testMail');
+	        ->view('emails.magic-mail');
     }
 }

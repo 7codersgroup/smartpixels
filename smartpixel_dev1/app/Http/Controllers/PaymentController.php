@@ -47,8 +47,8 @@
         public function handleGatewayCallback ()
         {
             $paymentDetails = (new Paystack)->getPaymentData ();
-            $status = $this->updatePayment ($paymentDetails);
-            return redirect ()->route ('home')->with ($status[0], $status[1]);
+            $this->updatePayment ($paymentDetails);
+            return redirect (\route ('home'))->with ('success', 'Order Completed Successfully. Check your mail for details');
 
             //  dd($paymentDetails);
             // Now you have the payment details,
@@ -95,7 +95,11 @@
                    // Mail::to (Auth::user ()->email)->send (new OrderMail($details));
                     \Cart::session(Auth::id ())->clear();
                     // Todo: Implement Order page and Order email
-                    dd ($images);
+                    $details = $images;
+                    //dd ($details, $images);
+                    Mail::to (Auth::user()->email)->send (new OrderMail($images));
+                    return redirect (\route ('home'))->with ('success', 'Order Completed Successfully. Check your mail for details');
+                   // dd ($images);
                     //return $status;
                 } else {
                     $payment->amount_paid = $paymentDetails['data']['amount'] / 100;
