@@ -16,7 +16,7 @@ class OrderMail extends Mailable
     /**
      * Create a new message instance.
      *
-     * @return void
+     * @param $details
      */
     public function __construct($details)
     {
@@ -31,6 +31,6 @@ class OrderMail extends Mailable
     public function build()
     {
         return $this->subject ('Your order was successful')
-	        ->view('emails.testMail');
+	        ->view('emails.order-mail');
     }
 }
