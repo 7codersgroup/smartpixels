@@ -61,9 +61,9 @@
                             <ul class="summary-table">
                                 <li><span>Subtotal:</span> <span>{{__('₦')}}{{ number_format (Cart::getSubTotal(),2) }}</span></li>
                                 <li><span>Tax:</span>
-                                    <span>{{__('₦')}}{{ number_format ($tax =  Cart::getSubTotal() * 0.075,2,'.','.') }} @if (Cart::session(Auth::id())->getContent()->count() >= 1) (7.5%) @endif</span></li>
+                                    <span>{{__('₦')}}{{ number_format ($tax =  Cart::getSubTotal() * 0.075,2) }} @if (Cart::session(Auth::id())->getContent()->count() >= 1) (7.5%) @endif</span></li>
                                 <li><span>Total:</span>
-                                    <span>{{__('₦')}}{{ number_format ($total = Cart::getSubTotal() + $tax,2,'.','.') }}</span></li>
+                                    <span>{{__('₦')}}{{ number_format ($total = Cart::getSubTotal() + $tax,2) }}</span></li>
                                 {{session ()->put('total', $total*100)}}
                                 <input type="hidden" name="email" value="{{Auth::user()->email}}"> {{-- required --}}
                                 <input type="hidden" name="amount" value="{{ $total = Cart::getSubTotal() + $tax }}"> {{-- required in kobo --}}

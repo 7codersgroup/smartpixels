@@ -44,11 +44,10 @@
                 </div>
 
                 <dd>
-
                     <input type="hidden" name="imageId" value="{{ $detail->id }}">
                 </dd>
 
-                <button class="btn btn-primary ml-auto" type="submit" data-toggle="modal"
+                <button class="btn btn-primary ml-auto"  data-toggle="modal"
                         data-target="#addToCart">Buy
                 </button>
 

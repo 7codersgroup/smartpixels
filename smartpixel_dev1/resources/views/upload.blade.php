@@ -94,9 +94,13 @@
 
                   </div>
 
-                  <div class="form-group mb-4"><label for="categoty">Category<span> *</span></label>
+                  <div class="form-group mb-4"><label for="category">Category<span> *</span></label>
                     <select class="custom-select" id="category" name="category" >
                       <option selected disabled>Select image category</option>
+                        @foreach($category as $cat)
+                            {{$category}}
+                            <option value="{{ $cat->id }}" {{--{{$company->shopping_id == $shopping->id  ? 'selected' : ''}}--}}>{{ucwords ($cat->category)}}</option>
+                        @endforeach
                     </select>
                   </div>
 
