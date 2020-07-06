@@ -39,9 +39,8 @@
     Route::get ('verify-number', 'VerifyNumberController@verifyNumber')->name ('verify-number');
 	//Route::post('verifydoc', 'VerifydocController@VerifyDocPost')->name('doc.verify.post');
 
-
-    Route::group (['middleware' => 'auth'], function () {
-		Route::get ('upload', 'UploadController@imageUpload')->name ('upload');
+    Route::group (['middleware' => 'auth','verified'], function () {
+		Route::get ('upload', 'UploadController@imageUpload')->name ('upload')->middleware ('verified');
 		Route::post ('upload', 'UploadController@imageUploadPost')->name ('uploadImage');
 		Route::get ('checkout', 'CheckoutController@checkout')->name ('checkout');
 		Route::get ('account', 'AccountController@account')->name ('account');
