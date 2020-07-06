@@ -55,7 +55,7 @@
 
             <div class="col-lg-3 col-6">
                 <p class="small mb-0">Available Earnings</p>
-                <p class="small mb-0">&#8358; 5,000,000<a href="" data-toggle="tooltip" data-placement="bottom"
+                <p class="small mb-0">&#8358;{{number_format ($earning['current_balance'], 2)}}<a href="" data-toggle="tooltip" data-placement="bottom"
                                                           title="To request payment you need at least $25 in available earnings. Additionally, you should not have other pending payouts, and 45 days must have passed since your first sale.">
                         Payout <i class="fa fa-arrow-right"></i></a></p>
             </div>

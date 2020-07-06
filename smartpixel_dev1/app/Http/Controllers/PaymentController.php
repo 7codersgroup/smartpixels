@@ -149,6 +149,7 @@
             $publicId = $image->public_id;
             $earning = Earning::updateOrCreate(['user_id' => $image->user_id]);
             $earning->current_balance = ($earning->current_balance + $image->price);
+            $earning->total_income = ($earning->total_income + $earning->current_balance);
             $earning->save();
             return Cloudder::showPrivateUrl ($publicId, 'png');
         }
