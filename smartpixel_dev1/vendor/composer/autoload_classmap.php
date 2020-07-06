@@ -69,6 +69,7 @@ return array(
     'Algolia\\AlgoliaSearch\\Support\\UserAgent' => $vendorDir . '/algolia/algoliasearch-client-php/src/Support/UserAgent.php',
     'App\\Banking' => $baseDir . '/app/Banking.php',
     'App\\CacheStorage' => $baseDir . '/app/CacheStorage.php',
+    'App\\Category' => $baseDir . '/app/Category.php',
     'App\\Console\\Kernel' => $baseDir . '/app/Console/Kernel.php',
     'App\\DBStorage' => $baseDir . '/app/DBStorage.php',
     'App\\DatabaseStorageModel' => $baseDir . '/app/DatabaseStorageModel.php',
