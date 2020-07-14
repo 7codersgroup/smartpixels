@@ -41,7 +41,7 @@
                         <div class="col-md-6 signup-registration order-first order-lg-last"
                              id="page-border-3">
                             <form method="post" action="{{ route('register') }}">
-                        @csrf
+                        {{csrf_field ()}}
                                 <a
                                         href="{{url ('auth/google')}}"
                                         type="button"
