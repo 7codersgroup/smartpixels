@@ -1,64 +1,74 @@
 <?php
-	
+
 	namespace App\Http\Controllers;
-	
-	use JD\Cloudder\Facades\Cloudder;
+
+	use App\Category;
+    use Cloudinary;
+    use Cloudinary\Uploader;
+    use Illuminate\Contracts\Foundation\Application;
+    use Illuminate\Contracts\View\Factory;
+    use Illuminate\Http\RedirectResponse;
+    use Illuminate\Http\Response;
+    use Illuminate\Validation\ValidationException;
+    use Illuminate\View\View;
+    use JD\Cloudder\Facades\Cloudder;
 	use Illuminate\Http\Request;
 	use Ixudra\Curl\Facades\Curl;
 	use Illuminate\Support\Facades\Auth;
 	use App\Image;
 	use UxWeb\SweetAlert\SweetAlert;
 	use RealRashid\SweetAlert\Facades\Alert;
-	
+
 	class UploadController extends Controller
 	{
 		/**
 		 * Display a listing of the resource.
 		 *
-		 * @return \Illuminate\Http\Response
+		 * @return Application|Factory|Response|View
 		 */
 		public function imageUpload ()
 		{
-			return view ('upload');
+		    $category = Category::get ()->sortBy('category');
+			return view ('upload', compact ('category'));
 		}
-		
+
 		/**
 		 * Display a listing of the resource.
 		 *
 		 * @param Request $request
-		 * @return \Illuminate\Http\Response
-		 * @throws \Illuminate\Validation\ValidationException
+		 * @return RedirectResponse|Response
+		 * @throws ValidationException
 		 */
 		public function imageUploadPost (Request $request)
 		{
 			$this->validate ($request, [
 				'image_name' => 'required|mimes:jpeg,bmp,jpg,png|between:1, 6000',
 			]);
-			
-			\Cloudinary::config(array(
+
+			Cloudinary::config(array(
 				"cloud_name" => env('CLOUDINARY_CLOUD_NAME'),
 				"api_key" => env('CLOUDINARY_API_KEY'),
 				"api_secret" => env('CLOUDINARY_API_SECRET'),
 				"secure" => true
 			));
-			
-			$image_name = $request->file ('image_name')->getRealPath ();;
-			//Cloudder::upload ('Fricapix/preview/' . $image_name, null);
+
+			$image_name = $request->file ('image_name')->getRealPath ();
+            //Cloudder::upload ('Fricapix/preview/' . $image_name, null);
 			$options = ["public_id"=>"","folder"=>"Fricapix", "type"=>"private", "sign_url"=>true,
 				"eager"=>array("transformation"=>"Main")];
-			
+
 			//Cloudder::upload ($image_name, null, $options);
 			list($width, $height) = getimagesize ($image_name);
-			
-			$result = \Cloudinary\Uploader::upload($image_name,  $options);
+
+			$result = Uploader::upload($image_name,  $options);
 			$image_url = $result['eager'][0]['secure_url'];
 			$public_id = $result['public_id'];
-			
+
 			//Save images
 			$this->saveImages ($request, $image_url, $public_id);
 			return redirect ()->route ('dashboard')->with ('status', 'Image Uploaded Successfully');
 		}
-		
+
 		/**
 		 * @param Request $request
 		 * @param $image_url
@@ -79,7 +89,7 @@
 			$image->location = $request['location'];
 			$image->category = $request['category'];
 			$image->review = 'PENDING';
-			
+
 			$image->save ();
 		}
 	}

@@ -22,7 +22,7 @@ use Overtrue\LaravelLike\Traits\Likeable;
  */
 class Image extends Model
 {
-    use Likeable, Searchable;
+    use Likeable;
 
     //
     /**
@@ -37,5 +37,9 @@ class Image extends Model
 	public static function find ($imageId)
 	{
 
+    }
+    public function category ()
+    {
+        return $this->hasOne (Category::class);
     }
 }

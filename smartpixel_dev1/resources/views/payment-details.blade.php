@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', __('Update Banking Details'))
+@section('title', __('African Stock Images'))
 @section('content')
 
     <div class="page-body">

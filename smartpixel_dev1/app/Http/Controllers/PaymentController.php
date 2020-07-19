@@ -9,6 +9,7 @@
     use App\Payments;
     use App\User;
     use Darryldecode\Cart\Cart;
+    use ErrorException;
     use Illuminate\Http\RedirectResponse;
     use Illuminate\Support\Arr;
     use Illuminate\Support\Facades\Auth;
@@ -34,7 +35,7 @@
             //$user = User::find(Auth::Id());
             $user = User::find (Auth::id ());
             $payment = new Payments();
-            $payment->req_amount = session ()->get ('total') * 1;
+            $payment->req_amount = (session ()->get ('total') * 1) / 100;
             $payment->reference = session ()->get ('ref');
             $user->payments ()->save ($payment);
         }
@@ -48,7 +49,7 @@
         {
             $paymentDetails = (new Paystack)->getPaymentData ();
             $status = $this->updatePayment ($paymentDetails);
-            return redirect ()->route ('home')->with ($status[0], $status[1]);
+            return redirect (\route ('home'))->with ($status[0], $status[1]);
 
             //  dd($paymentDetails);
             // Now you have the payment details,
@@ -59,54 +60,80 @@
         public function updatePayment ($paymentDetails)
         {
             $user = User::find (Auth::id ());
-            $payment = $user->payments ()
-                ->where ('reference', '=', $paymentDetails['data']['reference'])
-                ->first ();
+            try{
+                $payment = $user->payments ()
+                    ->where ('reference', '=', $paymentDetails['data']['reference'])
+                    ->first ();
 
-            if ($payment->req_amount != $paymentDetails['data']['amount']) {
-                $payment->amount_paid = $paymentDetails['data']['amount'];
-                $payment->status = $paymentDetails['data']['status'];
-                $payment->channel = $paymentDetails['data']['channel'];
-                $user->push ();
-                $status[0] = 'error';
-                $status[1] = 'You made an invalid payment';
-                return $status;
-            } else {
-                if ('success' == strtolower ($paymentDetails['data']['status'])) {
-                    $payment->amount_paid = $paymentDetails['data']['amount'];
-                    $payment->status = $paymentDetails['data']['status'];
-                    $payment->channel = $paymentDetails['data']['channel'];
-                    $user->payments()->save($payment);
-                    $status[0] = 'success';
-                    $status[1] = 'Order Completed Successfully. Check your mail for details';
-                    $images = array();
-                    foreach (\Cart::session (Auth::id ())->getContent () as $item) {
-                        $images = Arr::add ($images, $item->id, $this->retrievePrivateLink ($item->id));
-                        $order = new Orders();
-                        $order->order_id = $paymentDetails['data']['reference'];
-                        $order->image_id = $item->id;
-                        $user->orders()->save($order);
-                    }
+                $paymentModel = new Payments();
 
-                    /*$details = [
-                        'title' => 'Your login link',
-                        'body' => '<p>'.array_values ($images).'</p>'
-                    ];*/
-                   // Mail::to (Auth::user ()->email)->send (new OrderMail($details));
-                    \Cart::session(Auth::id ())->clear();
-                    // Todo: Implement Order page and Order email
-                    dd ($images);
-                    //return $status;
-                } else {
-                    $payment->amount_paid = $paymentDetails['data']['amount'];
+                if ($payment->req_amount != ($paymentDetails['data']['amount'] / 100)) {
+                    $payment->amount_paid = $paymentDetails['data']['amount'] / 100;
                     $payment->status = $paymentDetails['data']['status'];
                     $payment->channel = $paymentDetails['data']['channel'];
                     $user->push ();
                     $status[0] = 'error';
-                    $status[1] = 'Your Payment was not successful';
-                    return $status;
-                }
+                    $status[1] = 'You made an invalid payment';
 
+                    Activity()
+                        ->performedOn($paymentModel)
+                        ->causedBy(Auth::user ())
+                        ->withProperties(['amount' => $paymentDetails['data']['amount'] / 100, 'reference' => $paymentDetails['data']['reference']])
+                        ->log('Payment was not successful');
+                    return $status;
+                } else {
+                    if ('success' == strtolower ($paymentDetails['data']['status'])) {
+                        $payment->amount_paid = $paymentDetails['data']['amount'] / 100;
+                        $payment->status = $paymentDetails['data']['status'];
+                        $payment->channel = $paymentDetails['data']['channel'];
+                        $user->payments()->save($payment);
+                        $status[0] = 'success';
+                        $status[1] = 'Order Completed Successfully. Check your mail for details';
+                        $images = array();
+                        foreach (\Cart::session (Auth::id ())->getContent () as $item) {
+                            $images = Arr::add ($images, $item->id, $this->retrievePrivateLink ($item->id));
+                            $order = new Orders();
+                            $order->order_id = $paymentDetails['data']['reference'];
+                            $order->image_id = $item->id;
+                            $user->orders()->save($order);
+                        }
+
+                        \Cart::session(Auth::id ())->clear();
+
+                        Activity()
+                            ->performedOn($paymentModel)
+                            ->causedBy(Auth::user ())
+                            ->withProperties([
+                                'amount' => $paymentDetails['data']['amount'] / 100,
+                                'order_id' => $order->order_id,
+                                'reference' => $paymentDetails['data']['reference']
+                            ])
+                            ->log('Made a successful order');
+                        Mail::to (Auth::user()->email)->send (new OrderMail($images));
+                        $status[0] = 'success';
+                        $status[1] = 'Order completed successfully. Check your mail for details';
+                        return $status;
+                        //return redirect (\route ('home'))->with ('success', 'Order Completed Successfully. Check your mail for details');
+                    } else {
+                        $payment->amount_paid = $paymentDetails['data']['amount'] / 100;
+                        $payment->status = $paymentDetails['data']['status'];
+                        $payment->channel = $paymentDetails['data']['channel'];
+                        $user->push ();
+                        $status[0] = 'error';
+                        $status[1] = 'Your Payment was not successful';
+                        Activity()
+                            ->performedOn($paymentModel)
+                            ->causedBy(Auth::user ())
+                            ->withProperties(['amount' => $paymentDetails['data']['amount'] / 100, 'reference' => $paymentDetails['data']['reference']])
+                            ->log('Payment was not successful');
+                        return $status;
+                    }
+                }
+            } catch (ErrorException $exception) {
+                $status[0] = 'error';
+                $status[1] = 'You made an invalid payment';
+                //dd($exception);
+                return $status;
             }
 
             //$user->payments()->save($payment);

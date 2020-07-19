@@ -1,5 +1,6 @@
+@section('title', __('African Stock Images'))
 @include('layouts.ordinary_header')
-@section('title', __('Search'))
+
 @extends('layouts.searchnavbar')
 
 <!--   navigation ends-->

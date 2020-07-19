@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" autoUpload="Always" serverName="Testing" uploadOnCheckin="e118cfb9-9761-4d58-b5d2-a1b48a37cac6">
+  <component name="PublishConfigData" autoUpload="Always" serverName="fricapix" uploadOnCheckin="ec62e9d1-8ec5-4ce3-a7fa-0d500912482f">
     <serverData>
       <paths name="Testing">
         <serverdata>
@@ -23,6 +23,13 @@
           </mappings>
         </serverdata>
       </paths>
+      <paths name="fricapix">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
       <paths name="vogue_users">
         <serverdata>
           <mappings>
@@ -31,7 +38,7 @@
         </serverdata>
       </paths>
     </serverData>
-    <option name="myUploadOnCheckinName" value="Testing" />
+    <option name="myUploadOnCheckinName" value="fricapix" />
     <option name="myAutoUpload" value="ALWAYS" />
   </component>
 </project>

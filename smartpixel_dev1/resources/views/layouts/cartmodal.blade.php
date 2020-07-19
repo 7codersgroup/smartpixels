@@ -1,4 +1,4 @@
-@if ($message = Session::get('add'))
+
 <!-- Button trigger modal -->
 {{--
 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#addToCart">
@@ -30,4 +30,3 @@
         </div>
     </div>
 </div>
-@endif

@@ -1,5 +1,5 @@
 @extends('layouts.app')
-
+@section('title', __('African Stock Images'))
 @section('content')
 
 <div class="page-body">
@@ -39,7 +39,7 @@
                                     </label>
                                     <div class="input-group">
                                         <select class="form-control" id="exampleFormControlSelect1"
-                                            aria-describedby="button-addon1" name="country"> 
+                                            aria-describedby="button-addon1" name="country">
                                             <option>Please select your nationality</option>
                                             <option>2</option>
                                             <option>3</option>
