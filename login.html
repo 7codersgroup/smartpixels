@@ -101,11 +101,11 @@
                                 </div>
                             </div>
                             <div class="col-md-6 login-registration" id="page-border-3">
-                                <form method="get" action="dashboard.html" id="normal_auth">
+                                <form method="post" action="https://postman-echo.com/post" id="normal_auth">
                                     <div class="form-group mb-4">
                                         <label for="exampleInputEmail1">Email Address <span> *</span>
                                         </label>
-                                        <input type="email" class="form-control" placeholder="name@example.com" />
+                                        <input type="email" class="form-control" name="email" placeholder="name@example.com" />
                                     </div>
 
                                     <div class="row">
@@ -119,7 +119,7 @@
                                             Password<span> *</span>
                                         </label>
                                         <div class="input-group">
-                                            <input type="password" id="password" class="form-control" placeholder="Password"
+                                            <input type="password" name="current-password" id="password" class="form-control" placeholder="Password"
                                                    aria-describedby="button-addon2" />
                                             <div class="input-group-append">
                                                 <button class="btn btn-outline-secondary" type="button" id="button-addon2">
@@ -138,15 +138,14 @@
                                         </div>
                                     </div>
 
-                                    <button
-                                            type="button"
-                                            id="google-button"
-                                            class="btn btn-lg btn-block mt-3"
-                                            >
-                                        <img width="20px" style="margin-right:8px" alt="Google sign-in"
-                                             src="img/512px-Google_Logo.svg" />
+                                    <a
+                                       type="button"
+                                       id="google-button"
+                                       class="btn btn-lg btn-block mt-3"
+                                       >
+                                        <img width="20px" style="margin-right:8px" alt="Google sign-in" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/157px-Google_%22G%22_Logo.svg.png" />
                                         Login with Google
-                                    </button>
+                                    </a>
 
                                     <p class="text-center my-2">Or</p>
 
