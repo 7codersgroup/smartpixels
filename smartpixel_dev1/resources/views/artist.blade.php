@@ -19,7 +19,10 @@
                     </div>
 
                     <div class="my-3">
-                        @if (Auth::user() != $user)
+                        <p class="text-center font-weight-500 mb-2">{{$user->firstname}} {{$user->lastname}}</p>
+                        <p class="text-center small">Adam Perez is a freelance photographer and filmmaker based in Los Angeles, CA. His work centers on intimate stories that expose the nuances of race, gender, identity, and culture.</p>
+
+                    @if (Auth::user() != $user)
                             <button class="btn btn-pixel-outline btn-block follow" data-id="{{ $user->id }}">
                                 <strong>
                                     @if(Auth::user()->isFollowing($user))
