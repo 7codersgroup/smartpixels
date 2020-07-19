@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Earning;
 use App\Image;
 use App\User;
 use Illuminate\Http\Request;
@@ -26,9 +27,9 @@ class DashboardController extends Controller
 		$total_likes = Image::where ( 'images.user_id', '=', Auth::id () )
 			->join('likes', 'likeable_id', '=', 'images.id')
 			->count();
+		$earning = Earning::where('user_id', '=', Auth::id ())->first();
 
-
-		return view('dashboard', compact ('images', 'images_approved', 'images_review', 'images_rejected', 'total_downloads', 'total_likes'));
+		return view('dashboard', compact ('images', 'images_approved', 'images_review', 'images_rejected', 'total_downloads', 'total_likes', 'earning'));
 		//return redirect()->route('dashboard');
 
 	}

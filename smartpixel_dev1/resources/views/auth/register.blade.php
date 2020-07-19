@@ -41,7 +41,7 @@
                         <div class="col-md-6 signup-registration order-first order-lg-last"
                              id="page-border-3">
                             <form method="post" action="{{ route('register') }}">
-                        @csrf
+                        {{csrf_field ()}}
                                 <a
                                         href="{{url ('auth/google')}}"
                                         type="button"
@@ -49,7 +49,7 @@
                                         class="btn btn-lg btn-block mt-0"
                                 >
                                     <img width="20px" style="margin-right:8px" alt="Google sign-in"
-                                         src="{{asset ('img/512px-Google_Logo.svg')}}"/>
+                                         src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/157px-Google_%22G%22_Logo.svg.png"/>
                                     Signup with Google
                                 </a>
                                 <p class="text-center my-4">Or</p>

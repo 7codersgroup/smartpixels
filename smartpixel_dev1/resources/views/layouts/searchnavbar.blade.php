@@ -6,9 +6,9 @@
         >
             <a class="navbar-brand" href="{{route ('home')}}"
             ><img
-                        src="{{asset ('img/fricapix.png')}}"
+                        src="{{asset ('img/fricapix-logo-x2.png')}}"
                         alt="Fricapix logo"
-                        width="90"
+                        width="120"
                         class="mob"
                 /></a>
             <button

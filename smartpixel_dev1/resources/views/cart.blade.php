@@ -40,7 +40,7 @@
                                     <h5>{{ Str::words($item->name,20) }}</h5>
                                 </td>
                                 <td class="price">
-                                    <p class="my-0">{{$item->price}}</p>
+                                    <p class="my-0">{{number_format ($item->price,2)}}</p>
                                     <p class="mb-0"><a href="{{ route('checkout.cart.remove', $item->id) }}"
                                                        class="pixel-color small"><i class="fa fa-trash"></i> Remove</a>
                                     </p>

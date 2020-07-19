@@ -2,6 +2,7 @@
 
     namespace App\Http\Controllers;
 
+    use App\Earning;
     use App\Image;
     use App\Mail\MyTestMail;
     use App\Mail\OrderMail;
@@ -109,6 +110,7 @@
                                 'reference' => $paymentDetails['data']['reference']
                             ])
                             ->log('Made a successful order');
+
                         Mail::to (Auth::user()->email)->send (new OrderMail($images));
                         $status[0] = 'success';
                         $status[1] = 'Order completed successfully. Check your mail for details';
@@ -145,6 +147,10 @@
             $image->downloads += 1;
             $image->save ();
             $publicId = $image->public_id;
+            $earning = Earning::updateOrCreate(['user_id' => $image->user_id]);
+            $earning->current_balance = ($earning->current_balance + $image->price);
+            $earning->total_income = ($earning->total_income + $earning->current_balance);
+            $earning->save();
             return Cloudder::showPrivateUrl ($publicId, 'png');
         }
 

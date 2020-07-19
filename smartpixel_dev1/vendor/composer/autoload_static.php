@@ -819,6 +819,7 @@ class ComposerStaticInit148756e72cef7729b6a7f924e705178b
         'Algolia\\AlgoliaSearch\\Support\\UserAgent' => __DIR__ . '/..' . '/algolia/algoliasearch-client-php/src/Support/UserAgent.php',
         'App\\Banking' => __DIR__ . '/../..' . '/app/Banking.php',
         'App\\CacheStorage' => __DIR__ . '/../..' . '/app/CacheStorage.php',
+        'App\\Category' => __DIR__ . '/../..' . '/app/Category.php',
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
         'App\\DBStorage' => __DIR__ . '/../..' . '/app/DBStorage.php',
         'App\\DatabaseStorageModel' => __DIR__ . '/../..' . '/app/DatabaseStorageModel.php',
