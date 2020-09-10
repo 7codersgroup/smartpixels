@@ -121,3 +121,15 @@ if($('#bank_info').length) {
     $('#update_bank_info').toggle('slow');
   });
 }
+
+$(function () {
+  $("#country").countrySelect({
+    initialCountry: 'auto',
+    geoIpLookup: function (callback) {
+      $.get('http://ipinfo.io?token=47e8ba0b4941cf', function () {}, "jsonp").always(function (resp) {
+        var countryCode = (resp && resp.country) ? resp.country : "";
+        callback(countryCode);
+      });
+    }
+  });
+});
