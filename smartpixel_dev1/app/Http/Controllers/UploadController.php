@@ -54,8 +54,9 @@
 
 			$image_name = $request->file ('image_name')->getRealPath ();
             //Cloudder::upload ('Fricapix/preview/' . $image_name, null);
+            $transformations = ["fricapix_s1", "fricapix_s2"];
 			$options = ["public_id"=>"","folder"=>"Fricapix", "type"=>"private", "sign_url"=>true,
-				"eager"=>array("transformation"=>"Main")];
+				"eager"=>array("transformation"=>$transformations[array_rand ($transformations,1)])];
 
 			//Cloudder::upload ($image_name, null, $options);
 			list($width, $height) = getimagesize ($image_name);

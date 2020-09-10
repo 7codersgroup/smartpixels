@@ -2,7 +2,7 @@
     <nav class="navbar navbar-expand-lg navbar-light py-md-1 mob-pad px-md-0">
         <a class="navbar-brand" href="{{ route ('home') }}"
         ><img
-                    src="{{asset ('img/fricapix.png')}}"
+                    src="{{asset ('img/fricapix-logo-x2.png')}}"
                     alt="Fricapix logo"
                     width="120"
                     class="mob"
