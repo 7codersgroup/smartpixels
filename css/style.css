@@ -2427,3 +2427,7 @@ option {
 .selectize-control.multi .selectize-input.has-items {
   padding: 0px 8px;
 }
+
+#verified, #unverified {
+  cursor: none;
+}
