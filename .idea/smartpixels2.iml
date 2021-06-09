@@ -145,8 +145,15 @@
       <excludeFolder url="file://$MODULE_DIR$/smartpixel_dev1/vendor/vlucas/phpdotenv" />
       <excludeFolder url="file://$MODULE_DIR$/smartpixel_dev1/vendor/voku/portable-ascii" />
       <excludeFolder url="file://$MODULE_DIR$/smartpixel_dev1/vendor/webmozart/assert" />
+      <excludeFolder url="file://$MODULE_DIR$/smartpixel_dev1/vendor/snowfire/beautymail" />
+      <excludeFolder url="file://$MODULE_DIR$/smartpixel_dev1/vendor/pelago/emogrifier" />
+      <excludeFolder url="file://$MODULE_DIR$/smartpixel_dev1/vendor/algolia/algoliasearch-client-php" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="font-awesome" level="application" />
+    <orderEntry type="library" name="jquery-3.5.1" level="application" />
+    <orderEntry type="library" name="e9480ff5ec" level="application" />
+    <orderEntry type="library" name="jquery-validate" level="application" />
   </component>
 </module>

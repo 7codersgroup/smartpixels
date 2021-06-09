@@ -9,7 +9,7 @@ return [
     |   As set in the auth0 administration page
     |
     */
-    'domain'        => env( 'AUTH0_DOMAIN' ),
+    'domain' => 'dev-g5dxikbh.auth0.com',
 
     /*
     |--------------------------------------------------------------------------
@@ -18,7 +18,7 @@ return [
     |   As set in the auth0 administration page
     |
     */
-    'client_id'     => env( 'AUTH0_CLIENT_ID' ),
+    'client_id' => '7szN10Ws0LvveDp8Qc3K4YYiWk26iYt8',
 
     /*
     |--------------------------------------------------------------------------
@@ -27,7 +27,7 @@ return [
     |   As set in the auth0 administration page
     |
     */
-    'client_secret' => env( 'AUTH0_CLIENT_SECRET' ),
+    'client_secret' => 'Ms2vxlxAM_sO_nfGIcwF4F41hNjQLRzzs5AdEYBNKUZ7-bHzBKUJCg8NT6NSO1pn',
 
     /*
      |--------------------------------------------------------------------------
@@ -37,7 +37,7 @@ return [
      |   'Auth0\Login\Auth0Controller@callback'
      |
      */
-    'redirect_uri'  => env( 'APP_URL' ) . '/auth0/callback',
+    'redirect_uri' => env('APP_URL') . '/auth0/callback',
 
     /*
     |--------------------------------------------------------------------------

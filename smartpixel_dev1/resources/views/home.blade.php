@@ -60,7 +60,7 @@
                                                     <input
                                                         name="query"
                                                         class="js-search-text-input input--silent input--full light input--xlarge"
-                                                        type="text"
+                                                        type="search"
                                                         placeholder="Search"
                                                         required
                                                         autocomplete="off"

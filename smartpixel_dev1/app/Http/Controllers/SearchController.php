@@ -4,11 +4,8 @@ namespace App\Http\Controllers;
 
 
 use App\Image;
-use Darryldecode\Cart\Cart;
-use Darryldecode\Cart\Exceptions\InvalidItemException;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\DB;
 
 class SearchController extends Controller
 {
@@ -44,8 +41,6 @@ class SearchController extends Controller
                 )
             ));
         }
-
-
 
 		return redirect()->back()->with('success', 'Item added to cart successfully.');
 	}

@@ -141,6 +141,9 @@
       <path value="$PROJECT_DIR$/smartpixel_dev1/vendor/unicodeveloper/laravel-paystack" />
       <path value="$PROJECT_DIR$/smartpixel_dev1/vendor/laravel/scout" />
       <path value="$PROJECT_DIR$/smartpixel_dev1/vendor/spatie/laravel-activitylog" />
+      <path value="$PROJECT_DIR$/smartpixel_dev1/vendor/snowfire/beautymail" />
+      <path value="$PROJECT_DIR$/smartpixel_dev1/vendor/pelago/emogrifier" />
+      <path value="$PROJECT_DIR$/smartpixel_dev1/vendor/algolia/algoliasearch-client-php" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="7.2" />

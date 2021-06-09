@@ -14,7 +14,7 @@
                     <a href="{{route ('home')}}" class="logo"
                     ><img src="{{asset ('img/fricapix-logo-mark-x2.png')}}" alt="fricapix logo" width="80"
                         /></a>
-                    <a href="#" class="email" title="Send a mail to fricapix"
+                    <a href="mailto:hello@fricapix.com" class="email" title="Send a mail to fricapix"
                     >hello@fricapix.com</a
                     >
                     <a href="#" class="phone" title="Call fricapix"
@@ -23,8 +23,8 @@
                 </div>
                 <!-- /.about-widget -->
                 <div
-                        class="col-lg-3 col-sm-6 col-12 footer-list aos-init aos-animate"
-                        data-aos="fade-up"
+                    class="col-lg-3 col-sm-6 col-12 footer-list aos-init aos-animate"
+                    data-aos="fade-up"
                 >
                     <h5 class="title">Quick Links</h5>
                     <ul class="list-unstyled">
@@ -55,7 +55,7 @@
                 <!-- /.footer-list -->
                 <div class="col-lg-3 col-lg-2 col-sm-6 col-12 footer-information">
                     <h5 class="title">Our Address</h5>
-                    <p>fricapix Plaza, Victoria Island <br />Lagos, Nigeria</p>
+                    <p>Fricapix Plaza, Victoria Island <br/>Lagos, Nigeria</p>
                 </div>
             </div>
         </div>
@@ -63,20 +63,20 @@
         <div class="container">
             <div class="bottom-footer mt-0">
                 <div class="clearfix">
-                    <p class="float-md-left">© 2020 copyright all right reserved</p>
+                    <p class="float-md-left">© {{date('Y')}} copyright all right reserved</p>
 
                     <ul class="float-md-right">
                         <li>
                             <a
-                                    href="privacy-policy.html"
-                                    title="fricapix privacy policy"
-                            >Privacy &amp; Policy.</a
+                                href="privacy-policy.html"
+                                title="fricapix privacy policy"
+                            >Privacy &amp Policy.</a
                             >
                         </li>
                         <li>
                             <a
-                                    href="faq.html"
-                                    title="fricapix Frequently asked questions policy"
+                                href="faq.html"
+                                title="fricapix Frequently asked questions policy"
                             >Faq.</a
                             >
                         </li>

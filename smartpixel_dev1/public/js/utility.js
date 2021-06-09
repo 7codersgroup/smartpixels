@@ -12,25 +12,25 @@
   if ($.fn.imagesLoaded) {
     proCata.imagesLoaded(function () {
       proCata.isotope({
-        itemSelector: singleProCata,
-        percentPosition: true,
-        masonry: {
-          columnWidth: singleProCata,
-        },
+          itemSelector: singleProCata,
+          percentPosition: true,
+          masonry: {
+              columnWidth: singleProCata,
+          },
       });
     });
   }
 
 
     // :: 9.0 Tooltip Active Code
-  if ($.fn.tooltip) {
-    $('[data-toggle="tooltip"]').tooltip();
-  }
+    if ($.fn.tooltip) {
+        $('[data-toggle="tooltip"]').tooltip();
+    }
 
-  // :: 10.0 PreventDefault a Click
-  $("a[href='#']").on("click", function ($) {
-    $.preventDefault();
-  });
+    // :: 10.0 PreventDefault a Click
+    $("a[href='#']").on("click", function ($) {
+        $.preventDefault();
+    });
 })(jQuery);
 
 /**
@@ -85,14 +85,14 @@ $(".custom-file-input").on("change", function () {
 });
 
 $(function () {
-  $('[data-toggle="tooltip"]').tooltip()
-});
+    $('[data-toggle="tooltip"]').tooltip()
+})
 
 if ($('#seo-tags').length) {
     $('#seo-tags').selectize({
-    persist: false,
-    createOnBlur: true,
-    create: true
+        persist: false,
+        createOnBlur: true,
+        create: true
     });
 }
 
@@ -119,3 +119,33 @@ if ($('#bank_info').length) {
         $('#update_bank_info').toggle('slow');
     });
 }
+
+$(function () {
+    if ($("#country").length) {
+        $("#country").countrySelect({
+            initialCountry: 'auto',
+            geoIpLookup: function (callback) {
+                $.get('http://ipinfo.io?token=47e8ba0b4941cf', function () {
+                }, "jsonp").always(function (resp) {
+                    var countryCode = (resp && resp.country) ? resp.country : "";
+                    callback(countryCode);
+                });
+            }
+        });
+    }
+
+});
+
+
+var input = document.querySelector("#phone-number");
+window.intlTelInput(input, {
+    initialCountry: "auto",
+    geoIpLookup: function (callback) {
+        $.get('http://ipinfo.io?token=47e8ba0b4941cf', function () {
+        }, "jsonp").always(function (resp) {
+            var countryCode = (resp && resp.country) ? resp.country : "";
+            callback(countryCode);
+        });
+    },
+    utilsScript: "js/utils.js" // just for formatting/placeholders etc
+});

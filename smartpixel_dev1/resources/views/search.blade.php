@@ -8,6 +8,7 @@
 
 <!-- Product Catagories Area Start -->
 <div class="products-catagories-area clearfix mt-push-top">
+    @include('flash-message')
 
     <div class="amado-pro-catagory clearfix">
 

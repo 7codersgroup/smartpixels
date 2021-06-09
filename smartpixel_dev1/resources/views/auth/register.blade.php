@@ -78,16 +78,22 @@
                                     </div>
                                 </div>
                                 <div class="form-group mb-4">
+                                    <label for="country"> Country <span> *</span> </label>
+                                    <div class="input-group">
+                                        <input type="text" id="country" name="country" class="form-control"/>
+                                    </div>
+                                </div>
+                                <div class="form-group mb-4">
                                     <label for="email">
                                         Email<span> *</span>
                                     </label>
                                     <div class="input-group">
                                         <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" placeholder="mail@example.com" name="email" value="{{ old('email') }}" required autocomplete="email"/>
                                         @error('email')
-                                    <span class="invalid-feedback" role="alert">
+                                        <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
-                                @enderror
+                                        @enderror
                                     </div>
                                 </div>
 
@@ -155,5 +161,68 @@
                 </div>
             </section>
         </div>
-    </div>
+</div>
 @endsection
+
+@push('scripts')
+    <script>
+        $(document).ready(function () {
+            var form = $("#signup");
+            form.validate({
+                errorElement: 'p',
+                errorClass: 'help-block small mt-3 text-danger mb-0',
+                errorPlacement: function (error, element) {
+                    error.appendTo(element.parent("div").parent('.form-group'));
+                },
+                highlight: function (element, errorClass, validClass) {
+                    $(element).closest('.form-group').addClass("has-error");
+                    $(element).addClass("is-invalid");
+                },
+                unhighlight: function (element, errorClass, validClass) {
+                    $(element).closest('.form-group').removeClass("has-error");
+                    $(element).removeClass("is-invalid");
+                    $(element).addClass("is-valid");
+                },
+                rules: {
+                    fname: {
+                        required: true
+                    },
+                    lname: {
+                        required: true
+                    },
+                    email: {
+                        required: true
+                    },
+                    password: {
+                        required: true,
+                        pwcheck: true,
+                    },
+                    'confirm-password': {
+                        equalTo: "#password"
+                    }
+                },
+                messages: {
+                    fname: {
+                        required: "Your First Name is required"
+                    }
+                    , lname: {
+                        required: "Your Last Name is required"
+                    }
+                    , email: {
+                        required: "Your Email address is required"
+                    },
+                    password: {
+                        required: "We need a password to secure your account",
+                        pwcheck: "Your password must be at least 8 characters and contain uppercase, lowercase letters and numbers",
+                    },
+                }
+            });
+
+            $.validator.addMethod("pwcheck", function (value, element) {
+                return /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,12}$/.test(value);
+            });
+        });
+
+
+    </script>
+@endpush

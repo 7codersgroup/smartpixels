@@ -23,11 +23,53 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cbd6f795-d52c-4941-aaa0-5721efb1051f" name="Default Changelist" comment="Page Title modification">
-      <change afterPath="$PROJECT_DIR$/smartpixel_dev1/app/Http/Controllers/PaymentController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/webServers.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smartpixel_dev1/public/css/countrySelect.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smartpixel_dev1/public/css/intlTelInput.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smartpixel_dev1/public/img/favicon/android-chrome-192x192.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smartpixel_dev1/public/img/favicon/android-chrome-512x512.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smartpixel_dev1/public/img/favicon/apple-touch-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smartpixel_dev1/public/img/favicon/favicon-16x16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smartpixel_dev1/public/img/favicon/favicon-32x32.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smartpixel_dev1/public/img/favicon/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smartpixel_dev1/public/img/favicon/site.webmanifest" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smartpixel_dev1/public/img/flags.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smartpixel_dev1/public/img/flags@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smartpixel_dev1/public/js/countrySelect.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smartpixel_dev1/public/js/intlTelInput.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smartpixel_dev1/public/js/utils.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/a8950978-493d-4210-8bcb-ffb993534153.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/a8950978-493d-4210-8bcb-ffb993534153.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/smartpixels2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/smartpixels2.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartpixel_dev1/resources/views/cart.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/smartpixel_dev1/resources/views/cart.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smartpixel_dev1/app/Http/Controllers/Auth/VerificationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/smartpixel_dev1/app/Http/Controllers/Auth/VerificationController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smartpixel_dev1/app/Http/Controllers/ProfileController.php" beforeDir="false" afterPath="$PROJECT_DIR$/smartpixel_dev1/app/Http/Controllers/ProfileController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smartpixel_dev1/app/Http/Controllers/SearchController.php" beforeDir="false" afterPath="$PROJECT_DIR$/smartpixel_dev1/app/Http/Controllers/SearchController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smartpixel_dev1/app/Http/Controllers/UploadController.php" beforeDir="false" afterPath="$PROJECT_DIR$/smartpixel_dev1/app/Http/Controllers/UploadController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smartpixel_dev1/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/smartpixel_dev1/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smartpixel_dev1/config/cloudder.php" beforeDir="false" afterPath="$PROJECT_DIR$/smartpixel_dev1/config/cloudder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smartpixel_dev1/config/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/smartpixel_dev1/config/database.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smartpixel_dev1/config/laravel-auth0.php" beforeDir="false" afterPath="$PROJECT_DIR$/smartpixel_dev1/config/laravel-auth0.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smartpixel_dev1/config/mail.php" beforeDir="false" afterPath="$PROJECT_DIR$/smartpixel_dev1/config/mail.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smartpixel_dev1/config/paystack.php" beforeDir="false" afterPath="$PROJECT_DIR$/smartpixel_dev1/config/paystack.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smartpixel_dev1/public/css/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/smartpixel_dev1/public/css/global.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smartpixel_dev1/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/smartpixel_dev1/public/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smartpixel_dev1/public/css/variables.css" beforeDir="false" afterPath="$PROJECT_DIR$/smartpixel_dev1/public/css/variables.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smartpixel_dev1/public/js/utility.js" beforeDir="false" afterPath="$PROJECT_DIR$/smartpixel_dev1/public/js/utility.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smartpixel_dev1/resources/views/auth/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/smartpixel_dev1/resources/views/auth/register.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smartpixel_dev1/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/smartpixel_dev1/resources/views/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smartpixel_dev1/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/smartpixel_dev1/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smartpixel_dev1/resources/views/layouts/footercity.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/smartpixel_dev1/resources/views/layouts/footercity.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smartpixel_dev1/resources/views/layouts/ordinary_header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/smartpixel_dev1/resources/views/layouts/ordinary_header.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smartpixel_dev1/resources/views/layouts/ordinarynavbar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/smartpixel_dev1/resources/views/layouts/ordinarynavbar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smartpixel_dev1/resources/views/layouts/searchnavbar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/smartpixel_dev1/resources/views/layouts/searchnavbar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smartpixel_dev1/resources/views/profile-update.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/smartpixel_dev1/resources/views/profile-update.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smartpixel_dev1/resources/views/search.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/smartpixel_dev1/resources/views/search.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/smartpixel_dev1/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/smartpixel_dev1/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartpixel_dev1/vendor/unicodeveloper/laravel-paystack/src/Paystack.php" beforeDir="false" afterPath="$PROJECT_DIR$/smartpixel_dev1/vendor/unicodeveloper/laravel-paystack/src/Paystack.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,6 +94,14 @@
       </list>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -194,6 +244,9 @@
       <path value="$PROJECT_DIR$/smartpixel_dev1/vendor/unicodeveloper/laravel-paystack" />
       <path value="$PROJECT_DIR$/smartpixel_dev1/vendor/laravel/scout" />
       <path value="$PROJECT_DIR$/smartpixel_dev1/vendor/spatie/laravel-activitylog" />
+      <path value="$PROJECT_DIR$/smartpixel_dev1/vendor/snowfire/beautymail" />
+      <path value="$PROJECT_DIR$/smartpixel_dev1/vendor/pelago/emogrifier" />
+      <path value="$PROJECT_DIR$/smartpixel_dev1/vendor/algolia/algoliasearch-client-php" />
     </include_path>
   </component>
   <component name="ProjectId" id="1d8OrgKl690APD57fqe5SpdFXPa" />
@@ -206,6 +259,8 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
@@ -213,7 +268,7 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
     <property name="database.console.LAST_STATE" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/smartpixel_dev1" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -226,16 +281,18 @@
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="settings.php.debug.servers" />
     <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/smartpixel_dev1/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/views/minimal.blade.php" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/smartpixel_dev1" />
+      <recent name="$PROJECT_DIR$/smartpixel_dev1/public" />
+      <recent name="$PROJECT_DIR$/smartpixel_dev1/public/css" />
       <recent name="C:\AppServ\www\smartpixels2\smartpixel_dev1\vendor\laravel\framework\src\Illuminate\Foundation\Exceptions\views" />
       <recent name="C:\AppServ\www\smartpixels2\smartpixel_dev1\public" />
-      <recent name="C:\AppServ\www\smartpixels2\smartpixel_dev1\public\js" />
-      <recent name="C:\AppServ\www\smartpixels2\smartpixel_dev1\public\css" />
-      <recent name="C:\AppServ\www\smartpixels2\smartpixel_dev1\resources\views" />
     </key>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration>C:\Users\DeLL Inspiron\AppData\Roaming\Subversion</configuration>
   </component>
@@ -268,6 +325,9 @@
       <workItem from="1592221023959" duration="6297000" />
       <workItem from="1592233785091" duration="572000" />
       <workItem from="1592315790790" duration="2215000" />
+      <workItem from="1623147015502" duration="661000" />
+      <workItem from="1623147802214" duration="9842000" />
+      <workItem from="1623157872240" duration="9359000" />
     </task>
     <task id="LOCAL-00005" summary="Update on Liking an Image">
       <created>1588676253245</created>
@@ -628,7 +688,7 @@
     </todo-panel>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.History.Properties">
     <option name="COLUMN_WIDTH">
@@ -712,48 +772,5 @@
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="275" y="42" key="#Deployment" timestamp="1592232477735">
-      <screen x="0" y="0" width="1366" height="768" />
-    </state>
-    <state x="275" y="42" key="#Deployment/0.0.1366.768/1366.0.1600.900@0.0.1366.768" timestamp="1591808303922" />
-    <state x="275" y="42" key="#Deployment/0.0.1366.768@0.0.1366.768" timestamp="1592232477735" />
-    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1592137545687">
-      <screen x="0" y="0" width="1366" height="768" />
-    </state>
-    <state x="1727" y="0" key="CommitChangelistDialog2/0.0.1366.768/1366.0.1600.900@1366.0.1600.900" timestamp="1591876848260" />
-    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1592137545687" />
-    <state x="47" y="-8" width="1209" height="611" maximized="true" key="DiffContextDialog" timestamp="1592222666895">
-      <screen x="0" y="0" width="1366" height="768" />
-    </state>
-    <state x="1458" y="92" width="1416" height="716" key="DiffContextDialog/0.0.1366.768/1366.0.1600.900@1366.0.1600.900" timestamp="1591880484266" />
-    <state x="47" y="-8" width="1209" height="611" maximized="true" key="DiffContextDialog/0.0.1366.768@0.0.1366.768" timestamp="1592222666895" />
-    <state x="92" y="92" width="1182" height="584" key="DirDiffDialog" timestamp="1592232478522">
-      <screen x="0" y="0" width="1366" height="768" />
-    </state>
-    <state x="92" y="92" width="1182" height="584" key="DirDiffDialog/0.0.1366.768@0.0.1366.768" timestamp="1592232478522" />
-    <state x="1908" y="162" key="FileChooserDialogImpl" timestamp="1591873267080">
-      <screen x="1366" y="0" width="1600" height="900" />
-    </state>
-    <state x="463" y="138" key="FileChooserDialogImpl/0.0.1366.768/1366.0.1600.900@0.0.1366.768" timestamp="1591804453197" />
-    <state x="1908" y="162" key="FileChooserDialogImpl/0.0.1366.768/1366.0.1600.900@1366.0.1600.900" timestamp="1591873267080" />
-    <state x="1667" y="95" key="SettingsEditor" timestamp="1591874761427">
-      <screen x="1366" y="0" width="1600" height="900" />
-    </state>
-    <state x="1667" y="95" key="SettingsEditor/0.0.1366.768/1366.0.1600.900@1366.0.1600.900" timestamp="1591874761427" />
-    <state x="335" y="145" key="Vcs.Push.Dialog.v2" timestamp="1592137622830">
-      <screen x="0" y="0" width="1366" height="768" />
-    </state>
-    <state x="1758" y="170" key="Vcs.Push.Dialog.v2/0.0.1366.768/1366.0.1600.900@1366.0.1600.900" timestamp="1591876866492" />
-    <state x="335" y="145" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1592137622830" />
-    <state x="92" y="92" width="1182" height="584" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1592224067225">
-      <screen x="0" y="0" width="1366" height="768" />
-    </state>
-    <state x="92" y="92" width="1182" height="584" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1366.768@0.0.1366.768" timestamp="1592224067225" />
-    <state x="568" y="114" width="447" height="539" key="ftp.server.browser" timestamp="1591808204353">
-      <screen x="0" y="0" width="1366" height="768" />
-    </state>
-    <state x="568" y="114" width="447" height="539" key="ftp.server.browser/0.0.1366.768/1366.0.1600.900@0.0.1366.768" timestamp="1591808204353" />
   </component>
 </project>

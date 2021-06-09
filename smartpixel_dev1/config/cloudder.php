@@ -12,18 +12,18 @@ return [
     |
     */
 
-    'cloudName'  => env('CLOUDINARY_CLOUD_NAME'),
-    'baseUrl'    => env('CLOUDINARY_BASE_URL', 'http://res.cloudinary.com/'.env('CLOUDINARY_CLOUD_NAME')),
-    'secureUrl'  => env('CLOUDINARY_SECURE_URL', 'https://res.cloudinary.com/'.env('CLOUDINARY_CLOUD_NAME')),
-    'apiBaseUrl' => env('CLOUDINARY_API_BASE_URL', 'https://api.cloudinary.com/v1_1/'.env('CLOUDINARY_CLOUD_NAME')),
-    'apiKey'     => env('CLOUDINARY_API_KEY'),
-    'apiSecret'  => env('CLOUDINARY_API_SECRET'),
+    'cloudName' => 'fricapix',
+    'baseUrl' => env('CLOUDINARY_BASE_URL', 'http://res.cloudinary.com/' . 'fricapix'),
+    'secureUrl' => env('CLOUDINARY_SECURE_URL', 'https://res.cloudinary.com/' . 'fricapix'),
+    'apiBaseUrl' => env('CLOUDINARY_API_BASE_URL', 'https://api.cloudinary.com/v1_1/' . 'fricapix'),
+    'apiKey' => '223297176269546',
+    'apiSecret' => 'd9aR0T7su2KxF6uylpK9sUidYfo',
 
-    'scaling'    => [
+    'scaling' => [
         'format' => 'png',
-        'width'  => 150,
+        'width' => 150,
         'height' => 150,
-        'crop'   => 'fit',
+        'crop' => 'fit',
         'effect' => null
     ],
 

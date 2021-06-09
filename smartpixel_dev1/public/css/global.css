@@ -1,25 +1,31 @@
 @import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=auto";
 @import url('https://fonts.googleapis.com/css?family=Raleway:400,500,700&display=auto');
 @import url('fonts/circular-std/css/circular-std.css');
+@import url("variables.css");
 
 :root {
-	--primary-color: #004071;
-	--primary-btn-gradient: linear-gradient(137.29deg, #38a0f6, 12.08%, #38a0f6 58.97%, #3b8cfa 76.85%);
+    --primary-color: #004071;
+    --primary-btn-gradient: linear-gradient(137.29deg, #38a0f6, 12.08%, #38a0f6 58.97%, #3b8cfa 76.85%);
 }
 
 * {
-	margin: 0;
-	padding: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.align-center {
+    align-items: center;
 }
 
 .pixel-color {
-	color: var(--primary-color)
+    color: var(--primary-color)
 }
+
 body.landing {
-	font-family: 'Poppins', sans-serif !important;
-	font-size: 17px !important;
-	background-color: #fff !important;
-	overflow-x: hidden !important;
+    font-family: 'Poppins', sans-serif !important;
+    font-size: 17px !important;
+    background-color: #fff !important;
+    overflow-x: hidden !important;
 }
 
 .raleway {
@@ -157,25 +163,33 @@ svg {
 	background: linear-gradient(137.29deg, #5d98ca, 12.08%, #38a0f6 58.97%, #2a75da 76.85%) !important;
 	color: #ffffff !important;
 	border-radius: 50px !important;
-	box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.41);
-	padding: 10px 30px;
-	cursor: pointer;
-	text-decoration: none;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.41);
+    padding: 10px 30px;
+    cursor: pointer;
+    text-decoration: none;
 }
 
 .font-semi-bold {
-	font-weight: 600 !important;
+    font-weight: 600 !important;
+}
+
+.font-weight-500 {
+    font-weight: 500;
+}
+
+.benefits li {
+    list-style: square;
 }
 
 /*footer section*/
 .cityline__image {
-	width: 100%;
-	/*	opacity: 0.2;*/
-	/*	background: linear-gradient(to bottom, var(--products-red), var(--complementary-yellow), var(--complementary-yellow));*/
+    width: 100%;
+    /*	opacity: 0.2;*/
+    /*	background: linear-gradient(to bottom, var(--products-red), var(--complementary-yellow), var(--complementary-yellow));*/
 }
 
 .footer-bg {
-	background-color: #004071;
+    background-color: #004071;
 }
 
 .title {

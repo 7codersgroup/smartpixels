@@ -60,33 +60,31 @@
                                     </div>
                                 </div>
                                 <div class="form-group mb-4">
-                                    <label for="exampleFormControlSelect1">
+                                    <label for="country">
                                         Country<span> *</span>
                                     </label>
-
-                                    <select class="form-control" name="country">
-                                        <option value="{{$user->country}}">Please select your nationality</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                        <option>4</option>
-                                        <option>5</option>
-                                    </select>
-
+                                    <div class="input-group">
+                                        <input type="text" id="country" name="country" class="form-control"
+                                               value="{{$user->profile->country}}" required/>
+                                    </div>
                                 </div>
                                 <div class="form-group mb-4">
-                                    <label for="exampleInputTelephone1">
+                                    <label for="phone-number">
                                         Phone Number<span> *</span>
                                     </label>
                                     <div class="input-group">
-                                        <input type="tel" class="form-control" placeholder="(+234) 80 FRICAPIX" name="phone" @if (isset($user->profile))
-                                        value="{{$user->profile->phone}}"
-                                        @endif/>
+                                        <input type="tel" class="form-control" id="phone-number" name="phone"
+                                               autocomplete="mobile" placeholder="(+234) 80 FRICAPIX"
+                                               @if (isset($user->profile))
+                                               value="{{$user->profile->phone}}"
+                                               @endif required/>
                                     </div>
                                 </div>
                                 <div class="form-group mb-4">
                                     <label for="exampleFormControlTextarea1">Address<span> *</span></label>
-                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" name="address" >@if (isset($user->profile)){{$user->profile->address}}
-                                    @endif</textarea>
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"
+                                              name="address">@if (isset($user->profile)){{$user->profile->address}}
+                                        @endif</textarea>
                                 </div>
                                 <div class="form-group mb-4">
                                     <label for="exampleInputCity1">

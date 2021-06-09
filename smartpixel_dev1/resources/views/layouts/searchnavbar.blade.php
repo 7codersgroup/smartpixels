@@ -1,4 +1,4 @@
-@include('flash-message')
+
 <div class="">
     <div class="container-fluid">
         <nav
@@ -37,16 +37,16 @@
                         <div class="input-box" data-active="input">
                             <div class="container-table">
                                 <div
-                                        class="container-table-cell container-full container-relative"
+                                    class="container-table-cell container-full container-relative"
                                 >
                                     <input
-                                            name="query"
-                                            class="js-search-text-input input--silent input--full light input--xlarge"
-                                            type="text"
-                                            placeholder="Search"
-                                            autocomplete="off"
-                                            required
-                                            value="{{old ('query')}}"
+                                        name="query"
+                                        class="js-search-text-input input--silent input--full light input--xlarge"
+                                        type="search"
+                                        placeholder="Search"
+                                        autocomplete="off"
+                                        required
+                                        value="{{old ('query')}}"
                                     />
                                 </div>
                                 <div class="container-table-cell no-stretch">
@@ -103,7 +103,8 @@
                                         {{ __('Logout') }}
                                     </a>
 
-                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                    <form id="logout-form" action="{{ route('logout') }}" method="POST"
+                                          style="display: none;">
                                         @csrf
                                     </form>
                                 </li>
@@ -111,16 +112,17 @@
                             </ul>
                         </li>
                         <li class="nav-item mx-md-4 my-md-0 postion-relative">
-                            <a class="nav-link px-0" href="{{ route('checkout.cart') }}">View Cart.<span class="badge badge-secondary">{{\Cart::session(Auth::id())->getContent()->count()}}</span></a>
+                            <a class="nav-link px-0" href="{{ route('checkout.cart') }}">View Cart.<span
+                                    class="badge badge-secondary">{{Cart::session(Auth::id())->getContent()->count()}}</span></a>
                         </li>
                     @endguest
-                    <li class="nav-item mx-md-4 my-md-0 postion-relative">
-                        <a class="nav-link px-0" href="faq.html">FAQ.</a>
-                    </li>
+                    {{-- <li class="nav-item mx-md-4 my-md-0 postion-relative">
+                         <a class="nav-link px-0" href="faq.html">FAQ.</a>
+                     </li>
 
-                    <li class="nav-item mx-md-4 my-md-0 postion-relative">
-                        <a class="nav-link px-0" href="contact.html">Contact Us.</a>
-                    </li>
+                     <li class="nav-item mx-md-4 my-md-0 postion-relative">
+                         <a class="nav-link px-0" href="contact.html">Contact Us.</a>
+                     </li>--}}
                 </ul>
             </div>
         </nav>

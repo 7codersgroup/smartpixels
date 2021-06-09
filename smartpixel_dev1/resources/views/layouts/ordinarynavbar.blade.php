@@ -60,7 +60,8 @@
                                     {{ __('Logout') }}
                                 </a>
 
-                                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                <form id="logout-form" action="{{ route('logout') }}" method="POST"
+                                      style="display: none;">
                                     @csrf
                                 </form>
                             </li>
@@ -68,16 +69,17 @@
                         </ul>
                     </li>
                     <li class="nav-item mx-md-4 my-md-0 postion-relative">
-                        <a class="nav-link px-0" href="{{ route('checkout.cart') }}">View Cart.<span class="badge badge-secondary">{{\Cart::session(Auth::id())->getContent()->count()}}</span></a>
+                        <a class="nav-link px-0" href="{{ route('checkout.cart') }}">View Cart.<span
+                                class="badge badge-secondary">{{Cart::session(Auth::id())->getContent()->count()}}</span></a>
                     </li>
                 @endguest
-                <li class="nav-item mx-md-4 my-md-0 postion-relative">
-                    <a class="nav-link px-0" href="faq.html">FAQ.</a>
-                </li>
+                {{-- <li class="nav-item mx-md-4 my-md-0 postion-relative">
+                     <a class="nav-link px-0" href="faq.html">FAQ.</a>
+                 </li>
 
-                <li class="nav-item mx-md-4 my-md-0 postion-relative">
-                    <a class="nav-link px-0" href="contact.html">Contact Us.</a>
-                </li>
+                 <li class="nav-item mx-md-4 my-md-0 postion-relative">
+                     <a class="nav-link px-0" href="contact.html">Contact Us.</a>
+                 </li>--}}
             </ul>
         </div>
     </nav>
